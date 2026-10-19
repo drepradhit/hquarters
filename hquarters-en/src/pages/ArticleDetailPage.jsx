@@ -82,10 +82,10 @@ export default function ArticleDetailPage({ setCurrentPage, articleId = 'art-1',
   const cleanTitle = stripHtml(article.title || '');
 
   return (
-    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="insights" setCurrentPage={setCurrentPage} />
 
-      <main className="pt-24 sm:pt-28 space-y-16">
+      <main className="pt-24 sm:pt-28 space-y-16 bg-white flex-1">
         
         {/* Breadcrumb & Article Header */}
         <section className="max-w-[1040px] mx-auto px-4 sm:px-6 space-y-6">

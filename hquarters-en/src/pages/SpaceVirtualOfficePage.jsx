@@ -101,10 +101,10 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
   ];
 
   return (
-    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="spaces" setCurrentPage={setCurrentPage} />
 
-      <main className="pt-24 sm:pt-28 pb-0 space-y-28 sm:space-y-36">
+      <main className="pt-24 sm:pt-28 pb-0 space-y-28 sm:space-y-36 bg-white flex-1">
         
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">

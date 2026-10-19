@@ -17,9 +17,9 @@ export default function HomePage({ setCurrentPage }) {
   }, []);
 
   return (
-    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="home" setCurrentPage={setCurrentPage} />
-      <main className="flex-1">
+      <main className="flex-1 bg-white">
         <Hero setCurrentPage={setCurrentPage} />
         <BusinessJourney setCurrentPage={setCurrentPage} />
         <AddressStatement setCurrentPage={setCurrentPage} />

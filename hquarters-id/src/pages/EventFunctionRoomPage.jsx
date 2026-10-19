@@ -440,10 +440,10 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
   };
 
   return (
-    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="event" setCurrentPage={setCurrentPage} />
 
-      <main className="pt-24 sm:pt-28 pb-0 space-y-20 sm:space-y-28">
+      <main className="pt-24 sm:pt-28 pb-0 space-y-20 sm:space-y-28 bg-white flex-1">
 
         
         
@@ -1016,10 +1016,10 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
           <div className="bg-slate-900 rounded-2xl sm:rounded-3xl p-8 sm:p-12 lg:p-16 text-white space-y-12">
             <div className="max-w-2xl text-left sm:text-center sm:mx-auto space-y-3">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading tracking-tight text-white leading-tight">
-                Perfect for any occasion.
+                Ideal untuk Berbagai Format Acara.
               </h2>
               <p className="text-slate-300 text-base leading-relaxed">
-                Versatile spatial layouts and partition systems engineered to accommodate intimate executive sessions or full-scale company gatherings.
+                Tata letak ruang serbaguna dengan sistem partisi kedap suara berkualitas tinggi, siap mengakomodasi pertemuan eksekutif privat hingga pertemuan akbar perusahaan.
               </p>
             </div>
 
@@ -1027,45 +1027,45 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  name: 'Corporate Seminars',
-                  setup: 'Theatre Configuration',
-                  capacity: 'Up to 140 Guests',
-                  desc: 'Acoustic-treated hall with motorized projection for company townhalls and keynotes.',
+                  name: 'Seminar Korporat & Townhall',
+                  setup: 'Konfigurasi Teater',
+                  capacity: 'Hingga 140 Tamu',
+                  desc: 'Aula berakustik prima dengan proyektor motorized dan audio terintegrasi untuk seminar, townhall, dan keynote berskala besar.',
                   image: '/Function Room/Theatre.webp',
                 },
                 {
-                  name: 'Training & Workshops',
-                  setup: 'Classroom Configuration',
-                  capacity: 'Up to 100 Guests',
-                  desc: 'Spacious desk rows with presentation sightlines and high-speed Wi-Fi for interactive sessions.',
+                  name: 'Pelatihan & Workshop',
+                  setup: 'Konfigurasi Kelas',
+                  capacity: 'Hingga 100 Tamu',
+                  desc: 'Barisan meja ergonomis dengan visibilitas layar optimal dan Wi-Fi berkecepatan tinggi untuk sesi pelatihan interaktif.',
                   image: '/Function Room/Class Room.webp',
                 },
                 {
-                  name: 'Private Celebrations',
-                  setup: 'Round Table Banquet',
-                  capacity: 'Up to 70 Guests',
-                  desc: 'Circular dining arrangements with customizable ambient lighting for gala dinners.',
+                  name: 'Perayaan Privat & Jamuan Gala',
+                  setup: 'Konfigurasi Meja Bundar (Banquet)',
+                  capacity: 'Hingga 70 Tamu',
+                  desc: 'Penataan meja bundar elegan dengan pencahayaan ambient yang dapat disesuaikan untuk jamuan makan malam dan perayaan resmi.',
                   image: '/Function Room/Ron Table.webp',
                 },
                 {
-                  name: 'Board Meetings',
-                  setup: 'Executive U-Shape',
-                  capacity: 'Up to 100 Guests',
-                  desc: 'Open perimeter table design fostering direct eye contact for strategic summit discussions.',
+                  name: 'Rapat Direksi & Bisnis Strategis',
+                  setup: 'Konfigurasi U-Shape (Rapat Eksekutif)',
+                  capacity: 'Hingga 100 Tamu',
+                  desc: 'Rangkaian meja berbentuk U yang mendorong interaksi langsung dan tatap muka intensif untuk diskusi dewan direksi.',
                   image: '/Function Room/U SHape.webp',
                 },
                 {
-                  name: 'Product Launches',
-                  setup: 'Showcase & Stage',
-                  capacity: 'Up to 180 Guests',
-                  desc: 'High-ceiling presentation stage ready for brand reveals, press debuts, and VIP walkthroughs.',
+                  name: 'Peluncuran Produk & Pameran',
+                  setup: 'Konfigurasi Panggung & Resepsi',
+                  capacity: 'Hingga 180 Tamu',
+                  desc: 'Panggung presentasi berplafon tinggi yang ideal untuk peluncuran produk, konferensi pers, dan pameran brand.',
                   image: '/BUILDING/FR 01.webp',
                 },
                 {
-                  name: 'Community Gatherings',
-                  setup: 'Modular Breakout Space',
-                  capacity: 'Flexible Layout',
-                  desc: 'Adaptable partitions allowing simultaneous networking hubs, creative panels, and social gatherings.',
+                  name: 'Pertemuan Komunitas & Networking',
+                  setup: 'Konfigurasi Modular (Breakout)',
+                  capacity: 'Tata Letak Fleksibel',
+                  desc: 'Partisi kedap suara fleksibel untuk membagi ruangan menjadi zona networking, diskusi panel, dan interaksi komunitas.',
                   image: '/BUILDING/FR 02.webp',
                 },
               ].map((item, idx) => (

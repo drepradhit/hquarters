@@ -13,9 +13,9 @@ export default function SpacesPage({ setCurrentPage }) {
   }, []);
 
   return (
-    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="spaces" setCurrentPage={setCurrentPage} />
-      <main className="pt-24 sm:pt-28 flex-1">
+      <main className="pt-24 sm:pt-28 flex-1 bg-white">
         <SpacesSection setCurrentPage={setCurrentPage} />
         <CTA
           setCurrentPage={setCurrentPage}
