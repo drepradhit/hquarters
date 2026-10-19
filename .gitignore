@@ -1,19 +1,16 @@
 # Client & Personal Documents
 *.pdf
-Invoice*
-SOW*
-Logo*
+/Invoice*
+/SOW*
+/Logo Drevelopment.png
 
 # Other project folders
-hquartersfe/
-hquarters-redesign/
+/hquartersfe/
+/hquarters-redesign/
 
 # Node & Build artifacts
-node_modules/
 **/node_modules/
-dist/
 **/dist/
-dist-ssr/
 **/dist-ssr/
 *.local
 
