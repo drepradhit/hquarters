@@ -1,0 +1,1005 @@
+{
+  "version": "0.4",
+  "title": "Companies & Community HQuarters (Full Responsive)",
+  "type": "page",
+  "content": [
+    {
+      "id": "qvg5nak",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "32",
+          "bottom": "20",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "16",
+          "right": "16",
+          "bottom": "16",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "60gehxa",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"margin:0;\"><a href=\"/\" style=\"color:#64748B; text-decoration:none;\">Home</a> <span style=\"color:#94A3B8; margin:0 6px;\">›</span> <strong style=\"color:#0F172A;\">Companies</strong></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "500"
+          },
+          "elements": []
+        },
+        {
+          "id": "s4ydlvl",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": false
+            },
+            "flex_gap": {
+              "column": "12",
+              "row": "12",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "f6kkfu5",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "TENANT COMMUNITY",
+                "header_size": "span",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "gm4sr1v",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Growing Business <br><span style=\"color:#EA8E18;\">Ecosystem.</span>",
+                "header_size": "h1",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "17mcktn",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"max-width:680px; margin:0 auto;\">Meet the market leaders, financial giants, and creative pioneers who call HQuarters their corporate home.</p>",
+                "text_color": "#475569",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "typjvv8",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "32",
+          "bottom": "80",
+          "left": "32",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "24",
+          "row": "24",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "i50mu0y",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "928ai4i",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/GF allianz.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "wia4anf",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "7t2jn42",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/7de axa.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "rq2dlda",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "ccyiiis",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/9ef MSIG.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "dn17j7r",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "9my1phf",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/7i mitsubishi.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "rxgu5xe",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "m8kj5tx",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/16j roche.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "ttp4zfb",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "pn8wq1v",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/6FGH fwd.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "jdab83u",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "pgw50l9",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/19r avrist.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "pnh86hw",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "pyczvvd",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/19 OP Dana-Logo.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "3crlbsx",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "mq2qqpw",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/UG his travel.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "hge94ft",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "k2ie5qd",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/16E henan sekuritas.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "l5ldytz",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "gfgz2py",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/huawei.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "jswt1da",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 23
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 30
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 46
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 130
+            },
+            "background_background": "classic",
+            "background_color": "#F8FAFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "v079tzz",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/homepagelogobaru/GF B garuda.webp"
+                },
+                "image_size": "full",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

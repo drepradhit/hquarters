@@ -1,0 +1,1604 @@
+{
+  "version": "0.4",
+  "title": "Space Serviced Office HQuarters (Full Responsive)",
+  "type": "page",
+  "content": [
+    {
+      "id": "wwivhlf",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "16",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "3rmpw6c",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"margin:0;\"><a href=\"/\" style=\"color:#64748B; text-decoration:none;\">Home</a> <span style=\"color:#94A3B8; margin:0 6px;\">›</span> <a href=\"/spaces\" style=\"color:#64748B; text-decoration:none;\">Spaces</a> <span style=\"color:#94A3B8; margin:0 6px;\">›</span> <strong style=\"color:#0F172A;\">Serviced Office</strong></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "500"
+          },
+          "elements": []
+        },
+        {
+          "id": "23pagng",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "align_items": "stretch",
+            "background_background": "classic",
+            "background_color": "#0F172A",
+            "border_radius": {
+              "unit": "px",
+              "top": "44",
+              "right": "44",
+              "bottom": "44",
+              "left": "44",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#1E293B",
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "56",
+              "bottom": "56",
+              "left": "56",
+              "isLinked": true
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "28",
+              "right": "24",
+              "bottom": "28",
+              "left": "24",
+              "isLinked": false
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 20,
+              "blur": 40,
+              "spread": 0,
+              "color": "rgba(0,0,0,0.35)"
+            },
+            "flex_gap": {
+              "column": "36",
+              "row": "36",
+              "unit": "px"
+            },
+            "overflow": "hidden"
+          },
+          "elements": [
+            {
+              "id": "kzy2ghk",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "justify_content": "center",
+                "align_items": "flex-start",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "4a7nmqm",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SERVICED OFFICE",
+                    "header_size": "span",
+                    "title_color": "#FBBF24",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 1.5
+                    },
+                    "align": "left"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "vbory07",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Turnkey Office Suite <br><span style=\"color:#EA8E18;\">Ready In 24 Hours.</span>",
+                    "header_size": "h1",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 52
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 32
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.12
+                    },
+                    "align": "left"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ovqim0c",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Fully furnished, high-speed fiber internet, meeting rooms, and professional reception support included in one flexible monthly arrangement.</p>",
+                    "text_color": "#CBD5E1",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.6
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "pk1ltrn",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "EXPLORE SERVICED OFFICE",
+                    "link": {
+                      "url": "#find-space"
+                    },
+                    "button_type": "default",
+                    "size": "md",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "700",
+                    "background_color": "#EA8E18",
+                    "button_text_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": true
+                    },
+                    "button_padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "32",
+                      "bottom": "14",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "icon": {
+                      "value": "fas fa-arrow-right",
+                      "library": "fa-solid"
+                    },
+                    "icon_align": "right",
+                    "icon_indent": {
+                      "unit": "px",
+                      "size": 8
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "h3r8ke8",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; padding-top:12px; border-top:1px solid #1E293B; color:#94A3B8; font-size:12px;\">Fully Furnished &nbsp;—&nbsp; High-Speed Fiber Internet &nbsp;—&nbsp; Reception & Mail Handling Included</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "ly2xrtp",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 340
+                },
+                "min_height_mobile": {
+                  "unit": "px",
+                  "size": 260
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(255,255,255,0.15)",
+                "overflow": "hidden",
+                "background_background": "classic",
+                "background_image": {
+                  "url": "/SPACES/SERVICED OFFICE/1.webp"
+                },
+                "background_position": "center center",
+                "background_size": "cover"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ouiveak",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "text_align": "center",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "18",
+          "row": "18",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "0zdxcfd",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Plug In & Start Working. <br><span style=\"color:#EA8E18;\">We Handle The Rest.</span>",
+            "header_size": "h2",
+            "title_color": "#0F172A",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 26
+            },
+            "typography_font_weight": "500",
+            "align": "center"
+          },
+          "elements": []
+        },
+        {
+          "id": "jp5qoc0",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Zero fit-out delays, zero capital expenditure on furniture, zero utility hassle. Just move in with your laptop and focus on your business growth.</p>",
+            "text_color": "#475569",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 17
+            },
+            "align": "center"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "dxt9f9n",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "32",
+          "bottom": "60",
+          "left": "32",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "36",
+          "row": "36",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "zpgx5q5",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Everything Included In <span style=\"color:#EA8E18;\">Your Suite</span>",
+            "header_size": "h2",
+            "title_color": "#0F172A",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 36
+            },
+            "align": "center"
+          },
+          "elements": []
+        },
+        {
+          "id": "bcfdwee",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "column": "24",
+              "row": "24",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "8xk1bit",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "clt8d6q",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Ergonomic Workstations",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2qos75m",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:14px; color:#475569;\">Executive desks, mesh chairs, and pedestal storage.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "zz7nvi2",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "1386687",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "High-Speed Fiber Wi-Fi",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ugttu9u",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:14px; color:#475569;\">Dedicated corporate bandwidth with redundant backup.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "xmt23w6",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "f42jxyk",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Professional Receptionist",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "o23x9kl",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:14px; color:#475569;\">Greeting your guests and handling incoming mail/parcels.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "7zzhs8l",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "ezjkavy",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Meeting Room Credits",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "fuma2xc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:14px; color:#475569;\">Access to high-tech boardrooms for client presentations.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "wui070r",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "kzhupav",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Daily Cleaning Service",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "zpgx2jh",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:14px; color:#475569;\">Immaculate office hygiene maintained every single day.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "qx4luhw",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "3o2q9q8",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Free Refreshment",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "m0j5yc6",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:14px; color:#475569;\">Premium coffee, tea, and mineral water available all day.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cwl0crs",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "32",
+          "bottom": "60",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "24",
+          "right": "16",
+          "bottom": "40",
+          "left": "16",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hkq0xm8",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1200
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_radius": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E2E8F0",
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 20,
+              "blur": 40,
+              "spread": 0,
+              "color": "rgba(15,23,42,0.08)"
+            },
+            "overflow": "hidden",
+            "_element_id": "find-space"
+          },
+          "elements": [
+            {
+              "id": "qnsp0p4",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 40
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "min_height_tablet": {
+                  "unit": "px",
+                  "size": 380
+                },
+                "min_height_mobile": {
+                  "unit": "px",
+                  "size": 380
+                },
+                "flex_direction": "column",
+                "justify_content": "flex-end",
+                "align_items": "stretch",
+                "background_background": "classic",
+                "background_color": "#0F172A",
+                "background_image": {
+                  "url": "/SPACES/PREMIUM OFFICE/Premium Office 06.webp"
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_color": "#0F172A",
+                "background_overlay_opacity": {
+                  "unit": "px",
+                  "size": 0.5
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "_css_classes": "hq-space-banner"
+              },
+              "elements": [
+                {
+                  "id": "omtxz1s",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "rgba(22, 26, 37, 0.95)",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(255,255,255,0.12)",
+                    "padding": {
+                      "unit": "px",
+                      "top": "28",
+                      "right": "28",
+                      "bottom": "28",
+                      "left": "28",
+                      "isLinked": true
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "z7q20x3",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "FIND YOUR NEXT OFFICE",
+                        "header_size": "span",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "typography_font_weight": "800",
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 1
+                        },
+                        "_css_classes": "hq-space-badge"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "mj9doqt",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Tell Us What Your Team Needs.",
+                        "header_size": "h2",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 26
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 22
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        },
+                        "_css_classes": "hq-space-title"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "co5k69p",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>We'll match you to available office spaces by area, floor and move-in timeline — with a tailored rental proposal, not a public price list.</p>",
+                        "text_color": "#CBD5E1",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6
+                        },
+                        "_css_classes": "hq-space-desc"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f35x3pe",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 60
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "padding": {
+                  "unit": "px",
+                  "top": "44",
+                  "right": "44",
+                  "bottom": "44",
+                  "left": "44",
+                  "isLinked": true
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "20",
+                  "bottom": "24",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "flex_gap": {
+                  "column": "18",
+                  "row": "18",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "xoxze4k",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "1. Select Space Type",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2dvoear",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "column": "8",
+                      "row": "8",
+                      "unit": "px"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "wwxteim",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Premium Office",
+                        "button_type": "default",
+                        "_css_classes": "hq-space-btn "
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "rj2gmlk",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "SOHO",
+                        "button_type": "default",
+                        "_css_classes": "hq-space-btn "
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "lw4lyv8",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Serviced Office",
+                        "button_type": "default",
+                        "_css_classes": "hq-space-btn active"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "i4sndnp",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Virtual Office",
+                        "button_type": "default",
+                        "_css_classes": "hq-space-btn "
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ra0pm7m",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Function Room",
+                        "button_type": "default",
+                        "_css_classes": "hq-space-btn "
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "qsau8eg",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "style": "solid",
+                    "weight": {
+                      "unit": "px",
+                      "size": 1
+                    },
+                    "color": "#F1F5F9",
+                    "gap": {
+                      "unit": "px",
+                      "size": 6
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "yvci8vw",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "2. Complete Your Details",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "xphv4qr",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; font-size:12px; color:#64748B;\">Share your details and our team will get back to you shortly.</p>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "l4pp9nh",
+                  "elType": "widget",
+                  "widgetType": "form",
+                  "settings": {
+                    "form_name": "Inquiry Form",
+                    "form_fields": [
+                      {
+                        "_id": "name",
+                        "field_type": "text",
+                        "field_label": "FULL NAME *",
+                        "placeholder": "Your full name",
+                        "required": "true",
+                        "width": "50",
+                        "width_mobile": "100",
+                        "custom_id": "name"
+                      },
+                      {
+                        "_id": "whatsapp",
+                        "field_type": "tel",
+                        "field_label": "WHATSAPP *",
+                        "placeholder": "+62 812 3456 7890",
+                        "required": "true",
+                        "width": "50",
+                        "width_mobile": "100",
+                        "custom_id": "whatsapp"
+                      },
+                      {
+                        "_id": "company",
+                        "field_type": "text",
+                        "field_label": "COMPANY NAME (OPTIONAL)",
+                        "placeholder": "e.g. PT Enterprise Nusantara",
+                        "width": "100",
+                        "custom_id": "company"
+                      },
+                      {
+                        "_id": "notes",
+                        "field_type": "textarea",
+                        "field_label": "ADDITIONAL REQUIREMENTS (OPTIONAL)",
+                        "placeholder": "Any specific requests, timeline, or inquiries...",
+                        "rows": 3,
+                        "width": "100",
+                        "custom_id": "notes"
+                      }
+                    ],
+                    "button_text": "Request Floorplan & Proposal",
+                    "button_size": "md",
+                    "button_width": "100",
+                    "button_css_id": "hq-submit-btn",
+                    "submit_actions": [
+                      "redirect"
+                    ],
+                    "redirect_to": "https://wa.me/628111908319?text=Halo%20HQuarters!%20Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20*Serviced%20Office*.%0ANama:%20[field id=\"name\"]%0AWhatsApp:%20[field id=\"whatsapp\"]%0APerusahaan:%20[field id=\"company\"]%0ACatatan:%20[field id=\"notes\"]"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "9rha0k6",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"margin:0; text-align:center; font-size:10px; color:#94A3B8;\">Your information is confidential and will only be used by HQuarters management.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sgxbegm",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#231F20",
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "32",
+          "bottom": "80",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "60",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "8nzelck",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1000
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "18",
+              "row": "18",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "6ze4a91",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Move-In Today. <br><span style=\"color:#EA8E18;\">Scale Tomorrow.</span>",
+                "header_size": "h2",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "rv8rejg",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>HQuarters Serviced Office — Asia Afrika, Bandung</p>",
+                "text_color": "#94A3B8",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

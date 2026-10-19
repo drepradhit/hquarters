@@ -1,0 +1,4917 @@
+{
+  "version": "0.4",
+  "title": "HQuarters - Space Premium Office",
+  "type": "page",
+  "content": [
+    {
+      "id": "evgs1hf",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "112",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "112",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "96",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "unit": "px"
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_element_id": "space-hero",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "1igds7s",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "<a href=\"/\" style=\"color:#64748B;text-decoration:none;\">Beranda</a> &nbsp; <span style=\"color:#CBD5E1;\">&rsaquo;</span> &nbsp; <a href=\"/spaces\" style=\"color:#64748B;text-decoration:none;\">Ruang Usaha</a> &nbsp; <span style=\"color:#CBD5E1;\">&rsaquo;</span> &nbsp; <span style=\"color:#0F172A;font-weight:700;\">Premium Office</span>",
+            "header_size": "span",
+            "align": "left",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 12
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "v2t86fq",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "align_items": "stretch",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "unit": "px"
+            },
+            "flex_gap_tablet": {
+              "column": "24",
+              "row": "24",
+              "unit": "px"
+            },
+            "flex_gap_mobile": {
+              "column": "24",
+              "row": "24",
+              "unit": "px"
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "44",
+              "right": "44",
+              "bottom": "44",
+              "left": "44",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "background_background": "classic",
+            "background_color": "#0F172A",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#1E293B",
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 25,
+              "blur": 50,
+              "spread": -12,
+              "color": "rgba(0,0,0,0.25)"
+            },
+            "overflow": "hidden",
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "56",
+              "bottom": "56",
+              "left": "56",
+              "isLinked": true
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "48",
+              "right": "48",
+              "bottom": "48",
+              "left": "48",
+              "isLinked": true
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "lvwngxz",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc(50% - 16px)"
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "justify_content": "center",
+                "flex_gap": {
+                  "column": "24",
+                  "row": "24",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "oatx3ki",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Premium Office",
+                    "header_size": "span",
+                    "align": "left",
+                    "title_color": "#FBBF24",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.25
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "em",
+                      "size": 0.05
+                    },
+                    "typography_text_transform": "uppercase"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "4sbhsc4",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "HQuarters Berikutnya <br><span style=\"color:#EA8E18;\">Sudah Siap.</span>",
+                    "header_size": "h1",
+                    "align": "left",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 60
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.12
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 36
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "em",
+                      "size": -0.025
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "pcx0a5u",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Ruang kantor premium di CBD Bandung untuk perusahaan yang siap memasuki babak berikutnya.</p>",
+                    "align": "left",
+                    "text_color": "#CBD5E1",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    },
+                    "custom_css": "selector .elementor-widget-container { max-width:576px; }"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2cu7bc2",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "align_items": "center",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "8",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "4m6d8xj",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Cari Kantor Saya &nbsp;&rarr;",
+                        "link": {
+                          "url": "/find-space"
+                        },
+                        "align": "center",
+                        "size": "md",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#FFFFFF",
+                        "background_color": "#EA8E18",
+                        "button_background_hover_color": "#D88010",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "9999",
+                          "right": "9999",
+                          "bottom": "9999",
+                          "left": "9999",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "14",
+                          "right": "32",
+                          "bottom": "14",
+                          "left": "32",
+                          "isLinked": true
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 14
+                        },
+                        "box_shadow_box_shadow_type": "yes",
+                        "box_shadow_box_shadow": {
+                          "horizontal": 0,
+                          "vertical": 10,
+                          "blur": 15,
+                          "spread": -3,
+                          "color": "rgba(0,0,0,0.1)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "3849ajc",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "align_items": "center",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#1E293B"
+                  },
+                  "elements": [
+                    {
+                      "id": "kvb4xsl",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Ukuran Kantor Fleksibel",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#94A3B8",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 11
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "43qbgnk",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "&mdash;",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 11
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "79bqc04",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Lingkungan Bisnis Premium",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#94A3B8",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 11
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ievrhl2",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "&mdash;",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 11
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "dhtix8v",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Siap Fit-Out / Ditempati",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#94A3B8",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 11
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3e0j2tm",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc(50% - 16px)"
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "stretch"
+              },
+              "elements": [
+                {
+                  "id": "4wpt1ru",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 480
+                    },
+                    "min_height_tablet": {
+                      "unit": "px",
+                      "size": 400
+                    },
+                    "min_height_mobile": {
+                      "unit": "px",
+                      "size": 280
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "overflow": "hidden",
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "background_image": {
+                      "url": "/SPACES/PREMIUM OFFICE/Premium Office.webp"
+                    },
+                    "background_position": "center bottom",
+                    "background_size": "cover",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(255,255,255,0.15)",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 25,
+                      "blur": 50,
+                      "spread": -12,
+                      "color": "rgba(0,0,0,0.25)"
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en9x9hp",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "align_items": "center",
+        "text_align": "center",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "8xn99sa",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "px",
+              "size": 896
+            },
+            "width_tablet": {
+              "unit": "px",
+              "size": 768
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "align_self": "center",
+            "custom_css": "selector { margin-left:auto !important; margin-right:auto !important; }",
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "16",
+              "row": "16",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "d8st4wf",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Perusahaan Anda Sudah Bertumbuh. <br><span style=\"color:#EA8E18;\">Kantornya Harus Ikut Bertumbuh.</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "xz6dwp0",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Setiap perusahaan mencapai titik ketika kantor lama tidak lagi mencerminkan bisnis yang telah menjadi dirinya. Tim bertumbuh. Klien bertumbuh. Ekspektasi meningkat. Kantor menjadi bagian dari identitas korporat Anda.</p>",
+                "align": "center",
+                "text_color": "#475569",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.625
+                },
+                "custom_css": "selector .elementor-widget-container { max-width:672px; margin-left:auto; margin-right:auto; }"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2mtp4bz",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "24",
+          "row": "24",
+          "unit": "px"
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_element_id": "premium-office-details",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "4vbkv68",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "justify_content": "space-between",
+            "align_items": "flex-end",
+            "flex_gap": {
+              "column": "16",
+              "row": "16",
+              "unit": "px"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "16",
+              "left": "0",
+              "isLinked": false
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "1",
+              "left": "0",
+              "isLinked": false
+            },
+            "border_color": "rgba(226,232,240,0.8)"
+          },
+          "elements": [
+            {
+              "id": "rvajafg",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Premium Office <span style=\"color:#EA8E18;\">Details</span>",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "srqvqa0",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column"
+          },
+          "elements": [
+            {
+              "id": "bfd7ukf",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<div class=\"hq-gallery-wrap\" id=\"hq-gal-2ssqsk4\" style=\"width:100%;position:relative;\">\n  <style>\n    #hq-gal-2ssqsk4 .hq-main-img-box {\n      position: relative !important;\n      width: 100% !important;\n      min-width: 100% !important;\n      height: 520px !important;\n      border-radius: 16px !important;\n      overflow: hidden !important;\n      background: #0F172A !important;\n      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.12), 0 8px 10px -6px rgba(0,0,0,0.08) !important;\n    }\n    @media (max-width: 1024px) {\n      #hq-gal-2ssqsk4 .hq-main-img-box {\n        height: 400px !important;\n      }\n    }\n    @media (max-width: 640px) {\n      #hq-gal-2ssqsk4 .hq-main-img-box {\n        height: 240px !important;\n        border-radius: 20px !important;\n      }\n    }\n    /* KUNCI: position: absolute membuat foto TIDAK BISA mendorong atau mengubah ukuran container */\n    #hq-gal-2ssqsk4 .hq-main-img {\n      position: absolute !important;\n      top: 0 !important;\n      left: 0 !important;\n      width: 100% !important;\n      height: 100% !important;\n      min-height: 100% !important;\n      max-height: 100% !important;\n      object-fit: cover !important;\n      object-position: center !important;\n      transition: opacity 0.25s ease !important;\n      display: block !important;\n      margin: 0 !important;\n      padding: 0 !important;\n    }\n    #hq-gal-2ssqsk4 .hq-nav-btn {\n      position: absolute !important;\n      top: 50% !important;\n      transform: translateY(-50%) !important;\n      width: 48px !important;\n      height: 48px !important;\n      border-radius: 50% !important;\n      background: rgba(255,255,255,0.45) !important;\n      backdrop-filter: blur(8px) !important;\n      -webkit-backdrop-filter: blur(8px) !important;\n      border: 1px solid rgba(255,255,255,0.4) !important;\n      display: flex !important;\n      align-items: center !important;\n      justify-content: center !important;\n      color: #0F172A !important;\n      cursor: pointer !important;\n      z-index: 10 !important;\n      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1) !important;\n      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;\n      padding: 0 !important;\n    }\n    #hq-gal-2ssqsk4 .hq-nav-btn:hover {\n      background: rgba(255,255,255,0.85) !important;\n      transform: translateY(-50%) scale(1.08) !important;\n      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15) !important;\n    }\n    #hq-gal-2ssqsk4 .hq-nav-prev { left: 16px !important; }\n    #hq-gal-2ssqsk4 .hq-nav-next { right: 16px !important; }\n    @media (max-width: 640px) {\n      #hq-gal-2ssqsk4 .hq-nav-btn { width: 40px !important; height: 40px !important; }\n      #hq-gal-2ssqsk4 .hq-nav-prev { left: 10px !important; }\n      #hq-gal-2ssqsk4 .hq-nav-next { right: 10px !important; }\n    }\n    #hq-gal-2ssqsk4 .hq-dots-wrap {\n      position: absolute !important;\n      bottom: 16px !important;\n      left: 0 !important;\n      right: 0 !important;\n      display: flex !important;\n      align-items: center !important;\n      justify-content: center !important;\n      gap: 8px !important;\n      z-index: 10 !important;\n    }\n    #hq-gal-2ssqsk4 .hq-dot {\n      height: 8px !important;\n      border-radius: 9999px !important;\n      cursor: pointer !important;\n      border: none !important;\n      padding: 0 !important;\n      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;\n    }\n    #hq-gal-2ssqsk4 .hq-dot.active {\n      width: 24px !important;\n      background: #FFFFFF !important;\n      box-shadow: 0 2px 4px rgba(0,0,0,0.25) !important;\n    }\n    #hq-gal-2ssqsk4 .hq-dot:not(.active) {\n      width: 8px !important;\n      background: rgba(255,255,255,0.5) !important;\n    }\n    #hq-gal-2ssqsk4 .hq-dot:not(.active):hover {\n      background: rgba(255,255,255,0.85) !important;\n    }\n    #hq-gal-2ssqsk4 .hq-thumbs-wrap {\n      display: flex !important;\n      align-items: center !important;\n      justify-content: flex-start !important;\n      gap: 16px !important;\n      margin-top: 16px !important;\n      overflow-x: auto !important;\n      padding: 4px 2px 10px 2px !important;\n      max-width: 100% !important;\n      scrollbar-width: none !important;\n    }\n    #hq-gal-2ssqsk4 .hq-thumbs-wrap::-webkit-scrollbar { display: none !important; }\n    #hq-gal-2ssqsk4 .hq-thumb-btn {\n      position: relative !important;\n      flex-shrink: 0 !important;\n      width: 128px !important;\n      height: 88px !important;\n      border-radius: 12px !important;\n      overflow: hidden !important;\n      cursor: pointer !important;\n      border: 2px solid transparent !important;\n      padding: 0 !important;\n      margin: 0 !important;\n      background: #0F172A !important;\n      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;\n    }\n    @media (max-width: 640px) {\n      #hq-gal-2ssqsk4 .hq-thumb-btn { width: 96px !important; height: 64px !important; }\n      #hq-gal-2ssqsk4 .hq-thumbs-wrap { gap: 12px !important; }\n    }\n    #hq-gal-2ssqsk4 .hq-thumb-btn img {\n      position: absolute !important;\n      top: 0 !important;\n      left: 0 !important;\n      width: 100% !important;\n      height: 100% !important;\n      object-fit: cover !important;\n      display: block !important;\n      margin: 0 !important;\n    }\n    #hq-gal-2ssqsk4 .hq-thumb-btn.active {\n      border-color: #EA8E18 !important;\n      opacity: 1 !important;\n      transform: scale(1.04);\n      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.15);\n    }\n    #hq-gal-2ssqsk4 .hq-thumb-btn:not(.active) {\n      opacity: 0.6;\n    }\n    #hq-gal-2ssqsk4 .hq-thumb-btn:not(.active):hover {\n      opacity: 1;\n      border-color: rgba(226,232,240,0.8);\n      transform: translateY(-2px);\n    }\n  </style>\n\n  <div class=\"hq-main-img-box\">\n    <img class=\"hq-main-img\" src=\"/SPACES/PREMIUM%20OFFICE/Premium%20Office.webp\" alt=\"Lantai Korporat Eksekutif\" />\n    <button class=\"hq-nav-btn hq-nav-prev\" aria-label=\"Previous image\">\n      <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 18l-6-6 6-6\"/></svg>\n    </button>\n    <button class=\"hq-nav-btn hq-nav-next\" aria-label=\"Next image\">\n      <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 18l6-6-6-6\"/></svg>\n    </button>\n    <div class=\"hq-dots-wrap\">\n      <button class=\"hq-dot active\" data-idx=\"0\" aria-label=\"Slide 1\"></button><button class=\"hq-dot \" data-idx=\"1\" aria-label=\"Slide 2\"></button><button class=\"hq-dot \" data-idx=\"2\" aria-label=\"Slide 3\"></button><button class=\"hq-dot \" data-idx=\"3\" aria-label=\"Slide 4\"></button>\n    </div>\n  </div>\n\n  <div class=\"hq-thumbs-wrap\">\n    \n      <button class=\"hq-thumb-btn active\" data-idx=\"0\" aria-label=\"Lantai Korporat Eksekutif\">\n        <img src=\"/SPACES/PREMIUM%20OFFICE/Premium%20Office.webp\" alt=\"Lantai Korporat Eksekutif\" loading=\"lazy\" />\n      </button>\n    \n      <button class=\"hq-thumb-btn \" data-idx=\"1\" aria-label=\"Ruang Direksi & Rapat\">\n        <img src=\"/SPACES/PREMIUM%20OFFICE/Premium%20Office%2006.webp\" alt=\"Ruang Direksi & Rapat\" loading=\"lazy\" />\n      </button>\n    \n      <button class=\"hq-thumb-btn \" data-idx=\"2\" aria-label=\"Kantor Eksekutif Sudut\">\n        <img src=\"/SPACES/PREMIUM%20OFFICE/Premium%20Office%2003.webp\" alt=\"Kantor Eksekutif Sudut\" loading=\"lazy\" />\n      </button>\n    \n      <button class=\"hq-thumb-btn \" data-idx=\"3\" aria-label=\"Pusat Kolaborasi Tim\">\n        <img src=\"/SPACES/PREMIUM%20OFFICE/Premium%20Office%2004.webp\" alt=\"Pusat Kolaborasi Tim\" loading=\"lazy\" />\n      </button>\n    \n  </div>\n\n  <script>\n  (function() {\n    function init() {\n      var root = document.getElementById('hq-gal-2ssqsk4');\n      if (!root) return;\n      var images = [\"/SPACES/PREMIUM%20OFFICE/Premium%20Office.webp\",\"/SPACES/PREMIUM%20OFFICE/Premium%20Office%2006.webp\",\"/SPACES/PREMIUM%20OFFICE/Premium%20Office%2003.webp\",\"/SPACES/PREMIUM%20OFFICE/Premium%20Office%2004.webp\"];\n      var mainImg = root.querySelector('.hq-main-img');\n      var prevBtn = root.querySelector('.hq-nav-prev');\n      var nextBtn = root.querySelector('.hq-nav-next');\n      var dots = root.querySelectorAll('.hq-dot');\n      var thumbs = root.querySelectorAll('.hq-thumb-btn');\n      var current = 0;\n\n      function goTo(idx) {\n        if (idx < 0) idx = images.length - 1;\n        if (idx >= images.length) idx = 0;\n        current = idx;\n        mainImg.style.opacity = '0.4';\n        setTimeout(function() {\n          mainImg.src = images[current];\n          mainImg.style.opacity = '1';\n        }, 120);\n        dots.forEach(function(dot, i) {\n          if (i === current) dot.classList.add('active');\n          else dot.classList.remove('active');\n        });\n        thumbs.forEach(function(thumb, i) {\n          if (i === current) {\n            thumb.classList.add('active');\n            thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });\n          } else {\n            thumb.classList.remove('active');\n          }\n        });\n      }\n\n      if (prevBtn) prevBtn.addEventListener('click', function(e) { e.preventDefault(); goTo(current - 1); });\n      if (nextBtn) nextBtn.addEventListener('click', function(e) { e.preventDefault(); goTo(current + 1); });\n      dots.forEach(function(dot) {\n        dot.addEventListener('click', function(e) {\n          e.preventDefault();\n          goTo(parseInt(this.getAttribute('data-idx'), 10));\n        });\n      });\n      thumbs.forEach(function(thumb) {\n        thumb.addEventListener('click', function(e) {\n          e.preventDefault();\n          goTo(parseInt(this.getAttribute('data-idx'), 10));\n        });\n      });\n    }\n\n    if (document.readyState === 'loading') {\n      document.addEventListener('DOMContentLoaded', init);\n    } else {\n      init();\n    }\n  })();\n  </script>\n</div>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uj0rhsr",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "align_items": "center",
+        "text_align": "center",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "zzc9hq8",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "px",
+              "size": 896
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "align_self": "center",
+            "custom_css": "selector { margin-left:auto !important; margin-right:auto !important; }",
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "16",
+              "row": "16",
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#FAF8F5",
+            "border_radius": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "56",
+              "bottom": "56",
+              "left": "56",
+              "isLinked": true
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(226,232,240,0.8)"
+          },
+          "elements": [
+            {
+              "id": "aoxsl8p",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sebelum Rapat Dimulai, Kantor Anda Sudah Berbicara.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "k6hrwed",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Lobby yang representatif. Pengalaman kedatangan yang profesional. Lingkungan bisnis yang kredibel &mdash; yang menunjukkan kepada klien dan mitra bahwa mereka berurusan dengan perusahaan yang serius.</p>",
+                "align": "center",
+                "text_color": "#475569",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.625
+                },
+                "custom_css": "selector .elementor-widget-container { max-width:672px; margin-left:auto; margin-right:auto; }"
+              },
+              "elements": []
+            },
+            {
+              "id": "7xd5iuc",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Pastikan kantor Anda menyampaikan hal yang tepat.",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "custom_css": "selector { padding-top:8px; }",
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 18
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itc51r4",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "24",
+          "row": "24",
+          "unit": "px"
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_element_id": "premium-office-facilities",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "wcpr93l",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "justify_content": "space-between",
+            "align_items": "flex-end",
+            "flex_gap": {
+              "column": "16",
+              "row": "16",
+              "unit": "px"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "16",
+              "left": "0",
+              "isLinked": false
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "1",
+              "left": "0",
+              "isLinked": false
+            },
+            "border_color": "rgba(226,232,240,0.8)"
+          },
+          "elements": [
+            {
+              "id": "xnhvo9h",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Facilities",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "2fknr3o",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column"
+          },
+          "elements": [
+            {
+              "id": "92tjzbl",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<div class=\"hq-gallery-wrap\" id=\"hq-gal-t88b22p\" style=\"width:100%;position:relative;\">\n  <style>\n    #hq-gal-t88b22p .hq-main-img-box {\n      position: relative !important;\n      width: 100% !important;\n      min-width: 100% !important;\n      height: 520px !important;\n      border-radius: 16px !important;\n      overflow: hidden !important;\n      background: #0F172A !important;\n      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.12), 0 8px 10px -6px rgba(0,0,0,0.08) !important;\n    }\n    @media (max-width: 1024px) {\n      #hq-gal-t88b22p .hq-main-img-box {\n        height: 400px !important;\n      }\n    }\n    @media (max-width: 640px) {\n      #hq-gal-t88b22p .hq-main-img-box {\n        height: 240px !important;\n        border-radius: 20px !important;\n      }\n    }\n    /* KUNCI: position: absolute membuat foto TIDAK BISA mendorong atau mengubah ukuran container */\n    #hq-gal-t88b22p .hq-main-img {\n      position: absolute !important;\n      top: 0 !important;\n      left: 0 !important;\n      width: 100% !important;\n      height: 100% !important;\n      min-height: 100% !important;\n      max-height: 100% !important;\n      object-fit: cover !important;\n      object-position: center !important;\n      transition: opacity 0.25s ease !important;\n      display: block !important;\n      margin: 0 !important;\n      padding: 0 !important;\n    }\n    #hq-gal-t88b22p .hq-nav-btn {\n      position: absolute !important;\n      top: 50% !important;\n      transform: translateY(-50%) !important;\n      width: 48px !important;\n      height: 48px !important;\n      border-radius: 50% !important;\n      background: rgba(255,255,255,0.45) !important;\n      backdrop-filter: blur(8px) !important;\n      -webkit-backdrop-filter: blur(8px) !important;\n      border: 1px solid rgba(255,255,255,0.4) !important;\n      display: flex !important;\n      align-items: center !important;\n      justify-content: center !important;\n      color: #0F172A !important;\n      cursor: pointer !important;\n      z-index: 10 !important;\n      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1) !important;\n      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;\n      padding: 0 !important;\n    }\n    #hq-gal-t88b22p .hq-nav-btn:hover {\n      background: rgba(255,255,255,0.85) !important;\n      transform: translateY(-50%) scale(1.08) !important;\n      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15) !important;\n    }\n    #hq-gal-t88b22p .hq-nav-prev { left: 16px !important; }\n    #hq-gal-t88b22p .hq-nav-next { right: 16px !important; }\n    @media (max-width: 640px) {\n      #hq-gal-t88b22p .hq-nav-btn { width: 40px !important; height: 40px !important; }\n      #hq-gal-t88b22p .hq-nav-prev { left: 10px !important; }\n      #hq-gal-t88b22p .hq-nav-next { right: 10px !important; }\n    }\n    #hq-gal-t88b22p .hq-dots-wrap {\n      position: absolute !important;\n      bottom: 16px !important;\n      left: 0 !important;\n      right: 0 !important;\n      display: flex !important;\n      align-items: center !important;\n      justify-content: center !important;\n      gap: 8px !important;\n      z-index: 10 !important;\n    }\n    #hq-gal-t88b22p .hq-dot {\n      height: 8px !important;\n      border-radius: 9999px !important;\n      cursor: pointer !important;\n      border: none !important;\n      padding: 0 !important;\n      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;\n    }\n    #hq-gal-t88b22p .hq-dot.active {\n      width: 24px !important;\n      background: #FFFFFF !important;\n      box-shadow: 0 2px 4px rgba(0,0,0,0.25) !important;\n    }\n    #hq-gal-t88b22p .hq-dot:not(.active) {\n      width: 8px !important;\n      background: rgba(255,255,255,0.5) !important;\n    }\n    #hq-gal-t88b22p .hq-dot:not(.active):hover {\n      background: rgba(255,255,255,0.85) !important;\n    }\n    #hq-gal-t88b22p .hq-thumbs-wrap {\n      display: flex !important;\n      align-items: center !important;\n      justify-content: flex-start !important;\n      gap: 16px !important;\n      margin-top: 16px !important;\n      overflow-x: auto !important;\n      padding: 4px 2px 10px 2px !important;\n      max-width: 100% !important;\n      scrollbar-width: none !important;\n    }\n    #hq-gal-t88b22p .hq-thumbs-wrap::-webkit-scrollbar { display: none !important; }\n    #hq-gal-t88b22p .hq-thumb-btn {\n      position: relative !important;\n      flex-shrink: 0 !important;\n      width: 128px !important;\n      height: 88px !important;\n      border-radius: 12px !important;\n      overflow: hidden !important;\n      cursor: pointer !important;\n      border: 2px solid transparent !important;\n      padding: 0 !important;\n      margin: 0 !important;\n      background: #0F172A !important;\n      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;\n    }\n    @media (max-width: 640px) {\n      #hq-gal-t88b22p .hq-thumb-btn { width: 96px !important; height: 64px !important; }\n      #hq-gal-t88b22p .hq-thumbs-wrap { gap: 12px !important; }\n    }\n    #hq-gal-t88b22p .hq-thumb-btn img {\n      position: absolute !important;\n      top: 0 !important;\n      left: 0 !important;\n      width: 100% !important;\n      height: 100% !important;\n      object-fit: cover !important;\n      display: block !important;\n      margin: 0 !important;\n    }\n    #hq-gal-t88b22p .hq-thumb-btn.active {\n      border-color: #EA8E18 !important;\n      opacity: 1 !important;\n      transform: scale(1.04);\n      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.15);\n    }\n    #hq-gal-t88b22p .hq-thumb-btn:not(.active) {\n      opacity: 0.6;\n    }\n    #hq-gal-t88b22p .hq-thumb-btn:not(.active):hover {\n      opacity: 1;\n      border-color: rgba(226,232,240,0.8);\n      transform: translateY(-2px);\n    }\n  </style>\n\n  <div class=\"hq-main-img-box\">\n    <img class=\"hq-main-img\" src=\"/BUILDING/gym%2001.webp\" alt=\"Pusat Kebugaran Modern\" />\n    <button class=\"hq-nav-btn hq-nav-prev\" aria-label=\"Previous image\">\n      <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 18l-6-6 6-6\"/></svg>\n    </button>\n    <button class=\"hq-nav-btn hq-nav-next\" aria-label=\"Next image\">\n      <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 18l6-6-6-6\"/></svg>\n    </button>\n    <div class=\"hq-dots-wrap\">\n      <button class=\"hq-dot active\" data-idx=\"0\" aria-label=\"Slide 1\"></button><button class=\"hq-dot \" data-idx=\"1\" aria-label=\"Slide 2\"></button><button class=\"hq-dot \" data-idx=\"2\" aria-label=\"Slide 3\"></button><button class=\"hq-dot \" data-idx=\"3\" aria-label=\"Slide 4\"></button>\n    </div>\n  </div>\n\n  <div class=\"hq-thumbs-wrap\">\n    \n      <button class=\"hq-thumb-btn active\" data-idx=\"0\" aria-label=\"Pusat Kebugaran Modern\">\n        <img src=\"/BUILDING/gym%2001.webp\" alt=\"Pusat Kebugaran Modern\" loading=\"lazy\" />\n      </button>\n    \n      <button class=\"hq-thumb-btn \" data-idx=\"1\" aria-label=\"Studio Latihan & Kondisi\">\n        <img src=\"/BUILDING/gym%205_4.webp\" alt=\"Studio Latihan & Kondisi\" loading=\"lazy\" />\n      </button>\n    \n      <button class=\"hq-thumb-btn \" data-idx=\"2\" aria-label=\"Ruang Relaksasi & Sauna\">\n        <img src=\"/BUILDING/sauna%205_4.webp\" alt=\"Ruang Relaksasi & Sauna\" loading=\"lazy\" />\n      </button>\n    \n      <button class=\"hq-thumb-btn \" data-idx=\"3\" aria-label=\"Kolam Renang & Area Santai\">\n        <img src=\"/BUILDING/kolam%20renang%205_4.webp\" alt=\"Kolam Renang & Area Santai\" loading=\"lazy\" />\n      </button>\n    \n  </div>\n\n  <script>\n  (function() {\n    function init() {\n      var root = document.getElementById('hq-gal-t88b22p');\n      if (!root) return;\n      var images = [\"/BUILDING/gym%2001.webp\",\"/BUILDING/gym%205_4.webp\",\"/BUILDING/sauna%205_4.webp\",\"/BUILDING/kolam%20renang%205_4.webp\"];\n      var mainImg = root.querySelector('.hq-main-img');\n      var prevBtn = root.querySelector('.hq-nav-prev');\n      var nextBtn = root.querySelector('.hq-nav-next');\n      var dots = root.querySelectorAll('.hq-dot');\n      var thumbs = root.querySelectorAll('.hq-thumb-btn');\n      var current = 0;\n\n      function goTo(idx) {\n        if (idx < 0) idx = images.length - 1;\n        if (idx >= images.length) idx = 0;\n        current = idx;\n        mainImg.style.opacity = '0.4';\n        setTimeout(function() {\n          mainImg.src = images[current];\n          mainImg.style.opacity = '1';\n        }, 120);\n        dots.forEach(function(dot, i) {\n          if (i === current) dot.classList.add('active');\n          else dot.classList.remove('active');\n        });\n        thumbs.forEach(function(thumb, i) {\n          if (i === current) {\n            thumb.classList.add('active');\n            thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });\n          } else {\n            thumb.classList.remove('active');\n          }\n        });\n      }\n\n      if (prevBtn) prevBtn.addEventListener('click', function(e) { e.preventDefault(); goTo(current - 1); });\n      if (nextBtn) nextBtn.addEventListener('click', function(e) { e.preventDefault(); goTo(current + 1); });\n      dots.forEach(function(dot) {\n        dot.addEventListener('click', function(e) {\n          e.preventDefault();\n          goTo(parseInt(this.getAttribute('data-idx'), 10));\n        });\n      });\n      thumbs.forEach(function(thumb) {\n        thumb.addEventListener('click', function(e) {\n          e.preventDefault();\n          goTo(parseInt(this.getAttribute('data-idx'), 10));\n        });\n      });\n    }\n\n    if (document.readyState === 'loading') {\n      document.addEventListener('DOMContentLoaded', init);\n    } else {\n      init();\n    }\n  })();\n  </script>\n</div>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qghdenz",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px"
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "align_items": "center",
+        "text_align": "center",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "pas1hgy",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "px",
+              "size": 672
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "align_self": "center",
+            "custom_css": "selector { margin-left:auto !important; margin-right:auto !important; }",
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "8",
+              "row": "8",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "xznyjn9",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "WHAT'S INCLUDED",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": 0.1
+                },
+                "typography_text_transform": "uppercase"
+              },
+              "elements": []
+            },
+            {
+              "id": "m1sowb0",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Semua yang Diperlukan Perusahaan Modern.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "tpwgzxa",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "justify_content": "flex-start",
+            "align_items": "stretch",
+            "flex_gap": {
+              "column": "24",
+              "row": "24",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "sekzenk",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc((100% - 48px) / 3)"
+                },
+                "width_tablet": {
+                  "unit": "custom",
+                  "size": "calc((100% - 24px) / 2)"
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(226,232,240,0.8)",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 1,
+                  "blur": 2,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "cbhp1g4",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "flex_direction": "row",
+                    "justify_content": "center",
+                    "align_items": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FEF3E2"
+                  },
+                  "elements": [
+                    {
+                      "id": "0q1spl4",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-building",
+                          "library": "fa-solid"
+                        },
+                        "primary_color": "#B86807",
+                        "size": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "8gacven",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Citra Profesional",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.375
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mtc64ph",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Area bersama premium dan lingkungan bisnis yang mencerminkan kredibilitas korporat.</p>",
+                    "align": "left",
+                    "text_color": "#475569",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "x8rp84p",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc((100% - 48px) / 3)"
+                },
+                "width_tablet": {
+                  "unit": "custom",
+                  "size": "calc((100% - 24px) / 2)"
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(226,232,240,0.8)",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 1,
+                  "blur": 2,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "yxbfmhe",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "flex_direction": "row",
+                    "justify_content": "center",
+                    "align_items": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FEF3E2"
+                  },
+                  "elements": [
+                    {
+                      "id": "whkj3qw",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-users",
+                          "library": "fa-solid"
+                        },
+                        "primary_color": "#B86807",
+                        "size": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "syfn4cg",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Ruang untuk Bertumbuh",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.375
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "hvtexzf",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Pilihan unit dan tata letak untuk organisasi dengan ukuran berbeda.</p>",
+                    "align": "left",
+                    "text_color": "#475569",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "6c0o8xt",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc((100% - 48px) / 3)"
+                },
+                "width_tablet": {
+                  "unit": "custom",
+                  "size": "calc((100% - 24px) / 2)"
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(226,232,240,0.8)",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 1,
+                  "blur": 2,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "wwper05",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "flex_direction": "row",
+                    "justify_content": "center",
+                    "align_items": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FEF3E2"
+                  },
+                  "elements": [
+                    {
+                      "id": "6jo7my8",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-wifi",
+                          "library": "fa-solid"
+                        },
+                        "primary_color": "#B86807",
+                        "size": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "ksk4np9",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Konektivitas Bisnis",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.375
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0e9jcig",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Infrastruktur fiber dan dukungan konektivitas untuk bisnis modern.</p>",
+                    "align": "left",
+                    "text_color": "#475569",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "9cjh10s",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc((100% - 48px) / 3)"
+                },
+                "width_tablet": {
+                  "unit": "custom",
+                  "size": "calc((100% - 24px) / 2)"
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(226,232,240,0.8)",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 1,
+                  "blur": 2,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "bfvn9xc",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "flex_direction": "row",
+                    "justify_content": "center",
+                    "align_items": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FEF3E2"
+                  },
+                  "elements": [
+                    {
+                      "id": "edvy2ge",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-map-marker-alt",
+                          "library": "fa-solid"
+                        },
+                        "primary_color": "#B86807",
+                        "size": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "7duflh3",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Aksesibilitas",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.375
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "1iyjf7j",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Berada di pusat aktivitas kota Bandung.</p>",
+                    "align": "left",
+                    "text_color": "#475569",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "gv7fz5h",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc((100% - 48px) / 3)"
+                },
+                "width_tablet": {
+                  "unit": "custom",
+                  "size": "calc((100% - 24px) / 2)"
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(226,232,240,0.8)",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 1,
+                  "blur": 2,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "kw9q9tu",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "flex_direction": "row",
+                    "justify_content": "center",
+                    "align_items": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FEF3E2"
+                  },
+                  "elements": [
+                    {
+                      "id": "lzo5z32",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-shield-alt",
+                          "library": "fa-solid"
+                        },
+                        "primary_color": "#B86807",
+                        "size": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "6iy3giv",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Keamanan",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.375
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "3w93e5v",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Keamanan profesional 24 jam dan akses gedung berlapis.</p>",
+                    "align": "left",
+                    "text_color": "#475569",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "r8cfeze",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "custom",
+                  "size": "calc((100% - 48px) / 3)"
+                },
+                "width_tablet": {
+                  "unit": "custom",
+                  "size": "calc((100% - 24px) / 2)"
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(226,232,240,0.8)",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 1,
+                  "blur": 2,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "my9rqty",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "min_height": {
+                      "unit": "px",
+                      "size": 48
+                    },
+                    "flex_direction": "row",
+                    "justify_content": "center",
+                    "align_items": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FEF3E2"
+                  },
+                  "elements": [
+                    {
+                      "id": "3rfguqr",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-heart",
+                          "library": "fa-solid"
+                        },
+                        "primary_color": "#B86807",
+                        "size": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "ou2kaog",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Pengalaman Karyawan",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.375
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ek6bhqx",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Gym, sauna, dan kolam renang air hangat yang meningkatkan kualitas tempat kerja.</p>",
+                    "align": "left",
+                    "text_color": "#475569",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.625
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lfk2vor",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "mtq8hcj",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "32",
+              "row": "32",
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#FAF8F5",
+            "border_radius": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "56",
+              "bottom": "56",
+              "left": "56",
+              "isLinked": true
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(226,232,240,0.8)"
+          },
+          "elements": [
+            {
+              "id": "d74a3ly",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "px",
+                  "size": 576
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "align_self": "center",
+                "custom_css": "selector { margin-left:auto !important; margin-right:auto !important; }",
+                "flex_direction": "column",
+                "align_items": "center",
+                "text_align": "center",
+                "flex_gap": {
+                  "column": "8",
+                  "row": "8",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "3d1t8j2",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SESUAI UKURAN TIM ANDA",
+                    "header_size": "span",
+                    "align": "center",
+                    "title_color": "#EA8E18",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.25
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "em",
+                      "size": 0.1
+                    },
+                    "typography_text_transform": "uppercase"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "auv8itl",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Seberapa Besar Tim Anda?",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 36
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.25
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 36
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "em",
+                      "size": -0.025
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "efzbacz",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "justify_content": "space-between",
+                "align_items": "stretch",
+                "flex_gap": {
+                  "column": "24",
+                  "row": "24",
+                  "unit": "px"
+                },
+                "flex_gap_mobile": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "ebkroq9",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "custom",
+                      "size": "calc((100% - 72px) / 4)"
+                    },
+                    "width_tablet": {
+                      "unit": "custom",
+                      "size": "calc((100% - 24px) / 2)"
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "text_align": "center",
+                    "flex_gap": {
+                      "column": "6",
+                      "row": "6",
+                      "unit": "px"
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "16",
+                      "bottom": "24",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "16",
+                      "bottom": "20",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(226,232,240,0.8)",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 1,
+                      "blur": 2,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.05)"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "8xa2gl7",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "10 — 20 Orang",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 24
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.375
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 20
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "4cavkgr",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;margin:0;\">Kantor korporat kompak</p>",
+                        "align": "center",
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.625
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "sygea8g",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "custom",
+                      "size": "calc((100% - 72px) / 4)"
+                    },
+                    "width_tablet": {
+                      "unit": "custom",
+                      "size": "calc((100% - 24px) / 2)"
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "text_align": "center",
+                    "flex_gap": {
+                      "column": "6",
+                      "row": "6",
+                      "unit": "px"
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "16",
+                      "bottom": "24",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "16",
+                      "bottom": "20",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(226,232,240,0.8)",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 1,
+                      "blur": 2,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.05)"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "x04pmzi",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "20 — 40 Orang",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 24
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.375
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 20
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "cwehzw5",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;margin:0;\">Tata letak kantor fleksibel.</p>",
+                        "align": "center",
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.625
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "52562xr",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "custom",
+                      "size": "calc((100% - 72px) / 4)"
+                    },
+                    "width_tablet": {
+                      "unit": "custom",
+                      "size": "calc((100% - 24px) / 2)"
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "text_align": "center",
+                    "flex_gap": {
+                      "column": "6",
+                      "row": "6",
+                      "unit": "px"
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "16",
+                      "bottom": "24",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "16",
+                      "bottom": "20",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(226,232,240,0.8)",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 1,
+                      "blur": 2,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.05)"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "zi09drk",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "40 — 80 Orang",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 24
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.375
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 20
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "xrjdqkm",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;margin:0;\">Solusi kantor gabungan lebih besar.</p>",
+                        "align": "center",
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.625
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gfa93hf",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "custom",
+                      "size": "calc((100% - 72px) / 4)"
+                    },
+                    "width_tablet": {
+                      "unit": "custom",
+                      "size": "calc((100% - 24px) / 2)"
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "text_align": "center",
+                    "flex_gap": {
+                      "column": "6",
+                      "row": "6",
+                      "unit": "px"
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "16",
+                      "bottom": "24",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "16",
+                      "bottom": "20",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(226,232,240,0.8)",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 1,
+                      "blur": 2,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.05)"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "jx9qj0n",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "80 — 150+ Orang",
+                        "header_size": "h3",
+                        "align": "center",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 24
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.375
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 20
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "13qiezk",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;margin:0;\">Konfigurasi korporat khusus.</p>",
+                        "align": "center",
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.625
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h4t1vio",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "align_items": "center",
+        "text_align": "center",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "iu6wwu0",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "px",
+              "size": 768
+            },
+            "width_tablet": {
+              "unit": "px",
+              "size": 768
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "align_self": "center",
+            "custom_css": "selector { margin-left:auto !important; margin-right:auto !important; }",
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "20",
+              "row": "20",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "s0ppv4e",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sewa Ruangnya. <br><span style=\"color:#EA8E18;\">Jaga Modal Tetap Bekerja.</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhjsk38",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Membeli kantor korporat tidak selalu menjadi penggunaan modal terbaik. Sewa di HQuarters dan fokuskan sumber daya Anda pada hal yang memberi dampak terbesar: orang, produk, dan bisnis Anda.</p>",
+                "align": "center",
+                "text_color": "#475569",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.625
+                },
+                "custom_css": "selector .elementor-widget-container { max-width:672px; margin-left:auto; margin-right:auto; }"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dqk0dck",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "align_items": "center",
+        "text_align": "center",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "144",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "0",
+          "right": "0",
+          "bottom": "112",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-bottom: 144px !important; }\n@media (max-width: 767px) { selector { margin-bottom: 112px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "2a8zoce",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "px",
+              "size": 896
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "12",
+              "row": "12",
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#FAF8F5",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "48",
+              "bottom": "56",
+              "left": "48",
+              "isLinked": true
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "40",
+              "right": "24",
+              "bottom": "40",
+              "left": "24",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(226,232,240,0.8)",
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 1,
+              "blur": 2,
+              "spread": 0,
+              "color": "rgba(0,0,0,0.05)"
+            }
+          },
+          "elements": [
+            {
+              "id": "1r4eut5",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "ANDA DI PERUSAHAAN YANG TEPAT",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": 0.1
+                },
+                "typography_text_transform": "uppercase"
+              },
+              "elements": []
+            },
+            {
+              "id": "4x7aou3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Bergabung dengan komunitas perusahaan terhormat <br>yang beroperasi dari HQuarters.",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.375
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1ulcbad",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "32",
+          "bottom": "0",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "_element_id": "find-space"
+      },
+      "elements": [
+        {
+          "id": "x1k488a",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "px",
+              "size": 1200
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "align_items": "stretch",
+            "border_radius": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "overflow": "hidden",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(226,232,240,0.6)",
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 25,
+              "blur": 50,
+              "spread": -12,
+              "color": "rgba(0,0,0,0.25)"
+            }
+          },
+          "elements": [
+            {
+              "id": "wn8c1w1",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 40
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 480
+                },
+                "min_height_mobile": {
+                  "unit": "px",
+                  "size": 380
+                },
+                "flex_direction": "column",
+                "justify_content": "flex-end",
+                "background_background": "classic",
+                "background_color": "#0F172A",
+                "background_image": {
+                  "url": "/SPACES/PREMIUM OFFICE/Premium Office 06.webp"
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_color": "rgba(15,23,42,0.6)",
+                "padding": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "hexonpj",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px"
+                    },
+                    "background_background": "classic",
+                    "background_color": "rgba(22,26,37,0.95)",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(255,255,255,0.1)"
+                  },
+                  "elements": [
+                    {
+                      "id": "5vwg7lu",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "TEMUKAN KANTOR BERIKUTNYA",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "custom_css": "selector .elementor-heading-title { display:inline-block; background:#EA8E18; padding:4px 12px; border-radius:6px; }",
+                        "typography_letter_spacing": {
+                          "unit": "em",
+                          "size": 0.05
+                        },
+                        "typography_text_transform": "uppercase"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "8gt9n7k",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Beri Tahu Kami Kebutuhan Tim Anda.",
+                        "header_size": "h2",
+                        "align": "left",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 30
+                        },
+                        "typography_font_weight": "500",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.25
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 24
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "h2vg29j",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Kami akan mencocokkan Anda dengan unit yang tersedia berdasarkan luas, lantai, dan waktu kepindahan &mdash; beserta proposal sewa yang disesuaikan.</p>",
+                        "align": "left",
+                        "text_color": "#CBD5E1",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 14
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.625
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "88cb2yf",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 60
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "32",
+                  "row": "32",
+                  "unit": "px"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "48",
+                  "right": "48",
+                  "bottom": "48",
+                  "left": "48",
+                  "isLinked": true
+                },
+                "padding_tablet": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "v0d5yji",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "2sio8pm",
+                      "elType": "container",
+                      "isInner": false,
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "justify_content": "space-between",
+                        "align_items": "center",
+                        "flex_gap": {
+                          "column": "8",
+                          "row": "8",
+                          "unit": "px"
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "hry2evn",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "1. Select Space Type",
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": "#0F172A",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Outfit",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 20
+                            },
+                            "typography_font_weight": "500",
+                            "typography_line_height": {
+                              "unit": "em",
+                              "size": 1.25
+                            },
+                            "typography_font_size_mobile": {
+                              "unit": "px",
+                              "size": 18
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "w0rl4fx",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Premium Office",
+                            "header_size": "span",
+                            "align": "right",
+                            "title_color": "#EA8E18",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Outfit",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 12
+                            },
+                            "typography_font_weight": "700",
+                            "typography_line_height": {
+                              "unit": "em",
+                              "size": 1.25
+                            },
+                            "typography_letter_spacing": {
+                              "unit": "em",
+                              "size": 0.05
+                            },
+                            "typography_text_transform": "uppercase"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "h1buuup",
+                      "elType": "container",
+                      "isInner": false,
+                      "settings": {
+                        "content_width": "full",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "flex_direction": "row",
+                        "flex_wrap": "wrap",
+                        "justify_content": "space-between",
+                        "flex_gap": {
+                          "column": "8",
+                          "row": "8",
+                          "unit": "px"
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "z3c4l02",
+                          "elType": "container",
+                          "isInner": false,
+                          "settings": {
+                            "content_width": "full",
+                            "width": {
+                              "unit": "custom",
+                              "size": "calc((100% - 32px) / 5)"
+                            },
+                            "width_tablet": {
+                              "unit": "custom",
+                              "size": "calc((100% - 16px) / 3)"
+                            },
+                            "width_mobile": {
+                              "unit": "custom",
+                              "size": "calc((100% - 8px) / 2)"
+                            },
+                            "flex_direction": "row",
+                            "justify_content": "center",
+                            "align_items": "center",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "12",
+                              "right": "12",
+                              "bottom": "12",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "padding": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "12",
+                              "bottom": "10",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "background_background": "classic",
+                            "background_color": "#FEF3E2",
+                            "border_border": "solid",
+                            "border_width": {
+                              "unit": "px",
+                              "top": "1",
+                              "right": "1",
+                              "bottom": "1",
+                              "left": "1",
+                              "isLinked": true
+                            },
+                            "border_color": "#EA8E18"
+                          },
+                          "elements": [
+                            {
+                              "id": "acbusf9",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "title": "Premium Office",
+                                "header_size": "span",
+                                "align": "center",
+                                "title_color": "#EA8E18",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Outfit",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 12
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.25
+                                },
+                                "custom_css": "selector .elementor-heading-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "m0hk7kn",
+                          "elType": "container",
+                          "isInner": false,
+                          "settings": {
+                            "content_width": "full",
+                            "width": {
+                              "unit": "custom",
+                              "size": "calc((100% - 32px) / 5)"
+                            },
+                            "width_tablet": {
+                              "unit": "custom",
+                              "size": "calc((100% - 16px) / 3)"
+                            },
+                            "width_mobile": {
+                              "unit": "custom",
+                              "size": "calc((100% - 8px) / 2)"
+                            },
+                            "flex_direction": "row",
+                            "justify_content": "center",
+                            "align_items": "center",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "12",
+                              "right": "12",
+                              "bottom": "12",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "padding": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "12",
+                              "bottom": "10",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "background_background": "classic",
+                            "background_color": "#FFFFFF",
+                            "border_border": "solid",
+                            "border_width": {
+                              "unit": "px",
+                              "top": "1",
+                              "right": "1",
+                              "bottom": "1",
+                              "left": "1",
+                              "isLinked": true
+                            },
+                            "border_color": "#E2E8F0"
+                          },
+                          "elements": [
+                            {
+                              "id": "fq1jdiq",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "title": "SOHO",
+                                "header_size": "span",
+                                "align": "center",
+                                "title_color": "#334155",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Outfit",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 12
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.25
+                                },
+                                "custom_css": "selector .elementor-heading-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "ouuknl7",
+                          "elType": "container",
+                          "isInner": false,
+                          "settings": {
+                            "content_width": "full",
+                            "width": {
+                              "unit": "custom",
+                              "size": "calc((100% - 32px) / 5)"
+                            },
+                            "width_tablet": {
+                              "unit": "custom",
+                              "size": "calc((100% - 16px) / 3)"
+                            },
+                            "width_mobile": {
+                              "unit": "custom",
+                              "size": "calc((100% - 8px) / 2)"
+                            },
+                            "flex_direction": "row",
+                            "justify_content": "center",
+                            "align_items": "center",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "12",
+                              "right": "12",
+                              "bottom": "12",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "padding": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "12",
+                              "bottom": "10",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "background_background": "classic",
+                            "background_color": "#FFFFFF",
+                            "border_border": "solid",
+                            "border_width": {
+                              "unit": "px",
+                              "top": "1",
+                              "right": "1",
+                              "bottom": "1",
+                              "left": "1",
+                              "isLinked": true
+                            },
+                            "border_color": "#E2E8F0"
+                          },
+                          "elements": [
+                            {
+                              "id": "19259ex",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "title": "Serviced Office",
+                                "header_size": "span",
+                                "align": "center",
+                                "title_color": "#334155",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Outfit",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 12
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.25
+                                },
+                                "custom_css": "selector .elementor-heading-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "z6tctyq",
+                          "elType": "container",
+                          "isInner": false,
+                          "settings": {
+                            "content_width": "full",
+                            "width": {
+                              "unit": "custom",
+                              "size": "calc((100% - 32px) / 5)"
+                            },
+                            "width_tablet": {
+                              "unit": "custom",
+                              "size": "calc((100% - 16px) / 3)"
+                            },
+                            "width_mobile": {
+                              "unit": "custom",
+                              "size": "calc((100% - 8px) / 2)"
+                            },
+                            "flex_direction": "row",
+                            "justify_content": "center",
+                            "align_items": "center",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "12",
+                              "right": "12",
+                              "bottom": "12",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "padding": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "12",
+                              "bottom": "10",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "background_background": "classic",
+                            "background_color": "#FFFFFF",
+                            "border_border": "solid",
+                            "border_width": {
+                              "unit": "px",
+                              "top": "1",
+                              "right": "1",
+                              "bottom": "1",
+                              "left": "1",
+                              "isLinked": true
+                            },
+                            "border_color": "#E2E8F0"
+                          },
+                          "elements": [
+                            {
+                              "id": "8klhzlu",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "title": "Virtual Office",
+                                "header_size": "span",
+                                "align": "center",
+                                "title_color": "#334155",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Outfit",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 12
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.25
+                                },
+                                "custom_css": "selector .elementor-heading-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "1ma6ffs",
+                          "elType": "container",
+                          "isInner": false,
+                          "settings": {
+                            "content_width": "full",
+                            "width": {
+                              "unit": "custom",
+                              "size": "calc((100% - 32px) / 5)"
+                            },
+                            "width_tablet": {
+                              "unit": "custom",
+                              "size": "calc((100% - 16px) / 3)"
+                            },
+                            "width_mobile": {
+                              "unit": "custom",
+                              "size": "calc((100% - 8px) / 2)"
+                            },
+                            "flex_direction": "row",
+                            "justify_content": "center",
+                            "align_items": "center",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "12",
+                              "right": "12",
+                              "bottom": "12",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "padding": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "12",
+                              "bottom": "10",
+                              "left": "12",
+                              "isLinked": true
+                            },
+                            "background_background": "classic",
+                            "background_color": "#FFFFFF",
+                            "border_border": "solid",
+                            "border_width": {
+                              "unit": "px",
+                              "top": "1",
+                              "right": "1",
+                              "bottom": "1",
+                              "left": "1",
+                              "isLinked": true
+                            },
+                            "border_color": "#E2E8F0"
+                          },
+                          "elements": [
+                            {
+                              "id": "v0gysql",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "title": "Ruangan Acara",
+                                "header_size": "span",
+                                "align": "center",
+                                "title_color": "#334155",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Outfit",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 12
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.25
+                                },
+                                "custom_css": "selector .elementor-heading-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "rpqr2lo",
+                  "elType": "container",
+                  "isInner": false,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "column": "16",
+                      "row": "16",
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "8",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#F1F5F9"
+                  },
+                  "elements": [
+                    {
+                      "id": "2sc39l2",
+                      "elType": "container",
+                      "isInner": false,
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "column": "2",
+                          "row": "2",
+                          "unit": "px"
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "lids6o6",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "2. Complete Your Details",
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": "#0F172A",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Outfit",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 20
+                            },
+                            "typography_font_weight": "500",
+                            "typography_line_height": {
+                              "unit": "em",
+                              "size": 1.25
+                            },
+                            "typography_font_size_mobile": {
+                              "unit": "px",
+                              "size": 18
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "j4p1g1i",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Bagikan data Anda dan tim kami akan segera menghubungi Anda.</p>",
+                            "align": "left",
+                            "text_color": "#64748B",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 12
+                            },
+                            "typography_font_size_mobile": {
+                              "unit": "px",
+                              "size": 12
+                            },
+                            "typography_font_weight": "400",
+                            "typography_line_height": {
+                              "unit": "em",
+                              "size": 1.625
+                            }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "i82x16i",
+                      "elType": "widget",
+                      "widgetType": "form",
+                      "settings": {
+                        "form_name": "HQuarters Premium Office",
+                        "form_fields": [
+                          {
+                            "_id": "space_type",
+                            "field_type": "hidden",
+                            "field_value": "Premium Office"
+                          },
+                          {
+                            "_id": "name",
+                            "field_type": "text",
+                            "field_label": "Full Name *",
+                            "placeholder": "John Doe",
+                            "required": "true",
+                            "width": "50",
+                            "width_mobile": "100"
+                          },
+                          {
+                            "_id": "whatsapp",
+                            "field_type": "tel",
+                            "field_label": "WhatsApp *",
+                            "placeholder": "+62 812 3456 7890",
+                            "required": "true",
+                            "width": "50",
+                            "width_mobile": "100"
+                          },
+                          {
+                            "_id": "company",
+                            "field_type": "text",
+                            "field_label": "Company Name (Optional)",
+                            "placeholder": "mis. PT Enterprise Nusantara",
+                            "required": "false",
+                            "width": "100"
+                          },
+                          {
+                            "_id": "notes",
+                            "field_type": "textarea",
+                            "field_label": "Additional Requirements (Optional)",
+                            "placeholder": "Permintaan khusus, waktu, atau pertanyaan...",
+                            "rows": 3,
+                            "required": "false",
+                            "width": "100"
+                          }
+                        ],
+                        "button_text": "Minta Proposal & Denah Lantai",
+                        "button_size": "md",
+                        "button_width": "100",
+                        "button_typography_typography": "custom",
+                        "button_typography_font_family": "Plus Jakarta Sans",
+                        "button_typography_font_size": {
+                          "unit": "px",
+                          "size": 14
+                        },
+                        "button_typography_font_weight": "800",
+                        "button_typography_text_transform": "uppercase",
+                        "button_text_color": "#FFFFFF",
+                        "button_background_color": "#EA8E18",
+                        "button_background_hover_color": "#D88010",
+                        "button_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        },
+                        "button_padding": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "24",
+                          "bottom": "16",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "submit_actions": [
+                          "redirect"
+                        ],
+                        "redirect_to": "https://wa.me/628111908319?text=Halo%20HQuarters!%20Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20*Premium%20Office*.%0ANama:%20[field id=\"name\"]%0AWhatsApp:%20[field id=\"whatsapp\"]%0APerusahaan:%20[field id=\"company\"]%0ACatatan:%20[field id=\"notes\"]",
+                        "label_typography_typography": "custom",
+                        "label_typography_font_family": "Plus Jakarta Sans",
+                        "label_typography_font_size": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "label_typography_font_weight": "800",
+                        "label_typography_line_height": {
+                          "unit": "em",
+                          "size": 1
+                        },
+                        "label_text_color": "#475569",
+                        "field_typography_typography": "custom",
+                        "field_typography_font_family": "Plus Jakarta Sans",
+                        "field_typography_font_size": {
+                          "unit": "px",
+                          "size": 14
+                        },
+                        "field_text_color": "#0F172A",
+                        "field_background_color": "#FFFFFF",
+                        "field_border_border": "solid",
+                        "field_border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "field_border_color": "#E2E8F0",
+                        "field_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        },
+                        "field_padding": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "14",
+                          "bottom": "10",
+                          "left": "14",
+                          "isLinked": true
+                        },
+                        "custom_css": "selector .elementor-field-label { text-transform:uppercase; letter-spacing:.05em; font-weight:800; font-size:10px; color:#475569; display:flex; align-items:center; gap:6px; }\nselector .elementor-field-group-name .elementor-field-label::before { font-family:\"Font Awesome 5 Free\"; font-weight:900; content:\"\\f007\"; color:#EA8E18; font-size:12px; }\nselector .elementor-field-group-whatsapp .elementor-field-label::before { font-family:\"Font Awesome 5 Free\"; font-weight:900; content:\"\\f095\"; color:#EA8E18; font-size:12px; }\nselector .elementor-field-group-company .elementor-field-label::before { font-family:\"Font Awesome 5 Free\"; font-weight:900; content:\"\\f1ad\"; color:#94A3B8; font-size:12px; }\nselector .elementor-field-group-notes .elementor-field-label::before { font-family:\"Font Awesome 5 Free\"; font-weight:900; content:\"\\f075\"; color:#94A3B8; font-size:12px; }\nselector .elementor-field-group { margin-bottom: 14px; }"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "g2v4pup",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"text-align:center;font-size:10px;color:#94A3B8;margin:0;\">Informasi Anda aman dan hanya digunakan oleh manajemen HQuarters.</p>",
+                        "align": "center",
+                        "text_color": "#94A3B8",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.625
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "o8oj1wu",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "32",
+          "bottom": "64",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "96",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#231F20",
+        "align_items": "center",
+        "text_align": "center",
+        "margin": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        },
+        "margin_tablet": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "isLinked": false,
+          "top": "56",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        },
+        "custom_css": "selector { margin-top: 80px !important; }\n@media (max-width: 767px) { selector { margin-top: 56px !important; } }"
+      },
+      "elements": [
+        {
+          "id": "0wgjhj6",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "flex_gap": {
+              "column": "16",
+              "row": "16",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "q24wzgz",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Babak Berikutnya Anda Layak Mendapatkan <br><span style=\"color:#EA8E18;\">Alamat yang Tepat.</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.025
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "jqunjhm",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>HQuarters Premium Office &mdash; Asia Afrika, Bandung</p>",
+                "align": "center",
+                "text_color": "#94A3B8",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.625
+                },
+                "custom_css": "selector .elementor-widget-container { max-width:672px; margin-left:auto; margin-right:auto; }"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

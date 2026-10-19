@@ -1,0 +1,3064 @@
+{
+  "version": "0.4",
+  "title": "Homepage HQuarters Master (Full Responsive)",
+  "type": "page",
+  "content": [
+    {
+      "id": "62er7is",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "32",
+          "bottom": "16",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "60",
+          "right": "24",
+          "bottom": "16",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "16",
+          "bottom": "16",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "szsqvuf",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 680
+            },
+            "min_height_tablet": {
+              "unit": "px",
+              "size": 620
+            },
+            "min_height_mobile": {
+              "unit": "px",
+              "size": 580
+            },
+            "flex_direction": "column",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "justify_content": "center",
+            "align_items": "flex-start",
+            "border_radius": {
+              "unit": "px",
+              "top": "48",
+              "right": "48",
+              "bottom": "48",
+              "left": "48",
+              "isLinked": true
+            },
+            "border_radius_tablet": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "24",
+              "right": "24",
+              "bottom": "24",
+              "left": "24",
+              "isLinked": true
+            },
+            "overflow": "hidden",
+            "background_background": "classic",
+            "background_image": {
+              "url": "/BUILDING/ChatGPT%20Image%20Jul%2029,%202026,%2003_09_51%20PM-800.webp",
+              "id": ""
+            },
+            "background_position": "center center",
+            "background_size": "cover",
+            "background_overlay_background": "gradient",
+            "background_overlay_color": "rgba(15, 23, 42, 0.90)",
+            "background_overlay_color_b": "rgba(15, 23, 42, 0.40)",
+            "background_overlay_gradient_type": "linear",
+            "background_overlay_gradient_angle": {
+              "unit": "deg",
+              "size": 90
+            },
+            "padding": {
+              "unit": "px",
+              "top": "64",
+              "right": "64",
+              "bottom": "64",
+              "left": "64",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "48",
+              "right": "40",
+              "bottom": "48",
+              "left": "40",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "32",
+              "right": "24",
+              "bottom": "32",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "5ghrt01",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 60
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 80
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "gaps": {
+                  "unit": "px",
+                  "size": 24
+                }
+              },
+              "elements": [
+                {
+                  "id": "zz2zkui",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Space for Every <span style=\"color:#EA8E18;\">Stage of Business.</span>",
+                    "header_size": "h1",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 62
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 46
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 32
+                    },
+                    "typography_font_weight": "500",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.15
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "k6cg1dy",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #E2E8F0; font-size: 18px; line-height: 1.6;\">From your first business address to your corporate headquarters, HQuarters gives you the space to start, work, own and grow — in the heart of Asia Afrika, Bandung.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 14
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "9njy9qm",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "EXPLORE SPACES",
+                    "link": {
+                      "url": "/spaces"
+                    },
+                    "button_type": "default",
+                    "size": "medium",
+                    "background_color": "#EA8E18",
+                    "button_text_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "36",
+                      "bottom": "16",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_weight": "700",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 13
+                    },
+                    "typography_transform": "uppercase"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "od8khdq",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "32",
+          "bottom": "96",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "64",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "48",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_type": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#E2E8F0"
+      },
+      "elements": [
+        {
+          "id": "9x2g653",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "gaps": {
+              "unit": "px",
+              "size": 12
+            },
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "48",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "5algl2z",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "ONE BUILDING. MANY POSSIBILITIES.",
+                "header_size": "div",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_font_weight": "800",
+                "typography_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "odg2w8n",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Where Are You in <span style=\"color:#EA8E18;\">Your Business Journey?</span>",
+                "header_size": "h2",
+                "title_color": "#0F172A",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 38
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "500"
+              },
+              "elements": []
+            },
+            {
+              "id": "r2c6oan",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #64748B; font-size: 16px; text-align: center;\">Whatever comes next, there is a space for you at HQuarters.</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "2yp0h2t",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "column",
+            "justify_content": "space-between",
+            "wrap": "wrap",
+            "gaps": {
+              "unit": "px",
+              "size": 24
+            }
+          },
+          "elements": [
+            {
+              "id": "ojbdtzt",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "vi0y8qc",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "VIRTUAL OFFICE",
+                    "header_size": "div",
+                    "title_color": "#EA8E18",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 11
+                    },
+                    "typography_font_weight": "800",
+                    "typography_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 1
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "vb1y2al",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Start Here.",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 24
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "cp0yxet",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 13px; line-height: 1.6;\">Professional business presence without a permanent office.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ngmdu1b",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore Virtual Office",
+                    "link": {
+                      "url": "/spaces/virtual-office"
+                    },
+                    "button_type": "default",
+                    "size": "small",
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#0F172A",
+                    "border_type": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E2E8F0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "20",
+                      "bottom": "10",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "typography_font_weight": "700"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "zj2hrwa",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "pttmp4m",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SERVICED OFFICE",
+                    "header_size": "div",
+                    "title_color": "#EA8E18",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 11
+                    },
+                    "typography_font_weight": "800",
+                    "typography_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 1
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "pn3m9c4",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Work Here.",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 24
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "wtg6xuu",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 13px; line-height: 1.6;\">Ready-to-use workspace with facilities and service included.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "j76lova",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore Serviced Office",
+                    "link": {
+                      "url": "/spaces/serviced-office"
+                    },
+                    "button_type": "default",
+                    "size": "small",
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#0F172A",
+                    "border_type": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E2E8F0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "20",
+                      "bottom": "10",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "typography_font_weight": "700"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1m7wdht",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "f7rb3cl",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SOHO",
+                    "header_size": "div",
+                    "title_color": "#EA8E18",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 11
+                    },
+                    "typography_font_weight": "800",
+                    "typography_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 1
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "sy2bhkg",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Own Here.",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 24
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ec27alm",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 13px; line-height: 1.6;\">Office. Home office. Living space. One space that grows with you. #FleksibelAja</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "6vzntbc",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore SOHO Spaces",
+                    "link": {
+                      "url": "/spaces/soho"
+                    },
+                    "button_type": "default",
+                    "size": "small",
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#0F172A",
+                    "border_type": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E2E8F0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "20",
+                      "bottom": "10",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "typography_font_weight": "700"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "00yh6od",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "weaikp8",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "PREMIUM OFFICE",
+                    "header_size": "div",
+                    "title_color": "#EA8E18",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 11
+                    },
+                    "typography_font_weight": "800",
+                    "typography_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 1
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "arvoaub",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Grow Here.",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 24
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "5b99vmn",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 13px; line-height: 1.6;\">Representative, professional space built to support your next chapter.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s6rq1l9",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore Premium Office",
+                    "link": {
+                      "url": "/spaces/premium-office"
+                    },
+                    "button_type": "default",
+                    "size": "small",
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#0F172A",
+                    "border_type": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E2E8F0",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "9999",
+                      "right": "9999",
+                      "bottom": "9999",
+                      "left": "9999",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "20",
+                      "bottom": "10",
+                      "left": "20",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "typography_font_weight": "700"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b9t7bmi",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "32",
+          "bottom": "96",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "64",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "48",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_type": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#E2E8F0"
+      },
+      "elements": [
+        {
+          "id": "baa2mdz",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 80
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "gaps": {
+              "unit": "px",
+              "size": 16
+            },
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "48",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "yyyahwo",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "HQUARTERS — ASIA AFRIKA — BANDUNG",
+                "header_size": "div",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_font_weight": "800",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "b6e3lw4",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Address Says Something <span style=\"color:#EA8E18;\">About Your Business.</span>",
+                "header_size": "h2",
+                "title_color": "#0F172A",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "500"
+              },
+              "elements": []
+            },
+            {
+              "id": "kkkgqm6",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #64748B; font-size: 17px; text-align: center; max-width: 680px;\">When clients, partners, or candidates walk in, they form an impression before the meeting even starts. HQuarters offers a modern, professional business environment in Bandung's most iconic district.</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans"
+              },
+              "elements": []
+            },
+            {
+              "id": "0hzb21u",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "DISCOVER THE LOCATION →",
+                "link": {
+                  "url": "/location"
+                },
+                "button_type": "default",
+                "size": "medium",
+                "background_color": "transparent",
+                "button_text_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_weight": "800",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "oqy9iyf",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 480
+            },
+            "min_height_tablet": {
+              "unit": "px",
+              "size": 380
+            },
+            "min_height_mobile": {
+              "unit": "px",
+              "size": 260
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "24",
+              "right": "24",
+              "bottom": "24",
+              "left": "24",
+              "isLinked": true
+            },
+            "border_radius_mobile": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "overflow": "hidden",
+            "background_background": "classic",
+            "background_image": {
+              "url": "/addressstatement/21;9.webp",
+              "id": ""
+            },
+            "background_position": "center bottom",
+            "background_size": "cover"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "kqlfuhi",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "32",
+          "bottom": "64",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "48",
+          "right": "24",
+          "bottom": "48",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "16",
+          "bottom": "40",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_type": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#E2E8F0"
+      },
+      "elements": [
+        {
+          "id": "mfx7ed7",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 80
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "gaps": {
+              "unit": "px",
+              "size": 12
+            },
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "36",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "q0i9r26",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "YOU'RE IN GOOD COMPANY",
+                "header_size": "div",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_font_weight": "800",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "xzftxui",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Trusted by Businesses That Know the Value of the Right Address.",
+                "header_size": "h2",
+                "title_color": "#0F172A",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "typography_font_weight": "500"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "ojwirz7",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "row",
+            "justify_content": "center",
+            "wrap": "wrap",
+            "gaps": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "gh1kym9",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "bq2ihi6",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/GF allianz.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "m9dcn5l",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "n1to2y3",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/7de axa.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1vw3vdk",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "q6q8ip4",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/9ef MSIG.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2aao5hx",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "bx8qtbe",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/7i mitsubishi.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "ua7qssi",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "ryqjofa",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/16j roche.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "hktpwuk",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "v70uijh",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/6FGH fwd.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "y5bjzo3",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "rvyjlgs",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/19r avrist.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "jq2tb54",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "nv4lqft",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/19 OP Dana-Logo.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2v0gxx2",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "algzall",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/UG his travel.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "e5meyrd",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "d4ghluu",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/16E henan sekuritas.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "wt3f660",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "5xtbjy5",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/huawei.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "za32m3w",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 46
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "justify_content": "center",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "f26zo76",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/homepagelogobaru/GF B garuda.webp",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 85
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kljvwz9",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "32",
+          "bottom": "96",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "64",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "48",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "0bvx60n",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 80
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "gaps": {
+              "unit": "px",
+              "size": 12
+            },
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "48",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "acyhc6y",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "BUILT FOR PURPOSE",
+                "header_size": "div",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_font_weight": "800",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "qr308rr",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Infrastructure & Amenities Designed for Work.",
+                "header_size": "h2",
+                "title_color": "#0F172A",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26
+                },
+                "typography_font_weight": "500"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "9ydm1pb",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "column",
+            "justify_content": "space-between",
+            "wrap": "wrap",
+            "gaps": {
+              "unit": "px",
+              "size": 24
+            }
+          },
+          "elements": [
+            {
+              "id": "5hpa2jj",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "6ewlc0l",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Premium Arrival",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "dqkdams",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 14px; line-height: 1.6;\">Representative lobby & professional environment.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "eelcr5k",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "wag5wu6",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Business Ready",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "1s6jrzv",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 14px; line-height: 1.6;\">Meeting facilities, connectivity and professional building management.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "fsahb14",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "ipnb9z7",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "24/7 Security",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "xcr9sj7",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 14px; line-height: 1.6;\">Layered building security and controlled access.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "91t13u8",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "tm1fbme",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Easy Parking",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "rwly582",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 14px; line-height: 1.6;\">Large-capacity parking supported by mechanical parking systems.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "boo4uwa",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "ulbh3q9",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Health & Wellness",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "acf1c3q",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 14px; line-height: 1.6;\">Gym, sauna and heated swimming pool.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "kyzjhy6",
+              "elType": "container",
+              "isInner": false,
+              "settings": {
+                "width": {
+                  "unit": "%",
+                  "size": 31
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_type": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "gaps": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "5gaq6j5",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Connected",
+                    "header_size": "h3",
+                    "title_color": "#0F172A",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "8hcazfl",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color: #64748B; font-size: 14px; line-height: 1.6;\">At the centre of Bandung's business and city activity.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fvcbaeg",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "112",
+          "right": "32",
+          "bottom": "96",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "60",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#231F20"
+      },
+      "elements": [
+        {
+          "id": "49khmil",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 70
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 85
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "gaps": {
+              "unit": "px",
+              "size": 24
+            }
+          },
+          "elements": [
+            {
+              "id": "7ftsgse",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Where Will Your Business <br/><span style=\"color:#EA8E18;\">Go Next?</span>",
+                "header_size": "h2",
+                "title_color": "#FFFFFF",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "500"
+              },
+              "elements": []
+            },
+            {
+              "id": "hely3tg",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #CBD5E1; font-size: 17px; text-align: center; line-height: 1.6;\">Start from an address. Build your team. Own your space. Or move your company to its next headquarters. Whatever comes next, start at HQuarters.</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans"
+              },
+              "elements": []
+            },
+            {
+              "id": "uuiy7cc",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "FIND MY SPACE →",
+                "link": {
+                  "url": "/find-space"
+                },
+                "button_type": "default",
+                "size": "large",
+                "background_color": "#EA8E18",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "9999",
+                  "right": "9999",
+                  "bottom": "9999",
+                  "left": "9999",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "36",
+                  "bottom": "16",
+                  "left": "36",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

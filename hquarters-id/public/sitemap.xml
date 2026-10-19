@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://hquarters.co.id/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/?lang=id" />
+  </url>
+
+  <!-- Spaces Hub -->
+  <url>
+    <loc>https://hquarters.co.id/spaces</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/spaces" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/spaces?lang=id" />
+  </url>
+
+  <!-- Premium Office -->
+  <url>
+    <loc>https://hquarters.co.id/spaces/premium-office</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/spaces/premium-office" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/spaces/premium-office?lang=id" />
+  </url>
+
+  <!-- SOHO (Duplex Live-Work) -->
+  <url>
+    <loc>https://hquarters.co.id/spaces/soho</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/spaces/soho" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/spaces/soho?lang=id" />
+  </url>
+
+  <!-- Serviced Office -->
+  <url>
+    <loc>https://hquarters.co.id/spaces/serviced-office</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/spaces/serviced-office" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/spaces/serviced-office?lang=id" />
+  </url>
+
+  <!-- Virtual Office -->
+  <url>
+    <loc>https://hquarters.co.id/spaces/virtual-office</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/spaces/virtual-office" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/spaces/virtual-office?lang=id" />
+  </url>
+
+  <!-- Events & Function Room -->
+  <url>
+    <loc>https://hquarters.co.id/events</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/events" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/events?lang=id" />
+  </url>
+
+  <!-- Building & Facilities -->
+  <url>
+    <loc>https://hquarters.co.id/building</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/building" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/building?lang=id" />
+  </url>
+
+  <!-- Location (Asia Afrika Bandung) -->
+  <url>
+    <loc>https://hquarters.co.id/location</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/location" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/location?lang=id" />
+  </url>
+
+  <!-- Companies / Tenants Community -->
+  <url>
+    <loc>https://hquarters.co.id/companies</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/companies" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/companies?lang=id" />
+  </url>
+
+  <!-- Insights & Articles -->
+  <url>
+    <loc>https://hquarters.co.id/insights</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/insights" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/insights?lang=id" />
+  </url>
+
+  <!-- Find My Space (Lead Consultation) -->
+  <url>
+    <loc>https://hquarters.co.id/find-space</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hquarters.co.id/find-space" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://hquarters.co.id/find-space?lang=id" />
+  </url>
+</urlset>

@@ -1,0 +1,33 @@
+import React, { useEffect } from 'react';
+import Navbar from '../components/Navbar.jsx';
+import BuildingSection from '../components/BuildingSection.jsx';
+import CTA from '../components/CTA.jsx';
+import Footer from '../components/Footer.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
+
+export default function BuildingPage({ setCurrentPage }) {
+  const { language, t } = useLanguage();
+  const isId = language === 'id';
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+      <Navbar currentPage="building" setCurrentPage={setCurrentPage} />
+      <main className="pt-24 sm:pt-28">
+        <BuildingSection setCurrentPage={setCurrentPage} />
+        <CTA
+          setCurrentPage={setCurrentPage}
+          titlePrefix={isId ? 'Seperti Inilah Tempat Kerja Modern ' : 'This Is What A Modern Workplace '}
+          titleHighlight={isId ? 'Seharusnya Dirasakan.' : 'Should Feel Like.'}
+          description=""
+          buttonText={t.buildingPage.ctaButton}
+          pageTarget="find-space"
+        />
+      </main>
+      <Footer setCurrentPage={setCurrentPage} />
+    </div>
+  );
+}

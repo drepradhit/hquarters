@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/wp-json/:path*",
+      "destination": "https://hquarters.co.id/wp-json/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

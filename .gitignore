@@ -1,0 +1,49 @@
+# Client & Personal Documents
+*.pdf
+Invoice*
+SOW*
+Logo*
+
+# Other project folders
+hquartersfe/
+hquarters-redesign/
+
+# Node & Build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+*.local
+
+# OS & Editor
+.DS_Store
+**/.DS_Store
+.idea/
+**/.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# AI IDE & Scratch artifacts
+.agents/
+**/.agents/
+.taste-skill/
+**/.taste-skill/
+skills-lock.json
+**/skills-lock.json
+scratch/
+**/scratch/
+session-*.md
+**/session-*.md
+
+# Env
+.env
+.env.*

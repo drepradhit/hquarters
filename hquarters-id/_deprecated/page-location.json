@@ -1,0 +1,220 @@
+{
+  "version": "0.4",
+  "title": "Location Asia Afrika CBD HQuarters (Full Responsive)",
+  "type": "page",
+  "content": [
+    {
+      "id": "zf78whb",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "32",
+          "bottom": "20",
+          "left": "32",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "16",
+          "right": "16",
+          "bottom": "16",
+          "left": "16",
+          "isLinked": false
+        },
+        "flex_gap": {
+          "column": "16",
+          "row": "16",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "u4udox6",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"margin:0;\"><a href=\"/\" style=\"color:#64748B; text-decoration:none;\">Home</a> <span style=\"color:#94A3B8; margin:0 6px;\">›</span> <strong style=\"color:#0F172A;\">Location</strong></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "500"
+          },
+          "elements": []
+        },
+        {
+          "id": "fqi67rq",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "text_align": "center",
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": false
+            },
+            "flex_gap": {
+              "column": "12",
+              "row": "12",
+              "unit": "px"
+            }
+          },
+          "elements": [
+            {
+              "id": "ch2lkuu",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "STRATEGIC LOCATION",
+                "header_size": "span",
+                "title_color": "#EA8E18",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "sqafwil",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "In The Epicenter of <br><span style=\"color:#EA8E18;\">Asia Afrika CBD.</span>",
+                "header_size": "h1",
+                "title_color": "#0F172A",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "2ggv0r9",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"max-width:680px; margin:0 auto;\">Jl. Asia Afrika No. 158, Bandung. Surrounded by government financial institutions, iconic heritage landmarks, and high-end transit corridors.</p>",
+                "text_color": "#475569",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r1s4c8z",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1440
+        },
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "32",
+          "bottom": "80",
+          "left": "32",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "kwv5hgt",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 100
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 480
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "overflow": "hidden",
+            "background_background": "classic",
+            "background_image": {
+              "url": "/addressstatement/21;9.webp"
+            },
+            "background_position": "center center",
+            "background_size": "cover",
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 20,
+              "blur": 40,
+              "spread": 0,
+              "color": "rgba(0,0,0,0.1)"
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}

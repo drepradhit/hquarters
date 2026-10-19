@@ -1,0 +1,14 @@
+archive-images-original/
+archive-gambar-revisi-original/
+staging/
+docs/
+New folder/
+*.zip
+.kilo/
+_deprecated/
+session-*.md
+*-id.json
+theme-single-post.json
+node_modules/
+dist/
+.git/
