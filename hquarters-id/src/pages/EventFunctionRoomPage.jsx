@@ -440,7 +440,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
+    <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="event" setCurrentPage={setCurrentPage} />
 
       <main className="pt-24 sm:pt-28 pb-0 space-y-20 sm:space-y-28">

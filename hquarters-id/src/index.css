@@ -17,12 +17,18 @@
     --font-sans: 'Plus Jakarta Sans', sans-serif;
   }
 
-  html, body {
+  html {
+    background-color: #231F20;
+  }
+
+  body {
     font-family: 'Plus Jakarta Sans', var(--font-body);
     background-color: #ffffff;
     color: #0f172a;
     overflow-x: hidden;
     max-width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   h1, h2, h3, h4, h5, h6, .font-heading {

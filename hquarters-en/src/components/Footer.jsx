@@ -21,7 +21,7 @@ export default function Footer({ setCurrentPage }) {
   };
 
   return (
-    <footer className="bg-[#231F20] text-slate-400 text-xs border-t border-white/5 py-8 sm:py-10">
+    <footer className="bg-[#231F20] text-slate-400 text-xs border-t border-white/5 pt-8 sm:pt-10 pb-14 sm:pb-10 pb-[max(3.5rem,env(safe-area-inset-bottom,3.5rem))]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Main Grid: compact, elegant & balanced */}
