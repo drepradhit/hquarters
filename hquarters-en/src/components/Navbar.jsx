@@ -53,7 +53,7 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || mobileMenuOpen
           ? 'py-3.5 sm:py-4 bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-200/80'
-          : 'py-4 sm:py-6 bg-white/80 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none border-b border-slate-200/40 md:border-transparent'
+          : 'py-3.5 sm:py-6 bg-gradient-to-b from-white via-white/85 via-50% to-transparent md:bg-transparent border-b-0 md:border-transparent'
       }`}
     >
       <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-12">
