@@ -30,43 +30,43 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
     {
       id: 1,
       src: '/BUILDING/gym 01.webp?v=20260825',
-      title: 'State-of-the-Art Fitness Center',
+      title: 'Pusat Kebugaran & Gym Modern',
     },
     {
       id: 2,
       src: '/BUILDING/gym 5_4.webp?v=20260825',
-      title: 'Fitness & Conditioning Studio',
+      title: 'Studio Kebugaran & Conditioning',
     },
     {
       id: 3,
       src: '/BUILDING/sauna 5_4.webp?v=20260825',
-      title: 'Recovery & Relaxation Suite',
+      title: 'Ruang Sauna & Relaksasi Eksklusif',
     },
     {
       id: 4,
       src: '/BUILDING/kolam renang 5_4.webp?v=20260825',
-      title: 'Swimming Pool & Leisure Area',
+      title: 'Kolam Renang Air Hangat di Rooftop',
     },
   ];
 
   const galleryImages = [
     {
       src: '/SPACES/SOHO/SOHO 01.webp?v=20260823',
-      title: 'SOHO Mezzanine View',
-      category: 'Architecture',
-      desc: 'High-ceiling architectural split between professional work deck and private living.',
+      title: 'Desain Arsitektur Mezzanine Dua Lantai',
+      category: 'Arsitektur Duplex',
+      desc: 'Plafon tinggi dengan pemisahan cerdas antara area kerja profesional di lantai bawah dan ruang privat di lantai atas.',
     },
     {
       src: '/SPACES/SOHO/SOHO 02.webp?v=20260823',
-      title: 'Primary Workspace',
-      category: 'Work Area',
-      desc: 'Ergonomic team setup designed for focus, high productivity, and natural daylight.',
+      title: 'Area Kerja Utama & Tim',
+      category: 'Ruang Kerja',
+      desc: 'Penataan meja kerja ergonomis bermandikan cahaya alami untuk fokus maksimal dan produktivitas tinggi.',
     },
     {
       src: '/SPACES/SOHO/SOHO 08.webp?v=20260823',
-      title: 'Private Living Quarters',
-      category: 'Living Space',
-      desc: 'Seamless transition to rest and unwind without leaving your unit.',
+      title: 'Ruang Tinggal Privat',
+      category: 'Hunian Nyaman',
+      desc: 'Transisi mudah untuk beristirahat dan memulihkan energi tanpa harus meninggalkan unit Anda.',
     },
   ];
 
@@ -151,33 +151,33 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
   };
 
   const sohoLives = [
-    { title: 'STARTUP MODE', desc: 'Workspace, meeting corner, pantry — for a small team.' },
-    { title: 'HOME OFFICE MODE', desc: 'Professional workspace in front, private living behind.' },
-    { title: 'PROFESSIONAL MODE', desc: 'Reception, meeting room, private office.' },
-    { title: 'LIVING MODE', desc: 'Transform into a private living environment as needed.*' },
+    { title: 'STARTUP MODE', desc: 'Ruang kerja kolaboratif, meeting corner, dan pantry modern — ideal untuk tim inti berkembang.' },
+    { title: 'HOME OFFICE MODE', desc: 'Area kerja profesional di bagian depan untuk menerima klien, ruang hunian privat di bagian dalam.' },
+    { title: 'PROFESSIONAL MODE', desc: 'Resepsionis mini, ruang konsultasi tertutup, dan ruang kerja pribadi yang representatif.' },
+    { title: 'LIVING MODE', desc: 'Unit hunian modern lengkap berstandar apartemen premium dengan fasilitas gaya hidup terintegrasi.*' },
   ];
 
   const targetPills = [
-    'Startup Founders',
-    'Entrepreneurs',
-    'Consultants',
-    'Designers',
-    'Architects',
-    'Lawyers',
-    'Financial Professionals',
-    'Digital Agencies',
-    'Family Businesses',
+    'Pendiri Startup',
+    'Wirausahawan',
+    'Konsultan Bisnis',
+    'Desainer & Kreatif',
+    'Arsitek',
+    'Firma Hukum & Notaris',
+    'Praktisi Finansial',
+    'Agensi Digital',
+    'Bisnis Keluarga',
   ];
 
   const comparisonRows = [
-    { feature: 'Living', apt: '?', office: '—', soho: '?' },
-    { feature: 'Professional Workspace', apt: 'Limited', office: '?', soho: '?' },
-    { feature: 'Business Environment', apt: '—', office: '?', soho: '?' },
-    { feature: 'Business Address*', apt: 'Limited', office: '?', soho: '?' },
-    { feature: 'Lifestyle Facilities', apt: '?', office: 'Limited', soho: '?' },
-    { feature: '24/7 Access & Flexibility', apt: '?', office: '—', soho: '?' },
-    { feature: 'Ownership', apt: '?', office: 'Varies', soho: '?' },
-    { feature: 'Work + Live', apt: 'Limited', office: '—', soho: '?' },
+    { feature: 'Fungsi Tempat Tinggal', apt: '✓', office: '—', soho: '✓' },
+    { feature: 'Ruang Kerja Profesional', apt: 'Terbatas', office: '✓', soho: '✓' },
+    { feature: 'Lingkungan Bisnis CBD', apt: '—', office: '✓', soho: '✓' },
+    { feature: 'Legalitas Alamat Usaha*', apt: 'Terbatas', office: '✓', soho: '✓' },
+    { feature: 'Fasilitas Kebugaran & Gaya Hidup', apt: '✓', office: 'Terbatas', soho: '✓' },
+    { feature: 'Akses 24/7 Tanpa Batas', apt: '✓', office: '—', soho: '✓' },
+    { feature: 'Hak Kepemilikan Strata Title', apt: '✓', office: 'Bervariasi', soho: '✓' },
+    { feature: 'Integrasi Kerja & Tinggal (Work+Live)', apt: 'Terbatas', office: '—', soho: '✓' },
   ];
 
   return (
@@ -226,11 +226,11 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
 
               {/* Work? Live? Why Choose? as the Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Work? Live? <span className="text-[#EA8E18]">Why Choose?</span>
+                Bekerja? Tinggal? <span className="text-[#EA8E18]">Mengapa Harus Memilih?</span>
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Work. Live. Own. — #FleksibelAja. Satu ruang multifungsi yang fleksibel mengikuti dinamika kehidupan personal dan pertumbuhan bisnis Anda.
+                Work. Live. Own. — #FlexibleAja. Satu unit duplex multifungsi dua lantai yang mengintegrasikan kantor representatif dan hunian nyaman dalam satu ekosistem modern.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -263,15 +263,15 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Life Changes. Business Changes. <br />
-            <span className="text-[#EA8E18]">Your Space Should Change Too.</span>
+            Dinamika Hidup Berubah. Bisnis Berkembang. <br />
+            <span className="text-[#EA8E18]">Ruang Anda Pun Harus Fleksibel.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Today a startup office. Tomorrow a home office. Later a private living space.<br className="hidden sm:inline" />
-            Or all of it at once. Why buy a property that can only do one thing?
+            Hari ini kantor rintisan. Besok home office representatif. Nanti ruang tinggal pribadi berkelas.<br className="hidden sm:inline" />
+            Atau semuanya sekaligus. Mengapa berinvestasi pada properti yang hanya bisa satu fungsi?
           </p>
           <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
-            One Space. Many Possibilities.
+            #FlexibleAja — Satu Tempat, Seribu Kemungkinan.
           </div>
         </section>
 
@@ -280,9 +280,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              SOHO <span className="text-[#EA8E18]">Details</span>
-            </h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Detail <span className="text-[#EA8E18]">Unit SOHO</span></h2>
           </div>
 
           
@@ -462,9 +460,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Facilities
-            </h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Fasilitas <span className="text-[#EA8E18]">Gedung Unggulan</span></h2>
           </div>
 
           
@@ -550,14 +546,14 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-              Start Small. Look Professional.
+              Mulai Dari Kecil, Tampil Profesional Sejak Hari Pertama.
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto [text-wrap:balance]">
-              Your company may be just starting out. That doesn't mean it has to look small.<br className="hidden sm:inline" />
-              Meet clients in a representative business environment and build your business image from day one.
+              Bisnis Anda mungkin baru melangkah, namun tidak berarti harus terlihat kecil.<br className="hidden sm:inline" />
+              Sambut klien penting di lingkungan bisnis bergengsi dan bangun reputasi terpercaya sejak awal.
             </p>
             <div className="font-bold text-slate-900 text-base font-heading">
-              Big companies started small too.
+              Semua korporasi besar berawal dari langkah pertama.
             </div>
           </div>
         </section>
@@ -567,11 +563,11 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-6 space-y-4">
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-                Not Just A Home Address. <br />
-                <span className="text-[#EA8E18]">This Can Be Your Business Address.</span>
+                Bukan Sekadar Alamat Tempat Tinggal. <br />
+                <span className="text-[#EA8E18]">Ini Bisa Menjadi Alamat Legal Bisnis Anda.</span>
               </h2>
               <p className="text-slate-600 text-base leading-relaxed font-normal [text-wrap:pretty]">
-                One thing that sets SOHO apart from a regular apartment: the unit can be used as a business address, workspace, home office, and private base, subject to applicable regulations.
+                Keunggulan utama SOHO HQuarters dibanding apartemen biasa: unit dapat digunakan sebagai domisili legal perusahaan, ruang kerja profesional, sekaligus hunian personal sesuai regulasi yang berlaku.
               </p>
               <button
                 id="btn-soho-ask-domicile"
@@ -581,18 +577,18 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-2 font-bold text-[#EA8E18] hover:text-[#d88010] text-base font-heading group cursor-pointer transition-colors pt-1"
               >
-                <span>Ask About Business Domicile</span>
+                <span>Konsultasi Domisili Bisnis</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             <div className="lg:col-span-6 bg-[#FAF8F5] p-8 sm:p-10 rounded-2xl border border-slate-200/80 space-y-5 text-center shadow-sm">
               <h3 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                Why Pay For Two Places?
+                Mengapa Harus Membayar Dua Tempat Berbeda?
               </h3>
               
               <p className="text-slate-600 text-sm sm:text-base font-normal max-w-lg mx-auto">
-                Office (rent, utilities, commute) + Home (rent/mortgage, utilities, commute)
+                Sewa Kantor (biaya operasional, listrik, macet harian) + Biaya Hunian (cicilan/sewa, utilitas, waktu terbuang)
               </p>
 
               <div className="py-1">
@@ -601,10 +597,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
 
               <div className="space-y-1">
                 <h4 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                  HQuarters SOHO — Work + Live
+                  HQuarters SOHO — Solusi Work + Live Terpadu
                 </h4>
                 <p className="text-slate-600 text-sm sm:text-base font-normal">
-                  One space. One location. One asset. #FleksibelAja
+                  Satu ruang. Satu lokasi CBD. Satu aset bernilai tinggi. #FlexibleAja
                 </p>
               </div>
             </div>
@@ -615,10 +611,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Why Keep Renting Your Space?
+              Mengapa Terus Menyewa Jika Anda Bisa Memilikinya?
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              HQuarters SOHO gives you the chance to own a space that works for both your life and your business.
+              HQuarters SOHO memberi peluang emas memiliki aset properti strata title di CBD Bandung dengan skema cicilan flat developer hingga 60x tanpa bunga atau KPA s.d. 20 tahun.
             </p>
           </div>
         </section>
@@ -627,10 +623,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="text-center max-w-xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-              COMPARE
+              KOMPARASI NILAI
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Apartment? Office? SOHO?
+              Apartemen Biasa? Kantor Konvensional? Atau SOHO?
             </h2>
           </div>
 
@@ -640,8 +636,8 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                 <thead>
                   <tr className="bg-[#FAF8F5] border-b border-slate-200/80 text-xs sm:text-sm font-bold text-slate-800">
                     <th className="py-3 px-4 sm:py-3.5 sm:px-5 font-normal"></th>
-                    <th className="py-3 px-4 sm:py-3.5 sm:px-5 text-center font-bold text-slate-800">Apartment</th>
-                    <th className="py-3 px-4 sm:py-3.5 sm:px-5 text-center font-bold text-slate-800">Conventional Office</th>
+                    <th className="py-3 px-4 sm:py-3.5 sm:px-5 text-center font-bold text-slate-800">Apartemen Biasa</th>
+                    <th className="py-3 px-4 sm:py-3.5 sm:px-5 text-center font-bold text-slate-800">Kantor Konvensional</th>
                     <th className="py-3 px-4 sm:py-3.5 sm:px-5 text-center font-bold text-[#EA8E18] bg-[#FEF3E2]/40">HQuarters SOHO</th>
                   </tr>
                 </thead>
@@ -686,7 +682,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
               </table>
             </div>
             <div className="py-4 px-6 bg-[#FAF8F5] text-center border-t border-slate-200/80 font-bold text-slate-900 text-sm sm:text-base font-heading">
-              Why fit your life into one category?
+              Mengapa membatasi fleksibilitas hidup dan bisnis Anda hanya dalam satu kategori?
             </div>
           </div>
         </section>
@@ -695,10 +691,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
           <div className="space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-              WHO IT'S FOR
+              DIRANCANG UNTUK PROFESIONAL & PELAKU USAHA
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Built For People Building Something.
+              Diciptakan untuk Mereka yang Sedang Membangun Masa Depan.
             </h2>
           </div>
 
@@ -721,10 +717,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Work Here. Live Here. <br /><span className="text-[#EA8E18]">Own Here.</span>
+              Bekerja di Sini. Tinggal di Sini. <br /><span className="text-[#EA8E18]">Miliki di Sini.</span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto font-normal">
-              HQuarters SOHO — #FleksibelAja
+              HQuarters SOHO — #FlexibleAja
             </p>
           </div>
         </section>

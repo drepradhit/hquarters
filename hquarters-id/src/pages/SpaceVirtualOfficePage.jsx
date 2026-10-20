@@ -23,17 +23,17 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
   }, []);
 
   const includedItems = [
-    'Professional Business Address',
-    'Mail Handling',
-    'Reception Support',
-    'Meeting Room Access',
-    'Call Handling*',
-    'Business Domicile Support*',
+    'Alamat Bisnis Prestisius di Asia Afrika CBD',
+    'Layanan Penanganan Surat & Paket (Mail Handling)',
+    'Dukungan Resepsionis & Concierge Profesional',
+    'Akses Penggunaan Ruang Rapat (Meeting Room)',
+    'Nomor Telepon Khusus & Layanan Penjawab Panggilan*',
+    'Dukungan Domisili Legalitas & Keterangan Usaha*',
   ];
 
   const perfectForPills = [
-    'Entrepreneurs', 'New Companies', 'Consultants',
-    'Remote Businesses', 'Regional Representatives', 'Independent Professionals'
+    'Wirausahawan', 'Perusahaan Baru', 'Konsultan Independen',
+    'Bisnis Remote', 'Kantor Representatif Cabang', 'Profesional Mandiri'
   ];
 
   const packages = [
@@ -41,65 +41,65 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
       id: 'business-address',
       title: 'Business Address',
       price: 'Rp 413,000',
-      period: '/ month',
+      period: '/ bulan',
       popular: false,
       features: [
-        { name: 'Professional Business Address (not eligible for Legal Address)', included: true },
-        { name: 'Mail Handling', included: true },
-        { name: 'Local Telephone Number', included: false },
-        { name: 'Handling Calls in Your Company/Name', included: false },
-        { name: 'Unlimited Business Lounge Access (120 countries)', included: false },
-        { name: 'Community Meeting Room usage (2 hours/day)', included: false },
-        { name: 'Private Office Access (1 workstation) 5 days/month at home centre', included: false },
+        { name: 'Alamat Bisnis Prestisius di CBD (Non-domisili legalitas)', included: true },
+        { name: 'Layanan Penerimaan & Pengelolaan Surat/Paket', included: true },
+        { name: 'Nomor Telepon Khusus Perusahaan Lokal', included: false },
+        { name: 'Layanan Operator Penerimaan Panggilan atas Nama Perusahaan', included: false },
+        { name: 'Akses Business Lounge Tanpa Batas (Jaringan Global)', included: false },
+        { name: 'Penggunaan Meeting Room Komunitas (2 jam/hari)', included: false },
+        { name: 'Akses Ruang Kerja Privat (1 workstation 5 hari/bulan)', included: false },
       ],
     },
     {
       id: 'phone-answering',
       title: 'Phone Answering',
       price: 'Rp 530,000',
-      period: '/ month',
+      period: '/ bulan',
       popular: false,
       features: [
-        { name: 'Professional Business Address', included: false },
-        { name: 'Mail Handling', included: false },
-        { name: 'Local Telephone Number', included: true },
-        { name: 'Handling Calls in Your Company/Name', included: true },
-        { name: 'Unlimited Business Lounge Access (120 countries)', included: false },
-        { name: 'Community Meeting Room usage (2 hours/day)', included: false },
-        { name: 'Private Office Access (1 workstation) 5 days/month at home centre', included: false },
+        { name: 'Alamat Bisnis Prestisius di CBD', included: false },
+        { name: 'Layanan Penerimaan & Pengelolaan Surat/Paket', included: false },
+        { name: 'Nomor Telepon Khusus Perusahaan Lokal', included: true },
+        { name: 'Layanan Operator Penerimaan Panggilan atas Nama Perusahaan', included: true },
+        { name: 'Akses Business Lounge Tanpa Batas (Jaringan Global)', included: false },
+        { name: 'Penggunaan Meeting Room Komunitas (2 jam/hari)', included: false },
+        { name: 'Akses Ruang Kerja Privat (1 workstation 5 hari/bulan)', included: false },
       ],
     },
     {
       id: 'virtual-office-standard',
       title: 'Virtual Office Standard',
       price: 'Rp 883,000',
-      period: '/ month',
-      badge: 'POPULAR',
+      period: '/ bulan',
+      badge: 'TERPOPULER',
       popular: true,
       features: [
-        { name: 'Professional Business Address (eligible for Legal Address)', included: true },
-        { name: 'Mail Handling', included: true },
-        { name: 'Local Telephone Number', included: true },
-        { name: 'Handling Calls in Your Company/Name', included: true },
-        { name: 'Unlimited Business Lounge Access (120 countries)', included: true },
-        { name: 'Community Meeting Room usage (2 hours/day)', included: true },
-        { name: 'Private Office Access (1 workstation) 5 days/month at home centre', included: false },
+        { name: 'Alamat Bisnis Prestisius CBD (Dapat untuk Domisili Legalitas Usaha)', included: true },
+        { name: 'Layanan Penerimaan & Pengelolaan Surat/Paket', included: true },
+        { name: 'Nomor Telepon Khusus Perusahaan Lokal', included: true },
+        { name: 'Layanan Operator Penerimaan Panggilan atas Nama Perusahaan', included: true },
+        { name: 'Akses Business Lounge Tanpa Batas (Jaringan Global)', included: true },
+        { name: 'Penggunaan Meeting Room Komunitas (2 jam/hari)', included: true },
+        { name: 'Akses Ruang Kerja Privat (1 workstation 5 hari/bulan)', included: false },
       ],
     },
     {
       id: 'virtual-office-plus',
       title: 'Virtual Office Plus',
       price: 'Rp 1,354,000',
-      period: '/ month',
+      period: '/ bulan',
       popular: false,
       features: [
-        { name: 'Professional Business Address (eligible for Legal Address)', included: true },
-        { name: 'Mail Handling', included: true },
-        { name: 'Local Telephone Number', included: true },
-        { name: 'Handling Calls in Your Company/Name', included: true },
-        { name: 'Unlimited Business Lounge Access (120 countries)', included: true },
-        { name: 'Community Meeting Room usage (2 hours/day)', included: true },
-        { name: 'Private Office Access (1 workstation) 5 days/month at home centre', included: true },
+        { name: 'Alamat Bisnis Prestisius CBD (Dapat untuk Domisili Legalitas Usaha)', included: true },
+        { name: 'Layanan Penerimaan & Pengelolaan Surat/Paket', included: true },
+        { name: 'Nomor Telepon Khusus Perusahaan Lokal', included: true },
+        { name: 'Layanan Operator Penerimaan Panggilan atas Nama Perusahaan', included: true },
+        { name: 'Akses Business Lounge Tanpa Batas (Jaringan Global)', included: true },
+        { name: 'Penggunaan Meeting Room Komunitas (2 jam/hari)', included: true },
+        { name: 'Akses Ruang Kerja Privat (1 workstation 5 hari/bulan)', included: true },
       ],
     },
   ];
@@ -150,11 +150,11 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                A Better Address for <span className="text-[#EA8E18]">Your Business.</span>
+                Alamat Terbaik untuk <span className="text-[#EA8E18]">Meningkatkan Kredibilitas Bisnis Anda.</span>
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Bangun reputasi dan kehadiran bisnis profesional di alamat bergengsi Bandung tanpa komitmen kantor fisik permanen.
+                Bangun reputasi dan kredibilitas bisnis profesional di koridor paling prestisius CBD Asia Afrika Bandung tanpa biaya sewa kantor fisik permanen.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -187,12 +187,12 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            You Don't Always Need An Office. <br />
-            <span className="text-[#EA8E18]">But Your Business Still Needs A Presence.</span>
+            Anda Tidak Selalu Butuh Kantor Fisik. <br />
+            <span className="text-[#EA8E18]">Namun Bisnis Anda Tetap Membutuhkan Kredibilitas.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Remote business? New company? Independent professional? Branch representation?<br className="hidden sm:inline" />
-            Build credibility with a professional business address at HQuarters.
+            Bisnis remote? Perusahaan rintisan? Konsultan mandiri? Kantor representasi daerah?<br className="hidden sm:inline" />
+            Raih kepercayaan klien dan perbankan dengan domisili bisnis prestisius di HQuarters.
           </p>
         </section>
 
@@ -201,10 +201,10 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 border border-slate-200/80 space-y-8 max-w-4xl mx-auto">
             <div className="text-center max-w-xl mx-auto space-y-2">
               <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                INCLUDED
+                FASILITAS SUDAH TERMASUK
               </span>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                More Than Just An Address.
+                Lebih dari Sekadar Alamat Bisnis.
               </h2>
             </div>
 
@@ -218,7 +218,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
             </div>
 
             <p className="text-xs text-slate-500 text-center font-medium">
-              *Available depending on selected package.
+              *Fasilitas disesuaikan dengan paket yang dipilih.
             </p>
           </div>
         </section>
@@ -227,22 +227,20 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Work From Anywhere. Be Present Here.
+              Bekerja dari Mana Saja. Tetap Bereputasi di Sini.
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Your team may work remotely. Your business address doesn't have to look temporary.
+              Tim Anda dapat bekerja fleksibel secara jarak jauh. Namun alamat bisnis resmi perusahaan Anda tetap mencerminkan kemapanan dan stabilitas tinggi.
             </p>
             <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading">
-              Professional presence without permanent overhead.
+              Kehadiran profesional kelas korporat tanpa biaya overhead permanen.
             </div>
           </div>
         </section>
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-            Perfect For
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Solusi Ideal untuk</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {perfectForPills.map((pill) => (
@@ -260,13 +258,13 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section id="vo-packages" className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-xl mx-auto space-y-2">
             <span className="text-xs font-bold text-[#EA8E18] uppercase tracking-widest inline-block">
-              PACKAGES
+              PILIHAN PAKET
             </span>
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight">
-              Choose Your Package.
+              Pilih Paket Sesuai Kebutuhan Anda.
             </h2>
             <p className="text-slate-500 text-sm sm:text-base font-normal">
-              Month-to-month pricing, nett.
+              Harga transparan per bulan, nett.
             </p>
           </div>
 
@@ -348,7 +346,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                         : 'bg-slate-900 group-hover:bg-[#EA8E18] text-white shadow-sm'
                     }`}
                   >
-                    <span>Select Package</span>
+                    <span>Pilih Paket</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
@@ -358,7 +356,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
           <div className="text-center space-y-4 pt-2">
             <p className="text-xs text-slate-500 max-w-2xl mx-auto font-normal italic">
-              Prices are subject to change without prior notice. Please contact us for the latest pricing and package details.
+              Harga dapat berubah sewaktu-waktu. Hubungi tim kami untuk ketersediaan promo dan detail penawaran terbaru.
             </p>
             <div>
               <button
@@ -369,7 +367,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                 }}
                 className="px-8 py-3.5 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center gap-2 group"
               >
-                <span>Book Now</span>
+                <span>Daftar Sekarang</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -385,7 +383,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Every Business Needs <br /><span className="text-[#EA8E18]">Somewhere To Begin.</span>
+              Setiap Bisnis Membutuhkan <br /><span className="text-[#EA8E18]">Langkah Awal yang Tepat.</span>
             </h2>
             <div className="pt-2 sm:pt-4">
               <button
@@ -396,7 +394,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                 }}
                 className="px-9 py-4 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center gap-2.5 group"
               >
-                <span>Begin at HQuarters</span>
+                <span>Mulai di HQuarters</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

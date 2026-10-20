@@ -30,27 +30,27 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
     {
       id: 1,
       src: '/BUILDING/gym 01.webp?v=20260825',
-      title: 'State-of-the-Art Fitness Center',
+      title: 'Pusat Kebugaran & Gym Modern',
     },
     {
       id: 2,
       src: '/BUILDING/gym 5_4.webp?v=20260825',
-      title: 'Fitness & Conditioning Studio',
+      title: 'Studio Kebugaran & Conditioning',
     },
     {
       id: 3,
       src: '/BUILDING/sauna 5_4.webp?v=20260825',
-      title: 'Recovery & Relaxation Suite',
+      title: 'Ruang Sauna & Relaksasi Eksklusif',
     },
     {
       id: 4,
       src: '/BUILDING/kolam renang 5_4.webp?v=20260825',
-      title: 'Swimming Pool & Leisure Area',
+      title: 'Kolam Renang Air Hangat di Rooftop',
     },
   ];
 
   const handleTeamSizeClick = (item) => {
-    setTeamSizeNote(`Team size: ${item.size} (${item.desc})`);
+    setTeamSizeNote(`Kapasitas tim: ${item.size} (${item.desc})`);
     const formElem = document.getElementById('find-space');
     if (formElem) {
       formElem.scrollIntoView({ behavior: 'smooth' });
@@ -60,27 +60,27 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
   const galleryImages = [
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office.webp?v=20260823',
-      title: 'Executive Corporate Floor',
-      category: 'HQ Layout',
-      desc: 'Expansive open-plan floorplate designed for regional headquarters and growing corporate teams.',
+      title: 'Lantai Kantor Eksekutif Korporat',
+      category: 'Tata Ruang HQ',
+      desc: 'Denah lantai terbuka luas berstandar Grade A, dirancang untuk kantor pusat regional dan tim korporasi berskala besar.',
     },
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office 06.webp?v=20260823',
-      title: 'Boardroom & Conference Suite',
+      title: 'Ruang Rapat Direksi & Konferensi',
       category: 'Meeting Suite',
-      desc: 'High-tech conference environment equipped for executive board meetings and client presentations.',
+      desc: 'Ruang konferensi berteknologi tinggi untuk rapat dewan direksi, presentasi klien penting, dan kesepakatan strategis.',
     },
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office 03.webp?v=20260823',
-      title: 'Corner Executive Office',
+      title: 'Ruang Kerja Pimpinan Sudut (Corner Office)',
       category: 'Private Suite',
-      desc: 'Dedicated leadership suite with panoramic city skyline views of Asia Afrika CBD.',
+      desc: 'Ruang eksekutif privat dengan pemandangan panorama cakrawala CBD Asia Afrika Bandung yang prestisius.',
     },
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office 04.webp?v=20260823',
-      title: 'Collaborative Team Hub',
+      title: 'Area Kolaborasi & Workstation Tim',
       category: 'Workstation',
-      desc: 'Acoustically tuned workspace fostering cross-department collaboration and high focus.',
+      desc: 'Zona kerja dengan akustik prima yang mendorong fokus tinggi dan kolaborasi antar divisi secara dinamis.',
     },
   ];
 
@@ -158,41 +158,41 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
   };
 
   const teamSizes = [
-    { size: '10 — 20 People', desc: 'Compact corporate office' },
-    { size: '20 — 40 People', desc: 'Flexible office layout.' },
-    { size: '40 — 80 People', desc: 'Larger combined office solutions.' },
-    { size: '80 — 150+ People', desc: 'Custom corporate configuration.' },
+    { size: '10 — 20 Orang', desc: 'Kantor korporat kompak & efisien' },
+    { size: '20 — 40 Orang', desc: 'Tata letak kantor fleksibel & dinamis' },
+    { size: '40 — 80 Orang', desc: 'Solusi kantor terintegrasi satu sayap' },
+    { size: '80 — 150+ Orang', desc: 'Konfigurasi lantai korporasi kustom' },
   ];
 
   const features = [
     {
-      title: 'Professional Image',
-      desc: 'Premium common areas and business environment that reflect corporate credibility.',
+      title: 'Citra Bisnis Profesional',
+      desc: 'Lobi megah dan atmosfer bisnis prestisius yang langsung memancarkan kredibilitas korporat Anda.',
       icon: Building2,
     },
     {
-      title: 'Space To Grow',
-      desc: 'Unit and layout choices for organizations of different sizes.',
+      title: 'Ruang yang Tumbuh Bersama Anda',
+      desc: 'Pilihan unit dan denah fleksibel yang mudah disesuaikan dengan perkembangan jumlah tim perusahaan.',
       icon: Users,
     },
     {
-      title: 'Business Connectivity',
-      desc: 'Fiber infrastructure and connectivity support for modern business.',
+      title: 'Konektivitas Bisnis Cepat',
+      desc: 'Infrastruktur fiber optik berkecepatan tinggi dan manajemen gedung terpusat untuk kelancaran operasional.',
       icon: Wifi,
     },
     {
-      title: 'Accessibility',
-      desc: 'Located in the centre of Bandung\'s activity.',
+      title: 'Aksesibilitas Prima di Pusat CBD',
+      desc: 'Terletak tepat di koridor emas Asia Afrika Bandung, dekat pusat finansial, perbankan, dan pemerintahan.',
       icon: MapPin,
     },
     {
-      title: 'Security',
-      desc: '24-hour professional security and layered building access.',
+      title: 'Keamanan Berlapis 24/7',
+      desc: 'Pengamanan 24 jam dengan kontrol akses kartu, CCTV terpadu, dan sistem proteksi kebakaran modern.',
       icon: Shield,
     },
     {
-      title: 'Employee Experience',
-      desc: 'Gym, sauna and heated pool that raise the quality of the workplace.',
+      title: 'Kebugaran Karyawan',
+      desc: 'Gym modern, sauna eksklusif, dan kolam renang air hangat di rooftop untuk keseimbangan kerja tim.',
       icon: HeartHandshake,
     },
   ];
@@ -243,7 +243,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-200 tracking-tight leading-snug">
-                Your Next HQuarters <span className="text-[#EA8E18]">Is Ready.</span>
+                Kantor Korporat Representatif <span className="text-[#EA8E18]">Siap Digunakan.</span>
               </h2>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
@@ -288,12 +288,12 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Your Company Has Grown. <br />
-            <span className="text-[#EA8E18]">Your Office Should Too.</span>
+            Perusahaan Anda Terus Bertumbuh. <br />
+            <span className="text-[#EA8E18]">Kantor Anda Pun Seharusnya Begitu.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Every company reaches a point where the old office no longer reflects the business it has become.<br className="hidden sm:inline" />
-            Teams grow. Clients grow. Expectations rise. The office becomes part of your corporate identity.
+            Setiap bisnis mencapai titik di mana kantor lama tak lagi mencerminkan skala pencapaian yang telah diraih.<br className="hidden sm:inline" />
+            Tim bertambah besar. Klien semakin prestisius. Standar meningkat. Ruang kantor adalah representasi nyata reputasi korporat Anda.
           </p>
         </section>
 
@@ -455,14 +455,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
             <h2 className="text-2xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Before The Meeting Starts, Your Office Has Already Said Something.
+              Sebelum Rapat Dimulai, Kantor Anda Sudah Berbicara Lebih Dulu.
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-A representative lobby. A professional arrival experience. A credible business environment — the kind that tells clients and partners they're dealing with a serious company.
-
+              Lobi yang megah. Pengalaman kedatangan yang profesional. Lingkungan bisnis bereputasi tinggi — memberi sinyal kuat kepada klien dan mitra bahwa mereka bermitra dengan perusahaan terpercaya.
             </p>
             <div className="pt-2 font-bold text-[#EA8E18] text-lg sm:text-xl font-heading">
-              Make sure it says the right thing.
+              Pastikan kantor Anda memberikan kesan pertama yang terbaik.
             </div>
           </div>
         </section>
@@ -472,9 +471,7 @@ A representative lobby. A professional arrival experience. A credible business e
           
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Facilities
-            </h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Fasilitas <span className="text-[#EA8E18]">Gedung Unggulan</span></h2>
           </div>
 
           
@@ -560,10 +557,10 @@ A representative lobby. A professional arrival experience. A credible business e
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-              WHAT'S INCLUDED
+              STANDAR KELAS ATAS
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Everything a Modern Company Expects.
+              Semua yang Diharapkan oleh Perusahaan Modern.
             </h2>
           </div>
 
@@ -595,10 +592,10 @@ A representative lobby. A professional arrival experience. A credible business e
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 border border-slate-200/80 space-y-8">
             <div className="text-center max-w-xl mx-auto space-y-2">
               <div className="text-xs font-bold uppercase tracking-widest text-[#EA8E18]">
-                SIZED TO YOUR TEAM
+                SESUAIKAN DENGAN SKALA TIM ANDA
               </div>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                How Big Is Your Team?
+                Berapa Jumlah Anggota Tim Anda?
               </h2>
             </div>
 
@@ -625,11 +622,11 @@ A representative lobby. A professional arrival experience. A credible business e
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight">
-              Lease The Space. <span className="text-[#EA8E18]"><br />Keep Your Capital Working.</span>
+              Sewa atau Miliki Ruang. <span className="text-[#EA8E18]"><br />Jaga Modal Bisnis Tetap Produktif.</span>
             </h2>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Buying a corporate office isn't always the smartest use of capital. Lease at HQuarters and keep your resources focused where they create the greatest impact: your people, your products and your business.
+              Membeli gedung kantor bukan selalu alokasi modal terbaik. Di HQuarters, Anda memiliki keleluasaan opsi sewa maupun kepemilikan fleksibel, menjaga arus kas tetap berfokus pada inovasi produk, talenta terbaik, dan ekspansi bisnis Anda.
             </p>
           </div>
         </section>
@@ -638,11 +635,11 @@ A representative lobby. A professional arrival experience. A credible business e
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-xl sm:rounded-2xl py-10 sm:py-14 px-6 sm:px-12 border border-slate-200/80 text-center space-y-3 shadow-sm max-w-4xl mx-auto">
             <div className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA8E18]">
-              YOU'RE IN GOOD COMPANY
+              EKOSISTEM BISNIS TERPERCAYA
             </div>
             <p className="text-xl sm:text-2xl lg:text-3xl font-medium font-heading text-slate-900 leading-snug">
-              Join a growing community of respected companies <br className="hidden md:inline" />
-              operating from HQuarters.
+              Bergabung bersama komunitas perusahaan terkemuka dan brand multinasional <br className="hidden md:inline" />
+              yang beroperasi dari HQuarters Bandung.
             </p>
           </div>
         </section>
@@ -654,10 +651,10 @@ A representative lobby. A professional arrival experience. A credible business e
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Your Next Chapter Deserves <br /><span className="text-[#EA8E18]">The Right Address.</span>
+              Babak Baru Perjalanan Bisnis Anda Layak Berada <br /><span className="text-[#EA8E18]">di Alamat yang Tepat.</span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto font-normal">
-              HQuarters Premium Office — Asia Afrika, Bandung
+              HQuarters Premium Office — Asia Afrika CBD, Bandung
             </p>
           </div>
         </section>

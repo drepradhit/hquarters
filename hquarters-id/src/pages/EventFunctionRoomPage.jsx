@@ -108,23 +108,23 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       src: '/BUILDING/FR 01.webp?v=20260825',
       title: 'Grand Function Room',
-      category: 'Events & Corporate Seminars',
-      tag: 'Capacity: Up to 140 Pax',
-      desc: 'Versatile corporate event hall with complete audiovisual facilities in Bandung CBD.',
+      category: 'Seminar Korporat & Acara Spesial',
+      tag: 'Kapasitas: Hingga 140 Pax',
+      desc: 'Ruang serbaguna luas dengan tata akustik prima dan fasilitas audio visual modern di CBD Asia Afrika Bandung.',
     },
     {
       src: '/BUILDING/FR 02.webp?v=20260825',
       title: 'Executive Function Hall',
-      category: 'Seminars & Conferences',
-      tag: 'Capacity: Up to 100 Pax',
-      desc: 'Modern climate-controlled function room equipped for high-impact presentations and gatherings.',
+      category: 'Seminar, Workshop & Konferensi',
+      tag: 'Kapasitas: Hingga 100 Pax',
+      desc: 'Ruang serbaguna modern berpendingin udara optimal, dirancang untuk presentasi berdampak tinggi dan pertemuan bisnis.',
     },
     {
       src: '/BUILDING/FR 03.webp?v=20260825',
       title: 'Multi-Purpose Event Space',
-      category: 'Private Banquets & Gatherings',
-      tag: 'Capacity: Up to 140 Pax',
-      desc: 'Flexible layout setups designed to accommodate keynotes, workshops, and banquet celebrations.',
+      category: 'Gathering, Perjamuan & Acara Komunitas',
+      tag: 'Kapasitas: Hingga 140 Pax',
+      desc: 'Konfigurasi ruangan fleksibel yang dapat disesuaikan untuk simposium, lokakarya, maupun jamuan istimewa.',
     },
   ];
 
@@ -180,39 +180,39 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
 
   
   const occasionPills = [
-    'Corporate Seminars',
-    'Product Launches',
-    'Training & Workshops',
-    'Board Meetings',
-    'Private Celebrations',
-    'Community Gatherings',
+    'Seminar Korporat',
+    'Peluncuran Produk',
+    'Pelatihan & Workshop',
+    'Rapat Direksi & RUPS',
+    'Acara Jamuan Privat',
+    'Pertemuan Komunitas',
   ];
 
   
   const roomDetails = [
     {
       id: 'capacity',
-      title: 'Capacity',
-      stat: 'Up to 180 Guests',
-      desc: 'Theatre, classroom, banquet, or cocktail configuration.',
+      title: 'Kapasitas Maksimal',
+      stat: 'Hingga 280 Tamu',
+      desc: 'Konfigurasi fleksibel: theatre, classroom, round table banquet, maupun standing reception.',
     },
     {
       id: 'area',
-      title: 'Total Area',
-      stat: '298 m² Column-Free',
-      desc: 'Expansive floor plan with 3.8m acoustic ceiling height.',
+      title: 'Total Luas Area',
+      stat: '298 m² Bebas Kolom',
+      desc: 'Lantai terbuka luas dengan tinggi plafon akustik 3.8 meter untuk visibilitas maksimal.',
     },
     {
       id: 'divisible',
-      title: 'Divisible Space',
-      stat: '2 Private Rooms',
-      desc: 'Sound-insulated movable partition to divide the hall as needed.',
+      title: 'Ruangan Fleksibel',
+      stat: '2 Ruangan Privat',
+      desc: 'Partisi kedap suara berpindah untuk membagi ruangan menjadi Room 1 dan Room 2 sesuai kebutuhan.',
     },
     {
       id: 'light',
-      title: 'Natural Light',
-      stat: 'Floor-to-Ceiling',
-      desc: 'Panoramic windows with motorized blackout drapes for media.',
+      title: 'Pencahayaan Alami',
+      stat: 'Kaca Panorama',
+      desc: 'Jendela kaca lantai ke langit-langit dengan tirai blackout bermotor untuk kebutuhan proyeksi media.',
     },
   ];
 
@@ -221,7 +221,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'theatre',
       title: 'Theatre',
-      desc: 'Rows of chairs facing the front — best for presentations.',
+      desc: 'Barisan kursi menghadap panggung — ideal untuk presentasi dan seminar akbar.',
       icon: 'theatre',
       r1Capacity: 140,
       r2Capacity: 100,
@@ -229,15 +229,15 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'classroom',
       title: 'Classroom',
-      desc: 'Rows of tables and chairs — best for training and note-taking.',
+      desc: 'Meja dan kursi berbaris — cocok untuk pelatihan intensif, sertifikasi, dan lokakarya.',
       icon: 'classroom',
       r1Capacity: 100,
       r2Capacity: 60,
     },
     {
       id: 'reception',
-      title: 'Reception',
-      desc: 'Open standing space — best for mingling and cocktail events.',
+      title: 'Standing Reception',
+      desc: 'Ruang terbuka leluasa — sempurna untuk networking, cocktail party, dan ramah tamah.',
       icon: 'reception',
       r1Capacity: 180,
       r2Capacity: 130,
@@ -245,15 +245,15 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'u-shape',
       title: 'U-Shape',
-      desc: 'Tables arranged in a U — best for discussion-style meetings.',
+      desc: 'Susunan meja berbentuk huruf U — ideal untuk diskusi terarah dan rapat dewan direksi.',
       icon: 'ushape',
       r1Capacity: 100,
       r2Capacity: 60,
     },
     {
       id: 'round-table',
-      title: 'Round Table',
-      desc: 'Guests seated around round tables — best for banquets and dining.',
+      title: 'Round Table Banquet',
+      desc: 'Meja bundar berkapasitas 8–10 kursi — terbaik untuk gala dinner, jamuan makan, dan selebrasi.',
       icon: 'roundtable',
       r1Capacity: 70,
       r2Capacity: 50,
@@ -267,48 +267,40 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
       name: 'Fullboard',
       price: 'Rp 550,000',
       unit: '/ pax',
-      inclusions: '3× Coffee Break, 1× Lunch',
-      duration: '*Max 12 hours',
+      inclusions: '3× Coffee Break, 1× Makan Siang', duration: '*Maks. 12 jam',
     },
     {
       id: 'fullday',
       name: 'Full Day',
       price: 'Rp 450,000',
       unit: '/ pax',
-      inclusions: '2× Coffee Break, 1× Lunch or Dinner',
-      duration: '*Max 8 hours',
+      inclusions: '2× Coffee Break, 1× Makan Siang atau Malam', duration: '*Maks. 8 jam',
     },
     {
       id: 'halfday',
       name: 'Half Day',
       price: 'Rp 350,000',
       unit: '/ pax',
-      inclusions: '1× Coffee Break, 1× Lunch or Dinner',
-      duration: '*Max 6 hours',
+      inclusions: '1× Coffee Break, 1× Makan Siang atau Malam', duration: '*Maks. 6 jam',
     },
     {
       id: 'lunch-dinner',
       name: 'Lunch / Dinner',
       price: 'Rp 200,000',
       unit: '/ pax',
-      inclusions: '1× Lunch or Dinner',
-      duration: '',
+      inclusions: '1× Makan Siang atau Malam', duration: '',
     },
     {
       id: 'coffee-break',
       name: 'Coffee Break',
       price: 'Rp 200,000',
       unit: '/ pax',
-      inclusions: '1× Coffee Break',
-      duration: '*Min 6 hours',
+      inclusions: '1× Coffee Break', duration: '*Min. 6 jam',
     },
     {
       id: 'room-only',
       name: 'Room Only',
-      price: 'Rp 1,500,000',
-      unit: '/ room / hr',
-      inclusions: '',
-      duration: '*Min 4 hours / day',
+      price: 'Rp 1.500.000', unit: '/ ruangan / jam', inclusions: 'Hanya Sewa Ruangan', duration: '*Min. 4 jam / hari',
     },
   ];
 
@@ -681,7 +673,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
                     <span className="text-lg font-bold text-[#EA8E18]">100 Pax</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase block">Reception</span>
+                    <span className="text-[11px] font-semibold text-slate-500 uppercase block">Standing</span>
                     <span className="text-lg font-bold text-[#EA8E18]">180 Pax</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center">
@@ -740,7 +732,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
                     <span className="text-lg font-bold text-[#EA8E18]">60 Pax</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase block">Reception</span>
+                    <span className="text-[11px] font-semibold text-slate-500 uppercase block">Standing</span>
                     <span className="text-lg font-bold text-[#EA8E18]">130 Pax</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center">
