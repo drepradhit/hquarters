@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function SpacesSection({ setCurrentPage }) {
@@ -89,8 +89,7 @@ export default function SpacesSection({ setCurrentPage }) {
                           {space.badge}
                         </h2>
                         {space.isPopular && (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200/80 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider shrink-0 shadow-xs">
-                            <Sparkles className="w-3 h-3 text-[#EA8E18]" />
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200/80 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider shrink-0 shadow-xs">
                             {t.spacesHub.popularTag || 'TERPOPULER'}
                           </span>
                         )}
