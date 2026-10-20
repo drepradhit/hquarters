@@ -481,13 +481,13 @@ export const translations = {
         cta: 'Lihat Serviced Office',
       },
       soho: {
-        cat: 'SOHO (Duplex)',
+        cat: 'SOHO',
         title: 'Miliki di Sini.',
         desc: 'Unit serbaguna dua lantai untuk bekerja sekaligus hunian dan aset investasi masa depan. #FlexibleAja',
         cta: 'Lihat Unit SOHO',
       },
       premiumOffice: {
-        cat: 'Private & Premium Office',
+        cat: 'Premium Office',
         title: 'Bertumbuh di Sini.',
         desc: 'Unit kantor representatif dengan luasan fleksibel dan standar Grade A untuk memperkuat citra dan branding korporat Anda.',
         cta: 'Lihat Premium Office',
@@ -610,7 +610,7 @@ export const translations = {
       desc: 'Isi formulir singkat ini. Tim konsultan resmi HQuarters akan mengirimkan denah unit, ketersediaan jadwal survei, dan simulasi penawaran spesial via WhatsApp dalam hitungan menit.',
       optionsTitle: 'Pilihan ruang mana yang paling sesuai dengan kebutuhan bisnis Anda?',
       options: [
-        { label: 'Saya butuh Private / Premium Office', value: 'Premium Office', desc: 'Unit kantor representatif untuk korporasi & tim mapan' },
+        { label: 'Saya butuh Premium Office', value: 'Premium Office', desc: 'Unit kantor representatif untuk korporasi & tim mapan' },
         { label: 'Saya ingin memiliki SOHO', value: 'SOHO', desc: 'Unit duplex multifungsi dua lantai untuk kerja & hunian (#FlexibleAja)' },
         { label: 'Saya butuh Serviced Office', value: 'Serviced Office', desc: 'Kantor siap pakai instan lengkap perabot & fasilitas' },
         { label: 'Saya butuh Virtual Office', value: 'Virtual Office', desc: 'Alamat bisnis prestisius di CBD Bandung & mail handling' },
@@ -649,7 +649,7 @@ export const translations = {
       ctaButton: 'Jadwalkan Survei Lokasi',
       cards: {
         soho: {
-          badge: 'SOHO (DUPLEX)',
+          badge: 'SOHO',
           popular: 'TERPOPULER',
           title: 'Bekerja Sekaligus Hunian dalam Satu Ruang.',
           desc: 'Unit serbaguna dua lantai yang dirancang khusus bagi profesional modern yang membutuhkan fleksibilitas, kenyamanan, dan kepemilikan aset jangka panjang. #FlexibleAja',
@@ -657,7 +657,7 @@ export const translations = {
           cta: 'Lihat Unit SOHO',
         },
         premium: {
-          badge: 'PRIVATE & PREMIUM OFFICE',
+          badge: 'PREMIUM OFFICE',
           title: 'Unit Kantor Representatif untuk Citra Korporat.',
           desc: 'Unit kantor dengan berbagai pilihan ukuran yang dapat disesuaikan dengan skala dan branding perusahaan Anda. Dimulai dari Rp 10 Jutaan / bulan dengan standar Grade A.',
           bestFor: 'kantor pusat perusahaan, cabang regional, institusi finansial, dan firma profesional.',
