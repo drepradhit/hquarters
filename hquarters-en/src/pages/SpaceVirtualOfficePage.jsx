@@ -38,6 +38,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
   const packages = [
     {
+      id: 'business-address',
       title: 'Business Address',
       price: 'Rp 413,000',
       period: '/ month',
@@ -53,6 +54,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
       ],
     },
     {
+      id: 'phone-answering',
       title: 'Phone Answering',
       price: 'Rp 530,000',
       period: '/ month',
@@ -68,6 +70,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
       ],
     },
     {
+      id: 'virtual-office-standard',
       title: 'Virtual Office Standard',
       price: 'Rp 883,000',
       period: '/ month',
@@ -84,6 +87,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
       ],
     },
     {
+      id: 'virtual-office-plus',
       title: 'Virtual Office Plus',
       price: 'Rp 1,354,000',
       period: '/ month',
@@ -267,7 +271,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
-            {packages.map((pkg) => (
+            {packages.map((pkg, index) => (
               <div
                 key={pkg.title}
                 onClick={() => handlePackageClick(pkg)}
