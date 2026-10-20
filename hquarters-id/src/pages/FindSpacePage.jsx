@@ -12,7 +12,7 @@ export default function FindSpacePage({ setCurrentPage }) {
     <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       <Navbar currentPage="find-space" setCurrentPage={setCurrentPage} />
       <main className="pt-24 sm:pt-28 flex-1 bg-white">
-        <FindSpacePageSection />
+        <FindSpacePageSection setCurrentPage={setCurrentPage} />
       </main>
       <Footer setCurrentPage={setCurrentPage} />
     </div>
