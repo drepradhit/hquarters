@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, ArrowRight } from 'lucide-react';
+import { Star, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function Hero({ setCurrentPage }) {
@@ -52,10 +52,22 @@ export default function Hero({ setCurrentPage }) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.15 }}
-            className="text-slate-100 md:text-slate-600 text-[13px] sm:text-base md:text-lg leading-relaxed font-normal mb-5 sm:mb-8 max-w-sm md:max-w-xl drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)] md:drop-shadow-none"
+            className="text-slate-100 md:text-slate-600 text-[13px] sm:text-base md:text-lg leading-relaxed font-normal mb-3 sm:mb-4 max-w-sm md:max-w-xl drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)] md:drop-shadow-none"
           >
             {t.hero.description}
           </motion.p>
+
+          {/* Punchy Hero Tagline */}
+          {t.hero.tagline && (
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.18 }}
+              className="font-bold text-[#FBA93C] md:text-[#EA8E18] text-sm sm:text-base md:text-lg mb-5 sm:mb-8 drop-shadow-xs md:drop-shadow-none"
+            >
+              {t.hero.tagline}
+            </motion.p>
+          )}
 
           {/* CTA Buttons (sleeker, more proportional padding on mobile) */}
           <motion.div
@@ -75,16 +87,29 @@ export default function Hero({ setCurrentPage }) {
               <span>{t.hero.exploreBtn}</span>
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </button>
-            <button
-              id="btn-hero-visit"
-              onClick={() => {
-                if (setCurrentPage) setCurrentPage('find-space');
-                window.scrollTo(0, 0);
-              }}
-              className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-white/15 md:bg-white hover:bg-white/25 md:hover:bg-slate-50 border border-white/30 md:border-slate-300 hover:border-white md:hover:border-slate-800 text-white md:text-slate-800 font-semibold text-xs sm:text-base backdrop-blur-md md:backdrop-blur-none transition-all duration-200 cursor-pointer text-center shrink-0 active:scale-98 shadow-xs"
-            >
-              {t.hero.visitBtn}
-            </button>
+            {t.hero.visitBtn?.toLowerCase().includes('whatsapp') ? (
+              <a
+                id="btn-hero-whatsapp"
+                href="https://wa.me/628111908319?text=Halo%20HQuarters%20Bandung%2C%20saya%20ingin%20berkonsultasi%20mengenai%20ruang%20bisnis."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-white/15 md:bg-white hover:bg-white/25 md:hover:bg-slate-50 border border-white/30 md:border-slate-300 hover:border-white md:hover:border-slate-800 text-white md:text-slate-800 font-semibold text-xs sm:text-base backdrop-blur-md md:backdrop-blur-none transition-all duration-200 cursor-pointer text-center shrink-0 active:scale-98 shadow-xs"
+              >
+                <span>{t.hero.visitBtn}</span>
+                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-80" />
+              </a>
+            ) : (
+              <button
+                id="btn-hero-visit"
+                onClick={() => {
+                  if (setCurrentPage) setCurrentPage('find-space');
+                  window.scrollTo(0, 0);
+                }}
+                className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-white/15 md:bg-white hover:bg-white/25 md:hover:bg-slate-50 border border-white/30 md:border-slate-300 hover:border-white md:hover:border-slate-800 text-white md:text-slate-800 font-semibold text-xs sm:text-base backdrop-blur-md md:backdrop-blur-none transition-all duration-200 cursor-pointer text-center shrink-0 active:scale-98 shadow-xs"
+              >
+                {t.hero.visitBtn}
+              </button>
+            )}
           </motion.div>
 
           {/* Social Proof */}

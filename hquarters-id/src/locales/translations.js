@@ -456,11 +456,12 @@ export const translations = {
       languageLabel: 'Bahasa:',
     },
     hero: {
-      titlePrefix: 'Satu platform untuk ',
-      titleHighlight: 'setiap step bisnis Anda.',
-      description: 'HQuarters menyediakan pilihan ruang untuk kebutuhan bisnis yang berbeda, mulai dari Virtual Office dan kantor siap pakai hingga SOHO dan ruang pertemuan.',
-      exploreBtn: 'Lihat pilihan ruang',
-      visitBtn: 'Hubungi HQuarters',
+      titlePrefix: 'Unit Kantor Representatif dan Fleksibel ',
+      titleHighlight: 'untuk Kebutuhan Bisnis Modern',
+      description: 'HQuarters menghadirkan ruang bisnis dan hunian dalam satu gedung di Jl. Asia Afrika, Bandung. Jelajahi pilihan Premium Office, SOHO, Serviced Office, Virtual Office, hingga Function Room untuk kebutuhan usaha dan aktivitas Anda.',
+      tagline: 'Satu Tempat, Berbagai Peluang.',
+      exploreBtn: 'Lihat Pilihan Ruang',
+      visitBtn: 'Konsultasi via WhatsApp',
       trusted: 'Pilihan Garuda Indonesia dan Perusahaan Nasional di Bandung',
     },
     journey: {
