@@ -30,7 +30,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
     {
       id: 1,
       src: '/BUILDING/gym 01.webp?v=20260825',
-      title: 'Pusat Kebugaran & Gym Modern',
+      title: 'Pusat Kebugaran & Gym Gedung',
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
     {
       id: 3,
       src: '/BUILDING/sauna 5_4.webp?v=20260825',
-      title: 'Ruang Sauna & Relaksasi Eksklusif',
+      title: 'Ruang Sauna Relaksasi',
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
   ];
 
   const handleTeamSizeClick = (item) => {
-    setTeamSizeNote(`Kapasitas tim: ${item.size} (${item.desc})`);
+    setTeamSizeNote(`Estimasi kapasitas tim: ${item.size} (${item.desc})`);
     const formElem = document.getElementById('find-space');
     if (formElem) {
       formElem.scrollIntoView({ behavior: 'smooth' });
@@ -60,27 +60,27 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
   const galleryImages = [
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office.webp?v=20260823',
-      title: 'Lantai Kantor Eksekutif Korporat',
-      category: 'Tata Ruang HQ',
-      desc: 'Denah lantai terbuka luas berstandar Grade A, dirancang untuk kantor pusat regional dan tim korporasi berskala besar.',
+      title: 'Lantai Kerja Eksekutif Terbuka',
+      category: 'Tata Ruang Korporat',
+      desc: 'Denah lantai terbuka luas berstandar Grade A yang fleksibel untuk penataan workstation dan partisi ruang divisi.',
     },
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office 06.webp?v=20260823',
-      title: 'Ruang Rapat Direksi & Konferensi',
+      title: 'Ruang Rapat Direksi & Presentasi',
       category: 'Meeting Suite',
-      desc: 'Ruang konferensi berteknologi tinggi untuk rapat dewan direksi, presentasi klien penting, dan kesepakatan strategis.',
+      desc: 'Area rapat formal dilengkapi instalasi konektivitas dan peredam suara untuk kelancaran presentasi klien.',
     },
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office 03.webp?v=20260823',
       title: 'Ruang Kerja Pimpinan Sudut (Corner Office)',
       category: 'Private Suite',
-      desc: 'Ruang eksekutif privat dengan pemandangan panorama cakrawala CBD Asia Afrika Bandung yang prestisius.',
+      desc: 'Ruang kerja pimpinan privat dengan bukaan jendela panorama ke arah lanskap kota CBD Bandung.',
     },
     {
       src: '/SPACES/PREMIUM OFFICE/Premium Office 04.webp?v=20260823',
       title: 'Area Kolaborasi & Workstation Tim',
       category: 'Workstation',
-      desc: 'Zona kerja dengan akustik prima yang mendorong fokus tinggi dan kolaborasi antar divisi secara dinamis.',
+      desc: 'Penataan meja kerja tim yang ergonomis dengan pencahayaan alami untuk menjaga kenyamanan kerja harian.',
     },
   ];
 
@@ -158,41 +158,41 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
   };
 
   const teamSizes = [
-    { size: '10 — 20 Orang', desc: 'Kantor korporat kompak & efisien' },
-    { size: '20 — 40 Orang', desc: 'Tata letak kantor fleksibel & dinamis' },
-    { size: '40 — 80 Orang', desc: 'Solusi kantor terintegrasi satu sayap' },
-    { size: '80 — 150+ Orang', desc: 'Konfigurasi lantai korporasi kustom' },
+    { size: '10 — 20 Orang', desc: 'Format kantor korporat kompak & efisien' },
+    { size: '20 — 40 Orang', desc: 'Tata ruang fleksibel untuk beberapa divisi kerja' },
+    { size: '40 — 80 Orang', desc: 'Konfigurasi sayap lantai luas terintegrasi' },
+    { size: '80 — 150+ Orang', desc: 'Solusi satu lantai penuh (full floor plate)' },
   ];
 
   const features = [
     {
-      title: 'Citra Bisnis Profesional',
-      desc: 'Lobi megah dan atmosfer bisnis prestisius yang langsung memancarkan kredibilitas korporat Anda.',
+      title: 'Citra Bisnis Representatif',
+      desc: 'Lobi berkesan mapan dan atmosfer korporat yang mendukung rasa percaya dari relasi bisnis.',
       icon: Building2,
     },
     {
-      title: 'Ruang yang Tumbuh Bersama Anda',
-      desc: 'Pilihan unit dan denah fleksibel yang mudah disesuaikan dengan perkembangan jumlah tim perusahaan.',
+      title: 'Pilihan Denah yang Fleksibel',
+      desc: 'Keluasan lantai yang dapat dikonfigurasi ulang seiring bertambahnya jumlah anggota tim kerja.',
       icon: Users,
     },
     {
-      title: 'Konektivitas Bisnis Cepat',
-      desc: 'Infrastruktur fiber optik berkecepatan tinggi dan manajemen gedung terpusat untuk kelancaran operasional.',
+      title: 'Konektivitas Internet Dedicated',
+      desc: 'Didukung instalasi fiber optik berkecepatan tinggi untuk kestabilan komunikasi data perusahaan.',
       icon: Wifi,
     },
     {
-      title: 'Aksesibilitas Prima di Pusat CBD',
-      desc: 'Terletak tepat di koridor emas Asia Afrika Bandung, dekat pusat finansial, perbankan, dan pemerintahan.',
+      title: 'Akses Lokasi di Pusat Kota',
+      desc: 'Terletak di jalan utama Asia Afrika, dekat dengan jaringan perbankan, instansi, dan akses tol.',
       icon: MapPin,
     },
     {
-      title: 'Keamanan Berlapis 24/7',
-      desc: 'Pengamanan 24 jam dengan kontrol akses kartu, CCTV terpadu, dan sistem proteksi kebakaran modern.',
+      title: 'Keamanan Gedung 24 Jam',
+      desc: 'Pemeriksaan akses pengunjung, pemantauan kamera pengawas CCTV, dan pos keamanan aktif.',
       icon: Shield,
     },
     {
-      title: 'Kebugaran Karyawan',
-      desc: 'Gym modern, sauna eksklusif, dan kolam renang air hangat di rooftop untuk keseimbangan kerja tim.',
+      title: 'Fasilitas Kebugaran Karyawan',
+      desc: 'Gym centre, sauna, dan kolam renang di rooftop yang dapat dimanfaatkan tim untuk relaksasi.',
       icon: HeartHandshake,
     },
   ];
@@ -243,11 +243,11 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-200 tracking-tight leading-snug">
-                Kantor Korporat Representatif <span className="text-[#EA8E18]">Siap Digunakan.</span>
+                Kenali Pilihan Lantai Kantor <span className="text-[#EA8E18]">Sebelum Menentukan Pilihan.</span>
               </h2>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Ruang kantor korporat premium di pusat CBD Bandung untuk perusahaan yang siap meningkatkan citra dan efisiensi operasional bisnis.
+                Ruang kantor korporat berstandar Grade A di koridor CBD Asia Afrika Bandung. Bandingkan luas lantai, denah tata ruang, dan fasilitas gedung sebelum mengatur jadwal kunjungan.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -259,17 +259,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                   }}
                   className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Cek Ketersediaan Kantor</span>
+                  <span>Lihat Ketersediaan Unit & Jadwal ↘</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
 
               <div className="pt-3 border-t border-slate-800 flex flex-wrap items-center gap-3 text-xs text-slate-400 font-medium">
-                <span>Ukuran Fleksibel</span>
-                <span>•</span>
-                <span>Infrastruktur Korporat</span>
-                <span>•</span>
-                <span>Siap Fit-Out / Huni</span>
+                <span>Pilihan Denah Luas</span><span>•</span><span>Spesifikasi Grade A</span><span>•</span><span>Siap Huni / Fit-Out</span>
               </div>
             </div>
 
@@ -288,12 +284,12 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Perusahaan Anda Terus Bertumbuh. <br />
-            <span className="text-[#EA8E18]">Kantor Anda Pun Seharusnya Begitu.</span>
+            Ruang Kerja yang Menyesuaikan <br />
+            <span className="text-[#EA8E18]">Skala Pertumbuhan Bisnismu.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Setiap bisnis mencapai titik di mana kantor lama tak lagi mencerminkan skala pencapaian yang telah diraih.<br className="hidden sm:inline" />
-            Tim bertambah besar. Klien semakin prestisius. Standar meningkat. Ruang kantor adalah representasi nyata reputasi korporat Anda.
+            Setiap perusahaan berkembang membutuhkan ruang yang mampu menampung pertambahan tim dan mencerminkan standar profesionalitasnya.<br className="hidden sm:inline" />
+            Bandingkan opsi luasan lantai dan denah kerja yang sesuai dengan kebutuhan operasional perusahaan Anda.
           </p>
         </section>
 
@@ -303,7 +299,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Premium Office <span className="text-[#EA8E18]">Details</span>
+              Galeri Foto <span className="text-[#EA8E18]">Premium Office</span>
             </h2>
           </div>
 
@@ -455,13 +451,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
             <h2 className="text-2xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Sebelum Rapat Dimulai, Kantor Anda Sudah Berbicara Lebih Dulu.
+              Kesan Pertama Dimulai Sejak Langkah Awal di Lobi.
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Lobi yang megah. Pengalaman kedatangan yang profesional. Lingkungan bisnis bereputasi tinggi — memberi sinyal kuat kepada klien dan mitra bahwa mereka bermitra dengan perusahaan terpercaya.
+              Lobi kedatangan yang rapi, sambutan staf resepsionis, dan lingkungan gedung yang terkelola dengan baik memberikan rasa nyaman dan kepastian bagi mitra maupun klien yang berkunjung.
             </p>
             <div className="pt-2 font-bold text-[#EA8E18] text-lg sm:text-xl font-heading">
-              Pastikan kantor Anda memberikan kesan pertama yang terbaik.
+              Pastikan ruang kantormu memberikan impresi profesional yang meyakinkan.
             </div>
           </div>
         </section>
@@ -471,7 +467,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Fasilitas <span className="text-[#EA8E18]">Gedung Unggulan</span></h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Fasilitas Pendukung <span className="text-[#EA8E18]">di Dalam Gedung</span></h2>
           </div>
 
           
@@ -557,10 +553,10 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-              STANDAR KELAS ATAS
+              SPESIFIKASI STANDAR
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Semua yang Diharapkan oleh Perusahaan Modern.
+              Fasilitas Penunjang Operasional Perusahaan.
             </h2>
           </div>
 
@@ -592,10 +588,10 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 border border-slate-200/80 space-y-8">
             <div className="text-center max-w-xl mx-auto space-y-2">
               <div className="text-xs font-bold uppercase tracking-widest text-[#EA8E18]">
-                SESUAIKAN DENGAN SKALA TIM ANDA
+                OPSI BERDASARKAN JUMLAH TIM
               </div>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Berapa Jumlah Anggota Tim Anda?
+                Berapa Perkiraan Jumlah Anggota Tim Anda?
               </h2>
             </div>
 
@@ -622,11 +618,11 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight">
-              Sewa atau Miliki Ruang. <span className="text-[#EA8E18]"><br />Jaga Modal Bisnis Tetap Produktif.</span>
+              Pilihan Sewa Fleksibel <span className="text-[#EA8E18]"><br />untuk Menjaga Arus Kas Bisnis.</span>
             </h2>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Membeli gedung kantor bukan selalu alokasi modal terbaik. Di HQuarters, Anda memiliki keleluasaan opsi sewa maupun kepemilikan fleksibel, menjaga arus kas tetap berfokus pada inovasi produk, talenta terbaik, dan ekspansi bisnis Anda.
+              Menggunakan skema sewa memungkinkan perusahaan mengalokasikan modal kerja secara lebih produktif untuk pengembangan produk, perekrutan talenta, dan operasional utama tanpa beban investasi aset jangka panjang.
             </p>
           </div>
         </section>
@@ -635,11 +631,11 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-xl sm:rounded-2xl py-10 sm:py-14 px-6 sm:px-12 border border-slate-200/80 text-center space-y-3 shadow-sm max-w-4xl mx-auto">
             <div className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA8E18]">
-              EKOSISTEM BISNIS TERPERCAYA
+              LINGKUNGAN BISNIS TERPERCAYA
             </div>
             <p className="text-xl sm:text-2xl lg:text-3xl font-medium font-heading text-slate-900 leading-snug">
-              Bergabung bersama komunitas perusahaan terkemuka dan brand multinasional <br className="hidden md:inline" />
-              yang beroperasi dari HQuarters Bandung.
+              Bergabung bersama komunitas perusahaan nasional dan multinasional <br className="hidden md:inline" />
+              yang telah memilih HQuarters Bandung sebagai basis operasional mereka.
             </p>
           </div>
         </section>
@@ -651,10 +647,10 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Babak Baru Perjalanan Bisnis Anda Layak Berada <br /><span className="text-[#EA8E18]">di Alamat yang Tepat.</span>
+              Siap Menentukan Pilihan Lantai Kantor <br /><span className="text-[#EA8E18]">yang Pas untuk Perusahaan Anda?</span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto font-normal">
-              HQuarters Premium Office — Asia Afrika CBD, Bandung
+              HQuarters Premium Office — Jl. Asia Afrika No. 158, CBD Bandung
             </p>
           </div>
         </section>

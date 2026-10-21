@@ -108,23 +108,23 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       src: '/BUILDING/FR 01.webp?v=20260825',
       title: 'Grand Function Room',
-      category: 'Seminar Korporat & Acara Spesial',
+      category: 'Pilihan Ruang Serbaguna Utama',
       tag: 'Kapasitas: Hingga 140 Pax',
-      desc: 'Ruang serbaguna luas dengan tata akustik prima dan fasilitas audio visual modern di CBD Asia Afrika Bandung.',
+      desc: 'Ruang pertemuan luas bebas kolom dengan instalasi proyektor ganda, tata akustik prima, dan pendingin ruangan terpusat.',
     },
     {
       src: '/BUILDING/FR 02.webp?v=20260825',
       title: 'Executive Function Hall',
-      category: 'Seminar, Workshop & Konferensi',
+      category: 'Seminar & Pelatihan',
       tag: 'Kapasitas: Hingga 100 Pax',
-      desc: 'Ruang serbaguna modern berpendingin udara optimal, dirancang untuk presentasi berdampak tinggi dan pertemuan bisnis.',
+      desc: 'Konfigurasi ruangan berkarpet dengan sistem audio nirkabel, dirancang untuk kenyamanan peserta seminar dan lokakarya.',
     },
     {
       src: '/BUILDING/FR 03.webp?v=20260825',
       title: 'Multi-Purpose Event Space',
-      category: 'Gathering, Perjamuan & Acara Komunitas',
+      category: 'Acara Komunitas & Ramah Tamah',
       tag: 'Kapasitas: Hingga 140 Pax',
-      desc: 'Konfigurasi ruangan fleksibel yang dapat disesuaikan untuk simposium, lokakarya, maupun jamuan istimewa.',
+      desc: 'Penataan ruangan yang dapat disesuaikan untuk kebutuhan jamuan makan, peluncuran produk, atau pertemuan asosiasi.',
     },
   ];
 
@@ -180,12 +180,12 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
 
   
   const occasionPills = [
-    'Seminar Korporat',
+    'Seminar & Konferensi',
     'Peluncuran Produk',
     'Pelatihan & Workshop',
-    'Rapat Direksi & RUPS',
-    'Acara Jamuan Privat',
-    'Pertemuan Komunitas',
+    'Rapat Kerja & RUPS',
+    'Jamuan Makan Privat',
+    'Pertemuan Asosiasi',
   ];
 
   
@@ -194,25 +194,25 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
       id: 'capacity',
       title: 'Kapasitas Maksimal',
       stat: 'Hingga 280 Tamu',
-      desc: 'Konfigurasi fleksibel: theatre, classroom, round table banquet, maupun standing reception.',
+      desc: 'Dapat dikonfigurasi dalam format theatre, classroom, round table banquet, maupun standing reception.',
     },
     {
       id: 'area',
       title: 'Total Luas Area',
       stat: '298 m² Bebas Kolom',
-      desc: 'Lantai terbuka luas dengan tinggi plafon akustik 3.8 meter untuk visibilitas maksimal.',
+      desc: 'Denah lantai terbuka tanpa pilar tengah dengan tinggi plafon akustik 3.8 meter untuk visibilitas optimal.',
     },
     {
       id: 'divisible',
-      title: 'Ruangan Fleksibel',
-      stat: '2 Ruangan Privat',
-      desc: 'Partisi kedap suara berpindah untuk membagi ruangan menjadi Room 1 dan Room 2 sesuai kebutuhan.',
+      title: 'Opsi Pembagian Ruang',
+      stat: '2 Ruangan Terpisah',
+      desc: 'Penyekat dinding partisi kedap suara untuk membagi ruangan menjadi Room 1 dan Room 2 secara fleksibel.',
     },
     {
       id: 'light',
-      title: 'Pencahayaan Alami',
-      stat: 'Kaca Panorama',
-      desc: 'Jendela kaca lantai ke langit-langit dengan tirai blackout bermotor untuk kebutuhan proyeksi media.',
+      title: 'Bukaan Cahaya Alami',
+      stat: 'Kaca Jendela Panorama',
+      desc: 'Bukaan kaca tinggi menghadap kota dengan tirai blackout bermotor untuk kebutuhan presentasi video.',
     },
   ];
 
@@ -221,7 +221,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'theatre',
       title: 'Theatre',
-      desc: 'Barisan kursi menghadap panggung — ideal untuk presentasi dan seminar akbar.',
+      desc: 'Barisan kursi menghadap panggung — ideal untuk presentasi akbar dan seminar.',
       icon: 'theatre',
       r1Capacity: 140,
       r2Capacity: 100,
@@ -229,7 +229,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'classroom',
       title: 'Classroom',
-      desc: 'Meja dan kursi berbaris — cocok untuk pelatihan intensif, sertifikasi, dan lokakarya.',
+      desc: 'Meja dan kursi berbaris — cocok untuk pelatihan berdurasi panjang, sertifikasi, dan lokakarya.',
       icon: 'classroom',
       r1Capacity: 100,
       r2Capacity: 60,
@@ -237,7 +237,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'reception',
       title: 'Standing Reception',
-      desc: 'Ruang terbuka leluasa — sempurna untuk networking, cocktail party, dan ramah tamah.',
+      desc: 'Ruang terbuka leluasa — cocok untuk networking, peluncuran brand, dan pesta cocktail.',
       icon: 'reception',
       r1Capacity: 180,
       r2Capacity: 130,
@@ -245,7 +245,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'u-shape',
       title: 'U-Shape',
-      desc: 'Susunan meja berbentuk huruf U — ideal untuk diskusi terarah dan rapat dewan direksi.',
+      desc: 'Susunan meja berbentuk U — ideal untuk diskusi terarah, rapat direksi, dan koordinasi manajemen.',
       icon: 'ushape',
       r1Capacity: 100,
       r2Capacity: 60,
@@ -253,7 +253,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
     {
       id: 'round-table',
       title: 'Round Table Banquet',
-      desc: 'Meja bundar berkapasitas 8–10 kursi — terbaik untuk gala dinner, jamuan makan, dan selebrasi.',
+      desc: 'Meja bundar kapasitas 8–10 kursi — terbaik untuk jamuan makan formal dan gala dinner.',
       icon: 'roundtable',
       r1Capacity: 70,
       r2Capacity: 50,
@@ -267,21 +267,21 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
       name: 'Fullboard',
       price: 'Rp 550,000',
       unit: '/ pax',
-      inclusions: '3× Coffee Break, 1× Makan Siang', duration: '*Maks. 12 jam',
+      inclusions: '3× Coffee Break, 1× Makan Siang', duration: '*Maks. 12 jam acara',
     },
     {
       id: 'fullday',
       name: 'Full Day',
       price: 'Rp 450,000',
       unit: '/ pax',
-      inclusions: '2× Coffee Break, 1× Makan Siang atau Malam', duration: '*Maks. 8 jam',
+      inclusions: '2× Coffee Break, 1× Makan Siang/Malam', duration: '*Maks. 8 jam acara',
     },
     {
       id: 'halfday',
       name: 'Half Day',
       price: 'Rp 350,000',
       unit: '/ pax',
-      inclusions: '1× Coffee Break, 1× Makan Siang atau Malam', duration: '*Maks. 6 jam',
+      inclusions: '1× Coffee Break, 1× Makan Siang/Malam', duration: '*Maks. 6 jam acara',
     },
     {
       id: 'lunch-dinner',
@@ -295,12 +295,12 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
       name: 'Coffee Break',
       price: 'Rp 200,000',
       unit: '/ pax',
-      inclusions: '1× Coffee Break', duration: '*Min. 6 jam',
+      inclusions: '1× Coffee Break Ringan', duration: '*Min. pemesanan 6 jam',
     },
     {
       id: 'room-only',
       name: 'Room Only',
-      price: 'Rp 1.500.000', unit: '/ ruangan / jam', inclusions: 'Hanya Sewa Ruangan', duration: '*Min. 4 jam / hari',
+      price: 'Rp 1.500.000', unit: '/ ruangan / jam', inclusions: 'Hanya Sewa Ruangan Tanpa Konsumsi', duration: '*Min. pemesanan 4 jam',
     },
   ];
 

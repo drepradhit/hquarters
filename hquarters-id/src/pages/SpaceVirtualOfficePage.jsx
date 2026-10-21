@@ -23,17 +23,17 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
   }, []);
 
   const includedItems = [
-    'Alamat Bisnis Prestisius di Asia Afrika CBD',
-    'Layanan Penanganan Surat & Paket (Mail Handling)',
-    'Dukungan Resepsionis & Concierge Profesional',
-    'Akses Penggunaan Ruang Rapat (Meeting Room)',
-    'Nomor Telepon Khusus & Layanan Penjawab Panggilan*',
-    'Dukungan Domisili Legalitas & Keterangan Usaha*',
+    'Alamat Bisnis Resmi di CBD Asia Afrika',
+    'Penerimaan & Pengelolaan Surat Masuk',
+    'Dukungan Resepsionis Gedung',
+    'Akses Penggunaan Ruang Rapat',
+    'Nomor Telepon Lokal & Operator Panggilan*',
+    'Dukungan Dokumen Domisili Legalitas Usaha*',
   ];
 
   const perfectForPills = [
-    'Wirausahawan', 'Perusahaan Baru', 'Konsultan Independen',
-    'Bisnis Remote', 'Kantor Representatif Cabang', 'Profesional Mandiri'
+    'Wirausahawan Mandiri', 'Perusahaan Baru / PT / CV', 'Konsultan Profesional',
+    'Bisnis Berbasis Remote', 'Kantor Cabang Representasi', 'Praktisi Kreatif'
   ];
 
   const packages = [
@@ -150,11 +150,11 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Alamat Terbaik untuk <span className="text-[#EA8E18]">Meningkatkan Kredibilitas Bisnis Anda.</span>
+                Alamat Domisili Resmi di CBD Bandung <span className="text-[#EA8E18]">Tanpa Sewa Kantor Fisik.</span>
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Bangun reputasi dan kredibilitas bisnis profesional di koridor paling prestisius CBD Asia Afrika Bandung tanpa biaya sewa kantor fisik permanen.
+                Bandingkan paket layanan alamat bisnis, penanganan surat masuk, nomor telepon perusahaan, dan kuota ruang rapat sebelum mendaftarkan legalitas usahamu.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -166,7 +166,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                   }}
                   className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Lihat Paket Virtual Office</span>
+                  <span>Bandingkan Paket Virtual Office ↘</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -187,12 +187,12 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Anda Tidak Selalu Butuh Kantor Fisik. <br />
-            <span className="text-[#EA8E18]">Namun Bisnis Anda Tetap Membutuhkan Kredibilitas.</span>
+            Bisnis Tetap Membutuhkan Alamat Kredibel, <br />
+            <span className="text-[#EA8E18]">Meskipun Tim Bekerja Secara Fleksibel.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Bisnis remote? Perusahaan rintisan? Konsultan mandiri? Kantor representasi daerah?<br className="hidden sm:inline" />
-            Raih kepercayaan klien dan perbankan dengan domisili bisnis prestisius di HQuarters.
+            Perusahaan remote, praktisi mandiri, konsultan, maupun cabang daerah memerlukan kepastian alamat untuk korespondensi legal, perbankan, dan pengiriman dokumen resmi.<br className="hidden sm:inline" />
+            Dapatkan alamat bisnis di gedung komersial prestisius tanpa biaya sewa ruangan harian.
           </p>
         </section>
 
@@ -201,10 +201,10 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 border border-slate-200/80 space-y-8 max-w-4xl mx-auto">
             <div className="text-center max-w-xl mx-auto space-y-2">
               <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                FASILITAS SUDAH TERMASUK
+                RINCIAN FASILITAS
               </span>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Lebih dari Sekadar Alamat Bisnis.
+                Layanan Penunjang yang Tersedia dalam Paket.
               </h2>
             </div>
 
@@ -218,7 +218,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
             </div>
 
             <p className="text-xs text-slate-500 text-center font-medium">
-              *Fasilitas disesuaikan dengan paket yang dipilih.
+              *Fasilitas disesuaikan dengan rincian paket yang dipilih.
             </p>
           </div>
         </section>
@@ -227,20 +227,20 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Bekerja dari Mana Saja. Tetap Bereputasi di Sini.
+              Fleksibel Bekerja dari Mana Saja, Alamat Tetap Terpusat.
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Tim Anda dapat bekerja fleksibel secara jarak jauh. Namun alamat bisnis resmi perusahaan Anda tetap mencerminkan kemapanan dan stabilitas tinggi.
+              Seluruh korespondensi surat, paket, dan panggilan masuk tertangani secara rapi oleh tim gedung, menjaga kelancaran operasional bisnis harian.
             </p>
             <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading">
-              Kehadiran profesional kelas korporat tanpa biaya overhead permanen.
+              Alamat bisnis terverifikasi untuk kemudahan perizinan dan kepercayaan klien.
             </div>
           </div>
         </section>
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Solusi Ideal untuk</h2>
+          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Cocok untuk Kebutuhan Operasional:</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {perfectForPills.map((pill) => (
@@ -258,13 +258,13 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section id="vo-packages" className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-xl mx-auto space-y-2">
             <span className="text-xs font-bold text-[#EA8E18] uppercase tracking-widest inline-block">
-              PILIHAN PAKET
+              TABEL RINCIAN PAKET
             </span>
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight">
-              Pilih Paket Sesuai Kebutuhan Anda.
+              Bandingkan Fasilitas & Biaya per Paket.
             </h2>
             <p className="text-slate-500 text-sm sm:text-base font-normal">
-              Harga transparan per bulan, nett.
+              Biaya transparan per bulan, nett.
             </p>
           </div>
 
@@ -346,7 +346,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                         : 'bg-slate-900 group-hover:bg-[#EA8E18] text-white shadow-sm'
                     }`}
                   >
-                    <span>Pilih Paket</span>
+                    <span>Pilih Paket Ini ↗</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
@@ -356,7 +356,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
           <div className="text-center space-y-4 pt-2">
             <p className="text-xs text-slate-500 max-w-2xl mx-auto font-normal italic">
-              Harga dapat berubah sewaktu-waktu. Hubungi tim kami untuk ketersediaan promo dan detail penawaran terbaru.
+              Ketentuan harga dan promo mengikuti ketersediaan kuota serta konfirmasi tim konsultan HQuarters. Silakan hubungi tim kami untuk konsultasi perizinan domisili usaha.
             </p>
             <div>
               <button
@@ -367,7 +367,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                 }}
                 className="px-8 py-3.5 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center gap-2 group"
               >
-                <span>Daftar Sekarang</span>
+                <span>Konsultasi Paket Virtual Office ↗</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -383,7 +383,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Setiap Bisnis Membutuhkan <br /><span className="text-[#EA8E18]">Langkah Awal yang Tepat.</span>
+              Langkah Awal Membangun Legalitas Usaha <br /><span className="text-[#EA8E18]">di Alamat Komersial Terbaik.</span>
             </h2>
             <div className="pt-2 sm:pt-4">
               <button
@@ -394,7 +394,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                 }}
                 className="px-9 py-4 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center gap-2.5 group"
               >
-                <span>Mulai di HQuarters</span>
+                <span>Konsultasi Bersama Tim ↗</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
