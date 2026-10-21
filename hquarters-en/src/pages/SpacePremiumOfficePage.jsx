@@ -237,7 +237,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative overflow-hidden shadow-xl">
             <div className="lg:col-span-6 space-y-4 z-10 flex flex-col justify-center">
               {/* Product Name as the MAIN HIGHLIGHT (Largest headline) */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white tracking-tight leading-[1.08]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
                 PREMIUM OFFICE
               </h1>
 

@@ -200,7 +200,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-4 flex flex-col justify-center">
               {/* Product Name as the MAIN HIGHLIGHT (Largest headline) */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-slate-900 tracking-tight leading-[1.08]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
                 SERVICED OFFICE
               </h1>
 
