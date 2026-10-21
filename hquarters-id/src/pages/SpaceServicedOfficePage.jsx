@@ -59,28 +59,28 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
 
   const servicedSizes = [
     {
-      title: 'Private Office',
+      title: 'Private Office Suite',
       capacity: '1–2 orang',
       icon: User,
-      desc: 'Ruang kerja privat berpintu untuk kebutuhan founder atau eksekutif.',
+      desc: 'Ruang kerja privat berpintu untuk founder, eksekutif, atau konsultan.',
     },
     {
       title: 'Small Team Office',
       capacity: '3–5 orang',
       icon: Users,
-      desc: 'Konfigurasi meja tim kerja kecil, agensi, dan unit rintisan.',
+      desc: 'Ruang kerja tim ideal untuk startup, agensi, dan unit rintisan.',
     },
     {
-      title: 'Team Office',
+      title: 'Growth Team Office',
       capacity: '6–10 orang',
       icon: Building2,
-      desc: 'Ruang kerja representatif untuk divisi operasional atau tim cabang.',
+      desc: 'Ruang kerja representatif untuk divisi operasional atau kantor cabang Bandung.',
     },
     {
-      title: 'Custom Workspace',
-      capacity: '10+ orang',
+      title: 'Custom Corporate Suite',
+      capacity: '10–20+ orang',
       icon: Sparkles,
-      desc: 'Penggabungan unit atau sayap kerja khusus sesuai jumlah karyawan.',
+      desc: 'Penggabungan unit atau lantai kerja khusus sesuai jumlah karyawan korporasi Anda.',
     },
   ];
 
@@ -138,15 +138,15 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
   };
 
   const amenities = [
-    'Furnitur Meja & Kursi Kerja',
-    'Koneksi Internet Fiber Optik',
-    'Layanan Resepsionis Gedung',
-    'Akses Pemakaian Ruang Rapat',
+    'Meja & Kursi Kerja Ergonomis',
+    'Internet Fiber Dedicated Cepat',
+    'Resepsionis Gedung Profesional',
+    'Akses Ruang Rapat Modern',
     'Pembersihan Unit Harian',
-    'Biaya Listrik & AC Gedung',
-    'Sistem Pengamanan 24 Jam',
-    'Alamat Domisili CBD Bandung',
-    'Pantry & Lounge Bersama',
+    'Biaya Listrik & AC Sudah All-In',
+    'Sistem Keamanan & Akses 24 Jam',
+    'Alamat Domisili Resmi CBD Bandung',
+    'Executive Lounge & Free Pantry',
   ];
 
   const useCases = [
@@ -206,11 +206,11 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Kantor Siap Pakai Hari Ini <span className="text-[#EA8E18]">Tanpa Waktu Tunggu.</span>
+                Ruang kerja yang sudah disiapkan
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Ruang kerja privat berperabot lengkap di CBD Asia Afrika Bandung. Kenali pilihan kapasitas meja, fasilitas yang sudah termasuk, dan kemudahan proses masuk tim.
+                Serviced Office cocok dipertimbangkan jika tim Anda membutuhkan ruang kerja tanpa harus menyiapkan kantor dari awal. Rincian fasilitas dan layanan mengikuti unit atau paket yang tersedia.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -222,7 +222,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
                   }}
                   className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Cek Ketersediaan Meja & Ruang ↘</span>
+                  <span>Tanya ketersediaan</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -243,15 +243,13 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Mulai Bekerja Tanpa <br />
-            <span className="text-[#EA8E18]">Kerumitan Menyiapkan Kantor.</span>
+            Pilihan Ruang Kerja Siap Pakai
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Menyiapkan kantor mandiri membutuhkan waktu koordinasi kontraktor, pengadaan furnitur, instalasi internet, dan kontrak utilitas terpisah.<br className="hidden sm:inline" />
-            Di Serviced Office HQuarters, seluruh kebutuhan kerja sudah siap digunakan sejak hari pertama.
+            Menyiapkan kantor mandiri memerlukan waktu untuk pengadaan furnitur, sambungan internet, dan utilitas gedung. Serviced Office HQuarters menyediakan ruang kerja yang sudah dilengkapi fasilitas penunjang.
           </p>
           <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
-            Fokus pada operasional bisnismu. Urusan fasilitas kantor sudah tertangani.
+            Fasilitas kerja dan operasional gedung sudah disiapkan.
           </div>
         </section>
 
@@ -414,7 +412,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
               PILIHAN KAPASITAS RUANG
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Pilih Ukuran Meja Sesuai Kebutuhan Tim Anda.
+              Pilih Ukuran Meja Sesuai Jumlah Tim Anda.
             </h2>
           </div>
 
@@ -462,10 +460,10 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         
         <section className="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-            Menyesuaikan Kebutuhan Fleksibel Perusahaan.
+            Sistem Sewa Fleksibel Mengikuti Pertumbuhan Perusahaan.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-            Pertambahan anggota proyek, pembukaan kantor cabang di Bandung, atau kebutuhan ruang kerja sementara dapat diatur dengan periode sewa yang fleksibel.
+            Kebutuhan ruang tim bisa bertambah kapan saja. Di HQuarters, Anda dapat memulai dari 2 meja dan dengan mudah menambah kapasitas seiring bertumbuhnya tim, dengan skema sewa bulanan hingga tahunan yang ramah arus kas.
           </p>
         </section>
 
@@ -473,13 +471,13 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Kesan Perusahaan Mapan Sejak Pertemuan Pertama.
+              Fasilitas Gedung Komersial
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Meskipun beranggotakan tim kecil, Anda tetap dapat menyambut klien di lobi gedung representatif dan memanfaatkan fasilitas ruang rapat formal.
+              Penyewa Serviced Office dapat memanfaatkan fasilitas lobi gedung untuk menyambut tamu dan menggunakan ruang rapat untuk pertemuan bisnis.
             </p>
             <div className="font-bold text-[#EA8E18] text-base font-heading">
-              Operasional efisien dengan standar gedung komersial yang terawat.
+              Fasilitas kerja siap pakai di kawasan Asia Afrika.
             </div>
           </div>
         </section>
@@ -514,7 +512,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Jadwalkan Kunjungan dan Lihat <br /><span className="text-[#EA8E18]">Kesiapan Ruang Kerja Tim Anda.</span>
+              Jadwalkan Kunjungan ke Serviced Office <br /><span className="text-[#EA8E18]">HQuarters Asia Afrika Bandung</span>
             </h2>
             <div className="pt-2 sm:pt-4">
               <button
@@ -525,7 +523,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
                 }}
                 className="px-9 py-4 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center gap-2.5 group"
               >
-                <span>Jadwalkan Tur Kantor ↗</span>
+                <span>Tanya ketersediaan</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

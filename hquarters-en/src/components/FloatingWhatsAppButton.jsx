@@ -22,7 +22,7 @@ export default function FloatingWhatsAppButton() {
 
   const spaceCategories = [
     { id: 'Premium Office', label: t.whatsapp?.options?.premium || t.whatsapp?.categories?.premium || 'Premium Office' },
-    { id: 'SOHO', label: t.whatsapp?.options?.soho || t.whatsapp?.categories?.soho || 'SOHO (Duplex Live-Work)' },
+    { id: 'SOHO', label: t.whatsapp?.options?.soho || t.whatsapp?.categories?.soho || 'SOHO' },
     { id: 'Serviced Office', label: t.whatsapp?.options?.serviced || t.whatsapp?.categories?.serviced || 'Serviced Office' },
     { id: 'Virtual Office', label: t.whatsapp?.options?.virtual || t.whatsapp?.categories?.virtual || 'Virtual Office' },
     { id: 'Function Room', label: t.whatsapp?.options?.functionRoom || t.whatsapp?.categories?.function || 'Function Room' },

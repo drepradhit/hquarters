@@ -53,7 +53,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
     {
       src: '/SPACES/SOHO/SOHO 01.webp?v=20260823',
       title: 'Desain Arsitektur Mezzanine 2 Lantai',
-      category: 'Arsitektur Duplex',
+      category: 'Arsitektur SOHO',
       desc: 'Plafon tinggi dengan pembagian zona kerja di lantai dasar dan area istirahat di lantai mezzanine.',
     },
     {
@@ -151,10 +151,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
   };
 
   const sohoLives = [
-    { title: 'STARTUP MODE', desc: 'Area kerja tim kecil, meeting corner, dan pantry untuk operasional harian.' },
-    { title: 'HOME OFFICE MODE', desc: 'Meja kerja profesional di depan untuk menerima tamu, area privat di bagian dalam.' },
-    { title: 'PROFESSIONAL CONSULTANT', desc: 'Ruang konsultasi tertutup dan meja kerja pribadi yang tenang serta representatif.' },
-    { title: 'RESIDENTIAL LIVING', desc: 'Fungsi hunian apartemen modern dengan akses ke fasilitas gym, sauna, dan rooftop pool.*' },
+    { title: 'KANTOR TIM', desc: 'Area kerja tim di lantai dasar untuk aktivitas kerja harian.' },
+    { title: 'RUANG KONSULTASI', desc: 'Ruang kerja untuk menerima tamu dan pertemuan konsultasi.' },
+    { title: 'STUDIO KERJA', desc: 'Ruang kerja mandiri untuk praktisi atau usaha kreatif.' },
+    { title: 'FUNGSI HUNIAN', desc: 'Fungsi tempat tinggal dengan akses ke fasilitas gedung.' },
   ];
 
   const targetPills = [
@@ -226,11 +226,11 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
 
               {/* Work? Live? Why Choose? as the Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Bekerja dan Tinggal dalam Satu Unit <span className="text-[#EA8E18]">Tanpa Kompromi.</span>
+                Unit SOHO di HQuarters
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Unit duplex dua lantai yang memisahkan area kerja di lantai bawah dengan hunian privat di lantai atas. Periksa denah, fungsi ruang, dan skema kepemilikan sebelum menentukan pilihan.
+                SOHO menggabungkan fungsi ruang kerja dan hunian dalam satu unit. Lihat spesifikasi, ketentuan penggunaan, serta informasi harga dan ketersediaan dari tim HQuarters.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -242,7 +242,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                   }}
                   className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Cek Ketersediaan Unit SOHO ↘</span>
+                  <span>Tanya detail unit</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -263,15 +263,13 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Kebutuhan Ruang Berubah. <br />
-            <span className="text-[#EA8E18]">Pilih Unit yang Dapat Mengikuti Ritmemu.</span>
+            Dua Fungsi dalam Satu Unit
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Hari ini studio kerja mandiri, besok kantor tim kecil, atau hunian privat di pusat kota.<br className="hidden sm:inline" />
-            Bandingkan fleksibilitas fungsi unit sebelum memutuskan membeli atau menyewa properti satu fungsi.
+            Unit SOHO dengan pembagian area kerja di lantai dasar dan area privat atau istirahat di lantai atas mezzanine. Periksa spesifikasi denah dan ketentuan unit sebelum menentukan pilihan.
           </p>
           <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
-            Satu Unit Duplex. Beragam Kemungkinan Penggunaan.
+            Fungsi ruang kerja dan tempat tinggal dalam satu bangunan.
           </div>
         </section>
 
@@ -280,7 +278,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Galeri Unit <span className="text-[#EA8E18]">SOHO Duplex</span></h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">Galeri Unit <span className="text-[#EA8E18]">SOHO</span></h2>
           </div>
 
           
@@ -546,14 +544,13 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-              Memulai Usaha dengan Standar yang Tepat.
+              Standar Lingkungan Gedung
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto [text-wrap:balance]">
-              Membangun bisnis dari tim kecil tetap memerlukan lingkungan kerja yang profesional.<br className="hidden sm:inline" />
-              Sambut klien dan relasi kerja di lingkungan gedung yang terawat sejak hari pertama.
+              Penghuni SOHO dapat mengakses fasilitas lobi, lift penumpang, dan area parkir gedung.
             </p>
             <div className="font-bold text-slate-900 text-base font-heading">
-              Langkah awal yang terencana membangun reputasi jangka panjang.
+              Informasi ketersediaan unit dan ketentuan penggunaan dapat dikonfirmasi ke tim HQuarters.
             </div>
           </div>
         </section>
@@ -563,11 +560,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-6 space-y-4">
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-                Bukan Sekadar Alamat Tempat Tinggal. <br />
-                <span className="text-[#EA8E18]">Dapat Menjadi Domisili Legal Bisnis Anda.</span>
+                Ketentuan Penggunaan Unit
               </h2>
               <p className="text-slate-600 text-base leading-relaxed font-normal [text-wrap:pretty]">
-                Karakteristik penting unit SOHO di HQuarters: unit dapat difungsikan sebagai domisili resmi usaha sekaligus hunian pribadi, sesuai ketentuan dan regulasi yang berlaku.
+                Unit SOHO dapat difungsikan untuk kegiatan kerja dan tempat tinggal sesuai ketentuan yang berlaku di gedung HQuarters.
               </p>
               <button
                 id="btn-soho-ask-domicile"
@@ -577,18 +573,18 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-2 font-bold text-[#EA8E18] hover:text-[#d88010] text-base font-heading group cursor-pointer transition-colors pt-1"
               >
-                <span>Tanya Ketentuan Domisili Usaha ↗</span>
+                <span>Tanya ketentuan unit</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             <div className="lg:col-span-6 bg-[#FAF8F5] p-8 sm:p-10 rounded-2xl border border-slate-200/80 space-y-5 text-center shadow-sm">
               <h3 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                Bandingkan Efisiensi Biaya Dua Lokasi Berbeda:
+                Perbandingan Fungsi Ruang
               </h3>
               
               <p className="text-slate-600 text-sm sm:text-base font-normal max-w-lg mx-auto">
-                Biaya Sewa Kantor (operasional, listrik, waktu macet harian) + Biaya Hunian (sewa/cicilan, utilitas, perjalanan)
+                SOHO menggabungkan fungsi ruang kerja dan tempat tinggal dalam satu unit di Jl. Asia Afrika No. 158, Bandung.
               </p>
 
               <div className="py-1">
@@ -597,10 +593,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
 
               <div className="space-y-1">
                 <h4 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                  HQuarters SOHO — Solusi Terpadu Kerja & Tinggal
+                  HQuarters SOHO
                 </h4>
                 <p className="text-slate-600 text-sm sm:text-base font-normal">
-                  Satu lokasi CBD. Satu pengeluaran bulanan. Satu aset bernilai tinggi.
+                  Satu unit untuk kebutuhan kerja dan hunian.
                 </p>
               </div>
             </div>
@@ -611,10 +607,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Pertimbangkan Kepemilikan Aset Jangka Panjang.
+              Informasi Kepemilikan dan Pembayaran
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              HQuarters SOHO membuka opsi memiliki unit strata title di kawasan CBD Bandung melalui skema cicilan bertahap developer hingga 60x atau fasilitas KPA perbankan s.d. 20 tahun.
+              Informasi mengenai opsi pembelian unit, skema cicilan developer, atau fasilitas pembiayaan perbankan dapat ditanyakan langsung kepada tim pemasaran HQuarters.
             </p>
           </div>
         </section>
@@ -626,7 +622,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
               TABEL PERBANDINGAN
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Apartemen Biasa, Kantor Konvensional, atau SOHO?
+              Perbandingan Apartemen, Kantor Konvensional, dan SOHO
             </h2>
           </div>
 
@@ -682,7 +678,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
               </table>
             </div>
             <div className="py-4 px-6 bg-[#FAF8F5] text-center border-t border-slate-200/80 font-bold text-slate-900 text-sm sm:text-base font-heading">
-              Pilih format ruang yang paling sesuai dengan pola kerja dan hidupmu.
+              Periksa spesifikasi dan ketentuan unit sebelum menentukan pilihan.
             </div>
           </div>
         </section>
@@ -717,7 +713,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Ruang Kerja Sekaligus Hunian <br /><span className="text-[#EA8E18]">di Pusat Koridor Asia Afrika.</span>
+              Informasi Unit SOHO <br /><span className="text-[#EA8E18]">HQuarters Asia Afrika Bandung</span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto font-normal">
               HQuarters SOHO — Jl. Asia Afrika No. 158, Bandung

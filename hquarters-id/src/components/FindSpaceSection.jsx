@@ -140,8 +140,8 @@ export default function FindSpaceSection({
   const activeSpaceCopy = spaceCopywriting[language]?.[selectedSpace] || spaceCopywriting.en[selectedSpace];
 
   const currentCopy = {
-    badge: badge ?? activeSpaceCopy?.badge ?? (isId ? 'KONSULTASI RUANG' : 'EXPERT CONSULTATION'),
-    title: title ?? activeSpaceCopy?.title ?? (isId ? 'Beri Tahu Kami Kebutuhan Anda.' : 'Tell Us What You Need.'),
+    badge: badge ?? activeSpaceCopy?.badge ?? (isId ? 'HUBUNGI KAMI' : 'CONTACT US'),
+    title: title ?? activeSpaceCopy?.title ?? (isId ? 'Hubungi tim HQuarters' : 'Contact the HQuarters Team'),
     description: description ?? activeSpaceCopy?.description ?? '',
     image: image || activeSpaceCopy?.image || '/SPACES/PREMIUM OFFICE/Premium Office 06.webp?v=20260823',
   };
@@ -383,7 +383,7 @@ export default function FindSpaceSection({
                         type="submit"
                         className="w-full py-3.5 sm:py-4 rounded-xl bg-[#EA8E18] hover:bg-[#d88010] text-white font-bold text-sm sm:text-base shadow-lg transition-all flex items-center justify-center gap-2 group cursor-pointer active:scale-98"
                       >
-                        <span>{getSubmitButtonLabel()}</span>
+                        <span>{isId ? 'Kirim pesan' : getSubmitButtonLabel()}</span>
                         <Navigation className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </button>
                     </div>

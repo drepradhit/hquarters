@@ -143,7 +143,7 @@ export const translations = {
       responseBadge: 'Average response: < 15 mins via WhatsApp',
       categories: {
         premium: 'Premium Office',
-        soho: 'SOHO (Duplex Live-Work)',
+        soho: 'SOHO',
         serviced: 'Serviced Office',
         virtual: 'Virtual Office',
         function: 'Function Room Booking',
@@ -151,7 +151,7 @@ export const translations = {
       },
       options: {
         premium: 'Premium Office',
-        soho: 'SOHO (Duplex Live-Work)',
+        soho: 'SOHO',
         serviced: 'Serviced Office',
         virtual: 'Virtual Office',
         functionRoom: 'Function Room Booking',

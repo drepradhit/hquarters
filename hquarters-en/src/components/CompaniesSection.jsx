@@ -103,12 +103,12 @@ export default function CompaniesSection({ setCurrentPage }) {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* Editorial Heading & Context */}
-        <div className="max-w-3xl space-y-4">
+        <div className="max-w-3xl mx-auto text-center space-y-4">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium text-slate-900 font-heading tracking-tight leading-[1.12]">
             <span>{t.companiesPage.titlePrefix || 'Companies at '}</span>
             <span className="text-[#EA8E18]">{t.companiesPage.titleHighlight || 'HQuarters'}</span>
           </h1>
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
             {t.companiesPage.heroDesc}
           </p>
         </div>

@@ -21,12 +21,12 @@ export default function LocationSection({ setCurrentPage }) {
 
   const nearbyCategories = isId
     ? [
-        { name: 'Restoran & Braga', desc: 'Jalan Braga, Braga Permai, Sumber Hidangan (3 Menit)', icon: Utensils, highlight: true },
-        { name: 'Hotel Berbintang', desc: 'Savoy Homann, Grand Preanger, Ibis Asia Afrika (3 Menit)', icon: Building },
-        { name: 'Stasiun Kereta Api', desc: 'Stasiun Bandung (5 Menit) & Feeder Whoosh', icon: Train },
-        { name: 'Perbankan & Finansial', desc: 'Kantor Cabang Bank Mandiri, BCA, BI Regional (<500m)', icon: BankIcon },
+        { name: 'Restoran & Braga', desc: 'Jalan Braga, Braga Permai, dan Sumber Hidangan', icon: Utensils, highlight: true },
+        { name: 'Hotel Berbintang', desc: 'Savoy Homann, Grand Preanger, dan Ibis Asia Afrika', icon: Building },
+        { name: 'Stasiun Kereta Api', desc: 'Stasiun Bandung dan feeder kereta cepat', icon: Train },
+        { name: 'Perbankan & Finansial', desc: 'Kantor cabang Bank Mandiri, BCA, dan Bank Indonesia', icon: BankIcon },
         { name: 'Akses Jalan Utama', desc: 'Akses langsung Jl. Asia Afrika, Jl. Naripan, Jl. Tamblong', icon: Navigation },
-        { name: 'Akses Pintu Tol*', desc: 'Koneksi cepat ke Gerbang Tol Pasteur & Moh. Toha (15 Menit)', icon: Car },
+        { name: 'Akses Pintu Tol*', desc: 'Akses ke Gerbang Tol Pasteur dan Gerbang Tol Moh. Toha', icon: Car },
         { name: 'Belanja & Hiburan', desc: 'Heritage Braga, 23 Paskal, Trans Studio Mall', icon: ShoppingBag },
         { name: 'Pemerintahan & Sipil', desc: 'Gedung Merdeka, Alun-Alun Bandung, Balai Kota', icon: Landmark },
       ]

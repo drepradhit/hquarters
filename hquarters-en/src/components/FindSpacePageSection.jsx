@@ -61,7 +61,7 @@ export default function FindSpacePageSection({ setCurrentPage }) {
     },
     {
       id: 'soho',
-      label: 'SOHO Duplex',
+      label: 'SOHO',
       value: 'SOHO',
       icon: Layers,
     },

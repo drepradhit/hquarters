@@ -6,22 +6,22 @@ export const PAGE_SEO = {
   home: {
     id: {
       title: 'HQuarters — Premium Business Residence & Workspace di Asia Afrika Bandung',
-      description: 'HQuarters menghadirkan ekosistem kerja modern di Asia Afrika CBD Bandung: Premium Office, SOHO Duplex Live-Work, Serviced Office, Virtual Office, dan Function Room.',
+      description: 'HQuarters menghadirkan ekosistem kerja modern di Asia Afrika CBD Bandung: Premium Office, SOHO (Live-Work), Serviced Office, Virtual Office, dan Function Room.',
     },
     en: {
       title: 'HQuarters — Premium Business Residence & Workspace in Asia Afrika, Bandung',
-      description: 'HQuarters provides a modern commercial workspace in Asia Afrika CBD Bandung: Premium Office, SOHO Duplex Live-Work, Serviced Office, Virtual Office, and Function Room.',
+      description: 'HQuarters provides a modern commercial workspace in Asia Afrika CBD Bandung: Premium Office, SOHO (Live-Work), Serviced Office, Virtual Office, and Function Room.',
     },
     path: '/',
   },
   spaces: {
     id: {
       title: 'Ruang Usaha di HQuarters — Temukan Ruang yang Tepat untuk Bisnis Anda',
-      description: 'Pilihan ruang kantor lengkap di Bandung: SOHO Duplex, Premium Office untuk korporasi, Serviced Office siap pakai, dan Virtual Office bergengsi.',
+      description: 'Pilihan ruang kantor lengkap di Bandung: SOHO, Premium Office untuk korporasi, Serviced Office siap pakai, dan Virtual Office bergengsi.',
     },
     en: {
       title: 'Spaces at HQuarters — Find The Workspace That Fits Your Growth',
-      description: 'Comprehensive workspace solutions in Bandung: SOHO Duplex, Premium Corporate Office, Turnkey Serviced Office, and Prestigious Virtual Office.',
+      description: 'Comprehensive workspace solutions in Bandung: SOHO, Premium Corporate Office, Turnkey Serviced Office, and Prestigious Virtual Office.',
     },
     path: '/spaces',
   },
@@ -38,22 +38,22 @@ export const PAGE_SEO = {
   },
   'space-soho-duplex': {
     id: {
-      title: 'SOHO Duplex — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
+      title: 'SOHO — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
       description: 'Unit SOHO duplex bertingkat hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
     },
     en: {
-      title: 'SOHO Duplex — Own Your Live-Work Workspace in Bandung | HQuarters',
+      title: 'SOHO — Own Your Live-Work Workspace in Bandung | HQuarters',
       description: 'Strata-title duplex SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
     },
     path: '/spaces/soho',
   },
   'space-soho': {
     id: {
-      title: 'SOHO Duplex — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
+      title: 'SOHO — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
       description: 'Unit SOHO duplex bertingkat hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
     },
     en: {
-      title: 'SOHO Duplex — Own Your Live-Work Workspace in Bandung | HQuarters',
+      title: 'SOHO — Own Your Live-Work Workspace in Bandung | HQuarters',
       description: 'Strata-title duplex SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
     },
     path: '/spaces/soho',

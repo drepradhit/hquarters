@@ -61,7 +61,7 @@ export default function FindSpacePageSection({ setCurrentPage }) {
     },
     {
       id: 'soho',
-      label: 'SOHO Duplex',
+      label: 'SOHO',
       value: 'SOHO',
       icon: Layers,
     },
@@ -154,19 +154,19 @@ export default function FindSpacePageSection({ setCurrentPage }) {
         {/* Clean Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-            {isId ? 'KONSULTASI & DENAH' : 'INQUIRY & FLOORPLAN'}
+            {isId ? 'KONTAK' : 'CONTACT'}
           </span>
           <h1 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight">
             {isId ? (
-              <>Beri Tahu Kami <span className="text-[#EA8E18]">Kebutuhan Anda.</span></>
+              <>Hubungi tim <span className="text-[#EA8E18]">HQuarters</span></>
             ) : (
-              <>Tell Us <span className="text-[#EA8E18]">What You Need.</span></>
+              <>Contact the <span className="text-[#EA8E18]">HQuarters Team</span></>
             )}
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-normal">
             {isId
-              ? 'Pilih kategori ruang dan isi informasi Anda. Tim HQuarters akan mengirimkan denah, ketersediaan unit, dan proposal resmi via WhatsApp.'
-              : 'Select your preferred space category and share your contact details. Our team will promptly provide floorplans, availability, and rental proposals.'}
+              ? 'Punya pertanyaan tentang ruang, fasilitas, atau ketersediaan unit? Kirimkan kebutuhan Anda melalui formulir ini.'
+              : 'Have questions about spaces, facilities, or availability? Share your requirements using this form.'}
           </p>
         </div>
 
@@ -182,13 +182,13 @@ export default function FindSpacePageSection({ setCurrentPage }) {
                 <CheckCircle2 className="w-8 h-8" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900">
-                {isId ? 'Permintaan Terkirim!' : 'Request Received!'}
+                {isId ? 'Terima kasih, pesan Anda sudah terkirim.' : 'Thank you, your message has been sent.'}
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 {isId ? (
-                  <>Terima kasih, <strong className="text-slate-900">{formData.name}</strong>. Tim Workplace Advisor HQuarters akan segera menghubungi Anda di <strong className="text-slate-900">{formData.whatsapp}</strong> mengenai konsultasi <strong className="text-[#EA8E18]">{selectedSpace}</strong>.</>
+                  <>Tim HQuarters telah menerima rincian kebutuhan Anda untuk ruang <strong className="text-[#EA8E18]">{selectedSpace}</strong> dan akan segera menghubungi Anda di <strong className="text-slate-900">{formData.whatsapp}</strong>.</>
                 ) : (
-                  <>Thank you, <strong className="text-slate-900">{formData.name}</strong>. Our HQuarters advisors will reach out via WhatsApp at <strong className="text-slate-900">{formData.whatsapp}</strong> regarding your <strong className="text-[#EA8E18]">{selectedSpace}</strong> request.</>
+                  <>The HQuarters team has received your inquiry for <strong className="text-[#EA8E18]">{selectedSpace}</strong> and will follow up with you at <strong className="text-slate-900">{formData.whatsapp}</strong>.</>
                 )}
               </p>
               <div className="pt-4">
@@ -208,7 +208,7 @@ export default function FindSpacePageSection({ setCurrentPage }) {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <label className="text-xs font-bold uppercase tracking-wider text-slate-700">
-                    {isId ? '1. Pilih Kategori Ruang' : '1. Select Space Type'}
+                    {isId ? 'Ruang yang diminati' : 'Space of Interest'}
                   </label>
                   <span className="text-xs font-semibold text-[#EA8E18] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60">
                     {selectedSpace}
@@ -246,7 +246,7 @@ export default function FindSpacePageSection({ setCurrentPage }) {
               {/* Step 2: Form Inputs */}
               <div className="space-y-4">
                 <label className="text-xs font-bold uppercase tracking-wider text-slate-700 block">
-                  {isId ? '2. Informasi Kontak Anda' : '2. Your Contact Information'}
+                  {isId ? 'Informasi Kontak' : 'Contact Information'}
                 </label>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -342,7 +342,7 @@ export default function FindSpacePageSection({ setCurrentPage }) {
                   type="submit"
                   className="w-full py-4 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer"
                 >
-                  <span>{getSubmitButtonLabel()}</span>
+                  <span>{isId ? 'Kirim pesan' : 'Send message'}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
 

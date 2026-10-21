@@ -20,10 +20,10 @@ export default function BuildingPage({ setCurrentPage }) {
         <BuildingSection setCurrentPage={setCurrentPage} />
         <CTA
           setCurrentPage={setCurrentPage}
-          titlePrefix={isId ? 'Seperti Inilah Tempat Kerja Modern ' : 'This Is What A Modern Workplace '}
-          titleHighlight={isId ? 'Seharusnya Dirasakan.' : 'Should Feel Like.'}
-          description=""
-          buttonText={t.buildingPage.ctaButton}
+          titlePrefix={isId ? 'Sedang mencari ruang ' : 'Looking for space '}
+          titleHighlight={isId ? 'untuk bisnis?' : 'for your business?'}
+          description={isId ? 'Sampaikan jenis ruang yang Anda butuhkan. Tim HQuarters dapat membantu memberikan informasi tentang pilihan yang tersedia.' : ''}
+          buttonText={isId ? 'Hubungi HQuarters' : t.buildingPage.ctaButton}
           pageTarget="find-space"
         />
       </main>

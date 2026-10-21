@@ -5,63 +5,63 @@
 export const PAGE_SEO = {
   home: {
     id: {
-      title: 'HQuarters — Premium Business Residence & Workspace di Asia Afrika Bandung',
-      description: 'HQuarters menghadirkan ekosistem kerja modern di Asia Afrika CBD Bandung: Premium Office, SOHO Duplex Live-Work, Serviced Office, Virtual Office, dan Function Room.',
+      title: 'HQuarters Business Residence | Asia Afrika, Bandung',
+      description: 'Pilihan ruang bisnis di Jl. Asia Afrika No. 158, Bandung. Menyediakan Virtual Office, Serviced Office, SOHO, dan ruang pertemuan.',
     },
     en: {
-      title: 'HQuarters — Premium Business Residence & Workspace in Asia Afrika, Bandung',
-      description: 'HQuarters provides a modern commercial workspace in Asia Afrika CBD Bandung: Premium Office, SOHO Duplex Live-Work, Serviced Office, Virtual Office, and Function Room.',
+      title: 'HQuarters — Premium Business Residence | Asia Afrika, Bandung',
+      description: 'A prestigious business residence at Jl. Asia Afrika No. 158, Bandung. Premium Office, SOHO, Serviced Office, and corporate facilities.',
     },
     path: '/',
   },
   spaces: {
     id: {
-      title: 'Ruang Usaha di HQuarters — Temukan Ruang yang Tepat untuk Bisnis Anda',
-      description: 'Pilihan ruang kantor lengkap di Bandung: SOHO Duplex, Premium Office untuk korporasi, Serviced Office siap pakai, dan Virtual Office bergengsi.',
+      title: 'Pilihan Ruang | HQuarters Bandung',
+      description: 'Pilihan ruang di HQuarters: Virtual Office, Serviced Office, SOHO, dan Premium Office di kawasan Asia Afrika, Bandung.',
     },
     en: {
-      title: 'Spaces at HQuarters — Find The Workspace That Fits Your Growth',
-      description: 'Comprehensive workspace solutions in Bandung: SOHO Duplex, Premium Corporate Office, Turnkey Serviced Office, and Prestigious Virtual Office.',
+      title: 'Spaces at HQuarters — Find The Workspace for Your Stage | Bandung',
+      description: 'Explore the full spectrum of workspaces at HQuarters: Virtual Office, Serviced Office, SOHO, and Premium Corporate Office.',
     },
     path: '/spaces',
   },
   'space-premium-office': {
     id: {
-      title: 'Premium Office — Ruang Kantor Korporat Representatif di Bandung | HQuarters',
-      description: 'Kantor korporat grade-A di CBD Asia Afrika Bandung. Dirancang untuk perusahaan yang membutuhkan reputasi tinggi, fasilitas modern, dan akses prima.',
+      title: 'Premium Office | HQuarters Bandung',
+      description: 'Ruang kantor untuk perusahaan di HQuarters, Jl. Asia Afrika No. 158, Bandung. Informasi spesifikasi ruang dan fasilitas.',
     },
     en: {
-      title: 'Premium Office — Corporate Stature & Grade-A Offices in Bandung | HQuarters',
-      description: 'Grade-A corporate office space in Bandung CBD. Designed for established enterprises requiring prestige, modern amenities, and prime connectivity.',
+      title: 'Premium Office — Corporate Stature & Grade-A Workspaces | HQuarters',
+      description: 'Corporate-scale office floor plates at Jl. Asia Afrika, Bandung. Designed for established companies, financial institutions, and headquarters.',
     },
     path: '/spaces/premium-office',
   },
   'space-soho-duplex': {
     id: {
-      title: 'SOHO Duplex — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
-      description: 'Unit SOHO duplex bertingkat hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
+      title: 'SOHO | HQuarters Bandung',
+      description: 'Unit SOHO di HQuarters, menggabungkan fungsi ruang kerja dan hunian dalam satu unit di Jl. Asia Afrika No. 158, Bandung.',
     },
     en: {
-      title: 'SOHO Duplex — Own Your Live-Work Workspace in Bandung | HQuarters',
-      description: 'Strata-title duplex SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
+      title: 'SOHO — Own Your Live-Work Workspace in Bandung | HQuarters',
+      description: 'Strata-title SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
     },
     path: '/spaces/soho',
   },
   'space-soho': {
     id: {
-      title: 'SOHO Duplex — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
-      description: 'Unit SOHO duplex bertingkat hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
+      title: 'SOHO | HQuarters Bandung',
+      description: 'Unit SOHO di HQuarters, menggabungkan fungsi ruang kerja dan hunian dalam satu unit di Jl. Asia Afrika No. 158, Bandung.',
     },
     en: {
-      title: 'SOHO Duplex — Own Your Live-Work Workspace in Bandung | HQuarters',
-      description: 'Strata-title duplex SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
+      title: 'SOHO — Own Your Live-Work Workspace in Bandung | HQuarters',
+      description: 'Strata-title SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
     },
     path: '/spaces/soho',
   },
   'space-serviced-office': {
     id: {
-      title: 'Serviced Office — Kantor Siap Pakai & Berperabot Lengkap Bandung | HQuarters',
-      description: 'Sewa kantor siap pakai di Asia Afrika Bandung. Fasilitas lengkap, internet berkecepatan tinggi, meeting room, dan resepsionis profesional tanpa biaya renovasi.',
+      title: 'Serviced Office | HQuarters Bandung',
+      description: 'Ruang kerja yang sudah disiapkan di HQuarters, Jl. Asia Afrika No. 158, Bandung. Dilengkapi meja, kursi, internet, dan fasilitas gedung.',
     },
     en: {
       title: 'Serviced Office — Turnkey Furnished Office in Bandung | HQuarters',
@@ -71,8 +71,8 @@ export const PAGE_SEO = {
   },
   'space-virtual-office': {
     id: {
-      title: 'Virtual Office — Alamat Bisnis Prestisius CBD Asia Afrika Bandung | HQuarters',
-      description: 'Layanan Virtual Office legal dan terpercaya di Jl. Asia Afrika Bandung. Layanan penerimaan surat, nomor telepon khusus, dan akses ruang rapat.',
+      title: 'Virtual Office | HQuarters Bandung',
+      description: 'Alamat bisnis tanpa kantor permanen di Jl. Asia Afrika No. 158, Bandung. Layanan surat masuk, nomor telepon, dan ruang rapat sesuai paket.',
     },
     en: {
       title: 'Virtual Office — Prestigious Business Address in Bandung CBD | HQuarters',
@@ -82,8 +82,8 @@ export const PAGE_SEO = {
   },
   event: {
     id: {
-      title: 'Function Room & Event Hall — Tempat Acara Seminar & Jamuan Bandung | HQuarters',
-      description: 'Sewa Function Room modern berkapasitas hingga 280 orang di CBD Bandung. Dilengkapi proyektor laser 4K, sound system akustik, dan staf acara siaga.',
+      title: 'Function Room | HQuarters Bandung',
+      description: 'Pilihan ruang untuk rapat dan kegiatan bisnis di HQuarters, Jl. Asia Afrika No. 158, Bandung. Kapasitas hingga 280 orang.',
     },
     en: {
       title: 'Function Room & Event Hall — Corporate Seminars & Banquets in Bandung | HQuarters',
@@ -93,8 +93,8 @@ export const PAGE_SEO = {
   },
   events: {
     id: {
-      title: 'Function Room & Event Hall — Tempat Acara Seminar & Jamuan Bandung | HQuarters',
-      description: 'Sewa Function Room modern berkapasitas hingga 280 orang di CBD Bandung. Dilengkapi proyektor laser 4K, sound system akustik, dan staf acara siaga.',
+      title: 'Function Room | HQuarters Bandung',
+      description: 'Pilihan ruang untuk rapat dan kegiatan bisnis di HQuarters, Jl. Asia Afrika No. 158, Bandung. Kapasitas hingga 280 orang.',
     },
     en: {
       title: 'Function Room & Event Hall — Corporate Seminars & Banquets in Bandung | HQuarters',
@@ -104,8 +104,8 @@ export const PAGE_SEO = {
   },
   building: {
     id: {
-      title: 'Fasilitas & Keamanan Gedung — Standar Gedung Grade-A Bandung | HQuarters',
-      description: 'Fasilitas gedung komprehensif: Lift KONE Destination Control, parkir mekanikal otomatis, keamanan 24/7, kolam renang rooftop, gym, sauna, dan teras santai.',
+      title: 'Fasilitas Gedung | HQuarters',
+      description: 'Fasilitas di gedung HQuarters: lobi utama, ruang rapat, lift parkir vertikal, lift penumpang KONE, keamanan 24 jam, gym, sauna, dan kolam renang.',
     },
     en: {
       title: 'Building & Facilities — Grade-A Infrastructure in Bandung | HQuarters',
@@ -115,8 +115,8 @@ export const PAGE_SEO = {
   },
   location: {
     id: {
-      title: 'Lokasi Strategis — Jl. Asia Afrika CBD Kota Bandung | HQuarters',
-      description: 'Berada di jantung bisnis dan sejarah kota Bandung. Dikelilingi hotel berbintang, pusat perbankan, instansi pemerintah, dan akses transportasi cepat.',
+      title: 'Lokasi HQuarters | Asia Afrika, Bandung',
+      description: 'Alamat HQuarters Business Residence adalah Jl. Asia Afrika No. 158, Bandung. Lokasi di pusat kawasan bisnis dan perbankan kota Bandung.',
     },
     en: {
       title: 'Strategic Location — Jl. Asia Afrika CBD, Bandung | HQuarters',
@@ -126,8 +126,8 @@ export const PAGE_SEO = {
   },
   companies: {
     id: {
-      title: 'Komunitas Tenant & Perusahaan — Dipercayai Brand Terkemuka | HQuarters',
-      description: 'Daftar perusahaan nasional dan multinasional yang berkantor di HQuarters: Huawei, Allianz, AXA, MSIG, Roche, DANA, FWD, Mitsubishi, dan lainnya.',
+      title: 'Daftar Tenant | HQuarters Bandung',
+      description: 'Daftar perusahaan dan kantor perwakilan yang berkantor di gedung HQuarters, Jl. Asia Afrika No. 158, Bandung.',
     },
     en: {
       title: 'Tenant Directory & Corporate Community | HQuarters Bandung',
@@ -137,8 +137,8 @@ export const PAGE_SEO = {
   },
   insights: {
     id: {
-      title: 'Wawasan & Jurnal Bisnis — Informasi Ruang Kerja Terkini | HQuarters',
-      description: 'Artikel, tren industri, dan panduan memilih ruang kerja, SOHO, dan strategi kantor modern dari tim HQuarters Business Residence Bandung.',
+      title: 'Wawasan & Artikel | HQuarters Bandung',
+      description: 'Artikel dan informasi seputar pilihan ruang kantor, pengelolaan tempat kerja, dan informasi properti komersial dari HQuarters Bandung.',
     },
     en: {
       title: 'Insights & Business Journal — Modern Workspace Strategy | HQuarters',
@@ -148,8 +148,8 @@ export const PAGE_SEO = {
   },
   'article-detail': {
     id: {
-      title: 'Artikel & Wawasan Bisnis | HQuarters Bandung',
-      description: 'Baca ulasan mendalam mengenai tren ruang kantor, produktivitas tim, dan perkembangan bisnis di Asia Afrika Bandung.',
+      title: 'Wawasan & Artikel | HQuarters Bandung',
+      description: 'Artikel dan informasi seputar pilihan ruang kantor, pengelolaan tempat kerja, dan informasi properti komersial dari HQuarters Bandung.',
     },
     en: {
       title: 'Article & Business Insights | HQuarters Bandung',
@@ -159,8 +159,8 @@ export const PAGE_SEO = {
   },
   'find-space': {
     id: {
-      title: 'Konsultasi Ruang Usaha — Temukan Unit Kantor Ideal Anda | HQuarters',
-      description: 'Konsultasikan kebutuhan ruang kantor, jadwal survei lokasi, atau permintaan denah & penawaran harga langsung dengan tim spesialis HQuarters.',
+      title: 'Hubungi Kami | HQuarters Bandung',
+      description: 'Hubungi tim HQuarters untuk informasi ketersediaan unit, spesifikasi ruang, jadwal kunjungan, atau pertanyaan lainnya.',
     },
     en: {
       title: 'Find My Space — Workspace Inquiries & Private Tour Booking | HQuarters',

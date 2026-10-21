@@ -22,7 +22,7 @@ export default function FloatingWhatsAppButton() {
 
   const spaceCategories = [
     { id: 'Premium Office', label: t.whatsapp?.options?.premium || t.whatsapp?.categories?.premium || 'Premium Office' },
-    { id: 'SOHO', label: t.whatsapp?.options?.soho || t.whatsapp?.categories?.soho || 'SOHO (Duplex Live-Work)' },
+    { id: 'SOHO', label: t.whatsapp?.options?.soho || t.whatsapp?.categories?.soho || 'SOHO' },
     { id: 'Serviced Office', label: t.whatsapp?.options?.serviced || t.whatsapp?.categories?.serviced || 'Serviced Office' },
     { id: 'Virtual Office', label: t.whatsapp?.options?.virtual || t.whatsapp?.categories?.virtual || 'Virtual Office' },
     { id: 'Function Room', label: t.whatsapp?.options?.functionRoom || t.whatsapp?.categories?.function || 'Function Room' },
@@ -69,7 +69,7 @@ export default function FloatingWhatsAppButton() {
 
     const lines = isId
       ? [
-          'Halo HQuarters Bandung! Saya ingin berkonsultasi mengenai ruang kantor.',
+          'Halo tim HQuarters Bandung! Saya ingin menanyakan tentang ruang bisnis.',
           '',
           `• *Nama Lengkap:* ${formData.name}`,
           ...(formData.email.trim() ? [`• *Email:* ${formData.email.trim()}`] : []),
@@ -88,7 +88,7 @@ export default function FloatingWhatsAppButton() {
     if (formData.notes.trim()) {
       lines.push(isId ? `• *Catatan / Kebutuhan:* ${formData.notes.trim()}` : `• *Notes / Requirements:* ${formData.notes.trim()}`);
     }
-    lines.push('', isId ? 'Mohon informasi ketersediaan unit dan jadwal survei lokasi. Terima kasih!' : 'Please share unit availability and location survey schedule. Thank you!');
+    lines.push('', isId ? 'Mohon informasi mengenai pilihan ruang dan ketersediaan unit. Terima kasih.' : 'Please share space options and availability. Thank you.');
 
     const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(lines.join('\n'))}`;
     window.open(waUrl, '_blank');
@@ -149,7 +149,7 @@ export default function FloatingWhatsAppButton() {
                       HQuarters Bandung
                     </span>
                     <h3 className="text-xl font-heading font-medium tracking-tight text-slate-900">
-                      {isId ? 'Konsultasi Ruang Kerja' : 'Direct Leasing Advisory'}
+                      {isId ? 'Hubungi Tim HQuarters' : 'Contact HQuarters Team'}
                     </h3>
                   </div>
 
@@ -163,9 +163,7 @@ export default function FloatingWhatsAppButton() {
                   </button>
                 </div>
                 <p className="text-xs text-slate-500 mt-1 leading-relaxed font-normal">
-                  {isId
-                    ? 'Terhubung langsung dengan tim representatif resmi HQuarters Asia Afrika.'
-                    : 'Connect directly with HQuarters Asia Afrika leasing specialists.'}
+                  {isId ? 'Punya pertanyaan tentang ruang, fasilitas, atau ketersediaan unit? Kirimkan pesan melalui WhatsApp.' : 'Have questions about spaces, facilities, or availability? Send a message via WhatsApp.'}
                 </p>
               </div>
 
