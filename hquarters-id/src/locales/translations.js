@@ -456,6 +456,18 @@ export const translations = {
       languageLabel: 'Bahasa:',
     },
     hero: {
+      headlineParts: [
+        { text: 'Unit Kantor ', isOrange: false },
+        { text: 'Representatif', isOrange: true },
+        { br: true },
+        { text: 'dan ', isOrange: false },
+        { text: 'Fleksibel', isOrange: true },
+        { br: true },
+        { text: 'untuk ', isOrange: false },
+        { text: 'Kebutuhan', isOrange: true },
+        { br: true },
+        { text: 'Bisnis Modern', isOrange: false },
+      ],
       titlePrefix: 'Unit Kantor Representatif dan Fleksibel ',
       titleHighlight: 'untuk Kebutuhan Bisnis Modern',
       description: 'HQuarters menghadirkan ruang bisnis dan hunian dalam satu gedung di Jl. Asia Afrika, Bandung. Jelajahi pilihan Premium Office, SOHO, Serviced Office, Virtual Office, hingga Function Room untuk kebutuhan usaha dan aktivitas Anda.',

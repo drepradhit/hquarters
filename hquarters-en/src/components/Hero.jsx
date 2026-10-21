@@ -42,9 +42,25 @@ export default function Hero({ setCurrentPage }) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.08 }}
-            className="text-[27px] sm:text-4xl md:text-5xl lg:text-[64px] font-medium text-white md:text-slate-900 font-heading leading-[1.16] tracking-tight mb-3 sm:mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)] md:drop-shadow-none"
+            className="text-[25px] sm:text-3xl md:text-5xl lg:text-[58px] font-medium text-white md:text-slate-900 font-heading leading-[1.18] tracking-tight mb-3 sm:mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)] md:drop-shadow-none"
           >
-            {t.hero.titlePrefix} <span className="text-[#FBA93C] md:text-[#EA8E18]"><br/>{t.hero.titleHighlight}</span>
+            {t.hero.headlineParts ? (
+              t.hero.headlineParts.map((part, idx) => {
+                if (part.br) return <br key={idx} />;
+                if (part.isOrange) {
+                  return (
+                    <span key={idx} className="text-[#FBA93C] md:text-[#EA8E18]">
+                      {part.text}
+                    </span>
+                  );
+                }
+                return <span key={idx}>{part.text}</span>;
+              })
+            ) : (
+              <>
+                {t.hero.titlePrefix} <span className="text-[#FBA93C] md:text-[#EA8E18]"><br/>{t.hero.titleHighlight}</span>
+              </>
+            )}
           </motion.h1>
 
           {/* Subtitle Description */}
