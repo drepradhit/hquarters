@@ -483,7 +483,7 @@ export const translations = {
       soho: {
         cat: 'SOHO',
         title: 'Miliki di Sini.',
-        desc: 'Kantor, hunian, dan aset investasi dalam satu unit duplex dua lantai. #FleksibelAja',
+        desc: 'Kantor, hunian, dan aset investasi dalam satu unit multifungsi. #FleksibelAja',
         cta: 'Lihat Unit SOHO',
       },
       premiumOffice: {
@@ -611,7 +611,7 @@ export const translations = {
       optionsTitle: 'Ruang mana yang paling sesuai dengan kebutuhan Anda?',
       options: [
         { label: 'Saya butuh Premium Office', value: 'Premium Office', desc: 'Untuk kantor pusat korporasi & tim mapan' },
-        { label: 'Saya ingin memiliki SOHO', value: 'SOHO', desc: 'Kombinasi fleksibel hunian & kantor dua lantai' },
+        { label: 'Saya ingin memiliki SOHO', value: 'SOHO', desc: 'Kombinasi fleksibel hunian & kantor' },
         { label: 'Saya butuh Serviced Office', value: 'Serviced Office', desc: 'Kantor siap pakai lengkap untuk operasional cepat' },
         { label: 'Saya butuh Virtual Office', value: 'Virtual Office', desc: 'Alamat bisnis prestisius di CBD & penanganan surat' },
         { label: 'Saya ingin memesan Function Room', value: 'Function Room', desc: 'Ruang serbaguna untuk seminar, gathering & acara korporat' },
@@ -652,7 +652,7 @@ export const translations = {
           badge: 'SOHO',
           popular: 'TERPOPULER',
           title: 'Untuk Mereka yang Menghargai Fleksibilitas.',
-          desc: 'Unit duplex dua lantai untuk bekerja, tinggal, dan investasi kepemilikan jangka panjang.',
+          desc: 'Unit multifungsi untuk bekerja, tinggal, dan investasi kepemilikan jangka panjang.',
           bestFor: 'wirausaha, konsultan profesional, startup, dan investor properti.',
           cta: 'Lihat Unit SOHO',
         },

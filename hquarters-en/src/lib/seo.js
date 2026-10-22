@@ -39,22 +39,22 @@ export const PAGE_SEO = {
   'space-soho-duplex': {
     id: {
       title: 'SOHO — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
-      description: 'Unit SOHO duplex bertingkat hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
+      description: 'Unit SOHO multifungsi hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
     },
     en: {
       title: 'SOHO — Own Your Live-Work Workspace in Bandung | HQuarters',
-      description: 'Strata-title duplex SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
+      description: 'Strata-title SOHO unit in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
     },
     path: '/spaces/soho',
   },
   'space-soho': {
     id: {
       title: 'SOHO — Fleksibilitas Ruang Kerja & Hunian (Live-Work) | HQuarters',
-      description: 'Unit SOHO duplex bertingkat hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
+      description: 'Unit SOHO multifungsi hak milik di pusat kota Bandung. Kombinasi ideal antara kantor profesional dan ruang tinggal modern. #FleksibelAja',
     },
     en: {
       title: 'SOHO — Own Your Live-Work Workspace in Bandung | HQuarters',
-      description: 'Strata-title duplex SOHO in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
+      description: 'Strata-title SOHO unit in Bandung CBD. The flexible fusion of professional office and comfortable living space. Work here, live here, own.',
     },
     path: '/spaces/soho',
   },

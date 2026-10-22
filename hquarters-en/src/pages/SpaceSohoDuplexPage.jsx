@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ArrowDown, CheckCircle2, Check, X, ChevronRight, ChevronLeft, Home, Maximize2, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowDownRight, ArrowDown, CheckCircle2, Check, X, ChevronRight, ChevronLeft, Home, Maximize2, Sparkles } from 'lucide-react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
@@ -52,7 +52,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
   const galleryImages = [
     {
       src: '/SPACES/SOHO/SOHO 01.webp?v=20260823',
-      title: 'SOHO Mezzanine View',
+      title: 'SOHO Interior View',
       category: 'Architecture',
       desc: 'High-ceiling architectural split between professional work deck and private living.',
     },
@@ -219,32 +219,45 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-4 flex flex-col justify-center">
-              {/* Product Name as the MAIN HIGHLIGHT (Largest headline) */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                SOHO
+              {/* Eyebrow */}
+              <div className="text-xs sm:text-sm font-semibold text-slate-500 tracking-wider uppercase flex items-center gap-2">
+                <span className="w-5 h-[1.5px] bg-slate-400 inline-block"></span>
+                <span>HQUARTERS — CBD BANDUNG</span>
+              </div>
+
+              {/* Product Name as the MAIN HIGHLIGHT (SOHO large, Small Office Home Office smaller) */}
+              <h1 className="tracking-tight font-heading leading-tight space-y-1">
+                <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA8E18]">
+                  SOHO
+                </span>
+                <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-slate-800">
+                  (Small Office Home Office)
+                </span>
               </h1>
 
-              {/* Work? Live? Why Choose? as the Subheadline */}
-              <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Work? Live? <span className="text-[#EA8E18]">Why Choose?</span>
-              </h2>
-
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Work. Live. Own. — #FleksibelAja. Satu ruang multifungsi yang fleksibel mengikuti dinamika kehidupan personal dan pertumbuhan bisnis Anda.
+              {/* Description constrained so it aligns with headline width */}
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
+                Multifunctional unit that flexibly functions as both a professional workspace and residential living, specifically designed for modern founders to elevate their business presence.
               </p>
 
-              <div className="pt-2 flex flex-wrap items-center gap-4">
+              {/* Button & Trust Badge */}
+              <div className="pt-2 flex flex-col items-start gap-3">
                 <button
                   id="btn-soho-hero-check-avail"
                   onClick={() => {
-                    const formElem = document.getElementById('find-space');
-                    if (formElem) formElem.scrollIntoView({ behavior: 'smooth' });
+                    const formElem = document.getElementById("find-space");
+                    if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
+                  className="px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Cek Ketersediaan SOHO</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span>Inquire unit details</span>
+                  <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
                 </button>
+
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 font-medium pt-1">
+                  <span>Strata Title (Freehold)*</span>
+                  <span className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-[#EA8E18]" /> Real-time pricing & availability</span>
+                </div>
               </div>
             </div>
 
@@ -256,6 +269,54 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                   className="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Specs / Highlights Strip (Matches Client Mockup) */}
+          <div className="mt-4 bg-[#F8F8F7] rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 lg:divide-x divide-slate-200">
+            <div className="pt-2 sm:pt-0 lg:px-4 first:lg:pl-2">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                2 Functions in 1 Unit
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                INTEGRATED OFFICE & RESIDENCE
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Floors 3-16
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                PREMIUM FLOOR SELECTION
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Jl. Asia Afrika
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                PRESTIGIOUS BANDUNG CBD ADDRESS
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="text-left group cursor-pointer w-full"
+              >
+                <div className="text-slate-900 group-hover:text-[#EA8E18] font-bold font-heading text-base sm:text-lg transition-colors flex items-center justify-between">
+                  <span>Check Unit & Rates</span>
+                  <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
+                </div>
+                <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                  LATEST AVAILABILITY VIA WHATSAPP
+                </div>
+              </button>
             </div>
           </div>
         </section>

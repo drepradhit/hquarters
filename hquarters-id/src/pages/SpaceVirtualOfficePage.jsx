@@ -154,7 +154,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Alamat kantor representatif di Jl. Asia Afrika Bandung tanpa perlu sewa ruangan fisik harian. Didukung layanan penerimaan surat, paket, dan legalitas domisili usaha.
+                Alamat kantor resmi di CBD Jl. Asia Afrika Bandung untuk domisili usaha dan surat-menyurat tanpa sewa ruang fisik.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -187,10 +187,10 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Alamat usaha resmi di kawasan CBD Bandung
+            Domisili Resmi di CBD Asia Afrika Bandung
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Perusahaan yang beroperasi secara remote atau berkantor di luar kota tetap dapat menggunakan alamat gedung komersial HQuarters untuk keperluan legalitas dan korespondensi resmi.
+            Tingkatkan kredibilitas bisnis Anda dengan alamat komersial prestisius di pusat kota Bandung.
           </p>
         </section>
 
@@ -235,7 +235,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Cocok untuk siapa?</h2>
+          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Solusi Tepat untuk Bisnis Modern</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {perfectForPills.map((pill) => (

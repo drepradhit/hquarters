@@ -247,7 +247,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
               </h2>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Ruang kantor berkonsep open-plan yang fleksibel di CBD Asia Afrika, Bandung. Tersedia pilihan luasan mulai dari setengah hingga satu lantai penuh sesuai kebutuhan tim.
+                Lantai kantor open-plan fleksibel di CBD Asia Afrika Bandung. Pilihan luasan mulai dari setengah hingga satu lantai penuh.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -284,10 +284,10 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Pilihan ruang kantor di pusat bisnis Bandung
+            Spesifikasi Ruang & Tata Letak
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Bandingkan ukuran ruang, tata letak, dan kapasitas tim sebelum menjadwalkan survei langsung ke gedung.
+            Bandingkan ukuran ruang dan kapasitas tim sesuai kebutuhan bisnis Anda.
           </p>
         </section>
 
@@ -449,13 +449,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
             <h2 className="text-2xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Spesifikasi teknis & ketersediaan unit
+              Spesifikasi Teknis & Ketersediaan Unit
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Luas lantai, denah tata ruang, daya listrik, dan estimasi serah terima dapat dikonfirmasi langsung ke tim HQuarters.
+              Denah lantai, daya listrik, dan jadwal survei lokasi dapat dikonfirmasi langsung via WhatsApp.
             </p>
             <div className="pt-2 font-bold text-[#EA8E18] text-lg sm:text-xl font-heading">
-              Tanya denah unit dan jadwal survei lokasi via WhatsApp.
+              Tanya denah unit dan jadwal survei via WhatsApp.
             </div>
           </div>
         </section>
@@ -616,11 +616,11 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight">
-              Sewa kantor fleksibel, <span className="text-[#EA8E18]"><br />modal kerja tetap efisien</span>
+              Sewa Fleksibel, <span className="text-[#EA8E18]"><br />Modal Kerja Tetap Efisien</span>
             </h2>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Menyewa ruang kantor di HQuarters memberikan keleluasaan arus kas tanpa beban belanja modal besar di awal. Alokasikan dana bisnis Anda untuk ekspansi pasar, talenta tim, dan operasional utama.
+              Tanpa belanja modal besar di awal. Alokasikan modal untuk ekspansi pasar dan operasional utama bisnis Anda.
             </p>
           </div>
         </section>

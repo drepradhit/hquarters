@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ArrowDown, CheckCircle2, Check, X, ChevronRight, ChevronLeft, Home, Maximize2, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowDownRight, ArrowDown, CheckCircle2, Check, X, ChevronRight, ChevronLeft, Home, Maximize2, Sparkles } from 'lucide-react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
@@ -52,9 +52,9 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
   const galleryImages = [
     {
       src: '/SPACES/SOHO/SOHO 01.webp?v=20260823',
-      title: 'Desain Arsitektur Mezzanine 2 Lantai',
+      title: 'Desain Interior SOHO Modern',
       category: 'Arsitektur SOHO',
-      desc: 'Plafon tinggi dengan pembagian zona kerja di lantai dasar dan area istirahat di lantai mezzanine.',
+      desc: 'Plafon tinggi dengan pembagian zona kerja profesional dan area istirahat yang nyaman dalam satu unit.',
     },
     {
       src: '/SPACES/SOHO/SOHO 02.webp?v=20260823',
@@ -64,9 +64,9 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
     },
     {
       src: '/SPACES/SOHO/SOHO 08.webp?v=20260823',
-      title: 'Ruang Istirahat Privat Mezzanine',
+      title: 'Ruang Istirahat Privat',
       category: 'Hunian Nyaman',
-      desc: 'Kenyamanan beristirahat di lantai atas tanpa harus menghabiskan waktu perjalanan pulang pergi.',
+      desc: 'Kenyamanan beristirahat di unit yang sama tanpa harus menghabiskan waktu perjalanan pulang pergi.',
     },
   ];
 
@@ -151,7 +151,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
   };
 
   const sohoLives = [
-    { title: 'KANTOR TIM INTI', desc: 'Area kerja produktif untuk tim inti 3–6 orang di lantai bawah.' },
+    { title: 'KANTOR TIM INTI', desc: 'Area kerja produktif untuk tim inti 3–6 orang dalam satu unit.' },
     { title: 'STUDIO KONSULTASI', desc: 'Menerima tamu dan konsultasi bisnis dengan atmosfer profesional.' },
     { title: 'STUDIO KREATIF', desc: 'Ruang privat untuk desainer, arsitek, praktisi hukum, atau konsultan.' },
     { title: 'LIVE & WORK', desc: 'Hunian sekaligus kantor tanpa repot waktu perjalanan harian.' },
@@ -219,32 +219,45 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-4 flex flex-col justify-center">
-              {/* Product Name as the MAIN HIGHLIGHT (Largest headline) */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                SOHO
+              {/* Eyebrow */}
+              <div className="text-xs sm:text-sm font-semibold text-slate-500 tracking-wider uppercase flex items-center gap-2">
+                <span className="w-5 h-[1.5px] bg-slate-400 inline-block"></span>
+                <span>HQUARTERS — CBD BANDUNG</span>
+              </div>
+
+              {/* Product Name as the MAIN HIGHLIGHT (SOHO besar, Small Office Home Office lebih kecil) */}
+              <h1 className="tracking-tight font-heading leading-tight space-y-1">
+                <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA8E18]">
+                  SOHO
+                </span>
+                <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-slate-800">
+                  (Small Office Home Office)
+                </span>
               </h1>
 
-              {/* Work? Live? Why Choose? as the Subheadline */}
-              <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Ruang kerja dan hunian dalam satu unit
-              </h2>
-
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Unit dua lantai (mezzanine) yang memadukan kantor di lantai bawah dan area privat di lantai atas. Cocok untuk founder, praktisi profesional, dan tim yang mengutamakan efisiensi waktu.
+              {/* Description constrained so it aligns with headline width */}
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
+                Unit multifungsi yang dapat digunakan sebagai kantor maupun hunian yang fleksibel, dirancang khusus bagi profesional modern untuk menaikan citra bisnis anda.
               </p>
 
-              <div className="pt-2 flex flex-wrap items-center gap-4">
+              {/* Button & Trust Badge */}
+              <div className="pt-2 flex flex-col items-start gap-3">
                 <button
                   id="btn-soho-hero-check-avail"
                   onClick={() => {
-                    const formElem = document.getElementById('find-space');
-                    if (formElem) formElem.scrollIntoView({ behavior: 'smooth' });
+                    const formElem = document.getElementById("find-space");
+                    if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
+                  className="px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
                   <span>Tanya detail unit</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
                 </button>
+
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 font-medium pt-1">
+                  <span>Pilihan sertifikat SHM*</span>
+                  <span className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-[#EA8E18]" /> Info harga & ketersediaan</span>
+                </div>
               </div>
             </div>
 
@@ -258,6 +271,54 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
               </div>
             </div>
           </div>
+
+          {/* Specs / Highlights Strip (Persis Mockup Klien) */}
+          <div className="mt-4 bg-[#F8F8F7] rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 lg:divide-x divide-slate-200">
+            <div className="pt-2 sm:pt-0 lg:px-4 first:lg:pl-2">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                2 Fungsi 1 unit
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                BISA SEBAGAI KANTOR & HUNIAN
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Lantai 3-16
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                PILIHAN POSISI UNIT
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Jl. Asia Afrika
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                ALAMAT BISNIS DI PUSAT KOTA BANDUNG
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="text-left group cursor-pointer w-full"
+              >
+                <div className="text-slate-900 group-hover:text-[#EA8E18] font-bold font-heading text-base sm:text-lg transition-colors flex items-center justify-between">
+                  <span>Cek Unit & Harga</span>
+                  <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
+                </div>
+                <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                  KETERSEDIAAN TERBARU VIA WHATSAPP
+                </div>
+              </button>
+            </div>
+          </div>
         </section>
 
         
@@ -266,7 +327,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
             Dua fungsi dalam satu unit
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Pisahkan urusan kerja dan istirahat secara praktis. Lantai dasar untuk aktivitas kantor dan terima tamu, lantai atas mezzanine untuk area istirahat pribadi.
+            Tata ruang fungsional yang menggabungkan area kerja profesional untuk operasional bisnis dan area privat yang nyaman dalam satu unit.
           </p>
           <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
             Fungsi ruang kerja dan tempat tinggal dalam satu bangunan.

@@ -184,7 +184,7 @@ export default function PageSkeleton({ currentPage = "spaces", setCurrentPage })
               <div className="h-4 w-80 max-w-full mx-auto bg-slate-100 rounded animate-shimmer" />
             </div>
             <div className="aspect-[16/9] sm:aspect-[21/9] w-full rounded-2xl bg-slate-100 border border-slate-200 animate-shimmer flex items-center justify-center text-slate-400">
-              <span className="text-sm font-medium">Memuat peta lokasi...</span>
+              <span className="text-sm font-medium">Loading location map...</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
