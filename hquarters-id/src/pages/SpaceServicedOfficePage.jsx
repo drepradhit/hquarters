@@ -206,13 +206,8 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
               </div>
 
               {/* Product Name as the MAIN HIGHLIGHT */}
-              <h1 className="tracking-tight font-heading leading-tight space-y-1">
-                <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA8E18]">
-                  SERVICED OFFICE
-                </span>
-                <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-slate-800">
-                  (Private Office Furnished Siap Pakai)
-                </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
+                SERVICED OFFICE
               </h1>
 
               {/* Description constrained so it aligns with headline width */}

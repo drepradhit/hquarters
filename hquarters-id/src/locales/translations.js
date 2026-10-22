@@ -471,7 +471,7 @@ export const translations = {
       tagline: '',
       exploreBtn: 'Lihat Pilihan Ruang',
       visitBtn: 'Konsultasi via WhatsApp',
-      trusted: 'di percayain oleh perusahaan terkemuka',
+      trusted: 'Dipercaya oleh perusahaan nasional dan multinasional terkemuka',
     },
     journey: {
       badge: 'PILIHAN RUANG',

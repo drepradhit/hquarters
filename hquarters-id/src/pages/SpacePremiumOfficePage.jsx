@@ -234,26 +234,21 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           </nav>
 
           
-          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative overflow-hidden shadow-xl">
-            <div className="lg:col-span-6 space-y-4 z-10 flex flex-col justify-center">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-6 space-y-4 flex flex-col justify-center">
               {/* Eyebrow */}
-              <div className="text-xs sm:text-sm font-semibold text-slate-400 tracking-wider uppercase flex items-center gap-2">
-                <span className="w-5 h-[1.5px] bg-slate-500 inline-block"></span>
+              <div className="text-xs sm:text-sm font-semibold text-slate-500 tracking-wider uppercase flex items-center gap-2">
+                <span className="w-5 h-[1.5px] bg-slate-400 inline-block"></span>
                 <span>HQUARTERS — CBD BANDUNG</span>
               </div>
 
               {/* Product Name as the MAIN HIGHLIGHT */}
-              <h1 className="tracking-tight font-heading leading-tight space-y-1">
-                <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA8E18]">
-                  PREMIUM OFFICE
-                </span>
-                <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-slate-200">
-                  (Lantai Kantor Korporasi Representatif)
-                </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
+                PREMIUM OFFICE
               </h1>
 
               {/* Description constrained so it aligns with headline width */}
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
                 Lantai kantor open-plan fleksibel di CBD Asia Afrika Bandung. Pilihan luasan mulai dari setengah hingga satu lantai penuh untuk menaikan citra bisnis korporasi Anda.
               </p>
 
@@ -265,7 +260,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                     const formElem = document.getElementById("find-space");
                     if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
+                  className="px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
                   <span>Tanya detail kantor</span>
                   <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
@@ -273,8 +268,8 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
               </div>
             </div>
 
-            <div className="lg:col-span-6 relative z-10 flex items-center">
-              <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/11] w-full shadow-lg group bg-slate-800">
+            <div className="lg:col-span-6 relative flex items-center">
+              <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-slate-100 aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/11] w-full shadow-sm group bg-slate-100">
                 <img
                   src="/SPACES/PREMIUM OFFICE/Premium Office.webp?v=20260825"
                   alt="HQuarters Premium Office Suite"
