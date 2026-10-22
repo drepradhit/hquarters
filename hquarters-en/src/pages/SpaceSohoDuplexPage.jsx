@@ -240,8 +240,8 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                 Multifunctional unit that flexibly functions as both a professional workspace and residential living, specifically designed for modern founders to elevate their business presence.
               </p>
 
-              {/* Button & Trust Badge */}
-              <div className="pt-2 flex flex-col items-start gap-3">
+              {/* CTA Button */}
+              <div className="pt-2">
                 <button
                   id="btn-soho-hero-check-avail"
                   onClick={() => {
@@ -253,11 +253,6 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                   <span>Inquire unit details</span>
                   <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
                 </button>
-
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 font-medium pt-1">
-                  <span>Strata Title (Freehold)*</span>
-                  <span className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-[#EA8E18]" /> Real-time pricing & availability</span>
-                </div>
               </div>
             </div>
 

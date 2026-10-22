@@ -240,8 +240,8 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                 Unit multifungsi yang dapat digunakan sebagai kantor maupun hunian yang fleksibel, dirancang khusus bagi profesional modern untuk menaikan citra bisnis anda.
               </p>
 
-              {/* Button & Trust Badge */}
-              <div className="pt-2 flex flex-col items-start gap-3">
+              {/* CTA Button */}
+              <div className="pt-2">
                 <button
                   id="btn-soho-hero-check-avail"
                   onClick={() => {
@@ -253,11 +253,6 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                   <span>Tanya detail unit</span>
                   <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
                 </button>
-
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 font-medium pt-1">
-                  <span>Pilihan sertifikat SHM*</span>
-                  <span className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-[#EA8E18]" /> Info harga & ketersediaan</span>
-                </div>
               </div>
             </div>
 
