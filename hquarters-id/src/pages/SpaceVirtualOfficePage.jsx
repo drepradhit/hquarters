@@ -150,11 +150,11 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Alamat bisnis tanpa kantor permanen
+                Alamat domisili bisnis resmi di Bandung
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Virtual Office bisa menjadi pilihan jika bisnis Anda membutuhkan alamat usaha, tetapi tidak memerlukan ruang kantor sendiri setiap hari. Periksa layanan yang termasuk dalam paket sebelum memilih.
+                Alamat kantor representatif di Jl. Asia Afrika Bandung tanpa perlu sewa ruangan fisik harian. Didukung layanan penerimaan surat, paket, dan legalitas domisili usaha.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -187,14 +187,11 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Alamat Usaha di Pusat Kota Bandung
+            Alamat usaha resmi di kawasan CBD Bandung
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Bisnis yang beroperasi secara remote atau memiliki tim di luar kota tetap dapat menggunakan alamat gedung untuk korespondensi resmi dan penerimaan dokumen.
+            Perusahaan yang beroperasi secara remote atau berkantor di luar kota tetap dapat menggunakan alamat gedung komersial HQuarters untuk keperluan legalitas dan korespondensi resmi.
           </p>
-          <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
-            Pilihan alamat usaha tanpa menyewa ruangan fisik harian.
-          </div>
         </section>
 
         
@@ -205,7 +202,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                 RINCIAN FASILITAS
               </span>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Layanan Penunjang yang Tersedia dalam Paket
+                Layanan yang sudah termasuk dalam paket
               </h2>
             </div>
 
@@ -228,20 +225,17 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Layanan Surat dan Panggilan Masuk
+              Penerimaan surat & paket dokumen
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Surat, paket dokumen, dan panggilan masuk untuk perusahaan Anda diterima dan dicatat oleh staf gedung, kemudian diteruskan kepada Anda.
+              Surat dinas, dokumen legal, dan paket barang diterima serta dicatat secara rapi oleh tim resepsionis gedung, lalu diteruskan kepada Anda.
             </p>
-            <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading">
-              Layanan operasional sesuai paket yang Anda pilih.
-            </div>
           </div>
         </section>
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Cocok untuk Kebutuhan Usaha:</h2>
+          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Cocok untuk siapa?</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {perfectForPills.map((pill) => (
@@ -384,7 +378,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Langkah Awal Membangun Legalitas Usaha <br /><span className="text-[#EA8E18]">di Alamat Komersial Terbaik.</span>
+              Miliki alamat bisnis prestisius di pusat Bandung
             </h2>
             <div className="pt-2 sm:pt-4">
               <button

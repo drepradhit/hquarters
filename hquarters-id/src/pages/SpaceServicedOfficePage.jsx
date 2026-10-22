@@ -206,11 +206,11 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
 
               {/* Subheadline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Ruang kerja yang sudah disiapkan
+                Ruang kerja furnished siap pakai
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Serviced Office cocok dipertimbangkan jika tim Anda membutuhkan ruang kerja tanpa harus menyiapkan kantor dari awal. Rincian fasilitas dan layanan mengikuti unit atau paket yang tersedia.
+                Solusi kantor siap huni lengkap meja kerja, kursi ergonomis, internet cepat, dan resepsionis di CBD Asia Afrika Bandung. Langsung bekerja tanpa repot renovasi.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -243,14 +243,11 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Pilihan Ruang Kerja Siap Pakai
+            Kantor siap pakai tanpa biaya renovasi
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Menyiapkan kantor mandiri memerlukan waktu untuk pengadaan furnitur, sambungan internet, dan utilitas gedung. Serviced Office HQuarters menyediakan ruang kerja yang sudah dilengkapi fasilitas penunjang.
+            Hemat waktu dan biaya awal kantor. Unit Serviced Office HQuarters sudah dilengkapi furnitur kerja, listrik, pendingin udara, dan koneksi internet stabil.
           </p>
-          <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
-            Fasilitas kerja dan operasional gedung sudah disiapkan.
-          </div>
         </section>
 
         
@@ -442,7 +439,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
                 FASILITAS SUDAH TERMASUK
               </span>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Fasilitas Kerja yang Sudah Siap Digunakan.
+                Fasilitas kerja yang sudah termasuk
               </h2>
             </div>
 
@@ -460,10 +457,10 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         
         <section className="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-            Sistem Sewa Fleksibel Mengikuti Pertumbuhan Perusahaan.
+            Sewa fleksibel sesuai pertumbuhan tim
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-            Kebutuhan ruang tim bisa bertambah kapan saja. Di HQuarters, Anda dapat memulai dari 2 meja dan dengan mudah menambah kapasitas seiring bertumbuhnya tim, dengan skema sewa bulanan hingga tahunan yang ramah arus kas.
+            Mulai dari 2 meja kerja dan tambah kapasitas dengan mudah saat tim bertumbuh. Didukung skema sewa fleksibel bulanan hingga tahunan yang ramah arus kas.
           </p>
         </section>
 
@@ -471,14 +468,11 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Fasilitas Gedung Komersial
+              Akses fasilitas gedung komersial
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Penyewa Serviced Office dapat memanfaatkan fasilitas lobi gedung untuk menyambut tamu dan menggunakan ruang rapat untuk pertemuan bisnis.
+              Penyewa Serviced Office memiliki akses ke lobi penerima tamu, ruang rapat, sistem keamanan 24 jam, dan area parkir gedung.
             </p>
-            <div className="font-bold text-[#EA8E18] text-base font-heading">
-              Fasilitas kerja siap pakai di kawasan Asia Afrika.
-            </div>
           </div>
         </section>
 
@@ -489,7 +483,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
               SKENARIO PENGGUNAAN
             </div>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Pilihan yang Tepat untuk Berbagai Tahapan Bisnis.
+              Cocok untuk siapa?
             </h2>
           </div>
 
@@ -512,7 +506,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         <section className="!mt-14 sm:!mt-20 pt-16 sm:pt-24 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-white tracking-tight">
-              Jadwalkan Kunjungan ke Serviced Office <br /><span className="text-[#EA8E18]">HQuarters Asia Afrika Bandung</span>
+              Cek ketersediaan meja kerja dan jadwalkan survei kantor
             </h2>
             <div className="pt-2 sm:pt-4">
               <button

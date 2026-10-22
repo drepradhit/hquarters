@@ -659,7 +659,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
                     Room 1
                   </h3>
                   <p className="text-slate-600 text-sm mt-1">
-                    Spacious multi-configuration venue ideal for full-scale seminars, townhalls, and corporate dinners.
+                    Ruang serbaguna luas untuk seminar, rapat akbar perusahaan, dan jamuan makan resmi.
                   </p>
                 </div>
 
@@ -693,7 +693,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
                   onClick={handleCheckAvailabilityClick}
                   className="w-full py-3 rounded-xl bg-slate-100 hover:bg-[#EA8E18] text-slate-800 hover:text-white font-semibold text-sm transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 group"
                 >
-                  <span>Inquire Room 1</span>
+                  <span>Tanya Ruang 1</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -718,7 +718,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
                     Room 2
                   </h3>
                   <p className="text-slate-600 text-sm mt-1">
-                    Flexible executive room with premium sound isolation, perfect for workshops and hybrid boardroom meetings.
+                    Ruang eksekutif kedap suara untuk workshop, pelatihan, dan rapat direksi hybrid.
                   </p>
                 </div>
 
@@ -752,7 +752,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
                   onClick={handleCheckAvailabilityClick}
                   className="w-full py-3 rounded-xl bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm shadow-md transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 group"
                 >
-                  <span>Inquire Room 2</span>
+                  <span>Tanya Ruang 2</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -761,7 +761,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
 
           
           <div className="text-center text-xs sm:text-sm font-normal text-[#3a3836] pt-1">
-            Rooms can be combined or divided by movable partition to fit your event size.
+            Ruang dapat digabung atau disekat dengan partisi geser kedap suara sesuai kapasitas acara.
           </div>
 
           
@@ -873,7 +873,7 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading text-slate-900 tracking-tight">
-              Pricing Per Package.
+              Pilihan Paket Meeting
             </h2>
           </div>
 
@@ -933,11 +933,10 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
           
           <div className="space-y-2.5 text-center text-xs sm:text-[13px] font-normal text-[#3a3836] max-w-5xl mx-auto pt-4 leading-relaxed">
             <p className="text-[#3a3836]">
-              All rates are nett. Includes LCD & screen, whiteboard, standard sound system, free Wi-Fi, and meeting amenities (pencil, notepad, mineral water).
+              Semua harga nett. Sudah termasuk proyektor LCD & layar, whiteboard, sound system standar, Wi-Fi gratis, dan perlengkapan meeting (alat tulis, air mineral).
             </p>
             <p className="text-slate-500 italic">
-              Prices are subject to change without prior notice. Please contact us for the latest <br />
-              pricing and package details.
+              Harga dan ketersediaan paket dapat berubah sewaktu-waktu. Hubungi tim kami untuk konfirmasi jadwal dan rincian paket terbaru.
             </p>
           </div>
         </section>
