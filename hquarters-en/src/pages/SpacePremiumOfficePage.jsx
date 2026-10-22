@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Building2, Shield, Wifi, MapPin, Users, HeartHandshake, ChevronRight, ChevronLeft, Home, Sparkles, Maximize2, X } from 'lucide-react';
+import { ArrowRight, ArrowDownRight, CheckCircle2, Building2, Shield, Wifi, MapPin, Users, HeartHandshake, ChevronRight, ChevronLeft, Home, Sparkles, Maximize2, X } from 'lucide-react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
@@ -236,40 +236,40 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative overflow-hidden shadow-xl">
             <div className="lg:col-span-6 space-y-4 z-10 flex flex-col justify-center">
-              {/* Product Name as the MAIN HIGHLIGHT (Largest headline) */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                PREMIUM OFFICE
+              {/* Eyebrow */}
+              <div className="text-xs sm:text-sm font-semibold text-slate-400 tracking-wider uppercase flex items-center gap-2">
+                <span className="w-5 h-[1.5px] bg-slate-500 inline-block"></span>
+                <span>HQUARTERS — CBD BANDUNG</span>
+              </div>
+
+              {/* Product Name as the MAIN HIGHLIGHT */}
+              <h1 className="tracking-tight font-heading leading-tight space-y-1">
+                <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA8E18]">
+                  PREMIUM OFFICE
+                </span>
+                <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-slate-200">
+                  (Corporate Floor Plates & Representative Offices)
+                </span>
               </h1>
 
-              {/* Subheadline */}
-              <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-200 tracking-tight leading-snug">
-                Your Next HQuarters <span className="text-[#EA8E18]">Is Ready.</span>
-              </h2>
-
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-                Ruang kantor korporat premium di pusat CBD Bandung untuk perusahaan yang siap meningkatkan citra dan efisiensi operasional bisnis.
+              {/* Description constrained so it aligns with headline width */}
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
+                Flexible open-plan corporate floor plates in Bandung CBD. Options ranging from half to whole full floor plates tailored to elevate your business presence.
               </p>
 
-              <div className="pt-2 flex flex-wrap items-center gap-4">
+              {/* CTA Button */}
+              <div className="pt-2">
                 <button
                   id="btn-premium-hero-check-avail"
                   onClick={() => {
-                    const formElem = document.getElementById('find-space');
-                    if (formElem) formElem.scrollIntoView({ behavior: 'smooth' });
+                    const formElem = document.getElementById("find-space");
+                    if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Cek Ketersediaan Kantor</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span>Inquire office details</span>
+                  <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
                 </button>
-              </div>
-
-              <div className="pt-3 border-t border-slate-800 flex flex-wrap items-center gap-3 text-xs text-slate-400 font-medium">
-                <span>Ukuran Fleksibel</span>
-                <span>•</span>
-                <span>Infrastruktur Korporat</span>
-                <span>•</span>
-                <span>Siap Fit-Out / Huni</span>
               </div>
             </div>
 
@@ -281,6 +281,54 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                   className="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Specs / Highlights Strip */}
+          <div className="mt-4 bg-[#F8F8F7] rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 lg:divide-x divide-slate-200">
+            <div className="pt-2 sm:pt-0 lg:px-4 first:lg:pl-2">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Semi Gross 77–342 m²
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                OFFICE FLOOR PLATE OPTIONS
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Corporate Floor
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                EXCLUSIVE LOBBY & ACCESS
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Jl. Asia Afrika
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                BANDUNG CBD STRATEGIC ADDRESS
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="text-left group cursor-pointer w-full"
+              >
+                <div className="text-slate-900 group-hover:text-[#EA8E18] font-bold font-heading text-base sm:text-lg transition-colors flex items-center justify-between">
+                  <span>Check Unit & Layout</span>
+                  <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
+                </div>
+                <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                  SPACE CONSULTATION VIA WHATSAPP
+                </div>
+              </button>
             </div>
           </div>
         </section>

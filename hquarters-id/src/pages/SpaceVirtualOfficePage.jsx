@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronRight, Home, Check, X } from 'lucide-react';
+import { ArrowRight, ArrowDownRight, ChevronRight, Home, Check, X } from 'lucide-react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
@@ -143,31 +143,39 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
           
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-4 flex flex-col justify-center">
-              {/* Product Name as the MAIN HIGHLIGHT (Largest headline) */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                VIRTUAL OFFICE
+              {/* Eyebrow */}
+              <div className="text-xs sm:text-sm font-semibold text-slate-500 tracking-wider uppercase flex items-center gap-2">
+                <span className="w-5 h-[1.5px] bg-slate-400 inline-block"></span>
+                <span>HQUARTERS — CBD BANDUNG</span>
+              </div>
+
+              {/* Product Name as the MAIN HIGHLIGHT */}
+              <h1 className="tracking-tight font-heading leading-tight space-y-1">
+                <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA8E18]">
+                  VIRTUAL OFFICE
+                </span>
+                <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-slate-800">
+                  (Legalitas & Domisili Bisnis Resmi)
+                </span>
               </h1>
 
-              {/* Subheadline */}
-              <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Alamat domisili bisnis resmi di Bandung
-              </h2>
-
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
+              {/* Description constrained so it aligns with headline width */}
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
                 Alamat kantor resmi di CBD Jl. Asia Afrika Bandung untuk domisili usaha dan surat-menyurat tanpa sewa ruang fisik.
               </p>
 
-              <div className="pt-2 flex flex-wrap items-center gap-4">
+              {/* CTA Button */}
+              <div className="pt-2">
                 <button
                   id="btn-vo-hero-view-packages"
                   onClick={() => {
-                    const pkgElem = document.getElementById('vo-packages');
-                    if (pkgElem) pkgElem.scrollIntoView({ behavior: 'smooth' });
+                    const pkgElem = document.getElementById("vo-packages");
+                    if (pkgElem) pkgElem.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-7 py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
+                  className="px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow-md transition-all inline-flex items-center justify-center gap-2 group shrink-0 cursor-pointer"
                 >
-                  <span>Tanya paket Virtual Office</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span>Pilih paket domisili</span>
+                  <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
                 </button>
               </div>
             </div>
@@ -180,6 +188,54 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                   className="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Specs / Highlights Strip */}
+          <div className="mt-4 bg-[#F8F8F7] rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 lg:divide-x divide-slate-200">
+            <div className="pt-2 sm:pt-0 lg:px-4 first:lg:pl-2">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Zonasi Perkantoran
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                IZIN DOMISILI RESMI PT / CV
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Jl. Asia Afrika No. 158
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                ALAMAT PRESTISIUS CBD BANDUNG
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
+                Mail & Receptionist
+              </div>
+              <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                PENGELOLAAN SURAT & PAKET
+              </div>
+            </div>
+
+            <div className="pt-2 sm:pt-0 lg:px-4">
+              <button
+                onClick={() => {
+                  const pkgElem = document.getElementById("vo-packages");
+                  if (pkgElem) pkgElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="text-left group cursor-pointer w-full"
+              >
+                <div className="text-slate-900 group-hover:text-[#EA8E18] font-bold font-heading text-base sm:text-lg transition-colors flex items-center justify-between">
+                  <span>Pilih Paket Domisili</span>
+                  <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
+                </div>
+                <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
+                  MULAI DARI RP 300RB-AN / BULAN
+                </div>
+              </button>
             </div>
           </div>
         </section>
