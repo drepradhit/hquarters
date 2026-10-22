@@ -493,90 +493,6 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         )}
 
         
-        {/* Premium Office Highlights: Spesifikasi, Kapasitas, Fasilitas */}
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            {/* 1. Spesifikasi Teknis */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  SPESIFIKASI TEKNIS
-                </span>
-                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Denah Lantai Fleksibel
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Denah lantai terbuka Grade A dengan efisiensi tata ruang tinggi, modul partisi bebas, dan instalasi utilitas modern.
-                </p>
-              </div>
-              <button
-                id="btn-premium-inquire-specs"
-                onClick={() => {
-                  const formElem = document.getElementById("find-space");
-                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
-              >
-                <span>Tanya spesifikasi denah</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            {/* 2. Pilihan Luas Lantai */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  PILIHAN RUANG
-                </span>
-                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Sayap Hingga Full Floor
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Pilihan konfigurasi unit mulai dari sayap lantai terintegrasi hingga satu lantai penuh (full floor plate) dengan panorama CBD.
-                </p>
-              </div>
-              <button
-                onClick={() => {
-                  const formElem = document.getElementById("find-space");
-                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
-              >
-                <span>Cek ketersediaan unit</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            {/* 3. Fasilitas & Keamanan */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  FASILITAS GEDUNG
-                </span>
-                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Standar Gedung Grade A
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Lobi utama eksekutif, lift kartu akses berkecepatan tinggi, keamanan 24/7, gym, rooftop pool, dan parkir luas.
-                </p>
-              </div>
-              <button
-                onClick={() => {
-                  const formElem = document.getElementById("find-space");
-                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
-              >
-                <span>Jadwalkan survei lokasi</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-          </div>
-        </section>
-
-        
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           
           
@@ -663,92 +579,97 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           </div>
         </section>
 
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-              FASILITAS OPERASIONAL LENGKAP
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Fasilitas pendukung kelancaran kerja harian
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={item.title}
-                  className="bg-white p-8 rounded-xl border border-slate-200/80 shadow-sm space-y-4 group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-[#FEF3E2] text-[#B86807] group-hover:bg-[#EA8E18] group-hover:text-white flex items-center justify-center transition-colors">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="text-xl font-medium text-slate-900 font-heading group-hover:text-[#EA8E18] transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                    {item.desc}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 border border-slate-200/80 space-y-8">
-            <div className="text-center max-w-xl mx-auto space-y-2">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#EA8E18]">
-                PILIHAN KAPASITAS
+        {/* Premium Office Highlights: Kapasitas, Tata Ruang, Fasilitas */}
+        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Pilihan Kapasitas */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  PILIHAN KAPASITAS
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Kapasitas 10 — 150+ Tim
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Mulai dari kantor sayap kompak 10 orang hingga satu lantai penuh (full floor plate) terintegrasi untuk kantor pusat korporasi Anda.
+                </p>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Pilih kapasitas sesuai jumlah tim Anda
-              </h2>
+              <button
+                id="btn-premium-select-capacity"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Pilih kapasitas tim</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {teamSizes.map((item) => (
-                <div
-                  key={item.size}
-                  onClick={() => handleTeamSizeClick(item)}
-                  className="bg-white py-5 sm:py-6 px-4 rounded-2xl border border-slate-200/80 shadow-sm text-center flex flex-col items-center justify-center space-y-1.5 hover:border-[#EA8E18] hover:shadow-md transition-all cursor-pointer group hover:-translate-y-0.5"
-                >
-                  <div className="text-xl sm:text-2xl font-medium text-slate-900 font-heading group-hover:text-[#EA8E18] transition-colors">
-                    {item.size}
-                  </div>
-                  <p className="text-xs text-slate-500 font-normal">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
+            {/* 2. Tata Ruang Open-Plan */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  TATA RUANG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Lantai Kerja Grade A
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Denah lantai terbuka luas bebas kolom partisi dengan efisiensi tata ruang tinggi, pencahayaan alami, dan panorama CBD Bandung.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Tanya denah unit</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 3. Fasilitas & Reputasi Gedung */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  FASILITAS GEDUNG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Standar Gedung Komersial
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Lobi utama eksekutif, lift kartu akses, meeting suite, keamanan 24/7, gym, rooftop pool, serta dipercaya oleh Garuda Indonesia.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Jadwalkan survei lokasi</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight">
-              Sewa Fleksibel, <span className="text-[#EA8E18]"><br />Modal Kerja Tetap Efisien</span>
+          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
+              Sewa Fleksibel, Modal Kerja Tetap Efisien
             </h2>
-
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Tanpa belanja modal besar di awal. Alokasikan modal untuk ekspansi pasar dan operasional utama bisnis Anda.
-            </p>
-          </div>
-        </section>
-
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF8F5] rounded-xl sm:rounded-2xl py-10 sm:py-14 px-6 sm:px-12 border border-slate-200/80 text-center space-y-3 shadow-sm max-w-4xl mx-auto">
-            <div className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA8E18]">
-              TENANT KORPORASI
-            </div>
-            <p className="text-xl sm:text-2xl lg:text-3xl font-medium font-heading text-slate-900 leading-snug">
-              Pilihan kantor Garuda Indonesia dan berbagai korporasi nasional di Bandung.
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
+              Tanpa belanja modal besar di awal. Alokasikan modal untuk ekspansi pasar dan operasional utama bisnis korporasi Anda.
             </p>
           </div>
         </section>

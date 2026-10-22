@@ -495,90 +495,6 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         )}
 
         
-        {/* Premium Office Highlights: Specs, Capacity, Amenities */}
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            {/* 1. Technical Specs */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  TECHNICAL SPECS
-                </span>
-                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Flexible Floor Plates
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Grade A open floor plans with high spatial efficiency, customizable modular partitioning, and high-speed fiber infrastructure.
-                </p>
-              </div>
-              <button
-                id="btn-premium-inquire-specs"
-                onClick={() => {
-                  const formElem = document.getElementById("find-space");
-                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
-              >
-                <span>Inquire floor layout</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            {/* 2. Space Options */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  SPACE OPTIONS
-                </span>
-                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Wing to Full-Floor Suites
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Configurable floor footprints ranging from integrated wing suites to complete full-floor tenancies overlooking CBD Bandung.
-                </p>
-              </div>
-              <button
-                onClick={() => {
-                  const formElem = document.getElementById("find-space");
-                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
-              >
-                <span>Check unit availability</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            {/* 3. Building Amenities */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  BUILDING AMENITIES
-                </span>
-                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Grade A Commercial Baseline
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Executive grand lobby, smart card access elevators, 24/7 security surveillance, gym, rooftop pool, and multi-tier parking.
-                </p>
-              </div>
-              <button
-                onClick={() => {
-                  const formElem = document.getElementById("find-space");
-                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
-              >
-                <span>Schedule private tour</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-          </div>
-        </section>
-
-        
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           
           
@@ -667,93 +583,97 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
           </div>
         </section>
 
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-              WHAT'S INCLUDED
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Everything a Modern Company Expects.
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={item.title}
-                  className="bg-white p-8 rounded-xl border border-slate-200/80 shadow-sm space-y-4 group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-[#FEF3E2] text-[#B86807] group-hover:bg-[#EA8E18] group-hover:text-white flex items-center justify-center transition-colors">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="text-xl font-medium text-slate-900 font-heading group-hover:text-[#EA8E18] transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                    {item.desc}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 border border-slate-200/80 space-y-8">
-            <div className="text-center max-w-xl mx-auto space-y-2">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#EA8E18]">
-                SIZED TO YOUR TEAM
+        {/* Premium Office Highlights: Capacity, Layout, Amenities */}
+        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Office Capacity */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  OFFICE CAPACITY
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  10 — 150+ Team Footprint
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  From compact corporate wing suites for 10 people to entire integrated full-floor tenancies for corporate headquarters.
+                </p>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                How Big Is Your Team?
-              </h2>
+              <button
+                id="btn-premium-select-capacity"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Select team capacity</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {teamSizes.map((item) => (
-                <div
-                  key={item.size}
-                  onClick={() => handleTeamSizeClick(item)}
-                  className="bg-white py-5 sm:py-6 px-4 rounded-2xl border border-slate-200/80 shadow-sm text-center flex flex-col items-center justify-center space-y-1.5 hover:border-[#EA8E18] hover:shadow-md transition-all cursor-pointer group hover:-translate-y-0.5"
-                >
-                  <div className="text-xl sm:text-2xl font-medium text-slate-900 font-heading group-hover:text-[#EA8E18] transition-colors">
-                    {item.size}
-                  </div>
-                  <p className="text-xs text-slate-500 font-normal">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
+            {/* 2. Floor Layout */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  FLOOR LAYOUT
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Grade A Open Plates
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Column-free open floor plans with high spatial efficiency, abundant natural light, and panoramic Bandung skyline views.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Inquire floor specs</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 3. Building Amenities */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  BUILDING AMENITIES
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Commercial Grade A Standard
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Executive grand lobby, smart card elevators, board meeting suites, 24/7 security, gym, rooftop pool, and home to Garuda Indonesia.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Schedule private survey</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight">
-              Lease The Space. <span className="text-[#EA8E18]"><br />Keep Your Capital Working.</span>
+          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
+              Flexible Leases. Efficient Capital Allocation.
             </h2>
-
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Buying a corporate office isn't always the smartest use of capital. Lease at HQuarters and keep your resources focused where they create the greatest impact: your people, your products and your business.
-            </p>
-          </div>
-        </section>
-
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF8F5] rounded-xl sm:rounded-2xl py-10 sm:py-14 px-6 sm:px-12 border border-slate-200/80 text-center space-y-3 shadow-sm max-w-4xl mx-auto">
-            <div className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA8E18]">
-              YOU'RE IN GOOD COMPANY
-            </div>
-            <p className="text-xl sm:text-2xl lg:text-3xl font-medium font-heading text-slate-900 leading-snug">
-              Join a growing community of respected companies <br className="hidden md:inline" />
-              operating from HQuarters.
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
+              Eliminate heavy upfront fit-out expenses. Direct your enterprise capital toward market expansion and core operational growth.
             </p>
           </div>
         </section>
