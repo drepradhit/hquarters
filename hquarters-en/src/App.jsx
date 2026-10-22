@@ -2,6 +2,7 @@ import React, { useState, useRef, lazy, Suspense } from 'react';
 import HomePage from './pages/HomePage.jsx';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton.jsx';
 import PromoModal from './components/PromoModal.jsx';
+import PageSkeleton from './components/PageSkeleton.jsx';
 
 import { useLanguage } from './context/LanguageContext.jsx';
 import { updatePageSEO } from './lib/seo.js';
@@ -20,6 +21,7 @@ const SpaceVirtualOfficePage = lazy(() => import('./pages/SpaceVirtualOfficePage
 const EventFunctionRoomPage = lazy(() => import('./pages/EventFunctionRoomPage.jsx'));
 
 const PAGE_PATHS = {
+  skeleton: '/skeleton',
   home: '/',
   spaces: '/spaces',
   'space-premium-office': '/spaces/premium-office',
@@ -111,9 +113,10 @@ export default function App() {
   }, []);
 
   const navigate = (page) => {
-    setCurrentPage(page);
     const path = page === 'article-detail' ? `/insights/${articleIdRef.current}` : PAGE_PATHS[page] || '/';
     window.history.pushState({}, '', path);
+    setCurrentPage(page);
+    window.scrollTo(0, 0);
   };
 
   const selectArticle = (id) => {
@@ -129,8 +132,10 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-    <Suspense fallback={null}>
-      {currentPage === 'space-premium-office' ? (
+    <Suspense fallback={<PageSkeleton currentPage={currentPage} setCurrentPage={navigate} />}>
+      {currentPage === 'skeleton' ? (
+        <PageSkeleton currentPage="spaces" setCurrentPage={navigate} />
+      ) : currentPage === 'space-premium-office' ? (
         <SpacePremiumOfficePage setCurrentPage={navigate} />
       ) : currentPage === 'space-soho-duplex' ? (
         <SpaceSohoDuplexPage setCurrentPage={navigate} />
@@ -168,8 +173,9 @@ export default function App() {
       )}
 
       
-      <PromoModal setCurrentPage={navigate} />
+      {currentPage !== "skeleton" && <PromoModal setCurrentPage={navigate} />}
       <FloatingWhatsAppButton />
+
     </Suspense>
     </ErrorBoundary>
   );
