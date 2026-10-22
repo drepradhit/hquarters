@@ -506,24 +506,86 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         </section>
 
         
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-4">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-            Sewa fleksibel sesuai pertumbuhan tim
-          </h2>
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-            Mulai dari 2 meja kerja dan tambah kapasitas dengan mudah saat tim bertumbuh. Didukung skema sewa fleksibel bulanan hingga tahunan yang ramah arus kas.
-          </p>
-        </section>
-
-        
+        {/* Serviced Office Highlights: Kapasitas, Siap Pakai, Fasilitas */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Akses fasilitas gedung komersial
-            </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Penyewa Serviced Office memiliki akses ke lobi penerima tamu, ruang rapat, sistem keamanan 24 jam, dan area parkir gedung.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Kapasitas Fleksibel */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  KAPASITAS FLEKSIBEL
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Skalabilitas Meja Kerja
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Mulai dari 2 meja kerja dan tambah kapasitas dengan mudah saat tim bertumbuh. Skema sewa fleksibel bulanan hingga tahunan.
+                </p>
+              </div>
+              <button
+                id="btn-serviced-select-capacity"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Pilih kapasitas meja</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 2. Siap Pakai */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  SIAP PAKAI
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Bekerja Tanpa Renovasi
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Unit kantor siap huni lengkap dengan furnitur ergonomis, internet cepat, pendingin ruangan, dan layanan resepsionis.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Tanya kelengkapan unit</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 3. Fasilitas Gedung */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  FASILITAS GEDUNG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Akses Fasilitas Lengkap
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Akses ke lobi penerima tamu, ruang rapat formal, sistem keamanan 24 jam, area parkir, serta fasilitas kebugaran gedung.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Jadwal survei kantor</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

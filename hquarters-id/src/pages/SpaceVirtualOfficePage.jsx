@@ -273,14 +273,86 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         </section>
 
         
+        {/* Virtual Office Highlights: Domisili, Pengelolaan Surat, Ruang Rapat */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Penerimaan surat & paket dokumen
-            </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Surat dinas, dokumen legal, dan paket barang diterima serta dicatat secara rapi oleh tim resepsionis gedung, lalu diteruskan kepada Anda.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Legalitas & Domisili */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  LEGALITAS & DOMISILI
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Alamat Bisnis Prestisius
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Alamat resmi zonasi perkantoran komersial di Jl. Asia Afrika No. 158 Bandung untuk pengurusan izin PT, CV, atau PMA.
+                </p>
+              </div>
+              <button
+                id="btn-vo-inquire-domicile"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Tanya syarat domisili</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 2. Pengelolaan Surat & Paket */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  MANAGEMENT DOKUMEN
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Penerimaan Surat & Paket
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Surat dinas dan dokumen legal dicatat rapi oleh tim resepsionis dengan notifikasi instan WhatsApp dan opsi penerusan (forwarding).
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Pelajari alur surat</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 3. Fasilitas Meeting */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  FASILITAS RUANG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Akses Ruang Rapat
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Kuota pemakaian ruang rapat eksekutif di HQuarters untuk menyambut tamu, presentasi klien, dan pertemuan tim profesional.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const pkgElem = document.getElementById("vo-packages");
+                  if (pkgElem) pkgElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Lihat pilihan paket</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

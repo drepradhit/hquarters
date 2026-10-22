@@ -495,18 +495,86 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         )}
 
         
+        {/* Premium Office Highlights: Specs, Capacity, Amenities */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Before The Meeting Starts, Your Office Has Already Said Something.
-            </h2>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-A representative lobby. A professional arrival experience. A credible business environment — the kind that tells clients and partners they're dealing with a serious company.
-
-            </p>
-            <div className="pt-2 font-bold text-[#EA8E18] text-lg sm:text-xl font-heading">
-              Make sure it says the right thing.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Technical Specs */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  TECHNICAL SPECS
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Flexible Floor Plates
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Grade A open floor plans with high spatial efficiency, customizable modular partitioning, and high-speed fiber infrastructure.
+                </p>
+              </div>
+              <button
+                id="btn-premium-inquire-specs"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Inquire floor layout</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 2. Space Options */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  SPACE OPTIONS
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Wing to Full-Floor Suites
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Configurable floor footprints ranging from integrated wing suites to complete full-floor tenancies overlooking CBD Bandung.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Check unit availability</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 3. Building Amenities */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  BUILDING AMENITIES
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Grade A Commercial Baseline
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Executive grand lobby, smart card access elevators, 24/7 security surveillance, gym, rooftop pool, and multi-tier parking.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Schedule private tour</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

@@ -507,28 +507,86 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         </section>
 
         
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-4">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-            Flexible When Your Business Needs To Be.
-          </h2>
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-Team growing? Project ending? Setting up a temporary office? Opening Bandung representation? A serviced office lets your workspace change as quickly as your business does.
-
-          </p>
-        </section>
-
-        
+        {/* Serviced Office Highlights: Scalability, Plug & Play, Amenities */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Look Established From Day One.
-            </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Even a two-person company can receive clients in a professional business environment.
-            </p>
-            <div className="font-bold text-[#EA8E18] text-base font-heading">
-              Small team. Serious image.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Scalable Desks */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  SCALABLE CAPACITY
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Flexible Workstations
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Start from 2 desks and scale effortlessly as your headcount grows. Transparent monthly to annual agreements.
+                </p>
+              </div>
+              <button
+                id="btn-serviced-select-capacity"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Select desk capacity</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 2. Plug & Play */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  PLUG & PLAY
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Zero Fit-Out Costs
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Ready-to-occupy private suites with ergonomic furnishings, enterprise Wi-Fi, air conditioning, and receptionist support.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Inquire turnkey inclusions</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 3. Building Amenities */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  BUILDING AMENITIES
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Full Commercial Access
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Direct access to front desk guest greeting, formal conference suites, 24/7 security, secure parking, and wellness facilities.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Schedule an office tour</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

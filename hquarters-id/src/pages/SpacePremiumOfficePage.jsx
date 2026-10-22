@@ -493,17 +493,86 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         )}
 
         
+        {/* Premium Office Highlights: Spesifikasi, Kapasitas, Fasilitas */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Spesifikasi Teknis & Ketersediaan Unit
-            </h2>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-              Denah lantai, daya listrik, dan jadwal survei lokasi dapat dikonfirmasi langsung via WhatsApp.
-            </p>
-            <div className="pt-2 font-bold text-[#EA8E18] text-lg sm:text-xl font-heading">
-              Tanya denah unit dan jadwal survei via WhatsApp.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Spesifikasi Teknis */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  SPESIFIKASI TEKNIS
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Denah Lantai Fleksibel
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Denah lantai terbuka Grade A dengan efisiensi tata ruang tinggi, modul partisi bebas, dan instalasi utilitas modern.
+                </p>
+              </div>
+              <button
+                id="btn-premium-inquire-specs"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Tanya spesifikasi denah</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 2. Pilihan Luas Lantai */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  PILIHAN RUANG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Sayap Hingga Full Floor
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Pilihan konfigurasi unit mulai dari sayap lantai terintegrasi hingga satu lantai penuh (full floor plate) dengan panorama CBD.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Cek ketersediaan unit</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 3. Fasilitas & Keamanan */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  FASILITAS GEDUNG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Standar Gedung Grade A
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Lobi utama eksekutif, lift kartu akses berkecepatan tinggi, keamanan 24/7, gym, rooftop pool, dan parkir luas.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Jadwalkan survei lokasi</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

@@ -275,17 +275,86 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         </section>
 
         
+        {/* Virtual Office Highlights: Legality, Mail Handling, Meeting Access */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Work From Anywhere. Be Present Here.
-            </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Your team may work remotely. Your business address doesn't have to look temporary.
-            </p>
-            <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading">
-              Professional presence without permanent overhead.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Legal Domicile */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  LEGAL DOMICILE
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Prestigious Business Address
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Official commercial CBD zoning at Jl. Asia Afrika No. 158 Bandung, fully compliant for PT, CV, or foreign investment incorporation.
+                </p>
+              </div>
+              <button
+                id="btn-vo-inquire-domicile"
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Inquire domicile terms</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 2. Mail Handling */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  MAIL HANDLING
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Document & Parcel Management
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Official correspondence received and logged by front desk reception, with instant WhatsApp notices and mail forwarding options.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Learn mail workflow</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* 3. Meeting Access */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  MEETING ACCESS
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Executive Meeting Rooms
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Inclusive meeting room credits at HQuarters to host client meetings, pitch presentations, and confidential board sessions.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const pkgElem = document.getElementById("vo-packages");
+                  if (pkgElem) pkgElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>View package plans</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

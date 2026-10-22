@@ -603,67 +603,86 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         </section>
 
         
+        {/* SOHO Highlights: Domicile, Dual-Function, Amenities */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-              Start Small. Look Professional.
-            </h2>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto [text-wrap:balance]">
-              Your company may be just starting out. That doesn't mean it has to look small.<br className="hidden sm:inline" />
-              Meet clients in a representative business environment and build your business image from day one.
-            </p>
-            <div className="font-bold text-slate-900 text-base font-heading">
-              Big companies started small too.
-            </div>
-          </div>
-        </section>
-
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-6 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-                Not Just A Home Address. <br />
-                <span className="text-[#EA8E18]">This Can Be Your Business Address.</span>
-              </h2>
-              <p className="text-slate-600 text-base leading-relaxed font-normal [text-wrap:pretty]">
-                One thing that sets SOHO apart from a regular apartment: the unit can be used as a business address, workspace, home office, and private base, subject to applicable regulations.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Official Corporate Domicile */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  CORPORATE LEGALITY
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Official Corporate Domicile
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Dual-purpose permitted unit (business & residential). Fully eligible for PT/CV corporate licensing at Jl. Asia Afrika No. 158, Bandung.
+                </p>
+              </div>
               <button
                 id="btn-soho-ask-domicile"
                 onClick={() => {
-                  const formElem = document.getElementById('find-space');
-                  if (formElem) formElem.scrollIntoView({ behavior: 'smooth' });
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="inline-flex items-center gap-2 font-bold text-[#EA8E18] hover:text-[#d88010] text-base font-heading group cursor-pointer transition-colors pt-1"
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Ask About Business Domicile</span>
+                <span>Inquire licensing terms</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            <div className="lg:col-span-6 bg-[#FAF8F5] p-8 sm:p-10 rounded-2xl border border-slate-200/80 space-y-5 text-center shadow-sm">
-              <h3 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                Why Pay For Two Places?
-              </h3>
-              
-              <p className="text-slate-600 text-sm sm:text-base font-normal max-w-lg mx-auto">
-                Office (rent, utilities, commute) + Home (rent/mortgage, utilities, commute)
-              </p>
-
-              <div className="py-1">
-                <ArrowDown className="w-5 h-5 text-[#EA8E18] mx-auto" />
-              </div>
-
-              <div className="space-y-1">
-                <h4 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                  HQuarters SOHO — Work + Live
-                </h4>
-                <p className="text-slate-600 text-sm sm:text-base font-normal">
-                  One space. One location. One asset. #FleksibelAja
+            {/* 2. Dual-Function Utility */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  DUAL FUNCTION
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Work & Live Integration
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  One prestigious address for business operations and comfortable living. Eliminates double rental costs and daily commute times.
                 </p>
               </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Consult SOHO units</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 3. Building Amenities */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  BUILDING AMENITIES
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Full Facility Access
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  SOHO occupants enjoy complete access to the main grand lobby, access-card elevators, fitness gym, rooftop swimming pool, sauna, and secure parking.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Schedule a private tour</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 

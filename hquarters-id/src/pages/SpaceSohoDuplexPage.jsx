@@ -597,65 +597,86 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         </section>
 
         
+        {/* SOHO Highlights: Domisili, Dua Fungsi, Fasilitas */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF8F5] rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-200/80 max-w-4xl mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-              Akses fasilitas dan kenyamanan gedung
-            </h2>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto [text-wrap:balance]">
-              Penghuni SOHO memiliki akses penuh ke lobi utama, lift berakses kartu, gym, kolam renang rooftop, dan area parkir gedung.
-            </p>
-            <div className="font-bold text-slate-900 text-base font-heading">
-              Informasi ketersediaan unit dan jadwal survei dapat ditanyakan ke tim HQuarters.
-            </div>
-          </div>
-        </section>
-
-        
-        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-6 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight [text-wrap:balance]">
-                Izin domisili dan legalitas usaha
-              </h2>
-              <p className="text-slate-600 text-base leading-relaxed font-normal [text-wrap:pretty]">
-                Unit SOHO HQuarters memiliki izin fungsi ganda (usaha dan hunian). Dapat digunakan sebagai alamat resmi legalitas perusahaan di Jl. Asia Afrika No. 158, Bandung.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* 1. Izin Domisili & Legalitas Usaha */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  LEGALITAS USAHA
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Izin Domisili Resmi
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Unit SOHO berizin fungsi ganda (usaha & hunian). Sah sebagai alamat resmi legalitas PT atau CV di Jl. Asia Afrika No. 158, Bandung.
+                </p>
+              </div>
               <button
                 id="btn-soho-ask-domicile"
                 onClick={() => {
-                  const formElem = document.getElementById('find-space');
-                  if (formElem) formElem.scrollIntoView({ behavior: 'smooth' });
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="inline-flex items-center gap-2 font-bold text-[#EA8E18] hover:text-[#d88010] text-base font-heading group cursor-pointer transition-colors pt-1"
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
                 <span>Tanya ketentuan unit</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            <div className="lg:col-span-6 bg-[#FAF8F5] p-8 sm:p-10 rounded-2xl border border-slate-200/80 space-y-5 text-center shadow-sm">
-              <h3 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                Pemanfaatan Dua Fungsi
-              </h3>
-              
-              <p className="text-slate-600 text-sm sm:text-base font-normal max-w-lg mx-auto">
-                Satu alamat prestisius untuk operasional bisnis sekaligus tempat tinggal nyaman.
-              </p>
-
-              <div className="py-1">
-                <ArrowDown className="w-5 h-5 text-[#EA8E18] mx-auto" />
-              </div>
-
-              <div className="space-y-1">
-                <h4 className="text-2xl sm:text-3xl font-medium font-heading text-slate-900 tracking-tight">
-                  HQuarters SOHO
-                </h4>
-                <p className="text-slate-600 text-sm sm:text-base font-normal">
-                  Efisiensi ruang, biaya sewa, dan waktu perjalanan harian.
+            {/* 2. Pemanfaatan Dua Fungsi */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  DUA FUNGSI
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Pemanfaatan Work & Live
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Satu alamat prestisius untuk operasional bisnis sekaligus hunian nyaman. Maksimalkan efisiensi biaya sewa ganda dan waktu perjalanan harian.
                 </p>
               </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Konsultasi kebutuhan unit</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
+
+            {/* 3. Akses Fasilitas Gedung */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+                  FASILITAS GEDUNG
+                </span>
+                <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
+                  Akses Fasilitas Lengkap
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
+                  Penghuni memiliki akses penuh ke lobi utama, lift berakses kartu, pusat kebugaran (gym), kolam renang rooftop, sauna, dan area parkir gedung.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  const formElem = document.getElementById("find-space");
+                  if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
+              >
+                <span>Jadwal survei unit</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
         </section>
 
