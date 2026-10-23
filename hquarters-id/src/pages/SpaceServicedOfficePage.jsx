@@ -207,12 +207,17 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
 
               {/* Product Name as the MAIN HIGHLIGHT */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                SERVICED OFFICE
+                Serviced Office
               </h1>
 
-              {/* Description constrained so it aligns with headline width */}
+              {/* Sub Headline */}
+              <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
+                Ruang yang Siap <span className="text-[#EA8E18]">Operasional Sejak Hari Pertama</span>
+              </h2>
+
+              {/* Small Copy */}
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
-                Kantor furnished siap pakai di CBD Asia Afrika Bandung. Meja kerja ergonomis, internet cepat, resepsionis, dan ruang meeting siap sejak hari pertama.
+                Tanpa renovasi. Tanpa pengadaan perabot. Tanpa menunggu. Bawa tim Anda dan mulai bekerja.
               </p>
 
               {/* CTA Button */}
@@ -294,11 +299,14 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Langsung Bekerja Tanpa Biaya Renovasi
+            Lewati Persiapannya. <span className="text-[#EA8E18]"><br />Fokus Kembangkan Bisnisnya.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Lengkap dengan furnitur ergonomis, AC, listrik, dan internet fiber optik tanpa biaya renovasi di awal.
+            Membangun kantor sendiri berarti mengurus banyak hal: renovasi, furnitur, internet, utilitas, kebersihan, resepsionis, hingga ruang meeting. Di Serviced Office HQuarters, semua sudah ditangani.
           </p>
+          <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading pt-1">
+            Anda fokus menjalankan bisnis. Kami siapkan ruang kerjanya.
+          </div>
         </section>
 
         
@@ -460,7 +468,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
               PILIHAN KAPASITAS RUANG
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              Pilih Ukuran Meja Sesuai Jumlah Tim Anda.
+              Pilih Ruang Kantor Sesuai Kebutuhan Tim Anda.
             </h2>
           </div>
 
@@ -490,7 +498,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
                 FASILITAS SUDAH TERMASUK
               </span>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Fasilitas kerja yang sudah termasuk
+                Semua yang Anda Butuhkan? <span className="text-[#EA8E18]">Sudah tersedia.</span>
               </h2>
             </div>
 
@@ -510,17 +518,17 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            {/* 1. Kapasitas Fleksibel */}
+            {/* 1. Fleksibel, Secepat Bisnis Bergerak */}
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
                   KAPASITAS FLEKSIBEL
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Skalabilitas Meja Kerja
+                  Fleksibel, Secepat Bisnis Anda Bergerak
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Mulai dari 2 meja kerja dan tambah kapasitas dengan mudah saat tim bertumbuh. Skema sewa fleksibel bulanan hingga tahunan.
+                  Tim bertambah? Butuh kantor sementara? Ingin membuka perwakilan di Bandung? Dengan serviced office, ruang kerja Anda bisa ikut berubah secepat bisnis Anda berkembang.
                 </p>
               </div>
               <button
@@ -586,6 +594,21 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
               </button>
             </div>
 
+          </div>
+        </section>
+
+        {/* Look Established From Day One Dark Card */}
+        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
+              Tampil Meyakinkan Sejak Hari Pertama.
+            </h2>
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
+              Bisnis yang baru berkembang pun berhak mendapatkan lingkungan kerja yang profesional.
+            </p>
+            <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading">
+              Mulai dengan tim kecil? Kesan tetap berkelas.
+            </div>
           </div>
         </section>
 

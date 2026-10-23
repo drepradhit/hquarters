@@ -23,17 +23,17 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
   }, []);
 
   const includedItems = [
-    'Alamat Domisili Resmi di Jl. Asia Afrika No. 158',
-    'Penerimaan & Pengelolaan Surat/Paket Masuk',
-    'Resepsionis Gedung Profesional Penyambut Tamu',
-    'Kuota Ruang Rapat & Meeting Suite Modern',
-    'Nomor Telepon Kantor Dedicated (022)*',
-    'Dukungan Dokumen Legalitas & Domisili PT/CV*',
+    'Alamat Bisnis Profesional',
+    'Layanan Pengelolaan Surat',
+    'Dukungan Resepsionis',
+    'Akses Ruang Meeting',
+    'Layanan Penerimaan Telepon*',
+    'Dukungan Domisili Usaha*',
   ];
 
   const perfectForPills = [
-    'Wirausahawan Mandiri', 'Perusahaan Baru / PT / CV', 'Konsultan Profesional',
-    'Bisnis Berbasis Remote', 'Kantor Cabang Representasi', 'Praktisi Kreatif'
+    'Pengusaha', 'Perusahaan Baru', 'Konsultan',
+    'Bisnis Remote', 'Perwakilan Regional', 'Profesional Independen'
   ];
 
   const packages = [
@@ -151,12 +151,17 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
               {/* Product Name as the MAIN HIGHLIGHT */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                VIRTUAL OFFICE
+                Virtual Office
               </h1>
 
-              {/* Description constrained so it aligns with headline width */}
+              {/* Sub Headline */}
+              <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
+                Alamat Bisnis yang <span className="text-[#EA8E18]">Membangun Kepercayaan</span>
+              </h2>
+
+              {/* Small Copy */}
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
-                Alamat kantor resmi di CBD Jl. Asia Afrika Bandung untuk domisili usaha dan surat-menyurat tanpa sewa ruang fisik.
+                Bangun citra profesional dan tingkatkan kredibilitas bisnis Anda dengan alamat kantor prestisius di pusat bisnis Bandung.
               </p>
 
               {/* CTA Button */}
@@ -238,10 +243,10 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Domisili Resmi di CBD Asia Afrika Bandung
+            Tidak Selalu Harus Punya Kantor Fisik untuk <span className="text-[#EA8E18]">Terlihat Profesional.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Tingkatkan kredibilitas bisnis Anda dengan alamat komersial prestisius di pusat kota Bandung.
+            Bisnis remote? Perusahaan baru? Profesional independen? Perwakilan cabang? Bangun kepercayaan klien dengan alamat bisnis profesional di HQuarters.
           </p>
         </section>
 
@@ -253,7 +258,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                 RINCIAN FASILITAS
               </span>
               <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-                Layanan yang sudah termasuk dalam paket
+                Lebih dari Sekedar Alamat Bisnis
               </h2>
             </div>
 
@@ -267,7 +272,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
             </div>
 
             <p className="text-xs text-slate-500 text-center font-medium">
-              *Fasilitas disesuaikan dengan rincian paket yang dipilih.
+              *Tersedia sesuai paket yang dipilih.
             </p>
           </div>
         </section>
@@ -356,9 +361,24 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
           </div>
         </section>
 
+        {/* Remote Presence Dark Card */}
+        <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4 shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
+              Bekerja dari Mana Saja. Tetap Hadir di Sini
+            </h2>
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
+              Tim Anda bisa bekerja dari mana saja. Namun, citra bisnis Anda tetap bisa tampil profesional dengan alamat kantor yang kredibel.
+            </p>
+            <div className="font-bold text-[#EA8E18] text-base sm:text-lg font-heading">
+              Kehadiran profesional, tanpa beban biaya kantor tetap.
+            </div>
+          </div>
+        </section>
+
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Solusi Tepat untuk Bisnis Modern</h2>
+          <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">Cocok Untuk:</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {perfectForPills.map((pill) => (
@@ -376,13 +396,13 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
         <section id="vo-packages" className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-xl mx-auto space-y-2">
             <span className="text-xs font-bold text-[#EA8E18] uppercase tracking-widest inline-block">
-              TABEL RINCIAN PAKET
+              PILIHAN PAKET
             </span>
             <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight">
-              Bandingkan Fasilitas & Biaya per Paket.
+              Temukan Paket yang Sesuai dengan Kebutuhan Bisnis Anda.
             </h2>
             <p className="text-slate-500 text-sm sm:text-base font-normal">
-              Biaya transparan per bulan, nett.
+              *Bayar per bulan, harga nett.
             </p>
           </div>
 
