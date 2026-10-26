@@ -39,6 +39,7 @@ import CustomSelect from '../components/CustomSelect.jsx';
 import GoogleIcon from '../components/GoogleIcon.jsx';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { validateEmail } from '../lib/emailValidation.js';
+import { sendLeadToSheet } from '../lib/leadWebhook.js';
 
 export default function EventFunctionRoomPage({ setCurrentPage }) {
   const { language, t } = useLanguage();
@@ -433,6 +434,16 @@ export default function EventFunctionRoomPage({ setCurrentPage }) {
       (formData.company ? (isId ? `*Perusahaan:* ${formData.company}\n` : `*Company:* ${formData.company}\n`) : '') +
       (formData.notes ? (isId ? `*Catatan:* ${formData.notes}\n` : `*Notes:* ${formData.notes}\n`) : '')
     );
+
+    sendLeadToSheet({
+      source: 'Event Function Room',
+      name: formData.name,
+      email: formData.email,
+      whatsapp: formData.whatsapp,
+      selectedRoom: formData.selectedRoom,
+      company: formData.company,
+      notes: formData.notes,
+    });
 
     setTimeout(() => {
       window.open(`https://wa.me/628111908319?text=${textMessage}`, '_blank');

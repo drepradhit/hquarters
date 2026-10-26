@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { validateEmail } from '../lib/emailValidation.js';
+import { sendLeadToSheet } from '../lib/leadWebhook.js';
 
 export default function FindSpacePageSection({ setCurrentPage }) {
   const { language, t } = useLanguage();
@@ -107,6 +108,16 @@ export default function FindSpacePageSection({ setCurrentPage }) {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'lead_form_success', form_name: gtmFormName });
     }
+
+    sendLeadToSheet({
+      source: `Find Space Page (${selectedSpace})`,
+      name: formData.name,
+      email: formData.email,
+      whatsapp: formData.whatsapp,
+      space: selectedSpace,
+      company: formData.company,
+      notes: formData.notes,
+    });
 
     window.open(`https://wa.me/628111908319?text=${encodeURIComponent(lines.join('\n'))}`, '_blank');
     setSubmitted(true);

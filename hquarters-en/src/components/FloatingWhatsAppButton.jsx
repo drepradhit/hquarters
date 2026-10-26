@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowRight, Check } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { validateEmail } from '../lib/emailValidation.js';
+import { sendLeadToSheet } from '../lib/leadWebhook.js';
 
 export default function FloatingWhatsAppButton() {
   const { language, t } = useLanguage();
@@ -89,6 +90,15 @@ export default function FloatingWhatsAppButton() {
       lines.push(isId ? `• *Catatan / Kebutuhan:* ${formData.notes.trim()}` : `• *Notes / Requirements:* ${formData.notes.trim()}`);
     }
     lines.push('', isId ? 'Mohon informasi ketersediaan unit dan jadwal survei lokasi. Terima kasih!' : 'Please share unit availability and location survey schedule. Thank you!');
+
+    sendLeadToSheet({
+      source: 'CTA WhatsApp Floating',
+      name: formData.name,
+      email: formData.email,
+      whatsapp: cleanWa,
+      space: formData.space,
+      notes: formData.notes,
+    });
 
     const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(lines.join('\n'))}`;
     window.open(waUrl, '_blank');
