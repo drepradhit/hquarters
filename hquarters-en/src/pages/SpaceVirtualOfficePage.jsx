@@ -4,8 +4,10 @@ import { ArrowRight, ArrowDownRight, ChevronRight, Home, Check, X } from 'lucide
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function SpaceVirtualOfficePage({ setCurrentPage }) {
+  const { language, cms } = useLanguage();
   const [selectedPackage, setSelectedPackage] = useState('Virtual Office Standard');
   const [selectedPackageNote, setSelectedPackageNote] = useState('');
 

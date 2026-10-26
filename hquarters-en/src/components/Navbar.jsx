@@ -16,6 +16,26 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLanguageSwitch = (targetLang) => {
+    if (targetLang === language) return;
+    let subpath = '';
+    if (currentPage === 'home') subpath = '';
+    else if (currentPage === 'spaces') subpath = '/spaces';
+    else if (currentPage === 'space-premium-office') subpath = '/spaces/premium-office';
+    else if (currentPage === 'space-soho' || currentPage === 'space-soho-duplex') subpath = '/spaces/soho';
+    else if (currentPage === 'space-serviced-office') subpath = '/spaces/serviced-office';
+    else if (currentPage === 'space-virtual-office') subpath = '/spaces/virtual-office';
+    else if (currentPage === 'event' || currentPage === 'events' || currentPage === 'function-room') subpath = '/events';
+    else if (currentPage === 'building') subpath = '/building';
+    else if (currentPage === 'location') subpath = '/location';
+    else if (currentPage === 'companies') subpath = '/companies';
+    else if (currentPage === 'insights') subpath = '/insights';
+    else if (currentPage === 'find-space') subpath = '/find-space';
+
+    const targetUrl = `/${targetLang}${subpath ? (subpath.startsWith('/') ? subpath : '/' + subpath) : '/'}`;
+    window.location.href = targetUrl;
+  };
+
   const handleNavClick = (page, href) => {
     setMobileMenuOpen(false);
     if (page && setCurrentPage) {
@@ -102,6 +122,33 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
               ))}
             </nav>
 
+            <div className="flex items-center bg-slate-100 p-0.5 rounded-full border border-slate-200/80 text-xs font-bold shrink-0">
+              <button
+                id="btn-lang-switch-id"
+                type="button"
+                onClick={() => handleLanguageSwitch('id')}
+                className={`px-2.5 py-1 rounded-full transition-all cursor-pointer ${
+                  language === 'id'
+                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                ID
+              </button>
+              <button
+                id="btn-lang-switch-en"
+                type="button"
+                onClick={() => handleLanguageSwitch('en')}
+                className={`px-2.5 py-1 rounded-full transition-all cursor-pointer ${
+                  language === 'en'
+                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                EN
+              </button>
+            </div>
+
             <button
               id="btn-navbar-cta-find-space"
               onClick={() => handleNavClick('find-space')}
@@ -117,6 +164,33 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
 
           {/* Mobile & Tablet Hamburger Toggle */}
           <div className="flex items-center gap-2 lg:hidden">
+            <div className="flex items-center bg-slate-100 p-0.5 rounded-full border border-slate-200/80 text-[11px] font-bold shrink-0">
+              <button
+                id="btn-lang-switch-mobile-id"
+                type="button"
+                onClick={() => handleLanguageSwitch('id')}
+                className={`px-2 py-0.5 rounded-full transition-all cursor-pointer ${
+                  language === 'id'
+                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    : 'text-slate-600'
+                }`}
+              >
+                ID
+              </button>
+              <button
+                id="btn-lang-switch-mobile-en"
+                type="button"
+                onClick={() => handleLanguageSwitch('en')}
+                className={`px-2 py-0.5 rounded-full transition-all cursor-pointer ${
+                  language === 'en'
+                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    : 'text-slate-600'
+                }`}
+              >
+                EN
+              </button>
+            </div>
+
             <button
               id="btn-navbar-mobile-toggle"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

@@ -42,7 +42,10 @@ const PAGE_PATHS = {
 };
 
 function pageFromPath(pathname) {
-  const p = (pathname || '/').replace(/\/+$/, '') || '/';
+  let p = (pathname || '/').replace(/\/+$/, '') || '/';
+  if (p === '/id' || p === '/en') p = '/';
+  else if (p.startsWith('/id/')) p = p.slice(3) || '/';
+  else if (p.startsWith('/en/')) p = p.slice(3) || '/';
   if (p.startsWith('/insights/')) {
     return { page: 'article-detail', articleId: decodeURIComponent(p.slice('/insights/'.length)) };
   }
@@ -113,7 +116,11 @@ export default function App() {
   }, []);
 
   const navigate = (page) => {
-    const path = page === 'article-detail' ? `/insights/${articleIdRef.current}` : PAGE_PATHS[page] || '/';
+    const rawPath = page === 'article-detail' ? `/insights/${articleIdRef.current}` : PAGE_PATHS[page] || '/';
+    const isId = window.location.pathname.startsWith('/id');
+    const isEn = window.location.pathname.startsWith('/en');
+    const prefix = isId ? '/id' : (isEn ? '/en' : '');
+    const path = prefix ? (rawPath === '/' ? `${prefix}/` : `${prefix}${rawPath}`) : rawPath;
     window.history.pushState({}, '', path);
     setCurrentPage(page);
     window.scrollTo(0, 0);

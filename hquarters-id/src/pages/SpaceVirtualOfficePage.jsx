@@ -4,8 +4,10 @@ import { ArrowRight, ArrowDownRight, ChevronRight, Home, Check, X } from 'lucide
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function SpaceVirtualOfficePage({ setCurrentPage }) {
+  const { language, cms } = useLanguage();
   const [selectedPackage, setSelectedPackage] = useState('Virtual Office Standard');
   const [selectedPackageNote, setSelectedPackageNote] = useState('');
 
@@ -151,17 +153,17 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
 
               {/* Product Name as the MAIN HIGHLIGHT */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                Virtual Office
+                {(cms && cms.vo_headline) || 'Virtual Office'}
               </h1>
 
               {/* Sub Headline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Alamat Bisnis yang <span className="text-[#EA8E18]">Membangun Kepercayaan</span>
+                {(cms && cms.vo_subheadline) || <>Alamat Bisnis yang <span className="text-[#EA8E18]">Membangun Kepercayaan</span></>}
               </h2>
 
               {/* Small Copy */}
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
-                Bangun citra profesional dan tingkatkan kredibilitas bisnis Anda dengan alamat kantor prestisius di pusat bisnis Bandung.
+                {(cms && cms.vo_copy) || 'Bangun citra profesional dan tingkatkan kredibilitas bisnis Anda dengan alamat kantor prestisius di pusat bisnis Bandung.'}
               </p>
 
               {/* CTA Button */}

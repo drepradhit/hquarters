@@ -5,8 +5,10 @@ import { ArrowRight, ArrowDownRight, CheckCircle2, ChevronRight, ChevronLeft, Ho
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function SpaceServicedOfficePage({ setCurrentPage }) {
+  const { language, cms } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     desks: '',

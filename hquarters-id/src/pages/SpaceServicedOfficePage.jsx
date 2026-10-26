@@ -5,8 +5,10 @@ import { ArrowRight, ArrowDownRight, CheckCircle2, ChevronRight, ChevronLeft, Ho
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function SpaceServicedOfficePage({ setCurrentPage }) {
+  const { language, cms } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     desks: '',
@@ -207,17 +209,17 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
 
               {/* Product Name as the MAIN HIGHLIGHT */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-[#EA8E18] tracking-tight leading-[1.08]">
-                Serviced Office
+                {(cms && cms.so_headline) || 'Serviced Office'}
               </h1>
 
               {/* Sub Headline */}
               <h2 className="text-xl sm:text-2xl font-medium font-heading text-slate-800 tracking-tight leading-snug">
-                Ruang yang Siap <span className="text-[#EA8E18]">Operasional Sejak Hari Pertama</span>
+                {(cms && cms.so_subheadline) || <>Ruang yang Siap <span className="text-[#EA8E18]">Operasional Sejak Hari Pertama</span></>}
               </h2>
 
               {/* Small Copy */}
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
-                Tanpa renovasi. Tanpa pengadaan perabot. Tanpa menunggu. Bawa tim Anda dan mulai bekerja.
+                {(cms && cms.so_copy) || 'Tanpa renovasi. Tanpa pengadaan perabot. Tanpa menunggu. Bawa tim Anda dan mulai bekerja.'}
               </p>
 
               {/* CTA Button */}
