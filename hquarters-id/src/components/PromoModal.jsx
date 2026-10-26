@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-const PROMO_IMAGE = "/promo/promo-banner.jpg";
+const PROMO_IMAGE = `${import.meta.env.BASE_URL}promo/promo-banner.jpg`;
 
 export default function PromoModal({ setCurrentPage }) {
   const { language } = useLanguage();
