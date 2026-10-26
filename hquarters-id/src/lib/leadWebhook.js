@@ -3,7 +3,7 @@
  * Automatically records leads from all website forms into the unified Google Sheet.
  */
 export const LEAD_WEBHOOK_URL =
-  'https://script.google.com/macros/s/AKfycby1JGnjK0_cNMbavgnMMK9lFuU96A4gj84qpzldwZq4eHauFVrtXWR-RDF7EiRsC_hsvg/exec';
+  'https://script.google.com/macros/s/AKfycbwk7p-1Jf_PYISNVhAeTQdIp6jkC93kqwPHr2v_iCLsTBkgA0i_2uejKoD0AqPtEiTS/exec';
 
 /**
  * Sends lead data to Google Sheet webhook asynchronously in the background.
