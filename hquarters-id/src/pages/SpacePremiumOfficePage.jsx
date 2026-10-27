@@ -249,7 +249,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
               {/* Description constrained so it aligns with headline width */}
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-[440px] font-normal pt-1 [text-wrap:pretty]">
-                Lantai kantor open-plan fleksibel di CBD Asia Afrika Bandung. Pilihan luasan mulai dari setengah hingga satu lantai penuh untuk menaikan citra bisnis korporasi Anda.
+                Pilihan ruang kantor fleksibel yang dirancang untuk memperkuat citra profesional dan mendukung pertumbuhan perusahaan Anda.
               </p>
 
               {/* CTA Button */}
@@ -331,10 +331,10 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Spesifikasi Ruang & Tata Letak
+            Perusahaan Telah Bertumbuh.<br />Saatnya Kantor Anda Berkembang.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Bandingkan ukuran ruang dan kapasitas tim sesuai kebutuhan bisnis Anda.
+            Tim bertambah. Klien bertambah. Ekspektasi ikut naik. Kantor pun menjadi bagian dari identitas perusahaan Anda.
           </p>
         </section>
 
@@ -583,17 +583,17 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            {/* 1. Pilihan Kapasitas */}
+            {/* 1. Kapasitas Kantor */}
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  PILIHAN KAPASITAS
+                  KAPASITAS KANTOR
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Kapasitas 10 — 150+ Tim
+                  Untuk tim 10-150+ orang
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Mulai dari kantor sayap kompak 10 orang hingga satu lantai penuh (full floor plate) terintegrasi untuk kantor pusat korporasi Anda.
+                  Dari ruang kantor korporat yang efisien untuk tim beranggotakan 10 orang hingga satu lantai penuh yang terintegrasi untuk kebutuhan kantor pusat perusahaan.
                 </p>
               </div>
               <button
@@ -604,22 +604,22 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Pilih kapasitas tim</span>
+                <span>Temukan Kapasitas yang Tepat</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            {/* 2. Tata Ruang Open-Plan */}
+            {/* 2. Tata Letak Lantai */}
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  TATA RUANG
+                  TATA LETAK LANTAI
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Lantai Kerja Grade A
+                  Ruang Terbuka Kelas Premium
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Denah lantai terbuka luas bebas kolom partisi dengan efisiensi tata ruang tinggi, pencahayaan alami, dan panorama CBD Bandung.
+                  Denah terbuka tanpa kolom dengan efisiensi ruang tinggi, cahaya alami yang melimpah, dan pemandangan panorama kota Bandung.
                 </p>
               </div>
               <button
@@ -629,22 +629,22 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Tanya denah unit</span>
+                <span>Minta Spesifikasi Lantai</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            {/* 3. Fasilitas & Reputasi Gedung */}
+            {/* 3. Fasilitas Gedung */}
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
                   FASILITAS GEDUNG
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Standar Gedung Komersial
+                  Standar Gedung Komersial Grade-A
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Lobi utama eksekutif, lift kartu akses, meeting suite, keamanan 24/7, gym, rooftop pool, serta dipercaya oleh Garuda Indonesia.
+                  Lobi eksekutif yang megah, lift dengan akses kartu, ruang rapat direksi, keamanan 24 jam, gym, kolam renang rooftop, dan menjadi lokasi kantor Garuda Indonesia.
                 </p>
               </div>
               <button
@@ -654,7 +654,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Jadwalkan survei lokasi</span>
+                <span>Jadwalkan Survei Privat</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -666,10 +666,10 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900 text-white rounded-2xl sm:rounded-[40px] p-8 sm:p-14 text-center border border-slate-800 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-white tracking-tight">
-              Sewa Fleksibel, Modal Kerja Tetap Efisien
+              Fleksibilitas Sewa. Alokasi Modal Lebih Efisien
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
-              Tanpa belanja modal besar di awal. Alokasikan modal untuk ekspansi pasar dan operasional utama bisnis korporasi Anda.
+              Tanpa beban biaya fit-out besar di awal. Alihkan modal perusahaan Anda untuk ekspansi pasar dan pertumbuhan bisnis inti.
             </p>
           </div>
         </section>
