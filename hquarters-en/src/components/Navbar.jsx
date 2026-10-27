@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 
@@ -204,23 +204,15 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
       </div>
 
       {/* Modern Mobile & Tablet Drawer Menu */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setMobileMenuOpen(false)}
-              className="fixed inset-0 bg-slate-950/30 backdrop-blur-xs -z-10 lg:hidden"
-            />
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2 }}
-              className="lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 pt-4 pb-6 shadow-2xl max-h-[80vh] overflow-y-auto"
-            >
+      {mobileMenuOpen && (
+        <>
+          <div
+            onClick={() => setMobileMenuOpen(false)}
+            className="fixed inset-0 bg-slate-950/30 backdrop-blur-xs -z-10 lg:hidden transition-opacity duration-200"
+          />
+          <div
+            className="lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 pt-4 pb-6 shadow-2xl max-h-[80vh] overflow-y-auto transition-all duration-200"
+          >
               <div className="flex flex-col gap-1.5 font-medium">
                 {[
                   { id: 'home', label: t.nav.home, active: currentPage === 'home' },
@@ -254,10 +246,9 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
                   {t.nav.findMySpace}
                 </button>
               </div>
-            </motion.div>
+            </div>
           </>
         )}
-      </AnimatePresence>
     </header>
   );
 }

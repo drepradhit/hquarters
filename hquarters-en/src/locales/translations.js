@@ -445,14 +445,14 @@ export const translations = {
   },
   id: {
     nav: {
-      spaces: 'Spaces',
-      building: 'Building',
-      location: 'Location',
-      companies: 'Companies',
-      insights: 'Insights',
-      events: 'Events',
-      findMySpace: 'Find My Space',
-      home: 'Home',
+      spaces: 'Produk',
+      building: 'Fasilitas',
+      location: 'Lokasi',
+      companies: 'Tenant',
+      insights: 'Artikel',
+      events: 'Ruang Multifungsi',
+      findMySpace: 'KONSULTASI SEKARANG!',
+      home: 'Beranda',
       languageLabel: 'Bahasa:',
     },
     hero: {

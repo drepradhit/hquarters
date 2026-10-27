@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
-import Footer from "./Footer.jsx";
+
 import { ChevronRight, Home, Image as ImageIcon } from "lucide-react";
 
 export default function PageSkeleton({ currentPage = "spaces", setCurrentPage }) {
@@ -259,8 +259,13 @@ export default function PageSkeleton({ currentPage = "spaces", setCurrentPage })
         )}
       </main>
 
-      {/* 4. Real Footer grounded at bottom */}
-      <Footer setCurrentPage={setCurrentPage} />
+      {/* Skeleton Footer */}
+      <footer className="w-full bg-[#181516] border-t border-slate-800 py-12 px-5 sm:px-8">
+        <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="h-6 w-32 bg-slate-800 rounded animate-shimmer" />
+          <div className="h-4 w-48 bg-slate-800/60 rounded animate-shimmer" />
+        </div>
+      </footer>
     </div>
   );
 }

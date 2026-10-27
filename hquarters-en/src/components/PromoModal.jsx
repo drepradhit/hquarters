@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-const PROMO_IMAGE = `${import.meta.env.BASE_URL}promo/promo-banner.jpg`;
+const PROMO_IMAGE = `${import.meta.env.BASE_URL}promo/promo-banner.webp`;
 
 export default function PromoModal({ setCurrentPage }) {
   const { language } = useLanguage();
@@ -11,14 +11,38 @@ export default function PromoModal({ setCurrentPage }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    try {
+      if (sessionStorage.getItem("hq_promo_closed") === "1") return;
+    } catch (e) {}
+
+    let triggered = false;
+    const trigger = () => {
+      if (triggered) return;
+      triggered = true;
       setIsOpen(true);
-    }, 600);
-    return () => clearTimeout(timer);
+    };
+
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        trigger();
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    const timer = setTimeout(trigger, 5500);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleClose = () => {
     setIsOpen(false);
+    try {
+      sessionStorage.setItem("hq_promo_closed", "1");
+    } catch (e) {}
   };
 
   const handleViewUnits = () => {
@@ -63,7 +87,7 @@ export default function PromoModal({ setCurrentPage }) {
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="relative z-10 w-full max-w-[340px] xs:max-w-[380px] sm:max-w-[430px] md:max-w-[460px] bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-slate-100 my-auto flex flex-col"
           >
-            {/* Tombol Close X Melayang di Pojok Kanan Atas Poster */}
+            {/* Tombol Close X */}
             <button
               id="btn-promo-modal-close"
               type="button"
@@ -79,6 +103,10 @@ export default function PromoModal({ setCurrentPage }) {
               <img
                 src={PROMO_IMAGE}
                 alt="Promo HQuarters"
+                width="640"
+                height="800"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto max-h-[70vh] sm:max-h-[72vh] md:max-h-[74vh] object-contain block select-none"
               />
             </div>

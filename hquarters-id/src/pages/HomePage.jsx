@@ -1,19 +1,43 @@
-﻿import React, { useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Hero from '../components/Hero.jsx';
-import Partners from '../components/Partners.jsx';
-import AddressStatement from '../components/AddressStatement.jsx';
-import BusinessJourney from '../components/BusinessJourney.jsx';
-import BuildingHighlights from '../components/BuildingHighlights.jsx';
-import Features from '../components/Features.jsx';
-import InteractiveDemo from '../components/InteractiveDemo.jsx';
-import StatsSection from '../components/StatsSection.jsx';
-import CTA from '../components/CTA.jsx';
-import Footer from '../components/Footer.jsx';
+
+// Below-the-fold components lazy loaded on idle / first scroll for instant initial paint
+const BusinessJourney = lazy(() => import('../components/BusinessJourney.jsx'));
+const AddressStatement = lazy(() => import('../components/AddressStatement.jsx'));
+const Partners = lazy(() => import('../components/Partners.jsx'));
+const BuildingHighlights = lazy(() => import('../components/BuildingHighlights.jsx'));
+const CTA = lazy(() => import('../components/CTA.jsx'));
+const Footer = lazy(() => import('../components/Footer.jsx'));
 
 export default function HomePage({ setCurrentPage }) {
+  const [loadBelowFold, setLoadBelowFold] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const trigger = () => setLoadBelowFold(true);
+
+    // Load below-the-fold content after initial hero paint or immediately on first scroll
+    const onScroll = () => {
+      trigger();
+      window.removeEventListener('scroll', onScroll);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true, once: true });
+
+    if ('requestIdleCallback' in window) {
+      const handle = window.requestIdleCallback(trigger, { timeout: 1500 });
+      return () => {
+        window.removeEventListener('scroll', onScroll);
+        window.cancelIdleCallback(handle);
+      };
+    } else {
+      const timer = setTimeout(trigger, 1200);
+      return () => {
+        window.removeEventListener('scroll', onScroll);
+        clearTimeout(timer);
+      };
+    }
   }, []);
 
   return (
@@ -21,16 +45,21 @@ export default function HomePage({ setCurrentPage }) {
       <Navbar currentPage="home" setCurrentPage={setCurrentPage} />
       <main className="flex-1 bg-white">
         <Hero setCurrentPage={setCurrentPage} />
-        <BusinessJourney setCurrentPage={setCurrentPage} />
-        <AddressStatement setCurrentPage={setCurrentPage} />
-        <Partners setCurrentPage={setCurrentPage} />
-        <BuildingHighlights setCurrentPage={setCurrentPage} />
-        
-        
-        
-        <CTA setCurrentPage={setCurrentPage} />
+        {loadBelowFold && (
+          <Suspense fallback={null}>
+            <BusinessJourney setCurrentPage={setCurrentPage} />
+            <AddressStatement setCurrentPage={setCurrentPage} />
+            <Partners setCurrentPage={setCurrentPage} />
+            <BuildingHighlights setCurrentPage={setCurrentPage} />
+            <CTA setCurrentPage={setCurrentPage} />
+          </Suspense>
+        )}
       </main>
-      <Footer setCurrentPage={setCurrentPage} />
+      {loadBelowFold && (
+        <Suspense fallback={null}>
+          <Footer setCurrentPage={setCurrentPage} />
+        </Suspense>
+      )}
     </div>
   );
 }

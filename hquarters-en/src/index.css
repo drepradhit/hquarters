@@ -222,3 +222,43 @@ img:hover,
   background-size: 200% 100%;
   animation: shimmer 1.8s ease-in-out infinite;
 }
+
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.marquee-content-left {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  animation: marquee-left 40s linear infinite;
+  will-change: transform;
+}
+
+.marquee-content-right {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  animation: marquee-right 40s linear infinite;
+  will-change: transform;
+}
+
+.marquee-container:hover .marquee-content-left,
+.marquee-container:hover .marquee-content-right {
+  animation-play-state: paused;
+}

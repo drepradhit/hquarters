@@ -1,9 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Star, ArrowRight } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext.jsx';
+import React from "react";
+import { Star, ArrowRight, ArrowUpRight } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext.jsx";
 
-export default function Hero({ setCurrentPage }) {
+function Hero({ setCurrentPage }) {
   const { t } = useLanguage();
 
   return (
@@ -12,11 +11,15 @@ export default function Hero({ setCurrentPage }) {
       {/* Background image: full-screen dimmed on mobile, strictly below navbar on desktop */}
       <div className="absolute inset-0 md:top-28 overflow-hidden pointer-events-none">
         <img
-          src="/BUILDING/ChatGPT%20Image%20Jul%2029,%202026,%2003_09_51%20PM-1536.webp?v=20260825"
-          srcSet="/BUILDING/ChatGPT%20Image%20Jul%2029,%202026,%2003_09_51%20PM-640.webp?v=20260825 640w, /BUILDING/ChatGPT%20Image%20Jul%2029,%202026,%2003_09_51%20PM-800.webp?v=20260825 800w, /BUILDING/ChatGPT%20Image%20Jul%2029,%202026,%2003_09_51%20PM-1536.webp?v=20260825 1536w"
+          src="https://hquarters.co.id/BUILDING/hero-building-1536.webp?v=20260825"
+          srcSet="https://hquarters.co.id/BUILDING/hero-building-640.webp?v=20260825 640w, https://hquarters.co.id/BUILDING/hero-building-800.webp?v=20260825 800w, https://hquarters.co.id/BUILDING/hero-building-1536.webp?v=20260825 1536w"
           sizes="100vw"
           alt="HQuarters Building"
           fetchPriority="high"
+          loading="eager"
+          decoding="async"
+          width="1536"
+          height="1024"
           className="w-full h-full object-cover object-top md:object-center scale-100 md:scale-115 md:translate-x-[6%] contrast-[1.05] md:contrast-[1.18] saturate-[1.1] md:saturate-[1.25] brightness-[0.88] md:brightness-[0.98]"
         />
 
@@ -37,11 +40,8 @@ export default function Hero({ setCurrentPage }) {
       <div className="relative z-10 max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 w-full py-6 sm:py-20 md:py-28">
         <div className="max-w-xl lg:max-w-2xl">
           
-          {/* Main Headline (compact on mobile, expansive on desktop) */}
-          <motion.h1
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.08 }}
+          {/* Main Headline (Instant Zero-Delay Paint for 95+ LCP score) */}
+          <h1
             className="text-[25px] sm:text-3xl md:text-5xl lg:text-[58px] font-medium text-white md:text-slate-900 font-heading leading-[1.18] tracking-tight mb-3 sm:mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)] md:drop-shadow-none"
           >
             {t.hero.headlineParts ? (
@@ -61,29 +61,32 @@ export default function Hero({ setCurrentPage }) {
                 {t.hero.titlePrefix} <span className="text-[#FBA93C] md:text-[#EA8E18]"><br/>{t.hero.titleHighlight}</span>
               </>
             )}
-          </motion.h1>
+          </h1>
 
           {/* Subtitle Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.15 }}
-            className="text-slate-100 md:text-slate-600 text-[13px] sm:text-base md:text-lg leading-relaxed font-normal mb-5 sm:mb-8 max-w-sm md:max-w-xl drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)] md:drop-shadow-none"
+          <p
+            className="text-slate-100 md:text-slate-600 text-[13px] sm:text-base md:text-lg leading-relaxed font-normal mb-3 sm:mb-4 max-w-sm md:max-w-xl drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)] md:drop-shadow-none"
           >
             {t.hero.description}
-          </motion.p>
+          </p>
 
-          {/* CTA Buttons (sleeker, more proportional padding on mobile) */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
+          {/* Punchy Hero Tagline */}
+          {t.hero.tagline && (
+            <p
+              className="font-bold text-[#FBA93C] md:text-[#EA8E18] text-sm sm:text-base md:text-lg mb-5 sm:mb-8 drop-shadow-xs md:drop-shadow-none"
+            >
+              {t.hero.tagline}
+            </p>
+          )}
+
+          {/* CTA Buttons */}
+          <div
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-4 mb-5 sm:mb-8 max-w-[300px] sm:max-w-none"
           >
             <button
               id="btn-hero-explore-spaces"
               onClick={() => {
-                if (setCurrentPage) setCurrentPage('spaces');
+                if (setCurrentPage) setCurrentPage("spaces");
                 window.scrollTo(0, 0);
               }}
               className="inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-xs sm:text-base shadow-lg shadow-orange-500/25 active:scale-98 transition-all duration-200 cursor-pointer text-center shrink-0"
@@ -91,35 +94,51 @@ export default function Hero({ setCurrentPage }) {
               <span>{t.hero.exploreBtn}</span>
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </button>
-            <button
-              id="btn-hero-visit"
-              onClick={() => {
-                if (setCurrentPage) setCurrentPage('find-space');
-                window.scrollTo(0, 0);
-              }}
-              className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-white/15 md:bg-white hover:bg-white/25 md:hover:bg-slate-50 border border-white/30 md:border-slate-300 hover:border-white md:hover:border-slate-800 text-white md:text-slate-800 font-semibold text-xs sm:text-base backdrop-blur-md md:backdrop-blur-none transition-all duration-200 cursor-pointer text-center shrink-0 active:scale-98 shadow-xs"
-            >
-              {t.hero.visitBtn}
-            </button>
-          </motion.div>
+            {t.hero.visitBtn?.toLowerCase().includes("whatsapp") ? (
+              <a
+                id="btn-hero-whatsapp"
+                href="https://wa.me/628111908319?text=Halo%20HQuarters%20Bandung%2C%20saya%20ingin%20berkonsultasi%20mengenai%20ruang%20bisnis."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-white/15 md:bg-white hover:bg-white/25 md:hover:bg-slate-50 border border-white/30 md:border-slate-300 hover:border-white md:hover:border-slate-800 text-white md:text-slate-800 font-semibold text-xs sm:text-base backdrop-blur-md md:backdrop-blur-none transition-all duration-200 cursor-pointer text-center shrink-0 active:scale-98 shadow-xs"
+              >
+                <span>{t.hero.visitBtn}</span>
+                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-80" />
+              </a>
+            ) : (
+              <button
+                id="btn-hero-visit"
+                onClick={() => {
+                  if (setCurrentPage) setCurrentPage("find-space");
+                  window.scrollTo(0, 0);
+                }}
+                className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-white/15 md:bg-white hover:bg-white/25 md:hover:bg-slate-50 border border-white/30 md:border-slate-300 hover:border-white md:hover:border-slate-800 text-white md:text-slate-800 font-semibold text-xs sm:text-base backdrop-blur-md md:backdrop-blur-none transition-all duration-200 cursor-pointer text-center shrink-0 active:scale-98 shadow-xs"
+              >
+                {t.hero.visitBtn}
+              </button>
+            )}
+          </div>
 
           {/* Social Proof */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.25 }}
+          <div
             className="flex items-center gap-2 sm:gap-3 text-[11px] sm:text-sm text-slate-200 md:text-slate-700 font-medium"
           >
-            <div className="flex items-center gap-1 text-[#FBA93C] md:text-[#EA8E18] shrink-0">
+            <div className="flex -space-x-1 sm:-space-x-1.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" />
+                <div key={i} className="w-5 h-5 sm:w-7 sm:h-7 rounded-full bg-amber-400/90 md:bg-amber-100 border border-white/40 md:border-white flex items-center justify-center text-amber-900 md:text-amber-600 shadow-xs">
+                  <Star className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 fill-current" />
+                </div>
               ))}
             </div>
-            <span className="font-medium text-slate-100 md:text-slate-800 leading-snug drop-shadow-xs md:drop-shadow-none">{t.hero.trusted}</span>
-          </motion.div>
+            <span className="drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] md:drop-shadow-none">
+              {t.hero.socialProof}
+            </span>
+          </div>
 
         </div>
       </div>
     </section>
   );
 }
+
+export default React.memo(Hero);

@@ -2,23 +2,68 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 
+const rowTop = [
+  { name: 'Allianz', src: '/tenants/alllogo-gf-allianz.webp?v=20260826' },
+  { name: 'AXA', src: '/tenants/alllogo-7de-axa.webp?v=20260826' },
+  { name: 'MSIG', src: '/tenants/alllogo-9ef-msig.webp?v=20260826' },
+  { name: 'FWD Insurance', src: '/tenants/alllogo-6fgh-fwd.webp?v=20260826' },
+  { name: 'Avrist Assurance', src: '/tenants/alllogo-19r-avrist.webp?v=20260826' },
+  { name: 'NH Korindo Sekuritas', src: '/tenants/alllogo-5d-nh-korindo-sekuritas.webp?v=20260826' },
+  { name: 'Bmoney', src: '/tenants/alllogo-6k-b-money.webp?v=20260826' },
+  { name: 'Henan Sekuritas', src: '/tenants/alllogo-16e-henan-sekuritas-copy.webp?v=20260826' },
+  { name: 'DANA Indonesia', src: '/tenants/alllogo-19-op-dana-logo.webp?v=20260826' },
+  { name: 'Interpan Tradepro', src: '/tenants/alllogo-6i-interpan-tradepro.webp?v=20260826' },
+  { name: 'Mega Menara Mas', src: '/tenants/alllogo-3i-mega-menara-mas-a5-copy.webp?v=20260826' },
+  { name: 'Roche', src: '/tenants/alllogo-16j-roche.webp?v=20260826' },
+  { name: 'Medion', src: '/tenants/alllogo-15-rstkj-medion-logo.webp?v=20260826' },
+  { name: 'Hasna Medika', src: '/tenants/alllogo-12ij-hasna-copy-2.webp?v=20260826' },
+  { name: 'Amoures Clinic', src: '/tenants/alllogo-12m-amoures.webp?v=20260826' },
+  { name: 'Dispendix', src: '/tenants/alllogo-dispendixbicocompany.webp?v=20260826' },
+  { name: 'Huawei', src: '/tenants/alllogo-19-efhijk-huawei-logo.webp?v=20260826' },
+  { name: 'Datacolor', src: '/tenants/alllogo-6a-data-color.webp?v=20260826' },
+  { name: 'Garuda TV', src: '/tenants/alllogo-gf-b-garuda.webp?v=20260826' },
+  { name: 'INET Media', src: '/tenants/alllogo-6d-inet-media.webp?v=20260826' },
+  { name: 'VML Agency', src: '/tenants/alllogo-7q-vml.webp?v=20260826' },
+  { name: 'Social Bread', src: '/tenants/alllogo-5q-social-bread-logo-a4-cmyk.webp?v=20260826' },
+  { name: 'Hubton Studio', src: '/tenants/8D hubton-totem-hq-B.webp?v=20260825' },
+  { name: 'Senjakara Media', src: '/tenants/alllogo-8p-senjakara.webp?v=20260826' },
+  { name: 'Inpam Tekno', src: '/tenants/alllogo-7j-inpam-mini-riset.webp?v=20260826' },
+  { name: 'Neo IT', src: '/tenants/10 neo.webp?v=20260825' },
+  { name: 'Mitsubishi Chemical', src: '/tenants/alllogo-7i-mitsubishi.webp?v=20260826' },
+];
+
+const rowBottom = [
+  { name: 'Hyosung Corp', src: '/tenants/alllogo-8q-hyusung.webp?v=20260826' },
+  { name: 'PT Integra', src: '/tenants/alllogo-5n-integra-logo-baru001.webp?v=20260826' },
+  { name: 'GSS Engineering', src: '/tenants/alllogo-10h-gss.webp?v=20260826' },
+  { name: 'HGS Sourcing', src: '/tenants/alllogo-10q-hgs.webp?v=20260826' },
+  { name: 'Aero Logistics', src: '/tenants/alllogo-ug-aero.webp?v=20260826' },
+  { name: 'PT Biru Global', src: '/tenants/alllogo-17-abcdeflmnop-pt-biru.webp?v=20260826' },
+  { name: 'PT Bagja', src: '/tenants/alllogo-8fgh-pt-bagja.webp?v=20260826' },
+  { name: 'Kreasi Perdana', src: '/tenants/alllogo-15o-kreasi-perdana.webp?v=20260826' },
+  { name: 'Daya Inara', src: '/tenants/alllogo-15i-daya-inara.webp?v=20260826' },
+  { name: 'Ray White', src: '/tenants/raywhite.webp?v=20260825' },
+  { name: 'IWG Workspace', src: '/tenants/alllogo-20-iwg-hq.webp?v=20260826' },
+  { name: 'Kozystay', src: '/tenants/alllogo-kozystay.webp?v=20260826' },
+  { name: 'Investaland', src: '/tenants/alllogo-logo-investaland.webp?v=20260826' },
+  { name: 'Artaloka', src: '/tenants/alllogo-12c-artaloka.webp?v=20260826' },
+  { name: 'TDE Design', src: '/tenants/alllogo-12k-logo-tde---totem-pylon-hquarters-2.webp?v=20260826' },
+  { name: 'Kobi Education', src: '/tenants/alllogo-11h-kobi.webp?v=20260826' },
+  { name: 'Australia Int. College', src: '/tenants/alllogo-6l-australia-international-college.webp?v=20260826' },
+  { name: 'Universal Consulting', src: '/tenants/alllogo-6q-universal.webp?v=20260826' },
+  { name: 'ASA Consulting', src: '/tenants/alllogo-9q-asa.webp?v=20260826' },
+  { name: 'CAS Services', src: '/tenants/alllogo-5s-cas.webp?v=20260826' },
+  { name: 'AZ Pro Services', src: '/tenants/alllogo-ug-az-pro.webp?v=20260826' },
+  { name: 'HIS Travel', src: '/tenants/alllogo-ug-his-travel.webp?v=20260826' },
+  { name: 'Hamidah Tour & Travel', src: '/tenants/alllogo-9m-hamidah-tour-new.webp?v=20260826' },
+  { name: 'Tomoro Coffee', src: '/tenants/alllogo-gf-tomoro.webp?v=20260826' },
+  { name: 'Rejuve Juice', src: '/tenants/alllogo-gf-cmyk-rejuve-new-logo2025color.webp?v=20260826' },
+  { name: 'Jus Gaban', src: '/tenants/GF Jus Gaban.webp?v=20260825' },
+  { name: 'Sal Corner', src: '/tenants/alllogo-gf-sal-corner.webp?v=20260826' },
+];
+
 export default function Partners({ setCurrentPage }) {
   const { t } = useLanguage();
-
-  const featuredPartners = [
-    { name: 'Allianz', src: '/homepagelogobaru/GF allianz.webp?v=20260825', scale: 'scale-125' },
-    { name: 'AXA', src: '/homepagelogobaru/7de axa.webp?v=20260825', scale: 'scale-130' },
-    { name: 'MSIG', src: '/homepagelogobaru/9ef MSIG.webp?v=20260825', scale: 'scale-125' },
-    { name: 'Mitsubishi', src: '/homepagelogobaru/7i mitsubishi.webp?v=20260825', scale: 'scale-135' },
-    { name: 'Roche', src: '/homepagelogobaru/16j roche.webp?v=20260825', scale: 'scale-135' },
-    { name: 'FWD', src: '/homepagelogobaru/6FGH fwd.webp?v=20260825', scale: 'scale-130' },
-    { name: 'Avrist', src: '/homepagelogobaru/19r avrist.webp?v=20260825', scale: 'scale-130' },
-    { name: 'DANA', src: '/homepagelogobaru/19 OP Dana-Logo.webp?v=20260825', scale: 'scale-130' },
-    { name: 'HIS Travel', src: '/homepagelogobaru/UG his travel.webp?v=20260825', scale: 'scale-135' },
-    { name: 'Henan Sekuritas', src: '/homepagelogobaru/16E henan sekuritas.webp?v=20260825', scale: 'scale-135' },
-    { name: 'Huawei', src: '/homepagelogobaru/huawei.webp?v=20260825', scale: 'scale-125' },
-    { name: 'Garuda TV', src: '/homepagelogobaru/GF B garuda.webp?v=20260825', scale: 'scale-115' },
-  ];
 
   const handleCommunityClick = (e) => {
     e.preventDefault();
@@ -29,11 +74,11 @@ export default function Partners({ setCurrentPage }) {
   };
 
   return (
-    <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+    <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80 overflow-hidden">
+      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
         
-        
-        <div className="space-y-3 max-w-3xl mx-auto">
+        {/* Header */}
+        <div className="space-y-2.5 max-w-3xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
             {t.partners.badge}
           </span>
@@ -42,26 +87,52 @@ export default function Partners({ setCurrentPage }) {
           </h2>
         </div>
 
-        
-        {/* Curated Brand Showcase: Clean static grid without looping/animation */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 py-4 max-w-6xl mx-auto">
-          {featuredPartners.map((brand, idx) => (
-            <div
-              key={`partner-${brand.name}-${idx}`}
-              onClick={handleCommunityClick}
-              className="group flex items-center justify-center h-24 sm:h-28 px-4 py-3 bg-white rounded-xl border border-slate-200/80 hover:border-[#EA8E18]/60 shadow-2xs hover:shadow-md transition-all duration-300 cursor-pointer"
-            >
-              <img
-                loading="lazy"
-                src={brand.src}
-                alt={brand.name}
-                className="h-12 sm:h-14 w-auto max-w-[130px] sm:max-w-[150px] object-contain opacity-85 group-hover:opacity-100 transition-opacity"
-              />
+        {/* Dual Bi-directional Infinite Looping Marquee */}
+        <div className="w-full space-y-3 sm:space-y-4 py-2 [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+          
+          {/* Row 1: Moves to the RIGHT (Ke Kanan) */}
+          <div className="marquee-container overflow-hidden">
+            <div className="marquee-content-right gap-4 sm:gap-6 pr-4 sm:pr-6">
+              {[...rowTop, ...rowTop].map((brand, idx) => (
+                <div
+                  key={"top-" + brand.name + "-" + idx}
+                  onClick={handleCommunityClick}
+                  className="flex items-center justify-center h-14 sm:h-16 w-32 sm:w-40 shrink-0 px-2.5 cursor-pointer rounded-xl hover:bg-slate-50 transition-colors"
+                >
+                  <img
+                    loading="lazy"
+                    src={brand.src}
+                    alt={brand.name}
+                    className="h-7 sm:h-9 w-auto max-w-[100px] sm:max-w-[125px] object-contain transition-transform duration-200 hover:scale-108"
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Row 2: Moves to the LEFT (Ke Kiri) */}
+          <div className="marquee-container overflow-hidden">
+            <div className="marquee-content-left gap-4 sm:gap-6 pr-4 sm:pr-6">
+              {[...rowBottom, ...rowBottom].map((brand, idx) => (
+                <div
+                  key={"bot-" + brand.name + "-" + idx}
+                  onClick={handleCommunityClick}
+                  className="flex items-center justify-center h-14 sm:h-16 w-32 sm:w-40 shrink-0 px-2.5 cursor-pointer rounded-xl hover:bg-slate-50 transition-colors"
+                >
+                  <img
+                    loading="lazy"
+                    src={brand.src}
+                    alt={brand.name}
+                    className="h-7 sm:h-9 w-auto max-w-[100px] sm:max-w-[125px] object-contain transition-transform duration-200 hover:scale-108"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
 
-        
+        {/* Footer Link */}
         <div className="pt-2">
           <button
             id="btn-partners-explore-community"

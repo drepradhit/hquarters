@@ -1,8 +1,9 @@
 import React, { useState, useRef, lazy, Suspense } from 'react';
 import HomePage from './pages/HomePage.jsx';
-import FloatingWhatsAppButton from './components/FloatingWhatsAppButton.jsx';
-import PromoModal from './components/PromoModal.jsx';
 import PageSkeleton from './components/PageSkeleton.jsx';
+
+const FloatingWhatsAppButton = lazy(() => import('./components/FloatingWhatsAppButton.jsx'));
+const PromoModal = lazy(() => import('./components/PromoModal.jsx'));
 
 import { useLanguage } from './context/LanguageContext.jsx';
 import { updatePageSEO } from './lib/seo.js';
