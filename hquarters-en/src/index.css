@@ -176,9 +176,7 @@ body,
   will-change: transform;
 }
 
-.marquee-container:hover .marquee-content {
-  animation-play-state: paused;
-}
+/* Marquee continuous non-stopping on hover */
 
 .marquee-content-slow {
   display: flex;
@@ -246,7 +244,7 @@ img:hover,
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  animation: marquee-left 95s linear infinite;
+  animation: marquee-left 200s linear infinite;
   will-change: transform;
 }
 
@@ -254,11 +252,8 @@ img:hover,
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  animation: marquee-right 95s linear infinite;
+  animation: marquee-right 200s linear infinite;
   will-change: transform;
 }
 
-.marquee-container:hover .marquee-content-left,
-.marquee-container:hover .marquee-content-right {
-  animation-play-state: paused;
-}
+/* Marquee continuous non-stopping on hover */
