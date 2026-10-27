@@ -246,7 +246,7 @@ img:hover,
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  animation: marquee-left 40s linear infinite;
+  animation: marquee-left 95s linear infinite;
   will-change: transform;
 }
 
@@ -254,7 +254,7 @@ img:hover,
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  animation: marquee-right 40s linear infinite;
+  animation: marquee-right 95s linear infinite;
   will-change: transform;
 }
 

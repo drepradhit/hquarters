@@ -74,8 +74,8 @@ export default function Partners({ setCurrentPage }) {
   };
 
   return (
-    <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80 overflow-hidden">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-white border-b border-slate-200/80 overflow-hidden">
+      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 sm:space-y-10">
         
         {/* Header */}
         <div className="space-y-2.5 max-w-3xl mx-auto">
@@ -88,22 +88,22 @@ export default function Partners({ setCurrentPage }) {
         </div>
 
         {/* Dual Bi-directional Infinite Looping Marquee */}
-        <div className="w-full space-y-3 sm:space-y-4 py-2 [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+        <div className="w-full space-y-4 sm:space-y-6 py-2 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
           
           {/* Row 1: Moves to the RIGHT (Ke Kanan) */}
           <div className="marquee-container overflow-hidden">
-            <div className="marquee-content-right gap-4 sm:gap-6 pr-4 sm:pr-6">
+            <div className="marquee-content-right gap-6 sm:gap-10 md:gap-12 pr-6 sm:pr-10 md:pr-12">
               {[...rowTop, ...rowTop].map((brand, idx) => (
                 <div
                   key={"top-" + brand.name + "-" + idx}
                   onClick={handleCommunityClick}
-                  className="flex items-center justify-center h-14 sm:h-16 w-32 sm:w-40 shrink-0 px-2.5 cursor-pointer rounded-xl hover:bg-slate-50 transition-colors"
+                  className="flex items-center justify-center h-18 sm:h-22 md:h-26 w-40 sm:w-52 md:w-60 shrink-0 px-3 sm:px-5 cursor-pointer rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <img
                     loading="lazy"
                     src={brand.src}
                     alt={brand.name}
-                    className="h-7 sm:h-9 w-auto max-w-[100px] sm:max-w-[125px] object-contain transition-transform duration-200 hover:scale-108"
+                    className="h-10 sm:h-13 md:h-15 w-auto max-w-[130px] sm:max-w-[170px] md:max-w-[195px] object-contain transition-opacity duration-200 opacity-90 hover:opacity-100"
                   />
                 </div>
               ))}
@@ -112,18 +112,18 @@ export default function Partners({ setCurrentPage }) {
 
           {/* Row 2: Moves to the LEFT (Ke Kiri) */}
           <div className="marquee-container overflow-hidden">
-            <div className="marquee-content-left gap-4 sm:gap-6 pr-4 sm:pr-6">
+            <div className="marquee-content-left gap-6 sm:gap-10 md:gap-12 pr-6 sm:pr-10 md:pr-12">
               {[...rowBottom, ...rowBottom].map((brand, idx) => (
                 <div
                   key={"bot-" + brand.name + "-" + idx}
                   onClick={handleCommunityClick}
-                  className="flex items-center justify-center h-14 sm:h-16 w-32 sm:w-40 shrink-0 px-2.5 cursor-pointer rounded-xl hover:bg-slate-50 transition-colors"
+                  className="flex items-center justify-center h-18 sm:h-22 md:h-26 w-40 sm:w-52 md:w-60 shrink-0 px-3 sm:px-5 cursor-pointer rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <img
                     loading="lazy"
                     src={brand.src}
                     alt={brand.name}
-                    className="h-7 sm:h-9 w-auto max-w-[100px] sm:max-w-[125px] object-contain transition-transform duration-200 hover:scale-108"
+                    className="h-10 sm:h-13 md:h-15 w-auto max-w-[130px] sm:max-w-[170px] md:max-w-[195px] object-contain transition-opacity duration-200 opacity-90 hover:opacity-100"
                   />
                 </div>
               ))}
