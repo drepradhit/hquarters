@@ -81,13 +81,13 @@ export default function BuildingHighlights({ setCurrentPage }) {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#B45309] inline-block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
             {t.highlights.badge}
           </span>
 
           <h2 className="text-4xl sm:text-5xl font-medium text-slate-900 font-heading tracking-tight">
             {t.highlights.titlePrefix} <br />
-            <span className="text-[#B45309]">{t.highlights.titleHighlight}</span>
+            <span className="text-[#EA8E18]">{t.highlights.titleHighlight}</span>
           </h2>
         </div>
 
@@ -112,7 +112,7 @@ export default function BuildingHighlights({ setCurrentPage }) {
                 </p>
               </div>
 
-              <div className="pt-5 mt-4 border-t border-slate-200/60 flex items-center gap-1.5 text-xs font-bold text-[#B45309] group-hover:text-[#92400e]">
+              <div className="pt-5 mt-4 border-t border-slate-200/60 flex items-center gap-1.5 text-xs font-bold text-[#EA8E18] group-hover:text-[#d67a0a]">
                 <span>{t.highlights.featureLink}</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -124,7 +124,7 @@ export default function BuildingHighlights({ setCurrentPage }) {
           <button
             id="btn-building-highlights-explore"
             onClick={() => handleHighlightClick('building')}
-            className="inline-flex items-center gap-2 text-sm font-bold text-[#B45309] hover:text-[#92400e] transition-colors group cursor-pointer"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#EA8E18] hover:text-[#d67a0a] transition-colors group cursor-pointer"
           >
             <span>{t.highlights.exploreBtn}</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

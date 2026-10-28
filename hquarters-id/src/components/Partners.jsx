@@ -79,7 +79,7 @@ export default function Partners({ setCurrentPage }) {
         
         {/* Header */}
         <div className="space-y-2.5 max-w-3xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#B45309] inline-block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
             {t.partners.badge}
           </span>
           <h2 className="text-2xl sm:text-4xl font-medium text-slate-900 font-heading tracking-tight leading-tight">
@@ -137,7 +137,7 @@ export default function Partners({ setCurrentPage }) {
           <button
             id="btn-partners-explore-community"
             onClick={handleCommunityClick}
-            className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-[#B45309] hover:text-[#92400e] transition-colors group cursor-pointer"
+            className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-[#EA8E18] hover:text-[#d88010] transition-colors group cursor-pointer"
           >
             <span>{t.partners.exploreBtn}</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

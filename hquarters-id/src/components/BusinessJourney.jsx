@@ -51,13 +51,13 @@ export default function BusinessJourney({ setCurrentPage }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#B45309]">
+          <div className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#EA8E18]">
             <span>{t.journey.badge}</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-medium text-slate-900 font-heading tracking-tight leading-tight">
             <span>{t.journey.titlePrefix}</span><br />
-            <span className="text-[#B45309]">{t.journey.titleHighlight}</span>
+            <span className="text-[#EA8E18]">{t.journey.titleHighlight}</span>
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto">
@@ -89,15 +89,15 @@ export default function BusinessJourney({ setCurrentPage }) {
                 {/* Content Body: Product Name as the LARGEST headline below photo */}
                 <div className="p-5 space-y-2.5">
                   <div className="flex items-center justify-between gap-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 font-heading tracking-tight group-hover:text-[#B45309] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 font-heading tracking-tight group-hover:text-[#EA8E18] transition-colors">
                       {item.category}
                     </h3>
-                    <span className="text-xs font-semibold text-slate-600 font-mono tracking-wider shrink-0">
+                    <span className="text-xs font-semibold text-slate-400 font-mono tracking-wider shrink-0">
                       0{index + 1}
                     </span>
                   </div>
 
-                  <p className="text-sm font-medium text-[#B45309] leading-snug tracking-tight">
+                  <p className="text-sm font-medium text-[#EA8E18] leading-snug tracking-tight">
                     {item.title}
                   </p>
 
@@ -109,7 +109,7 @@ export default function BusinessJourney({ setCurrentPage }) {
 
               {/* Clean Footer Link */}
               <div className="px-5 pb-5 pt-0">
-                <div className="flex items-center justify-between text-xs font-semibold text-slate-800 group-hover:text-[#B45309] transition-colors pt-3 border-t border-slate-100">
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-800 group-hover:text-[#EA8E18] transition-colors pt-3 border-t border-slate-100">
                   <span>{item.cta}</span>
                   <div className="w-7 h-7 rounded-full bg-slate-100 group-hover:bg-[#EA8E18] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
