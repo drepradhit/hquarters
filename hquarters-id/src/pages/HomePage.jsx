@@ -26,13 +26,13 @@ export default function HomePage({ setCurrentPage }) {
     window.addEventListener('scroll', onScroll, { passive: true, once: true });
 
     if ('requestIdleCallback' in window) {
-      const handle = window.requestIdleCallback(trigger, { timeout: 1500 });
+      const handle = window.requestIdleCallback(trigger, { timeout: 2500 });
       return () => {
         window.removeEventListener('scroll', onScroll);
         window.cancelIdleCallback(handle);
       };
     } else {
-      const timer = setTimeout(trigger, 1200);
+      const timer = setTimeout(trigger, 2200);
       return () => {
         window.removeEventListener('scroll', onScroll);
         clearTimeout(timer);

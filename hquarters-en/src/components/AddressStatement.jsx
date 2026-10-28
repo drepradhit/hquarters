@@ -19,13 +19,13 @@ export default function AddressStatement({ setCurrentPage }) {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#B45309] inline-block">
             {t.address.badge}
           </span>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-slate-900 font-heading tracking-tight leading-[1.15]">
             {t.address.titlePrefix} <br className="hidden md:inline" />
-            <span className="text-[#EA8E18]">{t.address.titleHighlight}</span>
+            <span className="text-[#B45309]">{t.address.titleHighlight}</span>
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ export default function AddressStatement({ setCurrentPage }) {
             <button
               id="btn-address-explore"
               onClick={handleLocationClick}
-              className="inline-flex items-center gap-2 text-sm font-extrabold text-[#EA8E18] hover:text-[#d88010] transition-colors group cursor-pointer"
+              className="inline-flex items-center gap-2 text-sm font-extrabold text-[#B45309] hover:text-[#92400e] transition-colors group cursor-pointer"
             >
               <span>{t.address.exploreBtn}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -106,7 +106,7 @@ export default function AddressStatement({ setCurrentPage }) {
         >
           <div className="space-y-4">
             <h3 className="text-3xl sm:text-5xl font-medium text-slate-900 font-heading tracking-tight leading-tight">
-              {t.address.closingTitlePrefix} <br /><span className="text-[#EA8E18]">{t.address.closingTitleHighlight}</span>
+              {t.address.closingTitlePrefix} <br /><span className="text-[#B45309]">{t.address.closingTitleHighlight}</span>
             </h3>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal">

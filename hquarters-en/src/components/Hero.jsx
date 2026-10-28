@@ -89,7 +89,7 @@ function Hero({ setCurrentPage }) {
                 if (setCurrentPage) setCurrentPage("spaces");
                 window.scrollTo(0, 0);
               }}
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-xs sm:text-base shadow-lg shadow-orange-500/25 active:scale-98 transition-all duration-200 cursor-pointer text-center shrink-0"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-[#B45309] hover:bg-[#92400e] text-white font-semibold text-xs sm:text-base shadow-lg shadow-orange-500/25 active:scale-98 transition-all duration-200 cursor-pointer text-center shrink-0"
             >
               <span>{t.hero.exploreBtn}</span>
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />

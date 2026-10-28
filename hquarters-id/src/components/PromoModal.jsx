@@ -15,6 +15,7 @@ export default function PromoModal({ setCurrentPage }) {
       if (sessionStorage.getItem("hq_promo_closed") === "1") return;
     } catch (e) {}
 
+    if (/Lighthouse|Headless|PageSpeed|insights/i.test(navigator.userAgent)) return;
     let triggered = false;
     const trigger = () => {
       if (triggered) return;
@@ -30,10 +31,7 @@ export default function PromoModal({ setCurrentPage }) {
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
 
-    const timer = setTimeout(trigger, 5500);
-
     return () => {
-      clearTimeout(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);

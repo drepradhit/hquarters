@@ -129,7 +129,7 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
                 onClick={() => handleLanguageSwitch('id')}
                 className={`px-2.5 py-1 rounded-full transition-all cursor-pointer ${
                   language === 'id'
-                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    ? 'bg-[#EA8E18] text-slate-950 font-bold shadow-xs'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -141,7 +141,7 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
                 onClick={() => handleLanguageSwitch('en')}
                 className={`px-2.5 py-1 rounded-full transition-all cursor-pointer ${
                   language === 'en'
-                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    ? 'bg-[#EA8E18] text-slate-950 font-bold shadow-xs'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -155,7 +155,7 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
               className={`px-4.5 xl:px-6 py-2 xl:py-2.5 rounded-full font-bold text-[11px] xl:text-xs uppercase tracking-wider transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer whitespace-nowrap shrink-0 ${
                 currentPage === 'find-space'
                   ? 'bg-slate-900 text-white'
-                  : 'bg-[#E8860B] hover:bg-[#d67a0a] text-white'
+                  : 'bg-[#B45309] hover:bg-[#92400e] text-white'
               }`}
             >
               {t.nav.findMySpace}
@@ -169,9 +169,9 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
                 id="btn-lang-switch-mobile-id"
                 type="button"
                 onClick={() => handleLanguageSwitch('id')}
-                className={`px-2 py-0.5 rounded-full transition-all cursor-pointer ${
+                className={`px-2.5 py-1 min-h-[32px] rounded-full transition-all cursor-pointer ${
                   language === 'id'
-                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    ? 'bg-[#EA8E18] text-slate-950 font-bold shadow-xs'
                     : 'text-slate-600'
                 }`}
               >
@@ -181,9 +181,9 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
                 id="btn-lang-switch-mobile-en"
                 type="button"
                 onClick={() => handleLanguageSwitch('en')}
-                className={`px-2 py-0.5 rounded-full transition-all cursor-pointer ${
+                className={`px-2.5 py-1 min-h-[32px] rounded-full transition-all cursor-pointer ${
                   language === 'en'
-                    ? 'bg-[#E8860B] text-white shadow-xs'
+                    ? 'bg-[#EA8E18] text-slate-950 font-bold shadow-xs'
                     : 'text-slate-600'
                 }`}
               >
@@ -241,7 +241,7 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
                 <button
                   id="btn-navbar-mobile-cta-find-space"
                   onClick={() => handleNavClick('find-space')}
-                  className="w-full text-center py-3.5 rounded-xl bg-[#E8860B] hover:bg-[#d67a0a] text-white font-bold text-xs uppercase tracking-wider mt-3 shadow-md active:scale-98 transition-all cursor-pointer"
+                  className="w-full text-center py-3.5 rounded-xl bg-[#B45309] hover:bg-[#92400e] text-white font-bold text-xs uppercase tracking-wider mt-3 shadow-md active:scale-98 transition-all cursor-pointer"
                 >
                   {t.nav.findMySpace}
                 </button>

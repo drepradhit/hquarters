@@ -173,7 +173,9 @@ export const PAGE_SEO = {
 export function updatePageSEO(page, lang = 'id', customData = null) {
   const seo = customData || PAGE_SEO[page] || PAGE_SEO.home;
   const data = seo[lang] || seo.id || seo.en;
-  const canonicalUrl = `https://hquarters.co.id${seo.path || '/'}`;
+  const langPrefix = lang === 'id' ? '/id' : '/en';
+  const rawPath = seo.path || '/';
+  const canonicalUrl = `https://hquarters.co.id${langPrefix}${rawPath === '/' ? '/' : rawPath}`;
 
   // 1. Document Title
   if (data?.title) {
