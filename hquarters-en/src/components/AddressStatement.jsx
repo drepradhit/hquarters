@@ -23,8 +23,8 @@ export default function AddressStatement({ setCurrentPage }) {
             {t.address.badge}
           </span>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-slate-900 font-heading tracking-tight leading-[1.15]">
-            {t.address.titlePrefix} <br className="hidden md:inline" />
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-slate-900 font-heading tracking-tight leading-[1.15]">
+            <span>{t.address.titlePrefix}</span>
             <span className="text-[#EA8E18]">{t.address.titleHighlight}</span>
           </h2>
 
