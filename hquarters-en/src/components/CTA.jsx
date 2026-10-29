@@ -29,7 +29,7 @@ export default function CTA({
   return (
     <section 
       id="contact" 
-      className="pt-20 sm:pt-28 pb-12 sm:pb-16 bg-[#231F20] text-white text-center relative overflow-hidden"
+      className="pt-12 sm:pt-16 pb-8 sm:pb-10 bg-[#231F20] text-white text-center relative overflow-hidden"
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -38,29 +38,28 @@ export default function CTA({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto space-y-6"
+          className="max-w-3xl mx-auto space-y-4"
         >
           
-          <h2 className="text-3xl sm:text-5xl lg:text-[52px] font-medium font-heading tracking-tight leading-[1.15] text-white">
-            <span>{activeTitlePrefix}</span>
-            {activeTitlePrefix && activeTitleHighlight && <br />}
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium font-heading tracking-tight leading-snug text-white">
+            <span>{activeTitlePrefix}</span>{' '}
             <span className="text-[#EA8E18] font-medium">{activeTitleHighlight}</span>
           </h2>
 
           
           {activeDescription && (
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal">
+            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto font-normal">
               {activeDescription}
             </p>
           )}
 
           
           {activeButtonText && (
-            <div className="pt-2 sm:pt-4">
+            <div className="pt-1 sm:pt-2">
               <button
                 id="btn-cta-action"
                 onClick={handleClick}
-                className="px-7 sm:px-9 py-3.5 sm:py-4 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EA8E18]/25 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center justify-center gap-2.5 group shrink-0"
+                className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-[#EA8E18] hover:bg-[#d88010] text-white font-semibold text-xs sm:text-sm shadow-md shadow-[#EA8E18]/20 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer inline-flex items-center justify-center gap-2 group shrink-0"
               >
                 <span>{activeButtonText}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -20,14 +20,14 @@ export default function Footer({ setCurrentPage }) {
   };
 
   return (
-    <footer className="bg-[#231F20] text-slate-400 text-xs border-t border-white/[0.08] pt-12 sm:pt-14 pb-14 sm:pb-12 pb-[max(3.5rem,env(safe-area-inset-bottom,3.5rem))]">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+    <footer className="bg-[#231F20] text-slate-400 text-xs border-t border-white/[0.08] pt-8 sm:pt-10 pb-8 sm:pb-8 pb-[max(2rem,env(safe-area-inset-bottom,2rem))]">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
         
         {/* Main Layout: Proportional 12-column grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
           
           {/* Brand & Contact Column */}
-          <div className="lg:col-span-5 space-y-5">
+          <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3.5 flex-wrap">
               <button 
                 id="btn-footer-logo-home"
@@ -257,7 +257,7 @@ export default function Footer({ setCurrentPage }) {
         </div>
 
         {/* Bottom Bar: clean, balanced & minimal */}
-        <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500 font-light">
+        <div className="pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500 font-light">
           <span>© {new Date().getFullYear()} HQuarters Business Residence. All rights reserved.</span>
           <span className="hidden sm:inline">Asia Afrika CBD, Bandung, Indonesia</span>
         </div>
