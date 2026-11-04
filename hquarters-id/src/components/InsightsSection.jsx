@@ -11,10 +11,30 @@ export default function InsightsSection({ setCurrentPage, setSelectedArticleId }
   const featuredArticle = articles[0];
   const gridArticles = articles.slice(1);
 
+  const ARTICLE_SLUGS = {
+    'art-1': '/studio-foto-senjakara-jadi-salah-satu-tenant-di-hquarters/',
+    'art-2': '/garuda-indonesia-resmi-buka-kantor-penjualan-di-hquarters/',
+    'art-3': '/7-alasan-bisnis-kreatif-edukasi-cocok-sewa-kantor-di-bandung-cbd/',
+    'art-4': '/sewa-ruang-kantor-bandung-pilihan-alternatif-selain-jakarta/',
+    'art-5': '/elemen-penting-dalam-perencanaan-design-untuk-ruang-kantor/',
+    'art-6': '/7-tips-design-ruang-kantor-yang-fungsional-dan-nyaman/',
+    'art-7': '/8-tips-desain-ruang-kantor-kecil-minimalis-yang-efektif/',
+    'art-8': '/msig-indonesia-pilihan-tepat-berkantor-di-pusat-bisnis/',
+    'art-9': '/wajib-tahu-7-tips-memilih-lokasi-kantor-terbaik-bagi-perusahaan/',
+    '6012': '/studio-foto-senjakara-jadi-salah-satu-tenant-di-hquarters/',
+    '5522': '/garuda-indonesia-resmi-buka-kantor-penjualan-di-hquarters/',
+    '5423': '/7-alasan-bisnis-kreatif-edukasi-cocok-sewa-kantor-di-bandung-cbd/',
+    '5355': '/sewa-ruang-kantor-bandung-pilihan-alternatif-selain-jakarta/',
+    '3758': '/elemen-penting-dalam-perencanaan-design-untuk-ruang-kantor/',
+    '3483': '/7-tips-design-ruang-kantor-yang-fungsional-dan-nyaman/',
+    '3369': '/8-tips-desain-ruang-kantor-kecil-minimalis-yang-efektif/',
+    '2806': '/msig-indonesia-pilihan-tepat-berkantor-di-pusat-bisnis/',
+    '2840': '/wajib-tahu-7-tips-memilih-lokasi-kantor-terbaik-bagi-perusahaan/',
+  };
+
   const handleArticleClick = (articleId) => {
-    if (setSelectedArticleId) setSelectedArticleId(articleId);
-    if (setCurrentPage) setCurrentPage('article-detail');
-    window.scrollTo(0, 0);
+    const slug = ARTICLE_SLUGS[articleId] || '/insights/';
+    window.location.href = slug;
   };
 
   return (

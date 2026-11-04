@@ -117,6 +117,10 @@ export default function App() {
   }, []);
 
   const navigate = (page) => {
+    if (page === 'insights') {
+      window.location.href = '/insights/';
+      return;
+    }
     const rawPath = page === 'article-detail' ? `/insights/${articleIdRef.current}` : PAGE_PATHS[page] || '/';
     const isId = window.location.pathname.startsWith('/id');
     const isEn = window.location.pathname.startsWith('/en');
@@ -135,8 +139,28 @@ export default function App() {
   const { language } = useLanguage();
 
   React.useEffect(() => {
+    if (currentPage === 'insights') {
+      window.location.replace('/insights/');
+      return;
+    }
+    if (currentPage === 'article-detail') {
+      const ARTICLE_SLUGS = {
+        '6012': '/studio-foto-senjakara-jadi-salah-satu-tenant-di-hquarters/',
+        '5522': '/garuda-indonesia-resmi-buka-kantor-penjualan-di-hquarters/',
+        '5423': '/7-alasan-bisnis-kreatif-edukasi-cocok-sewa-kantor-di-bandung-cbd/',
+        '5355': '/sewa-ruang-kantor-bandung-pilihan-alternatif-selain-jakarta/',
+        '3758': '/elemen-penting-dalam-perencanaan-design-untuk-ruang-kantor/',
+        '3483': '/7-tips-design-ruang-kantor-yang-fungsional-dan-nyaman/',
+        '3369': '/8-tips-desain-ruang-kantor-kecil-minimalis-yang-efektif/',
+        '2806': '/msig-indonesia-pilihan-tepat-berkantor-di-pusat-bisnis/',
+        '2840': '/wajib-tahu-7-tips-memilih-lokasi-kantor-terbaik-bagi-perusahaan/',
+      };
+      const slug = ARTICLE_SLUGS[selectedArticleId] || '/insights/';
+      window.location.replace(slug);
+      return;
+    }
     updatePageSEO(currentPage, language);
-  }, [currentPage, language]);
+  }, [currentPage, language, selectedArticleId]);
 
   return (
     <ErrorBoundary>

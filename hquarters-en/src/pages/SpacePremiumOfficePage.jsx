@@ -5,8 +5,10 @@ import { ArrowRight, ArrowDownRight, CheckCircle2, Building2, Shield, Wifi, MapP
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import FindSpaceSection from '../components/FindSpaceSection.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function SpacePremiumOfficePage({ setCurrentPage }) {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     companyName: '',
     yourName: '',
