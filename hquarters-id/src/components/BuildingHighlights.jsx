@@ -80,14 +80,9 @@ export default function BuildingHighlights({ setCurrentPage }) {
     <section id="building-highlights" className="py-24 sm:py-32 bg-white border-b border-slate-200/80">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-            {t.highlights.badge}
-          </span>
-
-          <h2 className="text-4xl sm:text-5xl font-medium text-slate-900 font-heading tracking-tight">
-            {t.highlights.titlePrefix} <br />
-            <span className="text-[#EA8E18]">{t.highlights.titleHighlight}</span>
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#EA8E18] font-heading tracking-tight">
+            {t.highlights.singleTitle || 'Fasilitas Gedung'}
           </h2>
         </div>
 

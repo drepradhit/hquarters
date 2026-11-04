@@ -71,6 +71,7 @@ export const translations = {
       exploreBtn: 'Meet The HQuarters Business Community',
     },
     highlights: {
+      singleTitle: 'Building Amenities',
       badge: 'THE BUILDING',
       titlePrefix: 'Built for Business. ',
       titleHighlight: 'Designed for Life.',

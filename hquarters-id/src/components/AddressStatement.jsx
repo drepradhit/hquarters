@@ -15,20 +15,20 @@ export default function AddressStatement({ setCurrentPage }) {
   };
 
   return (
-    <section id="address-statement" className="py-24 sm:py-32 bg-white border-b border-slate-200/80 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <section id="address-statement" className="pt-16 sm:pt-24 pb-14 sm:pb-20 bg-white border-b border-slate-200/80 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
         
-        <div className="text-center max-w-4xl mx-auto space-y-4">
+        <div className="text-center max-w-5xl mx-auto space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
             {t.address.badge}
           </span>
 
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-slate-900 font-heading tracking-tight leading-[1.15]">
-            <span>{t.address.titlePrefix}</span>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-slate-900 font-heading tracking-tight leading-[1.15]">
+            <span>{t.address.titlePrefix}</span>{' '}
             <span className="text-[#EA8E18]">{t.address.titleHighlight}</span>
           </h2>
 
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-4xl mx-auto font-normal">
             {t.address.desc}
           </p>
 
@@ -94,24 +94,6 @@ export default function AddressStatement({ setCurrentPage }) {
               <span>{t.address.viewLocationBtn}</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#EA8E18]" />
             </button>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="rounded-2xl sm:rounded-[44px] p-8 sm:p-14 lg:p-16 bg-white text-center max-w-4xl mx-auto space-y-4"
-        >
-          <div className="space-y-4">
-            <h3 className="text-3xl sm:text-5xl font-medium text-slate-900 font-heading tracking-tight leading-tight">
-              {t.address.closingTitlePrefix} <br /><span className="text-[#EA8E18]">{t.address.closingTitleHighlight}</span>
-            </h3>
-
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal">
-              {t.address.closingStatement}
-            </p>
           </div>
         </motion.div>
 

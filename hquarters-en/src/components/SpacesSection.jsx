@@ -44,12 +44,12 @@ export default function SpacesSection({ setCurrentPage }) {
     <section id="spaces" className="pt-4 sm:pt-6 pb-16 bg-white">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-4xl mx-auto space-y-3">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-slate-900 font-heading tracking-tight leading-[1.15]">
-            {t.spacesHub.titlePrefix} <br />
+            <span>{t.spacesHub.titlePrefix}</span>
             <span className="text-[#EA8E18]">{t.spacesHub.titleHighlight}</span>
           </h1>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-normal">
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-normal">
             {t.spacesHub.description}
           </p>
         </div>

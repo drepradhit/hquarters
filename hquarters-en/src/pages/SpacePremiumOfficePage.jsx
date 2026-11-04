@@ -330,9 +330,9 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
-          <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
+          <h2 className="text-3xl sm:text-5xl font-medium font-heading text-[#EA8E18] tracking-tight leading-tight [text-wrap:balance]">
             Your Company Has Grown. <br />
-            <span className="text-[#EA8E18]">Your Office Should Too.</span>
+            <span>Your Office Should Too.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
             Every company reaches a point where the old office no longer reflects the business it has become.<br className="hidden sm:inline" />
@@ -585,19 +585,19 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
         {/* Premium Office Highlights: Capacity, Layout, Amenities */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             
             {/* 1. Office Capacity */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
                   OFFICE CAPACITY
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  10 — 150+ Team Footprint
+                  Choose Office Space Based on Team Needs
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  From compact corporate wing suites for 10 people to entire integrated full-floor tenancies for corporate headquarters.
+                  Your team size and daily activities determine your office space requirements. Share your company's needs to explore available units and their capacity.
                 </p>
               </div>
               <button
@@ -608,57 +608,59 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Select team capacity</span>
+                <span>Consult Space Requirements</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             {/* 2. Floor Layout */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  FLOOR LAYOUT
+                  OFFICE LAYOUT
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Grade A Open Plates
+                  Plan Your Office Layout
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Column-free open floor plans with high spatial efficiency, abundant natural light, and panoramic Bandung skyline views.
+                  Review floor plans to assess the division of work areas, meeting rooms, and other supporting facilities. Use space details as a reference before deciding on an office.
                 </p>
               </div>
               <button
+                id="btn-premium-request-layout"
                 onClick={() => {
                   const formElem = document.getElementById("find-space");
                   if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Inquire floor specs</span>
+                <span>Request Floor Plans and Details</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             {/* 3. Building Amenities */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
                   BUILDING AMENITIES
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Commercial Grade A Standard
+                  Experience Building Facilities Directly
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Executive grand lobby, smart card elevators, board meeting suites, 24/7 security, gym, rooftop pool, and home to Garuda Indonesia.
+                  Review the building amenities and environment during your office tour. Ask about access terms and usage to evaluate fit with your operational needs.
                 </p>
               </div>
               <button
+                id="btn-premium-schedule-tour"
                 onClick={() => {
                   const formElem = document.getElementById("find-space");
                   if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Schedule private survey</span>
+                <span>Schedule an Office Tour</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

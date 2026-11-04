@@ -97,13 +97,13 @@ export default function Partners({ setCurrentPage }) {
                 <div
                   key={"top-" + brand.name + "-" + idx}
                   onClick={handleCommunityClick}
-                  className="flex items-center justify-center h-18 sm:h-22 md:h-26 w-40 sm:w-52 md:w-60 shrink-0 px-3 sm:px-5 cursor-pointer rounded-2xl hover:bg-slate-50 transition-colors"
+                  className="flex items-center justify-center h-22 sm:h-28 md:h-32 w-48 sm:w-64 md:w-72 shrink-0 px-4 sm:px-6 cursor-pointer rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <img
                     loading="lazy"
                     src={brand.src}
                     alt={brand.name}
-                    className="h-10 sm:h-13 md:h-15 w-auto max-w-[130px] sm:max-w-[170px] md:max-w-[195px] object-contain transition-opacity duration-200 opacity-90 hover:opacity-100"
+                    className="h-13 sm:h-18 md:h-20 w-auto max-w-[160px] sm:max-w-[220px] md:max-w-[250px] object-contain transition-all duration-200 opacity-95 hover:opacity-100 hover:scale-105"
                   />
                 </div>
               ))}
@@ -117,13 +117,13 @@ export default function Partners({ setCurrentPage }) {
                 <div
                   key={"bot-" + brand.name + "-" + idx}
                   onClick={handleCommunityClick}
-                  className="flex items-center justify-center h-18 sm:h-22 md:h-26 w-40 sm:w-52 md:w-60 shrink-0 px-3 sm:px-5 cursor-pointer rounded-2xl hover:bg-slate-50 transition-colors"
+                  className="flex items-center justify-center h-22 sm:h-28 md:h-32 w-48 sm:w-64 md:w-72 shrink-0 px-4 sm:px-6 cursor-pointer rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <img
                     loading="lazy"
                     src={brand.src}
                     alt={brand.name}
-                    className="h-10 sm:h-13 md:h-15 w-auto max-w-[130px] sm:max-w-[170px] md:max-w-[195px] object-contain transition-opacity duration-200 opacity-90 hover:opacity-100"
+                    className="h-13 sm:h-18 md:h-20 w-auto max-w-[160px] sm:max-w-[220px] md:max-w-[250px] object-contain transition-all duration-200 opacity-95 hover:opacity-100 hover:scale-105"
                   />
                 </div>
               ))}

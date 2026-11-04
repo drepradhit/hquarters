@@ -330,7 +330,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
-          <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
+          <h2 className="text-3xl sm:text-5xl font-medium font-heading text-[#EA8E18] tracking-tight leading-tight [text-wrap:balance]">
             Perusahaan Telah Bertumbuh.<br />Saatnya Kantor Anda Berkembang.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
@@ -581,19 +581,19 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
 
         {/* Premium Office Highlights: Kapasitas, Tata Ruang, Fasilitas */}
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             
             {/* 1. Kapasitas Kantor */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
                   KAPASITAS KANTOR
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Untuk tim 10-150+ orang
+                  Pilih Kantor Sesuai Kebutuhan Tim
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Dari ruang kantor korporat yang efisien untuk tim beranggotakan 10 orang hingga satu lantai penuh yang terintegrasi untuk kebutuhan kantor pusat perusahaan.
+                  Jumlah anggota tim dan aktivitas sehari-hari menentukan kebutuhan ruang kantor. Sampaikan kebutuhan perusahaan Anda untuk mengetahui pilihan unit dan kapasitasnya.
                 </p>
               </div>
               <button
@@ -604,57 +604,59 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Temukan Kapasitas yang Tepat</span>
+                <span>Konsultasikan Kebutuhan Ruang</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            {/* 2. Tata Letak Lantai */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+            {/* 2. Tata Ruang Kantor */}
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  TATA LETAK LANTAI
+                  TATA RUANG KANTOR
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Ruang Terbuka Kelas Premium
+                  Rencanakan Tata Ruang Kantor Anda
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Denah terbuka tanpa kolom dengan efisiensi ruang tinggi, cahaya alami yang melimpah, dan pemandangan panorama kota Bandung.
+                  Pelajari denah unit untuk menilai pembagian area kerja, ruang rapat, dan kebutuhan pendukung lainnya. Gunakan detail ruang sebagai acuan sebelum menentukan pilihan kantor.
                 </p>
               </div>
               <button
+                id="btn-premium-request-layout"
                 onClick={() => {
                   const formElem = document.getElementById("find-space");
                   if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Minta Spesifikasi Lantai</span>
+                <span>Minta Denah dan Detail Unit</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             {/* 3. Fasilitas Gedung */}
-            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all">
+            <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
                   FASILITAS GEDUNG
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Standar Gedung Komersial Grade-A
+                  Lihat Langsung Fasilitas Gedung
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Lobi eksekutif yang megah, lift dengan akses kartu, ruang rapat direksi, keamanan 24 jam, gym, kolam renang rooftop, dan menjadi lokasi kantor Garuda Indonesia.
+                  Tinjau fasilitas dan lingkungan gedung saat survei kantor. Tanyakan ketentuan akses dan penggunaannya untuk menilai kesesuaiannya dengan kebutuhan operasional perusahaan.
                 </p>
               </div>
               <button
+                id="btn-premium-schedule-tour"
                 onClick={() => {
                   const formElem = document.getElementById("find-space");
                   if (formElem) formElem.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Jadwalkan Survei Privat</span>
+                <span>Jadwalkan Survei Kantor</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
