@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowRight, Search, MapPin, Phone, Mail, Building2, CheckCircle2 } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, MapPin, Phone, Mail, Building2, CheckCircle2 } from 'lucide-react';
 import { ARTICLES_ID, ARTICLES_EN } from '../lib/articlesData.js';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { stripHtml } from '../lib/wp.js';
@@ -8,14 +8,7 @@ export default function InsightsSection({ setCurrentPage, setSelectedArticleId }
   const { language, t } = useLanguage();
   const isId = language === 'id';
 
-  const [activeCategory, setActiveCategory] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
-
   const articles = isId ? ARTICLES_ID : ARTICLES_EN;
-
-  const categories = isId
-    ? ['Semua', 'Memilih Kantor', 'Investasi & Pembiayaan', 'Desain Kantor', 'Bisnis di Bandung']
-    : ['All', 'Choosing Office', 'Investment & Finance', 'Office Design', 'Business in Bandung'];
 
   // Category mapping
   const categoryMap = {
@@ -35,25 +28,8 @@ export default function InsightsSection({ setCurrentPage, setSelectedArticleId }
     displayCategory: categoryMap[a.id] || a.categoryLabel
   }));
 
-  // Filtering
-  const filteredArticles = enrichedArticles.filter((article) => {
-    const matchCategory =
-      activeCategory === 'Semua' ||
-      activeCategory === 'All' ||
-      article.displayCategory.toLowerCase() === activeCategory.toLowerCase();
-
-    const q = searchQuery.toLowerCase().trim();
-    const matchSearch =
-      !q ||
-      article.title.toLowerCase().includes(q) ||
-      article.excerpt.toLowerCase().includes(q) ||
-      article.displayCategory.toLowerCase().includes(q);
-
-    return matchCategory && matchSearch;
-  });
-
-  const featuredArticle = filteredArticles[0] || enrichedArticles[0];
-  const gridArticles = filteredArticles.length > 1 ? filteredArticles.slice(1) : filteredArticles;
+  const featuredArticle = enrichedArticles[0];
+  const gridArticles = enrichedArticles.slice(1);
 
   const handleArticleClick = (articleId) => {
     if (setSelectedArticleId) setSelectedArticleId(articleId);
@@ -76,44 +52,10 @@ export default function InsightsSection({ setCurrentPage, setSelectedArticleId }
               ? 'Kumpulan artikel seputar pilihan ruang kantor, pengelolaan tempat kerja, dan informasi properti komersial.'
               : 'Curated perspectives on modern workspaces, corporate property, and enterprise strategy in Bandung.'}
           </p>
-
-          {/* Kotak Cari (Brief Hal. 5) */}
-          <div className="pt-2 max-w-md mx-auto">
-            <div className="relative">
-              <Search className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-              <input
-                type="text"
-                placeholder={isId ? 'Q mis. SOHO, sewa kantor, KPA' : 'Search SOHO, serviced office, lease...'}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 rounded-full border border-slate-200 text-sm focus:outline-none focus:border-[#EA8E18] transition-colors shadow-xs"
-              />
-            </div>
-          </div>
-
-          {/* Chip Kategori Filter (Brief Hal. 5) */}
-          <div className="pt-3 flex flex-wrap items-center justify-center gap-2">
-            {categories.map((cat) => {
-              const isActive = activeCategory === cat;
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all cursor-pointer ${
-                    isActive
-                      ? 'bg-slate-900 text-white shadow-sm'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                  }`}
-                >
-                  {cat}
-                </button>
-              );
-            })}
-          </div>
         </div>
 
         {/* 2. ARTIKEL UNGGULAN / FEATURED (Brief Hal. 5, 17) */}
-        {featuredArticle && !searchQuery && activeCategory === (isId ? 'Semua' : 'All') && (
+        {featuredArticle && (
           <div
             onClick={() => handleArticleClick(featuredArticle.id)}
             className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center group cursor-pointer border border-slate-200/80 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300"
@@ -169,7 +111,7 @@ export default function InsightsSection({ setCurrentPage, setSelectedArticleId }
               {isId ? 'Artikel terbaru' : 'Latest Articles'}
             </h2>
             <span className="text-xs sm:text-sm text-slate-500 font-medium">
-              {filteredArticles.length} {isId ? 'artikel' : 'articles'}
+              {enrichedArticles.length} {isId ? 'artikel' : 'articles'}
             </span>
           </div>
 
