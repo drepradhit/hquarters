@@ -331,12 +331,22 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-[#EA8E18] tracking-tight leading-tight [text-wrap:balance]">
-            Your Company Has Grown. <br />
-            <span>Your Office Should Too.</span>
+            {t.premiumOfficePage?.headline ? (
+              <span>{t.premiumOfficePage.headline}</span>
+            ) : (
+              <>
+                Your Company Has Grown. <br />
+                <span>Your Office Should Too.</span>
+              </>
+            )}
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Every company reaches a point where the old office no longer reflects the business it has become.<br className="hidden sm:inline" />
-            Teams grow. Clients grow. Expectations rise. The office becomes part of your corporate identity.
+            {t.premiumOfficePage?.headlineDesc || (
+              <>
+                Every company reaches a point where the old office no longer reflects the business it has become.<br className="hidden sm:inline" />
+                Teams grow. Clients grow. Expectations rise. The office becomes part of your corporate identity.
+              </>
+            )}
           </p>
         </section>
 
@@ -591,13 +601,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  OFFICE CAPACITY
+                  {t.premiumOfficePage?.card1?.label || 'OFFICE CAPACITY'}
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Choose Office Space Based on Team Needs
+                  {t.premiumOfficePage?.card1?.title || 'Choose Office Space Based on Team Needs'}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Your team size and daily activities determine your office space requirements. Share your company's needs to explore available units and their capacity.
+                  {t.premiumOfficePage?.card1?.desc || "Your team size and daily activities determine your office space requirements. Share your company's needs to explore available units and their capacity."}
                 </p>
               </div>
               <button
@@ -608,7 +618,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Consult Space Requirements</span>
+                <span>{t.premiumOfficePage?.card1?.cta || 'Consult Space Requirements'}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -617,13 +627,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  OFFICE LAYOUT
+                  {t.premiumOfficePage?.card2?.label || 'OFFICE LAYOUT'}
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Plan Your Office Layout
+                  {t.premiumOfficePage?.card2?.title || 'Plan Your Office Layout'}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Review floor plans to assess the division of work areas, meeting rooms, and other supporting facilities. Use space details as a reference before deciding on an office.
+                  {t.premiumOfficePage?.card2?.desc || 'Review floor plans to assess the division of work areas, meeting rooms, and other supporting facilities. Use space details as a reference before deciding on an office.'}
                 </p>
               </div>
               <button
@@ -634,7 +644,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Request Floor Plans and Details</span>
+                <span>{t.premiumOfficePage?.card2?.cta || 'Request Floor Plans and Details'}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -643,13 +653,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  BUILDING AMENITIES
+                  {t.premiumOfficePage?.card3?.label || 'BUILDING AMENITIES'}
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Experience Building Facilities Directly
+                  {t.premiumOfficePage?.card3?.title || 'Experience Building Facilities Directly'}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Review the building amenities and environment during your office tour. Ask about access terms and usage to evaluate fit with your operational needs.
+                  {t.premiumOfficePage?.card3?.desc || 'Review the building amenities and environment during your office tour. Ask about access terms and usage to evaluate fit with your operational needs.'}
                 </p>
               </div>
               <button
@@ -660,7 +670,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Schedule an Office Tour</span>
+                <span>{t.premiumOfficePage?.card3?.cta || 'Schedule an Office Tour'}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

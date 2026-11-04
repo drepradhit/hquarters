@@ -319,10 +319,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-[#EA8E18] tracking-tight leading-tight [text-wrap:balance]">
-            Dua fungsi dalam satu unit
+            {t.sohoPage?.headline || 'Dua fungsi dalam satu unit'}
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Tata ruang fungsional yang menggabungkan area kerja profesional untuk operasional bisnis dan area privat yang nyaman dalam satu unit.
+            {t.sohoPage?.headlineDesc || 'Tata ruang fungsional yang menggabungkan area kerja profesional untuk operasional bisnis dan area privat yang nyaman dalam satu unit.'}
           </p>
           <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
             Fungsi ruang kerja dan tempat tinggal dalam satu bangunan.
@@ -485,7 +485,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-[#EA8E18] tracking-tight">
-              Fleksibel untuk berbagai jenis aktivitas
+              {t.sohoPage?.activitiesTitle || 'Fleksibel untuk berbagai jenis aktivitas'}
             </h2>
           </div>
 

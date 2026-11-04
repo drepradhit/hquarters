@@ -331,10 +331,12 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-[#EA8E18] tracking-tight leading-tight [text-wrap:balance]">
-            Perusahaan Telah Bertumbuh.<br />Saatnya Kantor Anda Berkembang.
+            {t.premiumOfficePage?.headline || (
+              <>Perusahaan Telah Bertumbuh.<br />Saatnya Kantor Anda Berkembang.</>
+            )}
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Tim bertambah. Klien bertambah. Ekspektasi ikut naik. Kantor pun menjadi bagian dari identitas perusahaan Anda.
+            {t.premiumOfficePage?.headlineDesc || 'Tim bertambah. Klien bertambah. Ekspektasi ikut naik. Kantor pun menjadi bagian dari identitas perusahaan Anda.'}
           </p>
         </section>
 
@@ -587,13 +589,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  KAPASITAS KANTOR
+                  {t.premiumOfficePage?.card1?.label || 'KAPASITAS KANTOR'}
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Pilih Kantor Sesuai Kebutuhan Tim
+                  {t.premiumOfficePage?.card1?.title || 'Pilih Kantor Sesuai Kebutuhan Tim'}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Jumlah anggota tim dan aktivitas sehari-hari menentukan kebutuhan ruang kantor. Sampaikan kebutuhan perusahaan Anda untuk mengetahui pilihan unit dan kapasitasnya.
+                  {t.premiumOfficePage?.card1?.desc || 'Jumlah anggota tim dan aktivitas sehari-hari menentukan kebutuhan ruang kantor. Sampaikan kebutuhan perusahaan Anda untuk mengetahui pilihan unit dan kapasitasnya.'}
                 </p>
               </div>
               <button
@@ -604,7 +606,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Konsultasikan Kebutuhan Ruang</span>
+                <span>{t.premiumOfficePage?.card1?.cta || 'Konsultasikan Kebutuhan Ruang'}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -613,13 +615,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  TATA RUANG KANTOR
+                  {t.premiumOfficePage?.card2?.label || 'TATA RUANG KANTOR'}
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Rencanakan Tata Ruang Kantor Anda
+                  {t.premiumOfficePage?.card2?.title || 'Rencanakan Tata Ruang Kantor Anda'}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Pelajari denah unit untuk menilai pembagian area kerja, ruang rapat, dan kebutuhan pendukung lainnya. Gunakan detail ruang sebagai acuan sebelum menentukan pilihan kantor.
+                  {t.premiumOfficePage?.card2?.desc || 'Pelajari denah unit untuk menilai pembagian area kerja, ruang rapat, dan kebutuhan pendukung lainnya. Gunakan detail ruang sebagai acuan sebelum menentukan pilihan kantor.'}
                 </p>
               </div>
               <button
@@ -630,7 +632,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Minta Denah dan Detail Unit</span>
+                <span>{t.premiumOfficePage?.card2?.cta || 'Minta Denah dan Detail Unit'}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -639,13 +641,13 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
             <div className="bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#EA8E18]/40 hover:shadow-md transition-all h-full">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA8E18] inline-block">
-                  FASILITAS GEDUNG
+                  {t.premiumOfficePage?.card3?.label || 'FASILITAS GEDUNG'}
                 </span>
                 <h3 className="text-xl font-medium font-heading text-slate-900 tracking-tight">
-                  Lihat Langsung Fasilitas Gedung
+                  {t.premiumOfficePage?.card3?.title || 'Lihat Langsung Fasilitas Gedung'}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                  Tinjau fasilitas dan lingkungan gedung saat survei kantor. Tanyakan ketentuan akses dan penggunaannya untuk menilai kesesuaiannya dengan kebutuhan operasional perusahaan.
+                  {t.premiumOfficePage?.card3?.desc || 'Tinjau fasilitas dan lingkungan gedung saat survei kantor. Tanyakan ketentuan akses dan penggunaannya untuk menilai kesesuaiannya dengan kebutuhan operasional perusahaan.'}
                 </p>
               </div>
               <button
@@ -656,7 +658,7 @@ export default function SpacePremiumOfficePage({ setCurrentPage }) {
                 }}
                 className="inline-flex items-center gap-1.5 font-bold text-sm text-[#EA8E18] hover:text-[#d88010] font-heading group cursor-pointer transition-colors pt-2"
               >
-                <span>Jadwalkan Survei Kantor</span>
+                <span>{t.premiumOfficePage?.card3?.cta || 'Jadwalkan Survei Kantor'}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

@@ -319,12 +319,22 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
         
         <section className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-medium font-heading text-slate-900 tracking-tight leading-tight [text-wrap:balance]">
-            Life Changes. Business Changes. <br />
-            <span className="text-[#EA8E18]">Your Space Should Change Too.</span>
+            {t.sohoPage?.headline ? (
+              <span className="text-[#EA8E18]">{t.sohoPage.headline}</span>
+            ) : (
+              <>
+                Life Changes. Business Changes. <br />
+                <span className="text-[#EA8E18]">Your Space Should Change Too.</span>
+              </>
+            )}
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal [text-wrap:balance]">
-            Today a startup office. Tomorrow a home office. Later a private living space.<br className="hidden sm:inline" />
-            Or all of it at once. Why buy a property that can only do one thing?
+            {t.sohoPage?.headlineDesc || (
+              <>
+                Today a startup office. Tomorrow a home office. Later a private living space.<br className="hidden sm:inline" />
+                Or all of it at once. Why buy a property that can only do one thing?
+              </>
+            )}
           </p>
           <div className="font-bold text-[#EA8E18] text-lg font-heading pt-2">
             One Space. Many Possibilities.
@@ -492,7 +502,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
               SIGNATURE
             </span>
             <h2 className="text-3xl sm:text-4xl font-medium font-heading text-slate-900 tracking-tight">
-              One SOHO. Different Lives.
+              {t.sohoPage?.activitiesTitle || 'One SOHO. Different Lives.'}
             </h2>
           </div>
 

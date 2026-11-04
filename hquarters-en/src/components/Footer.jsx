@@ -64,7 +64,7 @@ export default function Footer({ setCurrentPage }) {
             </div>
 
             <p className="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
-              HQuarters Business Residence — The premier integration of luxury workspace and flexible residences in Bandung's Asia Afrika CBD.
+              {t.footer?.about || "HQuarters Business Residence — The premier integration of luxury workspace and flexible residences in Bandung's Asia Afrika CBD."}
             </p>
 
             <div className="space-y-1 text-xs text-slate-400 font-light">
@@ -75,24 +75,24 @@ export default function Footer({ setCurrentPage }) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center min-h-[36px] text-slate-300 hover:text-[#EA8E18] transition-colors"
                 >
-                  Jl. Asia Afrika No. 158, Bandung, West Java 40261
+                  {t.footer?.address || 'Jl. Asia Afrika No. 158, Bandung, West Java 40261'}
                 </a>
               </div>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-0 text-slate-400">
                 <a
-                  href="https://wa.me/628111908319"
+                  href={`https://wa.me/${(t.footer?.phone || '+62 811-1908-319').replace(/[^0-9]/g, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center min-h-[36px] hover:text-[#EA8E18] transition-colors"
                 >
-                  +62 811-1908-319
+                  {t.footer?.phone || '+62 811-1908-319'}
                 </a>
                 <span className="text-white/20 hidden sm:inline">•</span>
                 <a
-                  href="mailto:info@hquarters.co.id"
+                  href={`mailto:${t.footer?.email || 'info@hquarters.co.id'}`}
                   className="inline-flex items-center min-h-[36px] hover:text-[#EA8E18] transition-colors"
                 >
-                  info@hquarters.co.id
+                  {t.footer?.email || 'info@hquarters.co.id'}
                 </a>
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function Footer({ setCurrentPage }) {
 
         {/* Bottom Bar: clean, balanced & minimal */}
         <div className="pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500 font-light">
-          <span>© {new Date().getFullYear()} HQuarters Business Residence. All rights reserved.</span>
+          <span>{t.footer?.copyright || `© ${new Date().getFullYear()} HQuarters Business Residence. All rights reserved.`}</span>
           <span className="hidden sm:inline">Asia Afrika CBD, Bandung, Indonesia</span>
         </div>
 
