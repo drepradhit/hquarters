@@ -38,10 +38,6 @@ export default function Navbar({ currentPage = 'home', setCurrentPage }) {
 
   const handleNavClick = (page, href) => {
     setMobileMenuOpen(false);
-    if (page === 'insights') {
-      window.location.href = '/insights/';
-      return;
-    }
     if (page && setCurrentPage) {
       setCurrentPage(page);
       window.scrollTo(0, 0);

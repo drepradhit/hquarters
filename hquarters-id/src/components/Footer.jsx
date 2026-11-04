@@ -5,10 +5,6 @@ export default function Footer({ setCurrentPage }) {
   const { t } = useLanguage();
 
   const handleNavClick = (page, anchor) => {
-    if (page === 'insights') {
-      window.location.href = '/insights/';
-      return;
-    }
     if (setCurrentPage) {
       setCurrentPage(page);
       if (anchor) {
