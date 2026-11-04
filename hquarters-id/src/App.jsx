@@ -56,6 +56,14 @@ function pageFromPath(pathname) {
   return { page: 'home' };
 }
 
+// Auto-recover from Vite dynamic import chunk mismatches after deployments
+if (typeof window !== 'undefined') {
+  window.addEventListener('vite:preloadError', (event) => {
+    event.preventDefault();
+    window.location.reload();
+  });
+}
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -82,7 +90,7 @@ class ErrorBoundary extends React.Component {
                 Muat Ulang
               </button>
               <button
-                onClick={() => { window.location.href = "/"; }}
+                onClick={() => { window.location.href = "/id/"; }}
                 className="px-6 py-2.5 rounded-full bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-colors cursor-pointer"
               >
                 Beranda

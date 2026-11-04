@@ -56,6 +56,14 @@ function pageFromPath(pathname) {
   return { page: 'home' };
 }
 
+// Auto-recover from Vite dynamic import chunk mismatches after deployments
+if (typeof window !== 'undefined') {
+  window.addEventListener('vite:preloadError', (event) => {
+    event.preventDefault();
+    window.location.reload();
+  });
+}
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -73,19 +81,19 @@ class ErrorBoundary extends React.Component {
         <div className="min-h-screen min-h-[100dvh] flex flex-col items-center justify-center bg-white text-slate-900 px-6 text-center">
           <div className="max-w-md space-y-4">
             <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900">Oops, something went wrong</h2>
-            <p className="text-sm text-slate-600">Terjadi kendala saat memuat halaman ini. Silakan muat ulang atau kembali ke beranda.</p>
+            <p className="text-sm text-slate-600">There was an issue loading this page. Please refresh or return to the home page.</p>
             <div className="pt-2 flex justify-center gap-3">
               <button
                 onClick={() => window.location.reload()}
                 className="px-6 py-2.5 rounded-full bg-[#EA8E18] text-white font-semibold text-sm hover:bg-[#d88010] transition-colors cursor-pointer"
               >
-                Muat Ulang
+                Reload Page
               </button>
               <button
-                onClick={() => { window.location.href = "/"; }}
+                onClick={() => { window.location.href = "/en/"; }}
                 className="px-6 py-2.5 rounded-full bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-colors cursor-pointer"
               >
-                Beranda
+                Home
               </button>
             </div>
           </div>

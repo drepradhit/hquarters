@@ -41,7 +41,14 @@ export function LanguageProvider({ children }) {
 
   // Merge CMS fields over base translations
   const t = useMemo(() => {
-    const baseT = translations[language] || translations.id;
+    const rawBase = translations[language] || translations.id;
+    const baseT = {
+      ...rawBase,
+      sohoPage: rawBase.sohoPage || {},
+      premiumOfficePage: rawBase.premiumOfficePage || { card1: {}, card2: {}, card3: {} },
+      virtualOfficePage: rawBase.virtualOfficePage || {},
+      servicedOfficePage: rawBase.servicedOfficePage || {},
+    };
     if (!cms || Object.keys(cms).length === 0) return baseT;
 
     return {
