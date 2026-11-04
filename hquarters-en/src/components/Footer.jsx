@@ -1,6 +1,9 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 export default function Footer({ setCurrentPage }) {
+  const { t } = useLanguage();
+
   const handleNavClick = (page, anchor) => {
     if (setCurrentPage) {
       setCurrentPage(page);

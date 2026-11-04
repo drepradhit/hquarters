@@ -111,3 +111,4 @@ Plugin **Yoast SEO** telah terpasang dan aktif di seluruh halaman dan artikel:
    * Untuk teks deskripsi panjang (*textarea*), penulisan langsung rapi tanpa perlu menambahkan tag HTML.
 4. **Bantuan Teknis:**
    * Jika ada kendala teknis atau kebutuhan penambahan section baru, hubungi tim developer pengelola website.
+
