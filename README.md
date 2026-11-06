@@ -1,5 +1,9 @@
 # HQuarters Web Applications
 
+> 📖 **Panduan Pengelolaan Konten untuk Klien & Tim Pengelola:**  
+> Untuk panduan lengkap pengelolaan website melalui WordPress CMS, cara edit per halaman, upload denah & foto, mengubah harga unit, mengatur promo, dan optimasi Yoast SEO, silakan baca:  
+> 👉 [**BUKU PANDUAN LENGKAP PENGELOLAAN WEBSITE HQUARTERS (README-WORDPRESS.md)**](README-WORDPRESS.md)
+
 Monorepo containing the official web applications for HQuarters Business Residence:
 - **`hquarters-id`**: Main website in Indonesian.
 - **`hquarters-en`**: Subdomain website in English.
