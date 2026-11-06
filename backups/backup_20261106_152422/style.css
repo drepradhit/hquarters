@@ -1,0 +1,119 @@
+/*
+Theme Name: Blocksy Child
+Template: blocksy
+*/
+
+/* =========================================================================
+   HQuarters Design Tokens & Typography (Brief Implementasi Hal. 16)
+   ========================================================================= */
+:root {
+    --hq-font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --hq-font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --hq-orange-action: #B45F06; /* Contrast with white 4.6:1 */
+    --hq-orange-brand: #EA8E18;  /* Brand decoration */
+    --hq-ink: #0F172A;
+    --hq-text-body: #334155;
+    --hq-text-muted: #475569;
+    --hq-border: #E2E8F0;
+    --hq-bg-hero: #F8FAFC;
+    --hq-max-reading-col: 720px;
+}
+
+/* Headings font */
+h1, h2, h3, h4, h5, h6,
+.elementor-heading-title,
+.entry-title {
+    font-family: var(--hq-font-heading) !important;
+    color: var(--hq-ink);
+}
+
+/* Body font & typography for articles */
+body, p, li, .entry-content p, .elementor-widget-theme-post-content p {
+    font-family: var(--hq-font-body) !important;
+    color: var(--hq-text-body);
+}
+
+.single-post .entry-content,
+.single-post .elementor-widget-theme-post-content {
+    font-size: 18px !important;
+    line-height: 1.75 !important;
+    max-width: var(--hq-max-reading-col) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.single-post .entry-content p:first-of-type {
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+    color: #1e293b !important;
+}
+
+/* Action Orange Buttons & Links */
+.hq-btn-wa,
+.elementor-button.elementor-size-md,
+.elementor-button[href*="wa.me"] {
+    background-color: var(--hq-orange-action) !important;
+    border-color: var(--hq-orange-action) !important;
+    color: #ffffff !important;
+    transition: all 0.2s ease !important;
+}
+
+.hq-btn-wa:hover,
+.elementor-button[href*="wa.me"]:hover {
+    background-color: #9A5205 !important;
+}
+
+/* Mobile Bottom Sticky Bar (Brief Hal. 18, 20) */
+@media (max-width: 768px) {
+    .hq-mobile-only-bar {
+        display: flex !important;
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(10px) !important;
+        padding: 12px 16px max(12px, env(safe-area-inset-bottom, 12px)) !important;
+        border-top: 1px solid #e2e8f0 !important;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08) !important;
+        z-index: 99999 !important;
+        gap: 10px !important;
+        align-items: center !important;
+    }
+
+    .hq-mobile-only-bar .hq-btn-wa {
+        flex: 1 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        background: var(--hq-orange-action) !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        padding: 12px 20px !important;
+        border-radius: 9999px !important;
+        text-decoration: none !important;
+    }
+
+    .hq-mobile-only-bar .hq-btn-share {
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 50% !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #f8fafc !important;
+        color: #334155 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+    }
+
+    /* Hide redundant duplicate floating Click to Chat icon on post pages */
+    .single-post .ctc_chat,
+    .single-post #click-to-chat,
+    .single-post .ht-ctc-chat {
+        display: none !important;
+    }
+}
