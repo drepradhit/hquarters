@@ -27,6 +27,22 @@ Setelah selesai mengubah data di tab manapun, selalu klik tombol **Simpan Peruba
 
 ---
 
+## 2b. Mengatur Urutan, Menambah & Menghapus Section (Gutenberg Blocks)
+
+Untuk kebebasan mengatur tata letak halaman secara visual, Anda dapat menggunakan editor blok WordPress (Gutenberg):
+
+1. Buka menu **Pages > All Pages**, lalu klik **Edit** pada halaman yang ingin Anda atur (misal: *HQuarters – Home (ID)*, *SOHO*, atau *Premium Office*).
+2. Di layar editor, setiap bagian halaman tersusun sebagai blok berlabel resmi (**HQuarters Section**).
+3. **Menggeser Urutan Section:** Klik blok yang ingin dipindahkan, lalu klik tombol panah atas atau bawah (⬆️ / ⬇️) pada toolbar blok.
+4. **Menghapus Section:** Klik menu titik tiga (⋮) pada toolbar blok, lalu pilih **Delete block**.
+5. **Menambah Section Baru:** Klik tombol tambah (**+**) di pojok kiri atas editor, buka kategori **🏢 HQuarters Section Blocks**, lalu klik section yang ingin ditambahkan.
+6. **Mengubah Teks & Foto Section:** Klik blok tersebut, lalu sesuaikan teks, status ketersediaan, atau gambar melalui panel sebelah kanan (**Block Settings**).
+7. Klik tombol biru **Update** di pojok kanan atas untuk langsung menerapkan susunan baru ke website.
+
+> **Catatan Keamanan Desain:** Pilihan blok dibatasi khusus pada modul resmi HQuarters agar struktur tata letak, font Outfit, dan skor kecepatan website tetap terjaga 100% konsisten.
+
+---
+
 ## 3. Panduan Mengedit Konten per Halaman
 
 ### A. Beranda (Home)
