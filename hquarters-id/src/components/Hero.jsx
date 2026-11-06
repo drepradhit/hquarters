@@ -2,7 +2,7 @@ import React from "react";
 import { Star, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-function Hero({ setCurrentPage }) {
+function Hero({ setCurrentPage, headline, description, badge }) {
   const { t } = useLanguage();
 
   return (
@@ -44,7 +44,9 @@ function Hero({ setCurrentPage }) {
           <h1
             className="text-[25px] sm:text-3xl md:text-5xl lg:text-[58px] font-medium text-white md:text-slate-900 font-heading leading-[1.18] tracking-tight mb-3 sm:mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)] md:drop-shadow-none"
           >
-            {t.hero.headlineParts ? (
+            {headline ? (
+              <span>{headline}</span>
+            ) : t.hero.headlineParts ? (
               t.hero.headlineParts.map((part, idx) => {
                 if (part.br) return <br key={idx} />;
                 if (part.isOrange) {
@@ -67,7 +69,7 @@ function Hero({ setCurrentPage }) {
           <p
             className="text-slate-100 md:text-slate-600 text-[13px] sm:text-base md:text-lg leading-relaxed font-normal mb-3 sm:mb-4 max-w-sm md:max-w-xl drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)] md:drop-shadow-none"
           >
-            {t.hero.description}
+            {description || t.hero.description}
           </p>
 
           {/* Punchy Hero Tagline */}

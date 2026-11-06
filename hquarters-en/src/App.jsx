@@ -20,6 +20,7 @@ const SpaceSohoDuplexPage = lazy(() => import('./pages/SpaceSohoDuplexPage.jsx')
 const SpaceServicedOfficePage = lazy(() => import('./pages/SpaceServicedOfficePage.jsx'));
 const SpaceVirtualOfficePage = lazy(() => import('./pages/SpaceVirtualOfficePage.jsx'));
 const EventFunctionRoomPage = lazy(() => import('./pages/EventFunctionRoomPage.jsx'));
+const DynamicPage = lazy(() => import('./pages/DynamicPage.jsx'));
 
 const PAGE_PATHS = {
   skeleton: '/skeleton',
@@ -53,6 +54,10 @@ function pageFromPath(pathname) {
   for (const [key, path] of Object.entries(PAGE_PATHS)) {
     if (p === path) return { page: key };
   }
+  if (p !== '/' && p.length > 1) {
+    const slug = p.replace(/^\//, '');
+    return { page: 'dynamic-page', dynamicSlug: slug };
+  }
   return { page: 'home' };
 }
 
@@ -81,19 +86,19 @@ class ErrorBoundary extends React.Component {
         <div className="min-h-screen min-h-[100dvh] flex flex-col items-center justify-center bg-white text-slate-900 px-6 text-center">
           <div className="max-w-md space-y-4">
             <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900">Oops, something went wrong</h2>
-            <p className="text-sm text-slate-600">There was an issue loading this page. Please refresh or return to the home page.</p>
+            <p className="text-sm text-slate-600">Terjadi kendala saat memuat halaman ini. Silakan muat ulang atau kembali ke beranda.</p>
             <div className="pt-2 flex justify-center gap-3">
               <button
                 onClick={() => window.location.reload()}
                 className="px-6 py-2.5 rounded-full bg-[#EA8E18] text-white font-semibold text-sm hover:bg-[#d88010] transition-colors cursor-pointer"
               >
-                Reload Page
+                Muat Ulang
               </button>
               <button
-                onClick={() => { window.location.href = "/en/"; }}
+                onClick={() => { window.location.href = "/id/"; }}
                 className="px-6 py-2.5 rounded-full bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-colors cursor-pointer"
               >
-                Home
+                Beranda
               </button>
             </div>
           </div>
@@ -108,6 +113,7 @@ export default function App() {
   const initial = pageFromPath(window.location.pathname);
   const [currentPage, setCurrentPage] = useState(initial.page);
   const [selectedArticleId, setSelectedArticleId] = useState(initial.articleId || 'art-1');
+  const [dynamicSlug, setDynamicSlug] = useState(initial.dynamicSlug || '');
   const articleIdRef = useRef(selectedArticleId);
 
   React.useEffect(() => {
@@ -118,14 +124,26 @@ export default function App() {
         articleIdRef.current = r.articleId;
         setSelectedArticleId(r.articleId);
       }
+      if (r.dynamicSlug) {
+        setDynamicSlug(r.dynamicSlug);
+      }
       window.scrollTo(0, 0);
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
-  const navigate = (page) => {
-    const rawPath = page === 'article-detail' ? `/insights/${articleIdRef.current}` : PAGE_PATHS[page] || '/';
+  const navigate = (page, extraSlug) => {
+    let rawPath = '/';
+    if (page === 'article-detail') {
+      rawPath = `/insights/${articleIdRef.current}`;
+    } else if (page === 'dynamic-page') {
+      const s = extraSlug || dynamicSlug;
+      setDynamicSlug(s);
+      rawPath = `/${s}`;
+    } else {
+      rawPath = PAGE_PATHS[page] || '/';
+    }
     const isId = window.location.pathname.startsWith('/id');
     const isEn = window.location.pathname.startsWith('/en');
     const prefix = isId ? '/id' : (isEn ? '/en' : '');
@@ -184,6 +202,8 @@ export default function App() {
         <BuildingPage setCurrentPage={navigate} />
       ) : currentPage === 'spaces' ? (
         <SpacesPage setCurrentPage={navigate} />
+      ) : currentPage === 'dynamic-page' ? (
+        <DynamicPage slug={dynamicSlug} setCurrentPage={navigate} />
       ) : (
         <HomePage setCurrentPage={navigate} />
       )}

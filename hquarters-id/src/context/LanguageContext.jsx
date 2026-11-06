@@ -119,7 +119,7 @@ export function LanguageProvider({ children }) {
         specSqm: cms.prem_spec_sqm || baseT.premiumOfficePage?.specSqm || '120 - 450 m²',
         specFloorload: cms.prem_spec_floorload || baseT.premiumOfficePage?.specFloorload || '250 kg/m²',
         specCeiling: cms.prem_spec_ceiling || baseT.premiumOfficePage?.specCeiling || '3.6 Meter',
-        heroImg: cms.prem_hero_img || '/SPACES/PREMIUM/PREMIUM 01.webp?v=20260825',
+        heroImg: cms.prem_hero_img || '/SPACES/PREMIUM OFFICE/Premium Office.webp?v=20260825',
         floorplanImg: cms.prem_floorplan_img || '',
         card1: {
           label: cms.prem_c1_label || 'KAPASITAS KANTOR',

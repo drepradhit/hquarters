@@ -20,6 +20,7 @@ const SpaceSohoDuplexPage = lazy(() => import('./pages/SpaceSohoDuplexPage.jsx')
 const SpaceServicedOfficePage = lazy(() => import('./pages/SpaceServicedOfficePage.jsx'));
 const SpaceVirtualOfficePage = lazy(() => import('./pages/SpaceVirtualOfficePage.jsx'));
 const EventFunctionRoomPage = lazy(() => import('./pages/EventFunctionRoomPage.jsx'));
+const DynamicPage = lazy(() => import('./pages/DynamicPage.jsx'));
 
 const PAGE_PATHS = {
   skeleton: '/skeleton',
@@ -52,6 +53,10 @@ function pageFromPath(pathname) {
   }
   for (const [key, path] of Object.entries(PAGE_PATHS)) {
     if (p === path) return { page: key };
+  }
+  if (p !== '/' && p.length > 1) {
+    const slug = p.replace(/^\//, '');
+    return { page: 'dynamic-page', dynamicSlug: slug };
   }
   return { page: 'home' };
 }
@@ -108,6 +113,7 @@ export default function App() {
   const initial = pageFromPath(window.location.pathname);
   const [currentPage, setCurrentPage] = useState(initial.page);
   const [selectedArticleId, setSelectedArticleId] = useState(initial.articleId || 'art-1');
+  const [dynamicSlug, setDynamicSlug] = useState(initial.dynamicSlug || '');
   const articleIdRef = useRef(selectedArticleId);
 
   React.useEffect(() => {
@@ -118,14 +124,26 @@ export default function App() {
         articleIdRef.current = r.articleId;
         setSelectedArticleId(r.articleId);
       }
+      if (r.dynamicSlug) {
+        setDynamicSlug(r.dynamicSlug);
+      }
       window.scrollTo(0, 0);
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
-  const navigate = (page) => {
-    const rawPath = page === 'article-detail' ? `/insights/${articleIdRef.current}` : PAGE_PATHS[page] || '/';
+  const navigate = (page, extraSlug) => {
+    let rawPath = '/';
+    if (page === 'article-detail') {
+      rawPath = `/insights/${articleIdRef.current}`;
+    } else if (page === 'dynamic-page') {
+      const s = extraSlug || dynamicSlug;
+      setDynamicSlug(s);
+      rawPath = `/${s}`;
+    } else {
+      rawPath = PAGE_PATHS[page] || '/';
+    }
     const isId = window.location.pathname.startsWith('/id');
     const isEn = window.location.pathname.startsWith('/en');
     const prefix = isId ? '/id' : (isEn ? '/en' : '');
@@ -184,6 +202,8 @@ export default function App() {
         <BuildingPage setCurrentPage={navigate} />
       ) : currentPage === 'spaces' ? (
         <SpacesPage setCurrentPage={navigate} />
+      ) : currentPage === 'dynamic-page' ? (
+        <DynamicPage slug={dynamicSlug} setCurrentPage={navigate} />
       ) : (
         <HomePage setCurrentPage={navigate} />
       )}

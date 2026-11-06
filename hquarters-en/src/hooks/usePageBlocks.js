@@ -27,3 +27,4 @@ export function usePageBlocks(slug) {
 
   return { blocks, loading };
 }
+

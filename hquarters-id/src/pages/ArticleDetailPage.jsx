@@ -109,6 +109,8 @@ export default function ArticleDetailPage({ setCurrentPage, articleId = '6012', 
     }
   ];
 
+  const displayFaqs = (article.faqs && article.faqs.length > 0) ? article.faqs : faqs;
+
   return (
     <div className="min-h-screen min-h-[100dvh] flex flex-col bg-white text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
       
@@ -236,177 +238,102 @@ export default function ArticleDetailPage({ setCurrentPage, articleId = '6012', 
                   {isId ? 'Ringkasan 30 Detik' : '30-Second Summary'}
                 </h3>
                 <ul className="space-y-2 text-sm sm:text-base text-slate-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#EA8E18] font-bold">·</span>
-                    <span><strong>Virtual Office:</strong> Pilihan hemat biaya tanpa sewa ruang fisik dengan alamat CBD sah.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#EA8E18] font-bold">·</span>
-                    <span><strong>Serviced Office:</strong> Langsung pakai tanpa repot renovasi atau pengadaan furniture.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#EA8E18] font-bold">·</span>
-                    <span><strong>SOHO (Duplex):</strong> Fleksibilitas 2 fungsi untuk operasional kerja tim 3–6 orang sekaligus hunian.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#EA8E18] font-bold">·</span>
-                    <span><strong>Premium Office:</strong> Lantai kantor korporat prestisius untuk perusahaan 6+ hingga 150+ anggota.</span>
-                  </li>
+                  {article.summary && article.summary.length > 0 ? (
+                    article.summary.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-[#EA8E18] font-bold">·</span>
+                        <span><strong>{item.label}:</strong> {item.text}</span>
+                      </li>
+                    ))
+                  ) : (
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#EA8E18] font-bold">·</span>
+                      <span>{stripHtml(article.excerpt)}</span>
+                    </li>
+                  )}
                 </ul>
               </div>
 
-              {/* Main Content Sections */}
-              <div id="section-questions" className="space-y-4">
-                <h2 className="text-2xl sm:text-3xl font-semibold font-heading text-[#0F172A] tracking-tight">
-                  {isId ? 'Mulai dari tiga pertanyaan ini' : 'Start with these three core questions'}
-                </h2>
-                <p>
-                  Mencari kantor di Bandung sering dimulai dari pertanyaan yang keliru: <em>“berapa harganya?”</em> Padahal yang menentukan biaya total justru jenis kantornya. Kantor yang terlalu besar membebani arus kas, kantor yang terlalu kecil memaksa pindah dalam setahun.
-                </p>
+              {/* Dynamic Article Content Sections */}
+              {article.sections && article.sections.length > 0 ? (
+                article.sections.map((sec, sIdx) => (
+                  <div key={sec.id || sIdx} id={sec.id} className="space-y-4">
+                    <h2 className="text-2xl sm:text-3xl font-semibold font-heading text-[#0F172A] tracking-tight">
+                      {sec.heading}
+                    </h2>
+                    {sec.intro && <p>{sec.intro}</p>}
 
-                {/* 3 Questions with Numbers in Circles */}
-                <div className="space-y-4 pt-2">
-                  <div className="flex items-start gap-3.5">
-                    <div className="w-7 h-7 rounded-full bg-[#0F172A] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-1">
-                      1
+                    {sec.points && sec.points.length > 0 && (
+                      <div className="space-y-4 pt-2">
+                        {sec.points.map((pt, pIdx) => (
+                          <div key={pIdx} className="flex items-start gap-3.5">
+                            <div className="w-7 h-7 rounded-full bg-[#0F172A] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-1">
+                              {pIdx + 1}
+                            </div>
+                            <div>
+                              <strong className="text-slate-900 block">{pt.title}</strong>
+                              <span className="text-sm text-slate-600">{pt.desc}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {sec.quote && (
+                      <blockquote className="text-xl sm:text-2xl font-medium text-[#EA8E18] font-heading border-l-4 border-[#EA8E18] pl-4 italic my-4">
+                        “{sec.quote}”
+                      </blockquote>
+                    )}
+
+                    {sec.stats && sec.stats.length > 0 && (
+                      <div className="grid grid-cols-3 gap-3 sm:gap-4 py-2 my-4">
+                        {sec.stats.map((st, stIdx) => (
+                          <div key={stIdx} className="bg-[#0F172A] text-white p-4 sm:p-5 rounded-xl text-center space-y-1">
+                            <div className="text-xl sm:text-2xl font-bold font-heading text-[#EA8E18]">{st.value}</div>
+                            <p className="text-[11px] sm:text-xs text-slate-300 leading-tight">{st.label}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <div
+                  className="prose max-w-none text-slate-700 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: article.content || article.excerpt }}
+                />
+              )}
+
+              {/* Dynamic Product Recommendation Card */}
+              {article.recommendation && (
+                <div
+                  id="btn-article-product"
+                  onClick={() => {
+                    if (setCurrentPage) setCurrentPage(article.recommendation.target || 'space-soho-duplex');
+                    window.scrollTo(0, 0);
+                  }}
+                  className="p-5 rounded-2xl border border-slate-200/90 bg-slate-50 hover:bg-white hover:border-[#EA8E18] hover:shadow-lg transition-all duration-200 cursor-pointer flex items-center justify-between gap-4 group"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-slate-200 shrink-0">
+                      <img
+                        src={article.recommendation.img || 'https://hquarters.co.id/SPACES/SOHO/SOHO%2001.webp'}
+                        alt={article.recommendation.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      />
                     </div>
                     <div>
-                      <strong className="text-slate-900 block">Berapa orang yang bekerja di kantor setiap hari?</strong>
-                      <span className="text-sm text-slate-600">Hitung yang benar-benar hadir, bukan total karyawan.</span>
+                      <span className="text-[11px] font-bold text-[#EA8E18] uppercase tracking-wider block">
+                        {article.recommendation.tag || (isId ? 'LANJUT LIHAT' : 'EXPLORE SUITE')}
+                      </span>
+                      <h4 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#EA8E18] transition-colors">
+                        {article.recommendation.title}
+                      </h4>
                     </div>
                   </div>
-
-                  <div className="flex items-start gap-3.5">
-                    <div className="w-7 h-7 rounded-full bg-[#0F172A] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-1">
-                      2
-                    </div>
-                    <div>
-                      <strong className="text-slate-900 block">Perlukah alamat ini tercantum di akta atau izin usaha?</strong>
-                      <span className="text-sm text-slate-600">Tidak semua paket kantor bisa dipakai untuk domisili legal PT atau CV.</span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3.5">
-                    <div className="w-7 h-7 rounded-full bg-[#0F172A] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-1">
-                      3
-                    </div>
-                    <div>
-                      <strong className="text-slate-900 block">Kantor ini biaya operasional atau aset?</strong>
-                      <span className="text-sm text-slate-600">Sewa menjaga arus kas tetap ringan; membeli unit strata title berarti membangun aset jangka panjang.</span>
-                    </div>
-                  </div>
+                  <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#EA8E18] group-hover:translate-x-1 transition-all shrink-0" />
                 </div>
-              </div>
-
-              {/* Perbandingan Cepat (Brief Hal. 10, 14) */}
-              <div id="section-comparison" className="space-y-4 pt-4">
-                <h2 className="text-2xl sm:text-3xl font-semibold font-heading text-[#0F172A] tracking-tight">
-                  {isId ? 'Perbandingan Cepat' : 'Quick Comparison'}
-                </h2>
-                <p>
-                  Keempatnya ada di dalam satu gedung yang sama di HQuarters, jadi perusahaan Anda bisa naik kelas tanpa harus pindah alamat.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div className="p-5 rounded-xl border border-slate-200 bg-white shadow-xs space-y-2">
-                    <div className="flex justify-between items-center">
-                      <h4 className="font-bold text-slate-900">Virtual Office</h4>
-                      <span className="text-xs text-slate-400">Tanpa ruang fisik</span>
-                    </div>
-                    <p className="text-xs text-slate-600">
-                      Alamat CBD, terima surat, domisili usaha (Standard & Plus).
-                    </p>
-                  </div>
-
-                  <div className="p-5 rounded-xl border border-slate-200 bg-white shadow-xs space-y-2">
-                    <div className="flex justify-between items-center">
-                      <h4 className="font-bold text-slate-900">Serviced Office</h4>
-                      <span className="text-xs text-slate-400">1–20+ orang</span>
-                    </div>
-                    <p className="text-xs text-slate-600">
-                      Langsung pakai: meja, internet, resepsionis, listrik & AC termasuk.
-                    </p>
-                  </div>
-
-                  <div className="p-5 rounded-xl border-2 border-[#EA8E18]/60 bg-amber-500/5 shadow-xs space-y-2">
-                    <div className="flex justify-between items-center">
-                      <h4 className="font-bold text-slate-900">SOHO (Duplex)</h4>
-                      <span className="text-xs font-semibold text-[#EA8E18]">3–6 orang</span>
-                    </div>
-                    <p className="text-xs text-slate-600">
-                      Beli (bisa sewa). Unit strata title untuk kerja dan tempat tinggal.
-                    </p>
-                  </div>
-
-                  <div className="p-5 rounded-xl border border-slate-200 bg-white shadow-xs space-y-2">
-                    <div className="flex justify-between items-center">
-                      <h4 className="font-bold text-slate-900">Premium Office</h4>
-                      <span className="text-xs text-slate-400">Mulai 6 orang</span>
-                    </div>
-                    <p className="text-xs text-slate-600">
-                      Sewa (bisa beli). Kantor pusat atau regional dengan citra korporat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Specs Numbers 3-Box (Brief Hal. 11, 15) */}
-              <div className="grid grid-cols-3 gap-3 sm:gap-4 py-2">
-                <div className="bg-[#0F172A] text-white p-4 sm:p-5 rounded-xl text-center space-y-1">
-                  <div className="text-xl sm:text-2xl font-bold font-heading text-[#EA8E18]">6.600 VA</div>
-                  <p className="text-[11px] sm:text-xs text-slate-300 leading-tight">Listrik ruangan + genset 24 jam</p>
-                </div>
-                <div className="bg-[#0F172A] text-white p-4 sm:p-5 rounded-xl text-center space-y-1">
-                  <div className="text-xl sm:text-2xl font-bold font-heading text-[#EA8E18]">2,8 m</div>
-                  <p className="text-[11px] sm:text-xs text-slate-300 leading-tight">Tinggi plafon maksimal terpasang</p>
-                </div>
-                <div className="bg-[#0F172A] text-white p-4 sm:p-5 rounded-xl text-center space-y-1">
-                  <div className="text-xl sm:text-2xl font-bold font-heading text-[#EA8E18]">250 kg/m²</div>
-                  <p className="text-[11px] sm:text-xs text-slate-300 leading-tight">Kapasitas beban lantai terukur</p>
-                </div>
-              </div>
-
-              {/* Lanjut Lihat Product Card (Brief Hal. 11, 15) */}
-              <div
-                id="btn-article-product"
-                onClick={() => {
-                  if (setCurrentPage) setCurrentPage('space-soho-duplex');
-                  window.scrollTo(0, 0);
-                }}
-                className="p-5 rounded-2xl border border-slate-200/90 bg-slate-50 hover:bg-white hover:border-[#EA8E18] hover:shadow-lg transition-all duration-200 cursor-pointer flex items-center justify-between gap-4 group"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-slate-200 shrink-0">
-                    <img
-                      src="https://hquarters.co.id/SPACES/SOHO/6.webp"
-                      alt="Unit SOHO HQuarters"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                  </div>
-                  <div>
-                    <span className="text-[11px] font-bold text-[#EA8E18] uppercase tracking-wider block">
-                      {isId ? 'LANJUT LIHAT' : 'EXPLORE SUITE'}
-                    </span>
-                    <h4 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#EA8E18] transition-colors">
-                      {isId ? 'Unit SOHO yang tersedia — Siap Huni & Semi-Furnished' : 'Available SOHO Suites — Ready for Occupancy'}
-                    </h4>
-                  </div>
-                </div>
-                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#EA8E18] group-hover:translate-x-1 transition-all shrink-0" />
-              </div>
-
-              {/* Quote & Location Callout (Brief Hal. 11) */}
-              <div id="section-location" className="space-y-4 pt-4">
-                <h2 className="text-2xl sm:text-3xl font-semibold font-heading text-[#0F172A] tracking-tight">
-                  {isId ? 'Soal lokasi, Asia Afrika tidak perlu dijelaskan' : 'Prime Location: Asia Afrika Speaks for Itself'}
-                </h2>
-                <blockquote className="text-xl sm:text-2xl font-medium text-[#EA8E18] font-heading border-l-4 border-[#EA8E18] pl-4 italic">
-                  “Klien Anda sudah tahu alamatnya.”
-                </blockquote>
-                <p>
-                  Gedung berada tepat di koridor finansial dan sejarah Kota Bandung: dekat Gedung Merdeka, Alun-Alun Bandung, Jalan Braga, Stasiun Kereta Cepat Bandung (Feeder), serta akses cepat Tol Pasteur dan Moh. Toha.
-                </p>
-              </div>
+              )}
 
               {/* FAQ Accordion (Brief Hal. 11, 15) */}
               <div id="section-faq" className="space-y-4 pt-4 border-t border-slate-200">
@@ -415,7 +342,7 @@ export default function ArticleDetailPage({ setCurrentPage, articleId = '6012', 
                 </h2>
 
                 <div className="space-y-3">
-                  {faqs.map((faq, idx) => (
+                  {displayFaqs.map((faq, idx) => (
                     <div
                       key={idx}
                       className="border border-slate-200 rounded-xl overflow-hidden transition-colors"
@@ -485,20 +412,18 @@ export default function ArticleDetailPage({ setCurrentPage, articleId = '6012', 
                   {isId ? 'DI ARTIKEL INI' : 'IN THIS ARTICLE'}
                 </span>
                 <nav className="space-y-2.5 text-xs sm:text-sm text-slate-600 font-medium">
-                  <a href="#section-questions" className="block hover:text-[#EA8E18] transition-colors">
-                    1. Mulai dari tiga pertanyaan
-                  </a>
-                  <a href="#section-comparison" className="block hover:text-[#EA8E18] transition-colors">
-                    2. Perbandingan cepat jenis kantor
-                  </a>
-                  <a href="#btn-article-product" className="block hover:text-[#EA8E18] transition-colors">
-                    3. Kapan SOHO masuk akal
-                  </a>
-                  <a href="#section-location" className="block hover:text-[#EA8E18] transition-colors">
-                    4. Lokasi strategis Asia Afrika
-                  </a>
+                  {article.sections && article.sections.map((sec, idx) => (
+                    <a key={idx} href={`#${sec.id}`} className="block hover:text-[#EA8E18] transition-colors">
+                      {idx + 1}. {sec.heading}
+                    </a>
+                  ))}
+                  {article.recommendation && (
+                    <a href="#btn-article-product" className="block hover:text-[#EA8E18] transition-colors">
+                      {(article.sections?.length || 0) + 1}. {article.recommendation.title}
+                    </a>
+                  )}
                   <a href="#section-faq" className="block hover:text-[#EA8E18] transition-colors">
-                    5. Pertanyaan umum (FAQ)
+                    {(article.sections?.length || 0) + (article.recommendation ? 2 : 1)}. {isId ? 'Pertanyaan umum (FAQ)' : 'Frequently Asked Questions'}
                   </a>
                 </nav>
               </div>
