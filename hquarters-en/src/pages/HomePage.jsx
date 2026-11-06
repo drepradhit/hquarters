@@ -1,6 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Hero from '../components/Hero.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 
 // Below-the-fold components lazy loaded on idle / first scroll for instant initial paint
 const BusinessJourney = lazy(() => import('../components/BusinessJourney.jsx'));
@@ -12,6 +13,7 @@ const Footer = lazy(() => import('../components/Footer.jsx'));
 
 export default function HomePage({ setCurrentPage }) {
   const [loadBelowFold, setLoadBelowFold] = useState(false);
+  const { cms } = useLanguage();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -49,9 +51,9 @@ export default function HomePage({ setCurrentPage }) {
           <Suspense fallback={null}>
             <BusinessJourney setCurrentPage={setCurrentPage} />
             <AddressStatement setCurrentPage={setCurrentPage} />
-            <Partners setCurrentPage={setCurrentPage} />
-            <BuildingHighlights setCurrentPage={setCurrentPage} />
-            <CTA setCurrentPage={setCurrentPage} />
+            {cms?.sec_partners_enabled !== '0' && <Partners setCurrentPage={setCurrentPage} />}
+            {cms?.sec_highlights_enabled !== '0' && <BuildingHighlights setCurrentPage={setCurrentPage} />}
+            {cms?.sec_cta_enabled !== '0' && <CTA setCurrentPage={setCurrentPage} />}
           </Suspense>
         )}
       </main>

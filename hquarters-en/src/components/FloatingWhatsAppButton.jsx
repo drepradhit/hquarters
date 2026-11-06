@@ -6,7 +6,7 @@ import { validateEmail } from '../lib/emailValidation.js';
 import { sendLeadToSheet } from '../lib/leadWebhook.js';
 
 export default function FloatingWhatsAppButton() {
-  const { language, t } = useLanguage();
+  const { language, t, cms } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -18,7 +18,7 @@ export default function FloatingWhatsAppButton() {
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState(false);
 
-  const phoneNumber = '628111908319';
+  const phoneNumber = (cms?.global_whatsapp || '628111908319').replace(/\D/g, '');
   const isId = language === 'id';
 
   const spaceCategories = [

@@ -235,7 +235,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                   <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
                 </div>
                 <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
-                  MULAI DARI RP 300RB-AN / BULAN
+                  {cms?.vo_price ? cms.vo_price.toUpperCase() : "MULAI DARI RP 450RB-AN / BULAN"}
                 </div>
               </button>
             </div>

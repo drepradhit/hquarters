@@ -6,6 +6,7 @@ const LanguageContext = createContext();
 export function LanguageProvider({ children }) {
   const [language, setLanguageState] = useState("id");
   const [cms, setCms] = useState({});
+  const [seoData, setSeoData] = useState({});
 
   const setLanguage = (lang) => {
     setLanguageState(lang);
@@ -26,8 +27,13 @@ export function LanguageProvider({ children }) {
     fetch("/wp-json/hq/v1/content?lang=" + encodeURIComponent(language))
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (isMounted && data && data.content && typeof data.content === "object" && Object.keys(data.content).length > 0) {
-          setCms(data.content);
+        if (isMounted && data) {
+          if (data.content && typeof data.content === "object" && Object.keys(data.content).length > 0) {
+            setCms(data.content);
+          }
+          if (data.seo && typeof data.seo === "object") {
+            setSeoData(data.seo);
+          }
         }
       })
       .catch(() => {
@@ -95,11 +101,26 @@ export function LanguageProvider({ children }) {
         ...(cms.soho_headline ? { headline: cms.soho_headline } : {}),
         ...(cms.soho_headline_desc ? { headlineDesc: cms.soho_headline_desc } : {}),
         ...(cms.soho_activities_title ? { activitiesTitle: cms.soho_activities_title } : {}),
+        price: cms.soho_price || baseT.sohoPage?.price || 'Hubungi Tim Leasing',
+        availability: cms.soho_availability || baseT.sohoPage?.availability || 'Tersedia',
+        specSqm: cms.soho_spec_sqm || baseT.sohoPage?.specSqm || '80 - 120 m²',
+        specFloor: cms.soho_spec_floor || baseT.sohoPage?.specFloor || 'Lantai 3-16',
+        specPower: cms.soho_spec_power || baseT.sohoPage?.specPower || '5.500 - 11.000 VA',
+        specCeiling: cms.soho_spec_ceiling || baseT.sohoPage?.specCeiling || '3.2 Meter',
+        heroImg: cms.soho_hero_img || '/SPACES/SOHO/SOHO 01.webp?v=20260825',
+        floorplanImg: cms.soho_floorplan_img || '',
       },
       premiumOfficePage: {
         ...baseT.premiumOfficePage,
         ...(cms.prem_headline ? { headline: cms.prem_headline } : {}),
         ...(cms.prem_headline_desc ? { headlineDesc: cms.prem_headline_desc } : {}),
+        price: cms.prem_price || baseT.premiumOfficePage?.price || 'Hubungi Tim Leasing',
+        availability: cms.prem_availability || baseT.premiumOfficePage?.availability || 'Tersedia',
+        specSqm: cms.prem_spec_sqm || baseT.premiumOfficePage?.specSqm || '120 - 450 m²',
+        specFloorload: cms.prem_spec_floorload || baseT.premiumOfficePage?.specFloorload || '250 kg/m²',
+        specCeiling: cms.prem_spec_ceiling || baseT.premiumOfficePage?.specCeiling || '3.6 Meter',
+        heroImg: cms.prem_hero_img || '/SPACES/PREMIUM/PREMIUM 01.webp?v=20260825',
+        floorplanImg: cms.prem_floorplan_img || '',
         card1: {
           label: cms.prem_c1_label || 'KAPASITAS KANTOR',
           title: cms.prem_c1_title || 'Pilih Kantor Sesuai Kebutuhan Tim',
@@ -119,13 +140,28 @@ export function LanguageProvider({ children }) {
           cta: cms.prem_c3_cta || 'Jadwalkan Survei Kantor',
         },
       },
+      functionRoomPage: {
+        ...(baseT.functionRoomPage || {}),
+        heroTitle: cms.fr_hero_title || 'Function Room & Ruang Konferensi Modern',
+        heroDesc: cms.fr_hero_desc || 'Ruang serbaguna untuk seminar, gathering korporasi, pelatihan, dan acara privat di pusat bisnis Bandung.',
+        price: cms.fr_price || 'Mulai Rp 1.500.000 / Jam',
+        capTheatre: cms.fr_cap_theatre || 'Hingga 280 Pax',
+        capClassroom: cms.fr_cap_classroom || 'Hingga 140 Pax',
+        capUshape: cms.fr_cap_ushape || 'Hingga 70 Pax',
+        capRoundtable: cms.fr_cap_roundtable || 'Hingga 120 Pax',
+        specCeiling: cms.fr_spec_ceiling || '3.8 Meter',
+        theatreImg: cms.fr_theatre_img || '/Function Room/Theatre.webp?v=20260825',
+        floorplanImg: cms.fr_floorplan_img || '',
+      },
       virtualOfficePage: {
         ...baseT.virtualOfficePage,
+        price: cms.vo_price || 'Mulai Rp 450.000 / Bulan',
         ...(cms.vo_subheadline ? { subheadline: cms.vo_subheadline } : {}),
         ...(cms.vo_copy ? { copy: cms.vo_copy } : {}),
       },
       servicedOfficePage: {
         ...baseT.servicedOfficePage,
+        price: cms.so_price || 'Mulai Rp 2.500.000 / Pax / Bulan',
         ...(cms.so_subheadline ? { subheadline: cms.so_subheadline } : {}),
         ...(cms.so_copy ? { copy: cms.so_copy } : {}),
       },
@@ -143,7 +179,7 @@ export function LanguageProvider({ children }) {
   }, [language, cms]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, cms }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, cms, seoData }}>
       {children}
     </LanguageContext.Provider>
   );
@@ -157,6 +193,7 @@ export function useLanguage() {
       setLanguage: () => {},
       t: translations.id,
       cms: {},
+      seoData: {},
     };
   }
   return context;

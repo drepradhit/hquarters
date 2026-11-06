@@ -230,7 +230,7 @@ export default function SpaceVirtualOfficePage({ setCurrentPage }) {
                   <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
                 </div>
                 <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
-                  STARTING FROM RP 300K / MONTH
+                  {cms?.vo_price ? cms.vo_price.toUpperCase() : "FROM IDR 450,000 / MONTH"}
                 </div>
               </button>
             </div>

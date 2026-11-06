@@ -287,7 +287,7 @@ export default function SpaceServicedOfficePage({ setCurrentPage }) {
                 className="text-left group cursor-pointer w-full"
               >
                 <div className="text-slate-900 group-hover:text-[#EA8E18] font-bold font-heading text-base sm:text-lg transition-colors flex items-center justify-between">
-                  <span>Cek Unit & Harga</span>
+                  <span>{cms?.so_price || "Cek Unit & Harga"}</span>
                   <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
                 </div>
                 <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">

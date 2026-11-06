@@ -171,15 +171,31 @@ export const PAGE_SEO = {
 };
 
 export function updatePageSEO(page, lang = 'id', customData = null) {
-  const seo = customData || PAGE_SEO[page] || PAGE_SEO.home;
+  let slug = page;
+  if (slug === 'space-soho' || slug === 'space-soho-duplex') slug = lang === 'en' ? 'soho-en' : 'soho';
+  else if (slug === 'space-premium-office') slug = lang === 'en' ? 'premium-office-en' : 'premium-office';
+  else if (slug === 'space-serviced-office') slug = lang === 'en' ? 'serviced-office-en' : 'serviced-office';
+  else if (slug === 'space-virtual-office') slug = lang === 'en' ? 'virtual-office-en' : 'virtual-office';
+  else if (slug === 'events' || slug === 'event') slug = lang === 'en' ? 'events-en' : 'events';
+  else if (slug === 'home') slug = lang === 'en' ? 'home-en' : 'hquarters-home';
+  else if (slug === 'building') slug = lang === 'en' ? 'building-en' : 'building';
+  else if (slug === 'location') slug = lang === 'en' ? 'location-en' : 'location';
+  else if (slug === 'companies') slug = lang === 'en' ? 'companies-en' : 'companies';
+  else if (slug === 'find-space') slug = lang === 'en' ? 'find-space-en' : 'find-space';
+
+  const yoast = (customData && customData[slug]) ? customData[slug] : null;
+
+  const seo = PAGE_SEO[page] || PAGE_SEO.home;
   const data = seo[lang] || seo.id || seo.en;
   const langPrefix = lang === 'id' ? '/id' : '/en';
   const rawPath = seo.path || '/';
-  const canonicalUrl = `https://hquarters.co.id${langPrefix}${rawPath === '/' ? '/' : rawPath}`;
+  const canonicalUrl = yoast?.canonical || `https://hquarters.co.id${langPrefix}${rawPath === '/' ? '/' : rawPath}`;
+  const title = (yoast && yoast.title) ? yoast.title : data?.title;
+  const description = (yoast && yoast.desc) ? yoast.desc : data?.description;
 
   // 1. Document Title
-  if (data?.title) {
-    document.title = data.title;
+  if (title) {
+    document.title = title;
   }
 
   // 2. Meta tags helper
@@ -194,16 +210,16 @@ export function updatePageSEO(page, lang = 'id', customData = null) {
     elem.setAttribute(attr, value);
   };
 
-  if (data?.description) {
-    setMeta('meta[name="description"]', 'content', data.description);
-    setMeta('meta[property="og:description"]', 'content', data.description);
-    setMeta('meta[name="twitter:description"]', 'content', data.description);
+  if (description) {
+    setMeta('meta[name="description"]', 'content', description);
+    setMeta('meta[property="og:description"]', 'content', description);
+    setMeta('meta[name="twitter:description"]', 'content', description);
   }
 
-  if (data?.title) {
-    setMeta('meta[name="title"]', 'content', data.title);
-    setMeta('meta[property="og:title"]', 'content', data.title);
-    setMeta('meta[name="twitter:title"]', 'content', data.title);
+  if (title) {
+    setMeta('meta[name="title"]', 'content', title);
+    setMeta('meta[property="og:title"]', 'content', title);
+    setMeta('meta[name="twitter:title"]', 'content', title);
   }
 
   // 3. OpenGraph URL & Canonical

@@ -140,11 +140,11 @@ export default function App() {
     setSelectedArticleId(id);
   };
 
-  const { language } = useLanguage();
+  const { language, seoData, cms } = useLanguage();
 
   React.useEffect(() => {
-    updatePageSEO(currentPage, language);
-  }, [currentPage, language, selectedArticleId]);
+    updatePageSEO(currentPage, language, seoData);
+  }, [currentPage, language, selectedArticleId, seoData]);
 
   return (
     <ErrorBoundary>
@@ -189,8 +189,8 @@ export default function App() {
       )}
 
       
-      {currentPage !== "skeleton" && <PromoModal setCurrentPage={navigate} />}
-      <FloatingWhatsAppButton />
+      {currentPage !== "skeleton" && cms?.promo_enabled !== "0" && <PromoModal setCurrentPage={navigate} />}
+      {cms?.sec_floating_wa_enabled !== "0" && <FloatingWhatsAppButton />}
 
     </Suspense>
     </ErrorBoundary>

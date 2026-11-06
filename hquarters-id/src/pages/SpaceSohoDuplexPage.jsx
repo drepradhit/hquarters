@@ -221,10 +221,17 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
           
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-4 flex flex-col justify-center">
-              {/* Eyebrow */}
-              <div className="text-xs sm:text-sm font-semibold text-slate-500 tracking-wider uppercase flex items-center gap-2">
-                <span className="w-5 h-[1.5px] bg-slate-400 inline-block"></span>
-                <span>HQUARTERS — CBD BANDUNG</span>
+              {/* Eyebrow & Availability */}
+              <div className="flex items-center gap-3">
+                <div className="text-xs sm:text-sm font-semibold text-slate-500 tracking-wider uppercase flex items-center gap-2">
+                  <span className="w-5 h-[1.5px] bg-slate-400 inline-block"></span>
+                  <span>HQUARTERS — CBD BANDUNG</span>
+                </div>
+                {t.sohoPage?.availability && (
+                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 border border-amber-200">
+                    {t.sohoPage.availability}
+                  </span>
+                )}
               </div>
 
               {/* Product Name as the MAIN HIGHLIGHT (SOHO besar, Small Office Home Office lebih kecil) */}
@@ -261,7 +268,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
             <div className="lg:col-span-6 relative flex items-center">
               <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-slate-100 aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/11] w-full shadow-sm group bg-slate-100">
                 <img
-                  src="/SPACES/SOHO/SOHO 01.webp?v=20260825"
+                  src={t.sohoPage?.heroImg || "/SPACES/SOHO/SOHO 01.webp?v=20260825"}
                   alt="HQuarters SOHO Unit"
                   className="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
@@ -282,7 +289,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
 
             <div className="pt-2 sm:pt-0 lg:px-4">
               <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
-                Lantai 3-16
+                {t.sohoPage?.specFloor || "Lantai 3-16"}
               </div>
               <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
                 PILIHAN POSISI UNIT
@@ -291,10 +298,10 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
 
             <div className="pt-2 sm:pt-0 lg:px-4">
               <div className="text-slate-900 font-bold font-heading text-base sm:text-lg">
-                Jl. Asia Afrika
+                {t.sohoPage?.specSqm || "80 - 120 m²"}
               </div>
               <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
-                ALAMAT BISNIS DI PUSAT KOTA BANDUNG
+                LUAS RUANG UNIT
               </div>
             </div>
 
@@ -307,7 +314,7 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
                 className="text-left group cursor-pointer w-full"
               >
                 <div className="text-slate-900 group-hover:text-[#EA8E18] font-bold font-heading text-base sm:text-lg transition-colors flex items-center justify-between">
-                  <span>Cek Unit & Harga</span>
+                  <span>{t.sohoPage?.price || "Cek Unit & Harga"}</span>
                   <ArrowRight className="w-4 h-4 text-[#EA8E18] group-hover:translate-x-1 transition-transform" />
                 </div>
                 <div className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-0.5">
@@ -507,6 +514,23 @@ export default function SpaceSohoDuplexPage({ setCurrentPage }) {
             ))}
           </div>
         </section>
+
+        {/* Floor Plan / Denah Lantai SOHO jika diunggah di CMS */}
+        {t.sohoPage?.floorplanImg && (
+          <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <div className="border-b border-slate-200/80 pb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium font-heading text-slate-900 tracking-tight">
+                Denah Tata Ruang <span className="text-[#EA8E18]">SOHO</span>
+              </h2>
+              <p className="text-slate-500 text-sm mt-1">
+                Ukuran: {t.sohoPage?.specSqm || '80 - 120 m²'} • Plafon: {t.sohoPage?.specCeiling || '3.2 Meter'} • Daya Listrik: {t.sohoPage?.specPower || '5.500 - 11.000 VA'}
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs flex items-center justify-center">
+              <img src={t.sohoPage?.floorplanImg} alt="Denah Tata Ruang SOHO HQuarters" className="max-h-[600px] w-auto object-contain rounded-xl" />
+            </div>
+          </section>
+        )}
 
         
         <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
