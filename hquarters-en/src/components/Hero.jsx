@@ -2,7 +2,7 @@ import React from "react";
 import { Star, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-function Hero({ setCurrentPage, headline, description, badge, heroImg }) {
+function Hero({ setCurrentPage, headline, description, badge }) {
   const { t } = useLanguage();
 
   return (
@@ -11,8 +11,8 @@ function Hero({ setCurrentPage, headline, description, badge, heroImg }) {
       {/* Background image: full-screen dimmed on mobile, strictly below navbar on desktop */}
       <div className="absolute inset-0 md:top-28 overflow-hidden pointer-events-none">
         <img
-          src={heroImg || "https://hquarters.co.id/BUILDING/hero-building-1536.webp?v=20260825"}
-          srcSet={heroImg ? undefined : "https://hquarters.co.id/BUILDING/hero-building-640.webp?v=20260825 640w, https://hquarters.co.id/BUILDING/hero-building-800.webp?v=20260825 800w, https://hquarters.co.id/BUILDING/hero-building-1536.webp?v=20260825 1536w"}
+          src="https://hquarters.co.id/BUILDING/hero-building-1536.webp?v=20260825"
+          srcSet="https://hquarters.co.id/BUILDING/hero-building-640.webp?v=20260825 640w, https://hquarters.co.id/BUILDING/hero-building-800.webp?v=20260825 800w, https://hquarters.co.id/BUILDING/hero-building-1536.webp?v=20260825 1536w"
           sizes="100vw"
           alt="HQuarters Building"
           fetchPriority="high"

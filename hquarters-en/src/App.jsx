@@ -21,31 +21,6 @@ const SpaceServicedOfficePage = lazy(() => import('./pages/SpaceServicedOfficePa
 const SpaceVirtualOfficePage = lazy(() => import('./pages/SpaceVirtualOfficePage.jsx'));
 const EventFunctionRoomPage = lazy(() => import('./pages/EventFunctionRoomPage.jsx'));
 const DynamicPage = lazy(() => import('./pages/DynamicPage.jsx'));
-const BlockRenderer = lazy(() => import('./components/BlockRenderer.jsx'));
-const Navbar = lazy(() => import('./components/Navbar.jsx'));
-const Footer = lazy(() => import('./components/Footer.jsx'));
-import { usePageBlocks } from './hooks/usePageBlocks.js';
-
-function DynamicGutenbergPage({ pageKey, slug, defaultElement, setCurrentPage }) {
-  const { language } = useLanguage();
-  const effectiveSlug = language === 'en' ? (slug.endsWith('-en') ? slug : `${slug}-en`) : slug.replace(/-en$/, '');
-  const { blocks } = usePageBlocks(effectiveSlug);
-
-  if (blocks && Array.isArray(blocks) && blocks.length > 0) {
-    const isFirstHero = blocks[0]?.name === 'hq/hero';
-    return (
-      <div className="min-h-screen min-h-[100dvh] flex flex-col bg-[#231F20] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900">
-        <Navbar currentPage={pageKey} setCurrentPage={setCurrentPage} />
-        <main className={`flex-1 bg-white ${isFirstHero ? '' : 'pt-24 sm:pt-28'}`}>
-          <BlockRenderer blocks={blocks} setCurrentPage={setCurrentPage} />
-        </main>
-        <Footer setCurrentPage={setCurrentPage} />
-      </div>
-    );
-  }
-
-  return defaultElement;
-}
 
 const PAGE_PATHS = {
   skeleton: '/skeleton',
@@ -195,40 +170,17 @@ export default function App() {
       {currentPage === 'skeleton' ? (
         <PageSkeleton currentPage="spaces" setCurrentPage={navigate} />
       ) : currentPage === 'space-premium-office' ? (
-        <DynamicGutenbergPage
-          pageKey="space-premium-office"
-          slug="premium-office"
-          defaultElement={<SpacePremiumOfficePage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
-      ) : currentPage === 'space-soho-duplex' || currentPage === 'space-soho' ? (
-        <DynamicGutenbergPage
-          pageKey="space-soho-duplex"
-          slug="soho"
-          defaultElement={<SpaceSohoDuplexPage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <SpacePremiumOfficePage setCurrentPage={navigate} />
+      ) : currentPage === 'space-soho-duplex' ? (
+        <SpaceSohoDuplexPage setCurrentPage={navigate} />
+      ) : currentPage === 'space-soho' ? (
+        <SpaceSohoDuplexPage setCurrentPage={navigate} />
       ) : currentPage === 'space-serviced-office' ? (
-        <DynamicGutenbergPage
-          pageKey="space-serviced-office"
-          slug="serviced-office"
-          defaultElement={<SpaceServicedOfficePage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <SpaceServicedOfficePage setCurrentPage={navigate} />
       ) : currentPage === 'space-virtual-office' ? (
-        <DynamicGutenbergPage
-          pageKey="space-virtual-office"
-          slug="virtual-office"
-          defaultElement={<SpaceVirtualOfficePage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <SpaceVirtualOfficePage setCurrentPage={navigate} />
       ) : currentPage === 'space-event' || currentPage === 'event' || currentPage === 'events' || currentPage === 'function-room' || currentPage === 'space-function-room' ? (
-        <DynamicGutenbergPage
-          pageKey="events"
-          slug="events"
-          defaultElement={<EventFunctionRoomPage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <EventFunctionRoomPage setCurrentPage={navigate} />
       ) : currentPage === 'find-space' ? (
         <FindSpacePage setCurrentPage={navigate} />
       ) : currentPage === 'article-detail' ? (
@@ -243,33 +195,13 @@ export default function App() {
           setSelectedArticleId={selectArticle}
         />
       ) : currentPage === 'companies' ? (
-        <DynamicGutenbergPage
-          pageKey="companies"
-          slug="companies"
-          defaultElement={<CompaniesPage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <CompaniesPage setCurrentPage={navigate} />
       ) : currentPage === 'location' ? (
-        <DynamicGutenbergPage
-          pageKey="location"
-          slug="location"
-          defaultElement={<LocationPage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <LocationPage setCurrentPage={navigate} />
       ) : currentPage === 'building' ? (
-        <DynamicGutenbergPage
-          pageKey="building"
-          slug="building"
-          defaultElement={<BuildingPage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <BuildingPage setCurrentPage={navigate} />
       ) : currentPage === 'spaces' ? (
-        <DynamicGutenbergPage
-          pageKey="spaces"
-          slug="spaces"
-          defaultElement={<SpacesPage setCurrentPage={navigate} />}
-          setCurrentPage={navigate}
-        />
+        <SpacesPage setCurrentPage={navigate} />
       ) : currentPage === 'dynamic-page' ? (
         <DynamicPage slug={dynamicSlug} setCurrentPage={navigate} />
       ) : (
