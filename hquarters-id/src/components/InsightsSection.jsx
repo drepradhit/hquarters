@@ -42,8 +42,8 @@ export default function InsightsSection({ setCurrentPage, setSelectedArticleId }
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* 1. HERO RATA TENGAH (Brief Hal. 5, 17) */}
-        <div className="max-w-3xl mx-auto text-center space-y-4 pt-4 sm:pt-8">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-semibold text-slate-900 font-heading tracking-tight leading-[1.15]">
+        <div className="max-w-4xl lg:max-w-5xl mx-auto text-center space-y-4 pt-4 sm:pt-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 font-heading tracking-tight leading-[1.15] whitespace-normal md:whitespace-nowrap">
             <span>{isId ? 'Artikel dan Informasi ' : 'Insights & Business '}</span>
             <span className="text-[#EA8E18]">{isId ? 'Ruang Bisnis' : 'Journal'}</span>
           </h1>

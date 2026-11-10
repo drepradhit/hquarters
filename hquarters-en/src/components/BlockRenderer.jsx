@@ -254,3 +254,4 @@ export default function BlockRenderer({ blocks, setCurrentPage }) {
     </>
   );
 }
+
