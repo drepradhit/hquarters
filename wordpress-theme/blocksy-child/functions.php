@@ -1273,13 +1273,13 @@ add_action('enqueue_block_editor_assets', function () {
         'hq-editor-styles',
         get_stylesheet_directory_uri() . '/css/hq-editor.css',
         ['hq-editor-fonts'],
-        '20261110_2'
+        '20261110_3'
     );
     wp_enqueue_script(
         'hq-gutenberg-blocks',
         get_stylesheet_directory_uri() . '/js/hq-blocks.js',
         ['wp-blocks', 'wp-element', 'wp-block-editor', 'wp-components', 'wp-i18n'],
-        '20261110_2',
+        '20261110_3',
         true
     );
 });
@@ -1292,6 +1292,9 @@ add_filter('allowed_block_types_all', function ($allowed_blocks, $editor_context
             'hq/business-journey',
             'hq/address-statement',
             'hq/location-section',
+            'hq/suite-hero',
+            'hq/companies-directory',
+            'hq/building-overview',
             'hq/partners',
             'hq/building-highlights',
             'hq/spaces-grid',

@@ -1010,4 +1010,256 @@
     save: function() { return null; }
 });
 
+
+    // 15. SUITE HERO (Split White Hero for Space Pages: Premium, SOHO, Serviced, Virtual, Events)
+    registerBlockType('hq/suite-hero', {
+        title: 'Suite Hero (Header Khusus Ruang)',
+        icon: 'slides',
+        category: 'hquarters',
+        attributes: {
+            eyebrow: { type: 'string', default: 'HQUARTERS — CBD BANDUNG' },
+            availability: { type: 'string', default: 'Unit Tersedia' },
+            title: { type: 'string', default: 'PREMIUM OFFICE' },
+            subtitle: { type: 'string', default: 'Lantai Korporat Eksekutif CBD Asia Afrika' },
+            description: { type: 'string', default: 'Lantai kerja eksekutif berstandar Grade A di koridor finansial Asia Afrika Bandung untuk perusahaan skala menengah hingga multinasional.' },
+            buttonText: { type: 'string', default: 'Cek Ketersediaan Unit' },
+            heroImg: { type: 'string', default: '/SPACES/PREMIUM OFFICE/Premium Office.webp?v=20260825' }
+        },
+        edit: function(props) {
+            var a = props.attributes;
+            var set = props.setAttributes;
+            var blockProps = useBlockProps({ className: 'hq-visual-section' });
+
+            return el(Fragment, {}, [
+                el(InspectorControls, {}, [
+                    el(PanelBody, { title: 'Pengaturan Suite Hero', initialOpen: true }, [
+                        el(TextControl, { label: 'Eyebrow', value: a.eyebrow, onChange: function(v) { set({ eyebrow: v }); } }),
+                        el(TextControl, { label: 'Status Ketersediaan', value: a.availability, onChange: function(v) { set({ availability: v }); } }),
+                        el(TextControl, { label: 'Judul Produk / Ruang', value: a.title, onChange: function(v) { set({ title: v }); } }),
+                        el(TextControl, { label: 'Subjudul', value: a.subtitle, onChange: function(v) { set({ subtitle: v }); } }),
+                        el(TextareaControl, { label: 'Deskripsi', value: a.description, onChange: function(v) { set({ description: v }); } }),
+                        el(TextControl, { label: 'Teks Tombol Aksi', value: a.buttonText, onChange: function(v) { set({ buttonText: v }); } }),
+                        el(TextControl, { label: 'URL Foto Ruang', value: a.heroImg, onChange: function(v) { set({ heroImg: v }); } })
+                    ])
+                ]),
+                el('div', blockProps, [
+                    el('div', { className: 'hq-section-tag' }, '🏢 SUITE HERO / HEADER RUANG'),
+                    el('div', { className: 'hq-suite-hero-wrap' }, [
+                        el('div', { className: 'hq-suite-hero-left' }, [
+                            el('div', { className: 'hq-suite-eyebrow-row' }, [
+                                el('span', { className: 'hq-suite-eyebrow' }, a.eyebrow),
+                                a.availability ? el('span', { className: 'hq-suite-status-badge' }, a.availability) : null
+                            ]),
+                            el(RichText, {
+                                tagName: 'h1',
+                                className: 'hq-suite-title',
+                                value: a.title,
+                                onChange: function(v) { set({ title: v }); }
+                            }),
+                            el(RichText, {
+                                tagName: 'h2',
+                                className: 'hq-suite-subtitle',
+                                value: a.subtitle,
+                                onChange: function(v) { set({ subtitle: v }); }
+                            }),
+                            el(RichText, {
+                                tagName: 'p',
+                                className: 'hq-suite-desc',
+                                value: a.description,
+                                onChange: function(v) { set({ description: v }); }
+                            }),
+                            el('div', {}, [
+                                el('a', { href: '#', className: 'hq-btn-primary' }, [
+                                    (a.buttonText || 'Cek Ketersediaan Unit'), ' →'
+                                ])
+                            ])
+                        ]),
+                        el('div', { className: 'hq-suite-hero-right' }, [
+                            el('img', {
+                                className: 'hq-suite-hero-img',
+                                src: formatImgUrl(a.heroImg || '/SPACES/PREMIUM OFFICE/Premium Office.webp?v=20260825'),
+                                alt: a.title
+                            })
+                        ])
+                    ])
+                ])
+            ]);
+        },
+        save: function() { return null; }
+    });
+
+    // 16. COMPANIES DIRECTORY (Grouped by Sector)
+    registerBlockType('hq/companies-directory', {
+        title: 'Direktori Tenant Berdasarkan Sektor',
+        icon: 'networking',
+        category: 'hquarters',
+        attributes: {
+            title: { type: 'string', default: 'Perusahaan dan Brand yang Berkantor di HQuarters' },
+            subtitle: { type: 'string', default: 'Bergabung bersama korporasi multinasional, institusi finansial, dan startup terkemuka di Bandung.' }
+        },
+        edit: function(props) {
+            var a = props.attributes;
+            var set = props.setAttributes;
+            var blockProps = useBlockProps({ className: 'hq-visual-section' });
+
+            var sectors = [
+                {
+                    title: 'Insurance & Financial Services',
+                    logos: [
+                        '/tenants/alllogo-gf-allianz.webp?v=20260826',
+                        '/tenants/alllogo-7de-axa.webp?v=20260826',
+                        '/tenants/alllogo-9ef-msig.webp?v=20260826',
+                        '/tenants/alllogo-6fgh-fwd.webp?v=20260826',
+                        '/tenants/alllogo-19r-avrist.webp?v=20260826',
+                        '/tenants/alllogo-16e-henan-sekuritas-copy.webp?v=20260826',
+                        '/tenants/alllogo-19-op-dana-logo.webp?v=20260826',
+                        '/tenants/alllogo-6k-b-money.webp?v=20260826'
+                    ]
+                },
+                {
+                    title: 'Healthcare & Life Sciences',
+                    logos: [
+                        '/tenants/alllogo-16j-roche.webp?v=20260826',
+                        '/tenants/alllogo-15-rstkj-medion-logo.webp?v=20260826',
+                        '/tenants/alllogo-12ij-hasna-copy-2.webp?v=20260826',
+                        '/tenants/alllogo-12m-amoures.webp?v=20260826'
+                    ]
+                },
+                {
+                    title: 'Technology & Media',
+                    logos: [
+                        '/tenants/alllogo-19-efhijk-huawei-logo.webp?v=20260826',
+                        '/tenants/alllogo-6d-inet-media.webp?v=20260826',
+                        '/tenants/alllogo-7q-vml.webp?v=20260826',
+                        '/tenants/alllogo-gf-b-garuda.webp?v=20260826'
+                    ]
+                },
+                {
+                    title: 'Industrial & Logistics',
+                    logos: [
+                        '/tenants/alllogo-7i-mitsubishi.webp?v=20260826',
+                        '/tenants/alllogo-8q-hyusung.webp?v=20260826',
+                        '/tenants/alllogo-5n-integra-logo-baru001.webp?v=20260826',
+                        '/tenants/alllogo-10h-gss.webp?v=20260826'
+                    ]
+                }
+            ];
+
+            return el(Fragment, {}, [
+                el(InspectorControls, {}, [
+                    el(PanelBody, { title: 'Pengaturan Direktori Tenant', initialOpen: true }, [
+                        el(TextControl, { label: 'Judul Utama', value: a.title, onChange: function(v) { set({ title: v }); } }),
+                        el(TextareaControl, { label: 'Subjudul', value: a.subtitle, onChange: function(v) { set({ subtitle: v }); } })
+                    ])
+                ]),
+                el('div', blockProps, [
+                    el('div', { className: 'hq-section-tag' }, '🏢 DIREKTORI TENANT PER SEKTOR'),
+                    el('div', { className: 'hq-companies-wrap' }, [
+                        el('div', { style: { textAlign: 'center', maxWidth: '720px', margin: '0 auto 20px auto' } }, [
+                            el(RichText, {
+                                tagName: 'h1',
+                                className: 'hq-location-title',
+                                value: a.title,
+                                onChange: function(v) { set({ title: v }); }
+                            }),
+                            el(RichText, {
+                                tagName: 'p',
+                                className: 'hq-location-desc',
+                                value: a.subtitle,
+                                onChange: function(v) { set({ subtitle: v }); }
+                            })
+                        ]),
+                        el('div', {}, sectors.map(function(sec, sIdx) {
+                            return el('div', { className: 'hq-sector-section', key: sIdx }, [
+                                el('h3', { className: 'hq-sector-title' }, sec.title),
+                                el('div', { className: 'hq-sector-grid' }, sec.logos.map(function(logo, lIdx) {
+                                    return el('div', { className: 'hq-sector-card', key: lIdx }, [
+                                        el('img', { src: formatImgUrl(logo), alt: 'Tenant Logo' })
+                                    ]);
+                                }))
+                            ]);
+                        }))
+                    ])
+                ])
+            ]);
+        },
+        save: function() { return null; }
+    });
+
+    // 17. BUILDING OVERVIEW (Gallery + Features)
+    registerBlockType('hq/building-overview', {
+        title: 'Fasilitas Gedung & Galeri Lengkap',
+        icon: 'admin-multisite',
+        category: 'hquarters',
+        attributes: {
+            title: { type: 'string', default: 'Gedung Bisnis Terintegrasi di Pusat Kota Bandung' },
+            subtitle: { type: 'string', default: 'Standar kenyamanan, teknologi rekayasa, dan infrastruktur modern berstandar internasional.' }
+        },
+        edit: function(props) {
+            var a = props.attributes;
+            var set = props.setAttributes;
+            var blockProps = useBlockProps({ className: 'hq-visual-section' });
+
+            var wellness = [
+                { img: '/BUILDING/gym 5_4.webp', lbl: 'Fitness & Gym Center' },
+                { img: '/BUILDING/sauna 5_4 new.webp?v=20260824', lbl: 'Executive Sauna Room' },
+                { img: '/BUILDING/kolam renang 5_4 new.webp?v=20260824', lbl: 'Rooftop Heated Pool' },
+                { img: '/BUILDING/lounge.webp?v=20260824', lbl: 'Business Lounge' },
+                { img: '/BUILDING/teras-g.webp?v=20260824', lbl: 'Ground Floor Plaza' },
+                { img: '/BUILDING/teras-ug.webp?v=20260824', lbl: 'Upper Ground Sky Terrace' }
+            ];
+
+            return el(Fragment, {}, [
+                el(InspectorControls, {}, [
+                    el(PanelBody, { title: 'Pengaturan Gedung', initialOpen: true }, [
+                        el(TextControl, { label: 'Judul Utama', value: a.title, onChange: function(v) { set({ title: v }); } }),
+                        el(TextareaControl, { label: 'Subjudul', value: a.subtitle, onChange: function(v) { set({ subtitle: v }); } })
+                    ])
+                ]),
+                el('div', blockProps, [
+                    el('div', { className: 'hq-section-tag' }, '🏗️ FASILITAS GEDUNG & WELLNESS'),
+                    el('div', { className: 'hq-building-overview-wrap' }, [
+                        el('div', { style: { textAlign: 'center', maxWidth: '720px', margin: '0 auto' } }, [
+                            el(RichText, {
+                                tagName: 'h1',
+                                className: 'hq-location-title',
+                                value: a.title,
+                                onChange: function(v) { set({ title: v }); }
+                            }),
+                            el(RichText, {
+                                tagName: 'p',
+                                className: 'hq-location-desc',
+                                value: a.subtitle,
+                                onChange: function(v) { set({ subtitle: v }); }
+                            })
+                        ]),
+                        el('div', { className: 'hq-wellness-grid' }, wellness.map(function(item, idx) {
+                            return el('div', { className: 'hq-wellness-item', key: idx }, [
+                                el('img', { src: formatImgUrl(item.img), alt: item.lbl }),
+                                el('div', { className: 'hq-wellness-lbl' }, item.lbl)
+                            ]);
+                        })),
+                        el('div', { className: 'hq-feat-split' }, [
+                            el('div', {}, [
+                                el('span', { className: 'hq-badge-gold' }, 'Infrastruktur & Akses'),
+                                el('h3', { className: 'hq-highlight-title', style: { fontSize: '22px', marginTop: '10px' } }, 'Grand Double-Height Lobby'),
+                                el('p', { className: 'hq-highlight-desc', style: { fontSize: '14px', marginTop: '8px' } }, 'Lobi megah dengan resepsionis profesional dan sistem verifikasi tamu terpadu.')
+                            ]),
+                            el('img', { src: formatImgUrl('/BUILDING/lobby-utama.webp?v=20260824'), alt: 'Lobby' })
+                        ]),
+                        el('div', { className: 'hq-feat-split' }, [
+                            el('img', { src: formatImgUrl('/LOGO/parking-lift.webp?v=20260825'), alt: 'Parking Lift' }),
+                            el('div', {}, [
+                                el('span', { className: 'hq-badge-gold' }, 'Parkir Otomatis'),
+                                el('h3', { className: 'hq-highlight-title', style: { fontSize: '22px', marginTop: '10px' } }, 'Automated Mechanical Parking Lift'),
+                                el('p', { className: 'hq-highlight-desc', style: { fontSize: '14px', marginTop: '8px' } }, 'Sistem parkir lift mekanikal bertingkat efisien untuk kenyamanan kendaraan Anda.')
+                            ])
+                        ])
+                    ])
+                ])
+            ]);
+        },
+        save: function() { return null; }
+    });
+
 })(window.wp);

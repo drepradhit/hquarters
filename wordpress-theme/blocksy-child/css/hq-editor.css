@@ -859,3 +859,204 @@
     font-weight: 700;
     color: #EA8E18;
 }
+
+/* ==========================================================================
+   15. SUITE HERO (hq/suite-hero - Split white hero for space pages)
+   ========================================================================== */
+.hq-suite-hero-wrap {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 24px;
+    padding: 44px 36px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 36px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.hq-suite-hero-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.hq-suite-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.hq-suite-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748B;
+}
+
+.hq-suite-status-badge {
+    background: #FEF3C7;
+    color: #B45309;
+    border: 1px solid #FDE68A;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 9999px;
+}
+
+.hq-suite-title {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    color: #EA8E18 !important;
+    line-height: 1.1 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+.hq-suite-subtitle {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #1E293B !important;
+    margin: 0 0 14px 0 !important;
+}
+
+.hq-suite-desc {
+    font-size: 14px !important;
+    color: #64748B !important;
+    line-height: 1.6 !important;
+    margin: 0 0 24px 0 !important;
+    max-width: 480px;
+}
+
+.hq-suite-hero-right {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 320px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border: 1px solid #E2E8F0;
+}
+
+.hq-suite-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================================================
+   16. COMPANIES DIRECTORY (hq/companies-directory)
+   ========================================================================== */
+.hq-companies-wrap {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 28px;
+    padding: 44px 36px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.hq-sector-section {
+    margin-top: 36px;
+}
+
+.hq-sector-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #64748B;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #F1F5F9;
+}
+
+.hq-sector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.hq-sector-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+.hq-sector-card img {
+    max-height: 36px;
+    max-width: 130px;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   17. BUILDING OVERVIEW (hq/building-overview)
+   ========================================================================== */
+.hq-building-overview-wrap {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 28px;
+    padding: 44px 36px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.hq-wellness-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 28px 0 36px 0;
+}
+
+.hq-wellness-item {
+    border-radius: 14px;
+    overflow: hidden;
+    height: 160px;
+    position: relative;
+    border: 1px solid #E2E8F0;
+}
+
+.hq-wellness-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hq-wellness-lbl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(2,6,23,0.85) 100%);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+
+.hq-feat-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+    padding: 24px;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.hq-feat-split img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
