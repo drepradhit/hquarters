@@ -920,4 +920,94 @@
         save: function() { return null; }
     });
 
+
+    // 14. LOCATION SECTION (Exact match to frontend LocationSection.jsx)
+    registerBlockType('hq/location-section', {
+        title: 'Lokasi & Peta Destinasi Sekitar',
+        icon: 'location-alt',
+        category: 'hquarters',
+        attributes: {
+            title: { type: 'string', default: 'Lokasi Strategis di Pusat Bisnis Bandung' },
+            subtitle: { type: 'string', default: 'Berada di koridor Asia Afrika, dikelilingi oleh institusi finansial, hotel terkemuka, dan akses transportasi utama kota.' },
+            mapTitle: { type: 'string', default: 'Lebih Dekat dengan Segala yang Penting.' }
+        },
+        edit: function(props) {
+            var a = props.attributes;
+            var set = props.setAttributes;
+            var blockProps = useBlockProps({ className: 'hq-visual-section' });
+
+            var categories = [
+                { name: 'Restoran & Braga', desc: 'Jalan Braga, Braga Permai, dan Sumber Hidangan', icon: '🍽️' },
+                { name: 'Hotel Berbintang', desc: 'Savoy Homann, Grand Preanger, dan Ibis Asia Afrika', icon: '🏨' },
+                { name: 'Stasiun Kereta Api', desc: 'Stasiun Bandung dan feeder kereta cepat Whoosh', icon: '🚆' },
+                { name: 'Perbankan & Finansial', desc: 'Kantor cabang Bank Mandiri, BCA, dan Bank Indonesia', icon: '🏦' },
+                { name: 'Akses Jalan Utama', desc: 'Akses langsung Jl. Asia Afrika, Jl. Naripan, Jl. Tamblong', icon: '🛣️' },
+                { name: 'Akses Pintu Tol', desc: 'Akses ke Gerbang Tol Pasteur dan Gerbang Tol Moh. Toha', icon: '🚗' },
+                { name: 'Belanja & Hiburan', desc: 'Heritage Braga, 23 Paskal, Trans Studio Mall', icon: '🛍️' },
+                { name: 'Pemerintahan & Sipil', desc: 'Gedung Merdeka, Alun-Alun Bandung, Balai Kota', icon: '🏛️' }
+            ];
+
+            return el(Fragment, {}, [
+                el(InspectorControls, {}, [
+                    el(PanelBody, { title: 'Pengaturan Halaman Lokasi', initialOpen: true }, [
+                        el(TextControl, { label: 'Judul Halaman', value: a.title, onChange: function(v) { set({ title: v }); } }),
+                        el(TextareaControl, { label: 'Subjudul', value: a.subtitle, onChange: function(v) { set({ subtitle: v }); } }),
+                        el(TextControl, { label: 'Judul Peta & Sekitar', value: a.mapTitle, onChange: function(v) { set({ mapTitle: v }); } })
+                    ])
+                ]),
+                el('div', blockProps, [
+                    el('div', { className: 'hq-section-tag' }, '📍 PETA LOKASI & DESTINASI SEKITAR'),
+                    el('div', { className: 'hq-location-full-wrap' }, [
+                        el('div', { className: 'hq-location-header' }, [
+                            el(RichText, {
+                                tagName: 'h1',
+                                className: 'hq-location-title',
+                                value: a.title,
+                                onChange: function(v) { set({ title: v }); }
+                            }),
+                            el(RichText, {
+                                tagName: 'p',
+                                className: 'hq-location-desc',
+                                value: a.subtitle,
+                                onChange: function(v) { set({ subtitle: v }); }
+                            })
+                        ]),
+                        el('div', { className: 'hq-location-card-grid' }, [
+                            el('div', { className: 'hq-location-map-wrap' }, [
+                                el('iframe', {
+                                    src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7328941393102!2d107.61305377499647!3d-6.922500093077204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e62eaa6b6423%3A0xb2cdc805dd650314!2sHQuarters%20Business%20Residence!5e0!3m2!1sid!2sid!4v1785903189677!5m2!1sid!2sid',
+                                    className: 'hq-location-iframe',
+                                    title: 'Google Map Preview'
+                                })
+                            ]),
+                            el('div', { className: 'hq-location-dest-wrap' }, [
+                                el(RichText, {
+                                tagName: 'h2',
+                                className: 'hq-location-dest-title',
+                                value: a.mapTitle,
+                                onChange: function(v) { set({ mapTitle: v }); }
+                            }),
+                            el('div', { className: 'hq-location-dest-grid' }, categories.map(function(item, idx) {
+                                return el('div', { className: 'hq-dest-item', key: idx }, [
+                                    el('div', { className: 'hq-dest-icon' }, item.icon),
+                                    el('div', { className: 'hq-dest-text' }, [
+                                        el('strong', { className: 'hq-dest-name' }, item.name),
+                                        el('span', { className: 'hq-dest-desc' }, item.desc)
+                                    ])
+                                ]);
+                            }))
+                        ])
+                    ]),
+                    el('div', { className: 'hq-location-recognition' }, [
+                        el('h3', { className: 'hq-recognition-title' }, 'Klien Anda Sudah Tahu Alamatnya.'),
+                        el('p', { className: 'hq-recognition-desc' }, 'Ada keunggulan psikologis nyata ketika alamat perusahaan tidak perlu dijelaskan. Asia Afrika sudah dikenal dan mudah dikenali.'),
+                        el('div', { className: 'hq-recognition-highlight' }, 'Mudah ditemukan. Mudah diingat.')
+                    ])
+                ])
+            ])
+        ]);
+    },
+    save: function() { return null; }
+});
+
 })(window.wp);
